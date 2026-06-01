@@ -958,7 +958,7 @@ def committee_grid(
         cards.append(
             f"""
             <article class="committee-person reveal" role="listitem">
-              {responsive_image(prefix, image, name, loading="lazy", decoding="async", sizes="(max-width: 520px) 84px, 128px")}
+              {responsive_image(prefix, image, name, loading="lazy", decoding="async", sizes="(max-width: 520px) 112px, (max-width: 780px) 128px, 180px")}
               <div>
                 <h3><a href="{href}" target="_blank" rel="noreferrer">{escape(name)}</a></h3>
                 <p>{escape(role)}</p>

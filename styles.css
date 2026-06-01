@@ -6740,3 +6740,63 @@ body[data-page="programme"] .program-track.highlight li::before {
     display: none;
   }
 }
+
+/* Larger portraits for the dedicated ICH2026 committee directory. */
+body[data-page="committees"] .committee-directory-grid .committee-person {
+  grid-template-columns: 210px minmax(0, 1fr);
+  min-height: 228px;
+}
+
+body[data-page="committees"] .committee-directory-grid .committee-person img {
+  width: 168px;
+  height: 168px;
+  margin-left: 22px;
+  border-width: 4px;
+}
+
+body[data-page="committees"] .committee-directory-grid .committee-person div {
+  padding: 22px 24px 22px 0;
+}
+
+@media (max-width: 1060px) and (min-width: 781px) {
+  body[data-page="committees"] .committee-directory-grid .committee-person {
+    grid-template-columns: 184px minmax(0, 1fr);
+    min-height: 208px;
+  }
+
+  body[data-page="committees"] .committee-directory-grid .committee-person img {
+    width: 148px;
+    height: 148px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 780px) {
+  body[data-page="committees"] .committee-directory-grid .committee-person {
+    grid-template-columns: 146px minmax(0, 1fr);
+    min-height: 178px;
+  }
+
+  body[data-page="committees"] .committee-directory-grid .committee-person img {
+    width: 116px;
+    height: 116px;
+    margin-left: 18px;
+  }
+
+  body[data-page="committees"] .committee-directory-grid .committee-person div {
+    padding: 18px 18px 18px 0;
+  }
+}
+
+@media (max-width: 420px) {
+  body[data-page="committees"] .committee-directory-grid .committee-person {
+    grid-template-columns: 140px minmax(0, 1fr);
+    min-height: 174px;
+  }
+
+  body[data-page="committees"] .committee-directory-grid .committee-person img {
+    width: 112px;
+    height: 112px;
+    margin-left: 16px;
+  }
+}
