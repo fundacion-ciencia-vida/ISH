@@ -6801,19 +6801,19 @@ body[data-page="committees"] .committee-directory-grid .committee-person div {
   }
 }
 
-/* Larger portraits for the About ISH advisory board. */
-body[data-page="about"] .advisory-grid {
+/* Larger portraits for the About ISH and homepage advisory board. */
+body:is([data-page="about"], [data-page="home"]) .advisory-grid {
   gap: 18px;
 }
 
-body[data-page="about"] .advisor,
-body[data-page="about"] .advisor-officer {
+body:is([data-page="about"], [data-page="home"]) .advisor,
+body:is([data-page="about"], [data-page="home"]) .advisor-officer {
   grid-column: span 3;
   border-radius: 8px;
 }
 
-body[data-page="about"] .advisor-photo,
-body[data-page="about"] .advisor-officer .advisor-photo {
+body:is([data-page="about"], [data-page="home"]) .advisor-photo,
+body:is([data-page="about"], [data-page="home"]) .advisor-officer .advisor-photo {
   width: calc(100% - 22px);
   margin: 11px auto 0;
   aspect-ratio: 1 / 1;
@@ -6821,74 +6821,74 @@ body[data-page="about"] .advisor-officer .advisor-photo {
   border-radius: 8px;
 }
 
-body[data-page="about"] .advisor-honorary {
+body:is([data-page="about"], [data-page="home"]) .advisor-honorary {
   grid-column: 5 / span 4;
 }
 
-body[data-page="about"] .advisor-copy {
+body:is([data-page="about"], [data-page="home"]) .advisor-copy {
   padding: 16px 17px 18px;
 }
 
 @media (max-width: 1060px) and (min-width: 781px) {
-  body[data-page="about"] .advisory-grid {
+  body:is([data-page="about"], [data-page="home"]) .advisory-grid {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
-  body[data-page="about"] .advisor,
-  body[data-page="about"] .advisor-officer {
+  body:is([data-page="about"], [data-page="home"]) .advisor,
+  body:is([data-page="about"], [data-page="home"]) .advisor-officer {
     grid-column: span 3;
   }
 
-  body[data-page="about"] .advisor-honorary {
+  body:is([data-page="about"], [data-page="home"]) .advisor-honorary {
     grid-column: 2 / span 4;
   }
 
-  body[data-page="about"] .advisor-photo,
-  body[data-page="about"] .advisor-officer .advisor-photo {
+  body:is([data-page="about"], [data-page="home"]) .advisor-photo,
+  body:is([data-page="about"], [data-page="home"]) .advisor-officer .advisor-photo {
     width: calc(100% - 20px);
   }
 }
 
 @media (max-width: 780px) {
-  body[data-page="about"] .advisor,
-  body[data-page="about"] .advisor-officer {
+  body:is([data-page="about"], [data-page="home"]) .advisor,
+  body:is([data-page="about"], [data-page="home"]) .advisor-officer {
     grid-column: auto;
     grid-template-columns: 150px minmax(0, 1fr);
     min-height: 184px;
   }
 
-  body[data-page="about"] .advisor-honorary {
+  body:is([data-page="about"], [data-page="home"]) .advisor-honorary {
     grid-column: auto;
   }
 
-  body[data-page="about"] .advisor-photo,
-  body[data-page="about"] .advisor-officer .advisor-photo {
+  body:is([data-page="about"], [data-page="home"]) .advisor-photo,
+  body:is([data-page="about"], [data-page="home"]) .advisor-officer .advisor-photo {
     width: 122px;
     min-height: 122px;
     margin: 18px 0 18px 18px;
     border-radius: 7px;
   }
 
-  body[data-page="about"] .advisor-copy {
+  body:is([data-page="about"], [data-page="home"]) .advisor-copy {
     padding: 18px;
   }
 }
 
 @media (max-width: 420px) {
-  body[data-page="about"] .advisor,
-  body[data-page="about"] .advisor-officer {
+  body:is([data-page="about"], [data-page="home"]) .advisor,
+  body:is([data-page="about"], [data-page="home"]) .advisor-officer {
     grid-template-columns: 138px minmax(0, 1fr);
     min-height: 176px;
   }
 
-  body[data-page="about"] .advisor-photo,
-  body[data-page="about"] .advisor-officer .advisor-photo {
+  body:is([data-page="about"], [data-page="home"]) .advisor-photo,
+  body:is([data-page="about"], [data-page="home"]) .advisor-officer .advisor-photo {
     width: 112px;
     min-height: 112px;
     margin-left: 14px;
   }
 
-  body[data-page="about"] .advisor-copy {
+  body:is([data-page="about"], [data-page="home"]) .advisor-copy {
     padding: 15px 14px;
   }
 }
