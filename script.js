@@ -327,6 +327,76 @@ if (heroCarousel) {
   setHeroVariant(activeHeroIndex);
 }
 
+const locationCarousels = Array.from(document.querySelectorAll("[data-location-carousel]"));
+locationCarousels.forEach((carousel) => {
+  const slides = Array.from(carousel.querySelectorAll("[data-location-slide]"));
+  const controls = Array.from(carousel.querySelectorAll("[data-location-control]"));
+  const prev = carousel.querySelector("[data-location-prev]");
+  const next = carousel.querySelector("[data-location-next]");
+  let activeIndex = slides.findIndex((slide) => slide.classList.contains("is-active"));
+  let dragStartX = 0;
+  let dragging = false;
+
+  if (activeIndex < 0) activeIndex = 0;
+
+  function setLocationSlide(index) {
+    if (!slides.length || !Number.isFinite(index)) return;
+    activeIndex = (index + slides.length) % slides.length;
+    carousel.dataset.activeLocation = String(activeIndex);
+
+    slides.forEach((slide, slideIndex) => {
+      const active = slideIndex === activeIndex;
+      slide.classList.toggle("is-active", active);
+      slide.setAttribute("aria-hidden", String(!active));
+    });
+
+    controls.forEach((control) => {
+      const active = Number(control.dataset.locationControl) === activeIndex;
+      control.classList.toggle("is-active", active);
+      control.setAttribute("aria-pressed", String(active));
+    });
+  }
+
+  controls.forEach((control) => {
+    control.addEventListener("click", () => setLocationSlide(Number(control.dataset.locationControl)));
+  });
+
+  if (prev) {
+    prev.addEventListener("click", () => setLocationSlide(activeIndex - 1));
+  }
+
+  if (next) {
+    next.addEventListener("click", () => setLocationSlide(activeIndex + 1));
+  }
+
+  carousel.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft") {
+      event.preventDefault();
+      setLocationSlide(activeIndex - 1);
+    }
+    if (event.key === "ArrowRight") {
+      event.preventDefault();
+      setLocationSlide(activeIndex + 1);
+    }
+  });
+
+  carousel.addEventListener("pointerdown", (event) => {
+    if (!event.target.closest(".location-carousel-stage")) return;
+    dragStartX = event.clientX;
+    dragging = true;
+  });
+
+  carousel.addEventListener("pointerup", (event) => {
+    if (!dragging) return;
+    dragging = false;
+    const distance = event.clientX - dragStartX;
+    if (Math.abs(distance) < 48) return;
+    setLocationSlide(distance < 0 ? activeIndex + 1 : activeIndex - 1);
+  });
+
+  setLocationSlide(activeIndex);
+});
+
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     setMenu(false);

@@ -314,6 +314,13 @@ TRAVEL_ICONS = {
     "route": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.5 6H14a3 3 0 0 1 0 6h-4a3 3 0 0 0 0 6h5.5"/></svg>',
 }
 
+LOCATION_CAROUSEL_IMAGES = [
+    ("01", "Puerto Varas and Osorno Volcano", "Osorno Volcano and Puerto Varas church by Lake Llanquihue", "ich2026/from-zip/pvaras.webp"),
+    ("02", "Lake District setting", "Panoramic Puerto Varas view with Lake Llanquihue and Osorno Volcano", "ich2026/from-zip/pvaras2.jpg"),
+    ("03", "Osorno Volcano", "Osorno Volcano summit and visitor chairlift", "ich2026/from-zip/volcan-puerto-varas.jpg"),
+    ("04", "Lake Llanquihue activities", "Kayaks on Lake Llanquihue near Puerto Varas", "ich2026/from-zip/sea-kayak-puerto-varas.jpg"),
+]
+
 
 def prefix_for(out_path: str) -> str:
     parent = Path(out_path).parent
@@ -995,6 +1002,57 @@ def committee_teaser(prefix: str) -> str:
       </section>"""
 
 
+def location_carousel(prefix: str) -> str:
+    total = len(LOCATION_CAROUSEL_IMAGES)
+    slides: list[str] = []
+    thumbs: list[str] = []
+    dots: list[str] = []
+
+    for index, (number, title, alt, image_path) in enumerate(LOCATION_CAROUSEL_IMAGES):
+        active_class = " is-active" if index == 0 else ""
+        aria_hidden = "false" if index == 0 else "true"
+        aria_pressed = "true" if index == 0 else "false"
+        safe_title = escape(title)
+        safe_label = escape(f"Show {title}", quote=True)
+
+        slides.append(
+            f"""
+            <figure class="location-slide{active_class}" data-location-slide aria-hidden="{aria_hidden}">
+              {responsive_image(prefix, image_path, alt, loading="lazy", decoding="async", sizes="(max-width: 780px) 92vw, 900px")}
+              <figcaption><span>{number} / {total:02d}</span><strong>{safe_title}</strong></figcaption>
+            </figure>"""
+        )
+        thumbs.append(
+            f"""
+            <button class="location-thumb{active_class}" type="button" data-location-control="{index}" aria-pressed="{aria_pressed}" aria-label="{safe_label}">
+              {responsive_image(prefix, image_path, alt, loading="lazy", decoding="async", picture_class="location-thumb-image", sizes="(max-width: 780px) 23vw, 160px")}
+              <span><small>{number}</small>{safe_title}</span>
+            </button>"""
+        )
+        dots.append(
+            f'<button class="location-carousel-dot{active_class}" type="button" data-location-control="{index}" aria-pressed="{aria_pressed}" aria-label="{safe_label}"><span class="sr-only">{safe_label}</span></button>'
+        )
+
+    return f"""
+        <div class="section-shell location-carousel reveal" data-location-carousel aria-label="Puerto Varas location carousel">
+          <div class="location-carousel-frame">
+            <div class="location-carousel-stage" tabindex="0">
+              {"".join(slides)}
+              <div class="location-carousel-actions" aria-label="Location gallery controls">
+                <button class="location-carousel-arrow is-prev" type="button" data-location-prev aria-label="Previous location photograph"><span aria-hidden="true"></span><span class="sr-only">Previous location photograph</span></button>
+                <div class="location-carousel-dots" role="group" aria-label="Select location photograph">
+                  {"".join(dots)}
+                </div>
+                <button class="location-carousel-arrow is-next" type="button" data-location-next aria-label="Next location photograph"><span aria-hidden="true"></span><span class="sr-only">Next location photograph</span></button>
+              </div>
+            </div>
+            <div class="location-carousel-thumbs" aria-label="Location photographs">
+              {"".join(thumbs)}
+            </div>
+          </div>
+        </div>"""
+
+
 def ich2026_page(prefix: str) -> str:
     return f"""
       <section class="ich-hero" aria-labelledby="ich-title">
@@ -1041,24 +1099,7 @@ def ich2026_page(prefix: str) -> str:
             <figcaption>Puerto Varas, Lake Llanquihue and the Chilean Lake District.</figcaption>
           </figure>
         </div>
-        <div class="section-shell location-carousel reveal" aria-label="Puerto Varas location gallery">
-          <figure>
-            {responsive_image(prefix, "ich2026/from-zip/pvaras.webp", "Osorno Volcano and Puerto Varas church by Lake Llanquihue", loading="lazy", decoding="async", sizes="(max-width: 780px) 86vw, 390px")}
-            <figcaption>Puerto Varas and Osorno Volcano</figcaption>
-          </figure>
-          <figure>
-            {responsive_image(prefix, "ich2026/from-zip/pvaras2.jpg", "Panoramic Puerto Varas view with Lake Llanquihue and Osorno Volcano", loading="lazy", decoding="async", sizes="(max-width: 780px) 86vw, 390px")}
-            <figcaption>Lake District setting</figcaption>
-          </figure>
-          <figure>
-            {responsive_image(prefix, "ich2026/from-zip/volcan-puerto-varas.jpg", "Osorno Volcano summit and visitor chairlift", loading="lazy", decoding="async", sizes="(max-width: 780px) 86vw, 390px")}
-            <figcaption>Osorno Volcano</figcaption>
-          </figure>
-          <figure>
-            {responsive_image(prefix, "ich2026/from-zip/sea-kayak-puerto-varas.jpg", "Kayaks on Lake Llanquihue near Puerto Varas", loading="lazy", decoding="async", sizes="(max-width: 780px) 86vw, 390px")}
-            <figcaption>Lake Llanquihue activities</figcaption>
-          </figure>
-        </div>
+        {location_carousel(prefix)}
       </section>
       <section class="section data-section">
         <div class="section-shell">
