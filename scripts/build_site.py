@@ -730,6 +730,7 @@ def doc(out_path: str, active: str, title: str, description: str, body: str) -> 
     <meta name="twitter:image" content="{og_image}">
     <!-- Canonical -->
     <link rel="canonical" href="{canonical}">
+    <link rel="icon" type="image/svg+xml" href="{prefix}assets/icons/ish-favicon.svg?v={file_version("assets/icons/ish-favicon.svg")}">
     <link rel="icon" href="{prefix}favicon.ico?v={file_version("favicon.ico")}" sizes="any">
     <link rel="icon" type="image/png" sizes="256x256" href="{prefix}assets/icons/ish-icon-256.png?v={file_version("assets/icons/ish-icon-256.png")}">
     <link rel="icon" type="image/png" sizes="512x512" href="{prefix}assets/icons/ish-icon-512.png?v={file_version("assets/icons/ish-icon-512.png")}">
