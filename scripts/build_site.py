@@ -895,7 +895,7 @@ def advisory_grid(prefix: str) -> str:
         cards.append(
             f"""
             <article class="advisor{officer_class}{honorary_class} reveal" role="listitem">
-              <div class="advisor-photo">{responsive_image(prefix, image, name, loading="lazy", decoding="async", sizes="(max-width: 780px) 112px, 220px")}</div>
+              <div class="advisor-photo">{responsive_image(prefix, image, name, loading="lazy", decoding="async", sizes="(max-width: 520px) 128px, (max-width: 780px) 144px, (max-width: 1060px) 180px, 280px")}</div>
               <div class="advisor-copy">
                 <span class="advisor-location">{escape(country)}</span>
                 <h3>{heading}</h3>
