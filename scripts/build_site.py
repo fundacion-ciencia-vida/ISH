@@ -1101,6 +1101,15 @@ def ich2026_page(prefix: str) -> str:
         </div>
         {location_carousel(prefix)}
       </section>
+      <section class="section data-section">
+        <div class="section-shell">
+          <div class="section-heading compact reveal">
+            <p class="eyebrow">Scientific Program & Keynote Speakers</p>
+            <h2>An excellent platform for students, postdoctoral researchers, and established scientists.</h2>
+            <p>The International Conference on Hantaviruses will provide an excellent platform for students, postdoctoral researchers, and established scientists to present their latest findings and engage with the international hantavirus research community. In addition, the organizing committee has invited leading experts in the field to deliver keynote lectures highlighting cutting-edge developments in hantavirus research.</p>
+          </div>
+        </div>
+      </section>
       {committee_teaser(prefix)}
       <section class="section ich-workshop">
         <div class="section-shell ich-workshop-layout">
