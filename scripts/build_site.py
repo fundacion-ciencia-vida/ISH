@@ -1101,53 +1101,6 @@ def ich2026_page(prefix: str) -> str:
         </div>
         {location_carousel(prefix)}
       </section>
-      <section class="section data-section">
-        <div class="section-shell">
-          <div class="section-heading compact reveal">
-            <p class="eyebrow">Scientific Program & Keynote Speakers</p>
-            <h2>An excellent platform for students, postdoctoral researchers, and established scientists.</h2>
-            <p>The International Conference on Hantaviruses will provide an excellent platform for students, postdoctoral researchers, and established scientists to present their latest findings and engage with the international hantavirus research community. In addition, the organizing committee has invited leading experts in the field to deliver keynote lectures highlighting cutting-edge developments in hantavirus research.</p>
-          </div>
-          <div class="ich-feature-grid">
-            <article class="ich-feature reveal">
-              {responsive_image(prefix, "ich2026/generated/scientific-program.jpg", "Researchers reviewing hantavirus program topics in a scientific session", loading="lazy", decoding="async", sizes="(max-width: 1060px) 100vw, 560px")}
-              <div>
-                <span>01</span>
-                <h3>Scientific Program ICH2026</h3>
-                <p>Sessions span viral epidemiology, ecology, virus-host interaction, pathogenesis, clinical aspects, vaccines and therapeutics.</p>
-                <a class="text-link" href="{local(prefix, "ich2026/programme/")}">View programme</a>
-              </div>
-            </article>
-            <article class="ich-feature reveal">
-              {responsive_image(prefix, "ich2026/generated/andes-virus-workshop.jpg", "Clinical and public health team working on Andes virus workshop materials in Southern Chile", loading="lazy", decoding="async", sizes="(max-width: 1060px) 100vw, 560px")}
-              <div>
-                <span>02</span>
-                <h3>ANDV Workshop</h3>
-                <p>A focused day on regional evidence, clinical management, early diagnosis and public health response.</p>
-                <a class="text-link" href="{local(prefix, "ich2026/programme/")}">Workshop details</a>
-              </div>
-            </article>
-            <article class="ich-feature reveal">
-              {responsive_image(prefix, "ich2026/generated/keynote-speakers.jpg", "Keynote speaker presenting hantavirus microscopy to a scientific audience", loading="lazy", decoding="async", sizes="(max-width: 1060px) 100vw, 560px")}
-              <div>
-                <span>03</span>
-                <h3>Keynote Speakers</h3>
-                <p>Invited experts highlight current developments across hantavirus research, clinical science and medical countermeasures.</p>
-                <a class="text-link" href="{local(prefix, "ich2026/keynote-speakers/")}">See speakers</a>
-              </div>
-            </article>
-            <article class="ich-feature reveal">
-              {responsive_image(prefix, "ich2026/generated/abstract-registration.jpg", "Scientist preparing abstract submission and conference registration materials", loading="lazy", decoding="async", sizes="(max-width: 1060px) 100vw, 560px")}
-              <div>
-                <span>04</span>
-                <h3>Abstract Submission & Registration</h3>
-                <p>Submission and registration are handled through the conference form, with early registration timing listed on the registration page.</p>
-                <a class="text-link" href="{local(prefix, "ich2026/abstracts-registration/")}">Registration details</a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
       {committee_teaser(prefix)}
       <section class="section ich-workshop">
         <div class="section-shell ich-workshop-layout">
