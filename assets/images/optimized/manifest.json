@@ -8163,6 +8163,109 @@
     ],
     "width": 512
   },
+  "ui/social-preview.jpg": {
+    "bytes": 60936,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 3427,
+          "height": 168,
+          "path": "optimized/ui/social-preview-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 5337,
+          "height": 252,
+          "path": "optimized/ui/social-preview-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 7395,
+          "height": 336,
+          "path": "optimized/ui/social-preview-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 11585,
+          "height": 504,
+          "path": "optimized/ui/social-preview-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 14714,
+          "height": 630,
+          "path": "optimized/ui/social-preview-1200.avif",
+          "width": 1200
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 4536,
+          "height": 168,
+          "path": "optimized/ui/social-preview-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 7784,
+          "height": 252,
+          "path": "optimized/ui/social-preview-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 11494,
+          "height": 336,
+          "path": "optimized/ui/social-preview-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 18188,
+          "height": 504,
+          "path": "optimized/ui/social-preview-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 24872,
+          "height": 630,
+          "path": "optimized/ui/social-preview-1200.webp",
+          "width": 1200
+        }
+      ]
+    },
+    "height": 630,
+    "variants": [
+      {
+        "bytes": 4536,
+        "height": 168,
+        "path": "optimized/ui/social-preview-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 7784,
+        "height": 252,
+        "path": "optimized/ui/social-preview-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 11494,
+        "height": 336,
+        "path": "optimized/ui/social-preview-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 18188,
+        "height": 504,
+        "path": "optimized/ui/social-preview-960.webp",
+        "width": 960
+      },
+      {
+        "bytes": 24872,
+        "height": 630,
+        "path": "optimized/ui/social-preview-1200.webp",
+        "width": 1200
+      }
+    ],
+    "width": 1200
+  },
   "ui/society-archive-2.png": {
     "bytes": 248870,
     "formats": {
@@ -8265,91 +8368,6 @@
       }
     ],
     "width": 1280
-  },
-  "venue/conference-landscape.png": {
-    "bytes": 117984,
-    "formats": {
-      "avif": [
-        {
-          "bytes": 13162,
-          "height": 232,
-          "path": "optimized/venue/conference-landscape-320.avif",
-          "width": 320
-        },
-        {
-          "bytes": 29434,
-          "height": 348,
-          "path": "optimized/venue/conference-landscape-480.avif",
-          "width": 480
-        },
-        {
-          "bytes": 48231,
-          "height": 464,
-          "path": "optimized/venue/conference-landscape-640.avif",
-          "width": 640
-        },
-        {
-          "bytes": 59499,
-          "height": 507,
-          "path": "optimized/venue/conference-landscape-700.avif",
-          "width": 700
-        }
-      ],
-      "webp": [
-        {
-          "bytes": 13194,
-          "height": 232,
-          "path": "optimized/venue/conference-landscape-320.webp",
-          "width": 320
-        },
-        {
-          "bytes": 30856,
-          "height": 348,
-          "path": "optimized/venue/conference-landscape-480.webp",
-          "width": 480
-        },
-        {
-          "bytes": 53706,
-          "height": 464,
-          "path": "optimized/venue/conference-landscape-640.webp",
-          "width": 640
-        },
-        {
-          "bytes": 66584,
-          "height": 507,
-          "path": "optimized/venue/conference-landscape-700.webp",
-          "width": 700
-        }
-      ]
-    },
-    "height": 507,
-    "variants": [
-      {
-        "bytes": 13194,
-        "height": 232,
-        "path": "optimized/venue/conference-landscape-320.webp",
-        "width": 320
-      },
-      {
-        "bytes": 30856,
-        "height": 348,
-        "path": "optimized/venue/conference-landscape-480.webp",
-        "width": 480
-      },
-      {
-        "bytes": 53706,
-        "height": 464,
-        "path": "optimized/venue/conference-landscape-640.webp",
-        "width": 640
-      },
-      {
-        "bytes": 66584,
-        "height": 507,
-        "path": "optimized/venue/conference-landscape-700.webp",
-        "width": 700
-      }
-    ],
-    "width": 700
   },
   "venue/hotel-bellavista.jpg": {
     "bytes": 209862,

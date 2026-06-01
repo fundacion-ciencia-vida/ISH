@@ -16,30 +16,32 @@ FONTSHEET = "fonts.min.css"
 SCRIPT = "script.min.js"
 
 OG_IMAGES: dict[str, str] = {
-    "home": "ui/home-science-hero.webp",
-    "about": "ui/home-science-hero.webp",
-    "former": "former-meetings/2023-seoul-1.jpg",
-    "communications": "ich2026/hantavirus-em.jpg",
+    "home": "ui/social-preview.jpg",
+    "about": "ui/social-preview.jpg",
+    "former": "ui/social-preview.jpg",
+    "communications": "ui/social-preview.jpg",
     "ich2026": "ich2026/from-zip/pvaras2.jpg",
-    "keynote": "venue/conference-landscape.png",
-    "programme": "ich2026/hantavirus-em.jpg",
+    "keynote": "ich2026/conference-volcano.jpg",
+    "programme": "ich2026/conference-volcano.jpg",
     "registration": "venue/puerto-varas-waterfront.jpg",
     "venue": "venue/hotel-bellavista.jpg",
     "sponsors": "ich2026/ich2026-logo-landscape.png",
-    "contact": "venue/conference-landscape.png",
+    "committees": "ich2026/ich2026-logo-landscape.png",
+    "contact": "ui/social-preview.jpg",
 }
 
 HERO_IMAGES: dict[str, str] = {
     "home": "ui/home-science-hero.webp?v=virus-fill-20260521",
     "about": "about-hantavirus-microscopy-pixnio.jpg",
-    "former": "former-meetings/2023-seoul-1.jpg",
+    "former": "former-meetings/2023-seoul-2.jpg",
     "communications": "ich2026/hantavirus-em.jpg",
     "ich2026": "ich2026/from-zip/pvaras2.jpg",
-    "keynote": "venue/conference-landscape.png",
-    "programme": "ich2026/hantavirus-em.jpg",
+    "keynote": "ich2026/conference-volcano.jpg",
+    "programme": "ich2026/conference-volcano.jpg",
     "registration": "venue/puerto-varas-waterfront.jpg",
     "venue": "venue/hotel-bellavista.jpg",
     "sponsors": "ich2026/ich2026-logo-landscape.png",
+    "committees": "ich2026/ich2026-logo-landscape.png",
 }
 
 HOME_HERO_VARIANTS = [
@@ -130,6 +132,7 @@ NAV = [
     ("programme", "Programme", "ich2026/programme/"),
     ("registration", "Registration", "ich2026/abstracts-registration/"),
     ("venue", "Venue", "ich2026/venue/"),
+    ("committees", "Committees", "ich2026/organizing-committees/"),
     ("sponsors", "Partners & Sponsors", "ich2026/partners-sponsors/"),
 ]
 
@@ -150,12 +153,13 @@ NAV_GROUPS = [
             ("programme", "Programme", "ich2026/programme/"),
             ("registration", "Registration", "ich2026/abstracts-registration/"),
             ("venue", "Venue", "ich2026/venue/"),
+            ("committees", "Committees", "ich2026/organizing-committees/"),
             ("sponsors", "Partners & Sponsors", "ich2026/partners-sponsors/"),
         ],
     ),
 ]
 
-ICH_NAV_KEYS = {"ich2026", "keynote", "programme", "registration", "venue", "sponsors"}
+ICH_NAV_KEYS = {"ich2026", "keynote", "programme", "registration", "venue", "committees", "sponsors"}
 
 MEMBERSHIP_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSc0IHUnT80-qDJn2wU4pLXKQ1F_VEdcziqVL-47iGGAwsLBEA/viewform?pli=1"
 CONFERENCE_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSfMc-cPx3hL8-Q67gN3uFLpQiZlgOD5lr03vvze29w4axGWtQ/viewform"
@@ -226,9 +230,9 @@ SPONSORS = [
 ]
 
 SPONSOR_GROUP_LABELS = [
-    ("Sponsors", "Sponsors"),
     ("Scientific societies", "Scientific societies"),
     ("Universities & research partners", "Universities & research partners"),
+    ("Sponsors", "Sponsors"),
 ]
 
 FORMER_MEETINGS = [
@@ -566,6 +570,12 @@ def local(prefix: str, path: str = "") -> str:
     return f"{prefix}{path}"
 
 
+def external_attrs(href: str) -> str:
+    if href.startswith(("http://", "https://")) and not href.startswith(SITE_URL):
+        return ' target="_blank" rel="noreferrer"'
+    return ""
+
+
 def contact_href(prefix: str) -> str:
     return local(prefix, "about-ish/#contact")
 
@@ -616,7 +626,7 @@ def header(prefix: str, active: str) -> str:
     return f"""
     <header class="site-header" data-header>
       <a class="brand" href="{local(prefix)}" aria-label="International Society for Hantaviruses">
-        {responsive_image(prefix, "ui/logo.png", "International Society for Hantaviruses logo", class_name="brand-logo", loading="eager", decoding="async", sizes="112px")}
+        {responsive_image(prefix, "ui/logo.png", "International Society for Hantaviruses logo", class_name="brand-logo", loading="eager", decoding="async", sizes="140px")}
         <span class="brand-copy">
           <strong>International Society</strong>
           <span>for Hantaviruses</span>
@@ -657,7 +667,7 @@ def footer(prefix: str) -> str:
     return f"""
     <footer class="site-footer-rich">
       <div>
-        {responsive_image(prefix, "ui/logo.png", "International Society for Hantaviruses logo", loading="lazy", decoding="async", sizes="150px")}
+        {responsive_image(prefix, "ui/logo.png", "International Society for Hantaviruses logo", loading="lazy", decoding="async", sizes="190px")}
         <p>Website of the International Society for Hantaviruses.</p>
       </div>
       <nav aria-label="Site pages">
@@ -667,6 +677,7 @@ def footer(prefix: str) -> str:
         <a href="{local(prefix, "communications/")}">Communications</a>
         <a href="{local(prefix, "ich2026/")}">ICH2026</a>
         <a href="{local(prefix, "ich2026/abstracts-registration/")}">Registration</a>
+        <a href="{local(prefix, "ich2026/organizing-committees/")}">Committees</a>
       </nav>
       <nav aria-label="Contact and actions">
         <strong>Contact</strong>
@@ -800,7 +811,7 @@ def home_page(
           </div>
           <div class="prose reveal">
             <p>The International Society for Hantaviruses promotes knowledge on hantaviruses and associated diseases through research exchange, training and international scientific cooperation.</p>
-            <p>The society connects experts in epidemiology, ecology, viral replication, host-pathogen interaction, pathogenesis, diagnostics, clinical care, vaccines and therapeutics.</p>
+            <p>The society connects experts in epidemiology, ecology, viral replication, host-pathogen interaction, pathogenesis, diagnostics, clinical management, vaccines and therapeutics.</p>
           </div>
         </div>
         <div class="section-shell society-gallery single-image" aria-label="ISH visual archive">
@@ -817,10 +828,10 @@ def home_page(
             <h2>A practical agenda for hantavirus science.</h2>
           </div>
           <div class="focus-grid" role="list">
-            <article class="focus-item reveal" role="listitem"><span>01</span><h3>Epidemiology & ecology</h3><p>Tracking viral diversity, reservoirs, climate influence and regional transmission dynamics.</p></article>
-            <article class="focus-item reveal" role="listitem"><span>02</span><h3>Virus-host biology</h3><p>Understanding replication, immune response, pathogenesis and host-pathogen interaction.</p></article>
-            <article class="focus-item reveal" role="listitem"><span>03</span><h3>Diagnostics & care</h3><p>Improving early diagnosis, clinical management and risk assessment after exposure.</p></article>
-            <article class="focus-item reveal" role="listitem"><span>04</span><h3>Vaccines & therapeutics</h3><p>Accelerating translational work on prevention, treatment and preparedness.</p></article>
+            <a class="focus-item reveal" role="listitem" href="{local(prefix, "ich2026/programme/")}"><span>01</span><h3>Epidemiology & ecology</h3><p>Tracking viral diversity, reservoirs, climate influence and regional transmission dynamics.</p><strong>Programme themes</strong></a>
+            <a class="focus-item reveal" role="listitem" href="{local(prefix, "ich2026/programme/")}"><span>02</span><h3>Virus-host biology</h3><p>Understanding replication, immune response, pathogenesis and host-pathogen interaction.</p><strong>Programme themes</strong></a>
+            <a class="focus-item reveal" role="listitem" href="{local(prefix, "ich2026/programme/")}"><span>03</span><h3>Diagnostics & clinical management</h3><p>Improving early diagnosis, clinical management and risk assessment after exposure.</p><strong>Programme themes</strong></a>
+            <a class="focus-item reveal" role="listitem" href="{local(prefix, "ich2026/programme/")}"><span>04</span><h3>Vaccines & therapeutics</h3><p>Accelerating translational work on prevention, treatment and preparedness.</p><strong>Programme themes</strong></a>
           </div>
         </div>
       </section>
@@ -831,13 +842,13 @@ def home_page(
             <h2>From field ecology to clinical preparedness.</h2>
           </div>
           <div class="domain-list reveal" aria-label="Hantavirus research domains">
-            <span>Reservoir ecology</span>
-            <span>Viral evolution</span>
-            <span>Host response</span>
-            <span>Diagnostics</span>
-            <span>Clinical care</span>
-            <span>Vaccines</span>
-            <span>Therapeutics</span>
+            <a href="{local(prefix, "ich2026/programme/")}">Reservoir ecology</a>
+            <a href="{local(prefix, "ich2026/programme/")}">Viral evolution</a>
+            <a href="{local(prefix, "ich2026/programme/")}">Host response</a>
+            <a href="{local(prefix, "ich2026/programme/")}">Diagnostics</a>
+            <a href="{local(prefix, "ich2026/programme/")}">Clinical management</a>
+            <a href="{local(prefix, "ich2026/programme/")}">Vaccines</a>
+            <a href="{local(prefix, "ich2026/programme/")}">Therapeutics</a>
           </div>
         </div>
       </section>
@@ -900,7 +911,10 @@ def page_hero(
 ) -> str:
     actions = ""
     if ctas:
-        links = "".join(f'<a class="button {klass}" href="{href}">{escape(label)}</a>' for label, href, klass in ctas)
+        links = "".join(
+            f'<a class="button {klass}" href="{href}"{external_attrs(href)}>{escape(label)}</a>'
+            for label, href, klass in ctas
+        )
         actions = f'<div class="hero-actions page-actions">{links}</div>'
     breadcrumb_html = ""
     if breadcrumbs:
@@ -926,14 +940,18 @@ def page_hero(
       </section>"""
 
 
-def committee_grid(prefix: str, people: list[tuple[str, str, str, str, str, str]]) -> str:
+def committee_grid(
+    prefix: str,
+    people: list[tuple[str, str, str, str, str, str]],
+    class_name: str = "committee-people-grid",
+) -> str:
     cards = []
     for name, role, affiliation, location, image, href in people:
         location_html = f"<span>{escape(location)}</span>" if location else ""
         cards.append(
             f"""
             <article class="committee-person reveal" role="listitem">
-              {responsive_image(prefix, image, name, loading="lazy", decoding="async", sizes="96px")}
+              {responsive_image(prefix, image, name, loading="lazy", decoding="async", sizes="(max-width: 520px) 84px, 128px")}
               <div>
                 <h3><a href="{href}" target="_blank" rel="noreferrer">{escape(name)}</a></h3>
                 <p>{escape(role)}</p>
@@ -942,19 +960,49 @@ def committee_grid(prefix: str, people: list[tuple[str, str, str, str, str, str]
               </div>
             </article>"""
         )
-    return f'<div class="committee-people-grid" role="list">{"".join(cards)}</div>'
+    return f'<div class="{class_name}" role="list">{"".join(cards)}</div>'
+
+
+def committee_teaser(prefix: str) -> str:
+    highlights = [
+        ("Nicole Tischler", "President ISH", "ich2026/scientific-nicole-tischler.jpg"),
+        ("Piet Maes", "President Elect ISH", "ich2026/scientific-piet-maes.jpg"),
+        ("Marcela Ferres", "Local Organizing Committee", "ich2026/local-marcela-ferres.jpg"),
+        ("Pablo Vial", "Local Organizing Committee", "ich2026/local-pablo-vial.jpg"),
+    ]
+    portraits = []
+    for name, role, image in highlights:
+        portraits.append(
+            f"""
+            <figure class="committee-teaser-person reveal">
+              {responsive_image(prefix, image, name, loading="lazy", decoding="async", sizes="(max-width: 780px) 46vw, 180px")}
+              <figcaption><strong>{escape(name)}</strong><span>{escape(role)}</span></figcaption>
+            </figure>"""
+        )
+    return f"""
+      <section class="section committee-teaser">
+        <div class="section-shell committee-teaser-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Organizing Committees</p>
+            <h2>Scientific and local teams coordinating ICH2026.</h2>
+            <p>Committee details now live on a dedicated page so the conference homepage stays focused and easy to scan.</p>
+            <a class="button button-primary" href="{local(prefix, "ich2026/organizing-committees/")}">View committees</a>
+          </div>
+          <div class="committee-teaser-grid" aria-label="ICH2026 committee highlights">
+            {"".join(portraits)}
+          </div>
+        </div>
+      </section>"""
 
 
 def ich2026_page(prefix: str) -> str:
-    scientific_people = committee_grid(prefix, SCIENTIFIC_COMMITTEE)
-    local_people = committee_grid(prefix, LOCAL_COMMITTEE)
     return f"""
       <section class="ich-hero" aria-labelledby="ich-title">
         {responsive_image(prefix, "ich2026/from-zip/pvaras2.jpg", "Puerto Varas, Lake Llanquihue and Osorno Volcano", class_name="ich-hero-bg", fetchpriority="high", sizes="100vw")}
         <div class="ich-hero-overlay"></div>
         <div class="ich-hero-copy reveal is-visible">
           <div class="ich-meeting-mark">
-            {responsive_image(prefix, "ich2026/ich2026-logo-landscape.png", "ICH2026 Puerto Varas conference illustration", loading="eager", decoding="async", sizes="(max-width: 780px) 260px, 360px")}
+            {responsive_image(prefix, "ich2026/ich2026-logo-landscape.png", "ICH2026 Puerto Varas conference illustration", loading="eager", decoding="async", sizes="(max-width: 780px) 340px, 520px")}
           </div>
           <p class="eyebrow">International Conference on Hantaviruses</p>
           <h1 id="ich-title">Puerto Varas | Chile</h1>
@@ -1012,20 +1060,6 @@ def ich2026_page(prefix: str) -> str:
           </figure>
         </div>
       </section>
-      <section class="section conference-path-section">
-        <div class="section-shell">
-          <div class="section-heading compact reveal">
-            <p class="eyebrow">Conference path</p>
-            <h2>Core information for a focused scientific meeting.</h2>
-          </div>
-          <div class="conference-path" role="list">
-            <a class="path-step reveal" role="listitem" href="{local(prefix, "ich2026/programme/")}"><span>01</span><strong>Scientific Program ICH2026</strong><small>Main conference themes across hantavirus research and disease.</small></a>
-            <a class="path-step reveal" role="listitem" href="{local(prefix, "ich2026/programme/")}"><span>02</span><strong>ANDV Workshop</strong><small>A focused day on regional evidence, countermeasures and public health response.</small></a>
-            <a class="path-step reveal" role="listitem" href="{local(prefix, "ich2026/keynote-speakers/")}"><span>03</span><strong>Keynote Speakers</strong><small>Invited experts highlighting developments across the field.</small></a>
-            <a class="path-step reveal" role="listitem" href="{local(prefix, "ich2026/abstracts-registration/")}"><span>04</span><strong>Abstract Submission Registration</strong><small>Submission, registration timing and conference form.</small></a>
-          </div>
-        </div>
-      </section>
       <section class="section data-section">
         <div class="section-shell">
           <div class="section-heading compact reveal">
@@ -1048,7 +1082,7 @@ def ich2026_page(prefix: str) -> str:
               <div>
                 <span>02</span>
                 <h3>ANDV Workshop</h3>
-                <p>A focused day on regional evidence, clinical care, early diagnosis and public health response.</p>
+                <p>A focused day on regional evidence, clinical management, early diagnosis and public health response.</p>
                 <a class="text-link" href="{local(prefix, "ich2026/programme/")}">Workshop details</a>
               </div>
             </article>
@@ -1073,6 +1107,7 @@ def ich2026_page(prefix: str) -> str:
           </div>
         </div>
       </section>
+      {committee_teaser(prefix)}
       <section class="section ich-workshop">
         <div class="section-shell ich-workshop-layout">
           <div class="section-heading reveal">
@@ -1086,11 +1121,30 @@ def ich2026_page(prefix: str) -> str:
           </div>
         </div>
       </section>
-      <section class="section committees">
+      <section class="section intro-band">
+        <div class="section-shell contact-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Partners & Sponsors</p>
+            <h2>Institutions and sponsors supporting the Puerto Varas meeting.</h2>
+          </div>
+          <div class="contact-actions reveal">
+            <a class="button button-primary" href="{local(prefix, "ich2026/partners-sponsors/")}">View partners & sponsors</a>
+          </div>
+        </div>
+      </section>"""
+
+
+def organizing_committees_page(prefix: str) -> str:
+    crumbs = [("Home", local(prefix)), ("ICH2026", local(prefix, "ich2026/")), ("Committees", None)]
+    scientific_people = committee_grid(prefix, SCIENTIFIC_COMMITTEE, "committee-people-grid committee-directory-grid")
+    local_people = committee_grid(prefix, LOCAL_COMMITTEE, "committee-people-grid committee-directory-grid")
+    return f"""
+      {page_hero(prefix, "ICH2026 Committees", "Organizing Committees", "Scientific and local teams coordinating ICH2026 in Puerto Varas.", "ich2026/from-zip/pvaras2.jpg", [("Partners & sponsors", local(prefix, "ich2026/partners-sponsors/"), "button-primary"), ("Programme", local(prefix, "ich2026/programme/"), "button-secondary")], breadcrumbs=crumbs)}
+      <section class="section committees committee-directory">
         <div class="section-shell">
           <div class="section-heading compact reveal">
-            <p class="eyebrow">Organizing Committees</p>
-            <h2>Scientific and local teams coordinating ICH2026 in Puerto Varas.</h2>
+            <p class="eyebrow">Conference governance</p>
+            <h2>International scientific direction and Chilean local organization.</h2>
           </div>
           <div class="committee-tabs reveal" role="group" aria-label="Filter committees">
             <button type="button" class="is-active" data-committee-filter="all">All</button>
@@ -1111,9 +1165,6 @@ def ich2026_page(prefix: str) -> str:
             </div>
             {local_people}
           </div>
-          <div class="partners-link reveal">
-            <a class="button button-primary" href="{local(prefix, "ich2026/partners-sponsors/")}">ICH2026 Partners & Sponsors</a>
-          </div>
         </div>
       </section>"""
 
@@ -1121,7 +1172,7 @@ def ich2026_page(prefix: str) -> str:
 def keynote_page(prefix: str) -> str:
     crumbs = [("Home", local(prefix)), ("ICH2026", local(prefix, "ich2026/")), ("Keynote Speakers", None)]
     return f"""
-      {page_hero(prefix, "Keynote speakers", "ICH2026 Keynote Speakers", "Invited speakers for the International Conference on Hantaviruses.", "venue/conference-landscape.png", breadcrumbs=crumbs)}
+      {page_hero(prefix, "Keynote speakers", "ICH2026 Keynote Speakers", "Invited speakers for the International Conference on Hantaviruses.", "ich2026/conference-volcano.jpg", breadcrumbs=crumbs)}
       <section class="section speakers">
         <div class="section-shell speaker-grid">
           <article class="speaker reveal">
@@ -1152,7 +1203,7 @@ def keynote_page(prefix: str) -> str:
 def programme_page(prefix: str) -> str:
     crumbs = [("Home", local(prefix)), ("ICH2026", local(prefix, "ich2026/")), ("Programme", None)]
     return f"""
-      {page_hero(prefix, "ICH2026 Program", "International Hantavirus Conference", "November 2-4, followed by the Andes Virus Workshop on November 5.", "ich2026/hantavirus-em.jpg", [("Registration", local(prefix, "ich2026/abstracts-registration/"), "button-primary")], breadcrumbs=crumbs)}
+      {page_hero(prefix, "ICH2026 Program", "International Hantavirus Conference", "November 2-4, followed by the Andes Virus Workshop on November 5.", "ich2026/conference-volcano.jpg", [("Registration", local(prefix, "ich2026/abstracts-registration/"), "button-primary")], breadcrumbs=crumbs)}
       <section class="section program">
         <div class="section-shell">
           <div class="program-intro reveal">
@@ -1209,6 +1260,26 @@ def venue_page(prefix: str) -> str:
             </div>
           </div>
           <figure class="venue-image reveal">{responsive_image(prefix, "venue/puerto-varas-waterfront.jpg", "Hotel Bellavista conference room", loading="lazy", decoding="async", sizes="(max-width: 1060px) 100vw, 520px")}<figcaption>Hotel Bellavista conference facilities</figcaption></figure>
+        </div>
+      </section>
+      <section class="section hotel-planning">
+        <div class="section-shell hotel-planning-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Hotels</p>
+            <h2>Accommodation information will be incorporated as it is confirmed.</h2>
+          </div>
+          <div class="hotel-planning-list reveal" aria-label="Hotel information status">
+            <article>
+              <span>Puerto Varas</span>
+              <h3>Conference-area hotels</h3>
+              <p>A curated list of hotels near Hotel Bellavista and central Puerto Varas will be added after confirmation by the organizing team.</p>
+            </article>
+            <article>
+              <span>Santiago airport</span>
+              <h3>Stop-over hotels</h3>
+              <p>Recommended hotels near Arturo Merino Benitez International Airport (SCL) will be added for participants who need an overnight connection before flying to Puerto Montt.</p>
+            </article>
+          </div>
         </div>
       </section>
       <section class="section intro-band">
@@ -1320,13 +1391,36 @@ def former_images_for_year(year: str) -> list[str]:
     return []
 
 
-def former_meetings_timeline() -> str:
+def timeline_abstract_link(prefix: str, label: str, href: str) -> str:
+    if not href:
+        return ""
+    return (
+        f'<a class="archive-timeline-abstract" href="{local(prefix, href)}" target="_blank" rel="noreferrer" '
+        f'aria-label="{escape(label or "Abstract Book")}">'
+        '<span class="archive-timeline-abstract-icon" aria-hidden="true">'
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" '
+        'stroke-linecap="round" stroke-linejoin="round">'
+        '<path d="M7 3h7l4 4v14H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/>'
+        '<path d="M14 3v5h5"/><path d="M8.5 13h7"/><path d="M8.5 16h5"/>'
+        '</svg></span><span>Abstract</span></a>'
+    )
+
+
+def former_meetings_timeline(prefix: str) -> str:
     items = []
-    timeline_entries = list(reversed([(number, year, location, False) for number, year, location, *_ in FORMER_MEETINGS]))
-    timeline_entries.append(("XIII", "2026", "Puerto Varas, Chile", True))
-    for index, (number, year, location, is_upcoming) in enumerate(timeline_entries):
+    timeline_entries = list(
+        reversed(
+            [
+                (number, year, location, abstract_label, abstract_href, False)
+                for number, year, location, abstract_label, abstract_href, *_ in FORMER_MEETINGS
+            ]
+        )
+    )
+    timeline_entries.append(("XIII", "2026", "Puerto Varas, Chile", "", "", True))
+    for index, (number, year, location, abstract_label, abstract_href, is_upcoming) in enumerate(timeline_entries):
         item_class = "archive-timeline-item is-upcoming" if is_upcoming else "archive-timeline-item"
         timeline_tag = '<span class="archive-timeline-tag">Next ICH</span>' if is_upcoming else ""
+        abstract_html = timeline_abstract_link(prefix, abstract_label, abstract_href)
         items.append(
             f"""
             <li class="{item_class}" style="--timeline-index: {index}">
@@ -1335,6 +1429,7 @@ def former_meetings_timeline() -> str:
                 <span class="archive-timeline-no">{escape(number)}</span>
                 <time class="archive-timeline-year" datetime="{escape(year)}">{escape(year)}</time>
                 <strong class="archive-timeline-location">{escape(location)}</strong>
+                {abstract_html}
               </div>
             </li>"""
         )
@@ -1392,7 +1487,7 @@ def former_meeting_materials(prefix: str) -> str:
 def former_meetings_page(prefix: str) -> str:
     return (
         f"""
-      {page_hero(prefix, "Society archive", "Former Meetings", "A concise archive of International Hantavirus Conference milestones.", "former-meetings/2023-seoul-1.jpg", [("ICH2026", local(prefix, "ich2026/"), "button-primary")])}
+      {page_hero(prefix, "Society archive", "Former Meetings", "A concise archive of International Hantavirus Conference milestones.", "former-meetings/2023-seoul-2.jpg", [("ICH2026", local(prefix, "ich2026/"), "button-primary")])}
       <section class="section intro-band">
         <div class="section-shell two-column">
           <div class="section-heading reveal">
@@ -1418,7 +1513,7 @@ def former_meetings_page(prefix: str) -> str:
             <p class="eyebrow">Conference timeline</p>
             <h2>International Hantavirus Conference editions, 1989-2026.</h2>
           </div>
-          {former_meetings_timeline()}
+          {former_meetings_timeline(prefix)}
         </div>
       </section>
       <section class="section intro-band">
@@ -1436,16 +1531,34 @@ def former_meetings_page(prefix: str) -> str:
 def communications_page(prefix: str) -> str:
     who_event = "https://www.who.int/news-room/events/detail/2026/05/15/default-calendar/emergency-scientific-consultation-on-andes-virus-medical-countermeasures-(mcm)-r-d"
     who_focus = "https://www.who.int/news-room/events/detail/2026/05/20/default-calendar/hantavirus-in-focus-i-what-we-know-and-what-it-means"
-    statement_href = local(prefix, "assets/documents/communications/statement-ish-andes-v4.pdf")
+    statement_href = "https://zenodo.org/records/20298312"
     news_items = [
         {
-            "category": "Statement",
-            "date": "2026",
-            "title": "ISH Andes virus statement",
-            "description": "Statement from ISH and members of the international hantavirus research and clinical community regarding the current Andes virus outbreak investigation.",
+            "category": "ISH statement",
+            "date": "May 19, 2026",
+            "title": "Andes virus transmission and current outbreak investigation",
+            "description": "Statement from ISH and members of the international hantavirus research and clinical community, linked to the Zenodo record supplied by the team.",
             "href": statement_href,
             "external": True,
-            "label": "Open statement",
+            "label": "Open Zenodo record",
+        },
+        {
+            "category": "WHO guidance",
+            "date": "May 15, 2026",
+            "title": "Laboratory testing of Andes virus infection",
+            "description": "WHO interim guidance for laboratory testing of Andes virus infection.",
+            "href": "https://www.who.int/publications/i/item/B09765",
+            "external": True,
+            "label": "Read WHO guidance",
+        },
+        {
+            "category": "ECDC update",
+            "date": "May 2026",
+            "title": "Andes hantavirus outbreak in cruise ship",
+            "description": "ECDC epidemiological update and associated guidance for the Andes hantavirus outbreak.",
+            "href": "https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak",
+            "external": True,
+            "label": "View ECDC update",
         },
         {
             "category": "WHO webinar",
@@ -1455,6 +1568,15 @@ def communications_page(prefix: str) -> str:
             "href": who_focus,
             "external": True,
             "label": "View WHO webinar",
+        },
+        {
+            "category": "WHO R&D Blueprint",
+            "date": "WHO",
+            "title": "R&D Blueprint for epidemics",
+            "description": "WHO programme for rapid activation of research and development during epidemics, including the Andes virus MCM R&D consultation.",
+            "href": "https://www.who.int/teams/blueprint",
+            "external": True,
+            "label": "Open WHO Blueprint",
         },
         {
             "category": "WHO consultation",
@@ -1484,12 +1606,12 @@ def communications_page(prefix: str) -> str:
             "label": "Watch webinar",
         },
     ]
-    lead_item = news_items[1]
-    secondary_items = [news_items[0], *news_items[2:]]
+    lead_item = news_items[0]
+    secondary_items = news_items[1:]
     news_cards = []
     for item in secondary_items:
         target = ' target="_blank" rel="noreferrer"' if item["external"] else ""
-        card_class = "news-card news-card-statement reveal" if item["category"] == "Statement" else "news-card reveal"
+        card_class = "news-card reveal"
         news_cards.append(
             f"""
             <a class="{card_class}" href="{item["href"]}"{target}>
@@ -1542,7 +1664,7 @@ def contact_page(prefix: str) -> str:
 
 def about_page(prefix: str) -> str:
     return f"""
-      {page_hero(prefix, "About ISH", "About the International Society for Hantaviruses", "Founded in 1989 with its first Meeting in Seoul (Korea).", "about-hantavirus-microscopy-pixnio.jpg", [("Apply for ISH Membership", MEMBERSHIP_FORM, "button-primary")], image_credit="Image reference: CDC / Cynthia Goldsmith, 1993.")}
+      {page_hero(prefix, "About ISH", "About the International Society for Hantaviruses", "Founded in 1989 with its first Meeting in Seoul (Korea).", "about-hantavirus-microscopy-pixnio.jpg", [("Apply for ISH Membership", MEMBERSHIP_FORM, "button-primary")], image_credit="Viral image reference: CDC / C. S. Goldsmith, 1995.")}
       <section class="section intro-band">
         <div class="section-shell about-logo-card reveal">
           {responsive_image(prefix, "ui/logo.png", "International Society for Hantaviruses logo", loading="lazy", decoding="async", sizes="190px")}
@@ -1590,6 +1712,7 @@ PAGES = [
     ("ich2026/programme/index.html", "programme", "Programme | ICH2026", "Scientific programme for ICH2026.", programme_page),
     ("ich2026/abstracts-registration/index.html", "registration", "Abstracts & Registration | ICH2026", "Abstract submission and registration for ICH2026.", registration_page),
     ("ich2026/venue/index.html", "venue", "Venue | ICH2026", "Venue and travel information for ICH2026.", venue_page),
+    ("ich2026/organizing-committees/index.html", "committees", "Organizing Committees | ICH2026", "Scientific and local organizing committees for ICH2026.", organizing_committees_page),
     ("ich2026/partners-sponsors/index.html", "sponsors", "Partners & Sponsors | ICH2026", "Partners and sponsors for ICH2026.", sponsors_page),
     ("contact/index.html", "contact", "Contact | ICH2026", "Contact the ICH2026 organizing team.", contact_page),
 ]
