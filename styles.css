@@ -5604,6 +5604,33 @@ body[data-page="committees"] .button-primary {
   }
 }
 
+/* Keep tablet header controls aligned while the primary nav is collapsed. */
+@media (max-width: 1240px) and (min-width: 781px) {
+  .site-header {
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 10px 28px;
+  }
+
+  .brand {
+    flex: 0 0 auto;
+    flex-basis: auto;
+  }
+
+  .brand-logo {
+    width: 116px;
+    height: 90px;
+  }
+
+  .theme-toggle {
+    margin-left: auto;
+  }
+
+  .menu-toggle {
+    margin-left: 0;
+  }
+}
+
 /* Dark-mode readability fixes for archive and ICH2026 content pages. */
 :root[data-theme="dark"] .archive-timeline-item {
   border-color: rgba(147, 197, 253, 0.24);
