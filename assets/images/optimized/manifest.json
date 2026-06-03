@@ -5857,6 +5857,109 @@
     ],
     "width": 720
   },
+  "ich2026/scientific-piet-maes-teaser.jpg": {
+    "bytes": 159278,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2340,
+          "height": 200,
+          "path": "optimized/ich2026/scientific-piet-maes-teaser-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 3584,
+          "height": 300,
+          "path": "optimized/ich2026/scientific-piet-maes-teaser-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 4893,
+          "height": 400,
+          "path": "optimized/ich2026/scientific-piet-maes-teaser-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 8058,
+          "height": 600,
+          "path": "optimized/ich2026/scientific-piet-maes-teaser-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 27811,
+          "height": 1125,
+          "path": "optimized/ich2026/scientific-piet-maes-teaser-900.avif",
+          "width": 900
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 3012,
+          "height": 200,
+          "path": "optimized/ich2026/scientific-piet-maes-teaser-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 5122,
+          "height": 300,
+          "path": "optimized/ich2026/scientific-piet-maes-teaser-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 7374,
+          "height": 400,
+          "path": "optimized/ich2026/scientific-piet-maes-teaser-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 13536,
+          "height": 600,
+          "path": "optimized/ich2026/scientific-piet-maes-teaser-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 48442,
+          "height": 1125,
+          "path": "optimized/ich2026/scientific-piet-maes-teaser-900.webp",
+          "width": 900
+        }
+      ]
+    },
+    "height": 1125,
+    "variants": [
+      {
+        "bytes": 3012,
+        "height": 200,
+        "path": "optimized/ich2026/scientific-piet-maes-teaser-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 5122,
+        "height": 300,
+        "path": "optimized/ich2026/scientific-piet-maes-teaser-240.webp",
+        "width": 240
+      },
+      {
+        "bytes": 7374,
+        "height": 400,
+        "path": "optimized/ich2026/scientific-piet-maes-teaser-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 13536,
+        "height": 600,
+        "path": "optimized/ich2026/scientific-piet-maes-teaser-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 48442,
+        "height": 1125,
+        "path": "optimized/ich2026/scientific-piet-maes-teaser-900.webp",
+        "width": 900
+      }
+    ],
+    "width": 900
+  },
   "ich2026/scientific-piet-maes.jpg": {
     "bytes": 64517,
     "formats": {

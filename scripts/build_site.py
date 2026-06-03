@@ -974,7 +974,7 @@ def committee_grid(
 def committee_teaser(prefix: str) -> str:
     highlights = [
         ("Nicole Tischler", "President ISH", "ich2026/scientific-nicole-tischler.jpg"),
-        ("Piet Maes", "President Elect ISH", "board/piet-maes.jpg?v=piet-unified-css-frame-20260603"),
+        ("Piet Maes", "President Elect ISH", "ich2026/scientific-piet-maes-teaser.jpg"),
         ("Marcela Ferres", "Local Organizing Committee", "ich2026/local-marcela-ferres.jpg"),
         ("Pablo Vial", "Local Organizing Committee", "ich2026/local-pablo-vial.jpg"),
     ]

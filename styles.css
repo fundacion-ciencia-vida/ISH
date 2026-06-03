@@ -5301,15 +5301,6 @@ body.lightbox-open {
   transform: scale(1.035);
 }
 
-.committee-teaser-person img[alt="Piet Maes"] {
-  transform: scale(1.16);
-  transform-origin: 50% 38%;
-}
-
-.committee-teaser-person:hover img[alt="Piet Maes"] {
-  transform: scale(1.2);
-}
-
 .committee-teaser-person figcaption {
   position: absolute;
   right: 10px;
