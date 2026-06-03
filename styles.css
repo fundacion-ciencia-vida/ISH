@@ -6848,6 +6848,28 @@ body:is([data-page="about"], [data-page="home"]) .advisor-officer .advisor-photo
   border-radius: 8px;
 }
 
+body:is([data-page="about"], [data-page="home"]) .advisor-photo img[alt="Piet Maes"] {
+  padding: clamp(20px, 9%, 28px);
+  background: var(--white);
+}
+
+.committee-person img[alt="Piet Maes"],
+.committee-teaser-person img[alt="Piet Maes"] {
+  background: var(--white);
+}
+
+.committee-person img[alt="Piet Maes"] {
+  padding: 12px;
+}
+
+body[data-page="committees"] .committee-directory-grid .committee-person img[alt="Piet Maes"] {
+  padding: 16px;
+}
+
+.committee-teaser-person img[alt="Piet Maes"] {
+  padding: 14px;
+}
+
 body:is([data-page="about"], [data-page="home"]) .advisor-honorary {
   grid-column: 5 / span 4;
 }
