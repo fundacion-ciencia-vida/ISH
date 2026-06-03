@@ -166,7 +166,7 @@ CONFERENCE_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSfMc-cPx3hL8-Q67gN3u
 
 BOARD = [
     ("Nicole Tischler", "President ISH | Chile", "board/nicole-tischler.jpg", "https://orcid.org/0000-0002-4578-4780"),
-    ("Piet Maes", "President Elect | Belgium", "board/piet-maes.jpg?v=piet-scale-20260603", "https://orcid.org/0000-0002-4571-5232"),
+    ("Piet Maes", "President Elect | Belgium", "board/piet-maes.jpg?v=piet-matte-20260603", "https://orcid.org/0000-0002-4571-5232"),
     ("Colleen B. Jonsson", "Secretary ISH | USA", "board/colleen-jonsson.jpg", "https://orcid.org/0000-0002-2640-7672"),
     ("Jin Won Song", "Past-President | Korea", "board/jin-won-song.jpg", "https://orcid.org/0000-0003-0796-8332"),
     ("Satoru Arai", "Japan", "board/satoru-arai.jpg", "https://orcid.org/0000-0001-5865-0717"),
@@ -186,7 +186,7 @@ BOARD = [
 
 SCIENTIFIC_COMMITTEE = [
     ("Nicole Tischler", "President ISH", "Fundacion Ciencia & Vida / Universidad San Sebastian", "Chile", "ich2026/scientific-nicole-tischler.jpg", "https://orcid.org/0000-0002-4578-4780"),
-    ("Piet Maes", "President Elect ISH", "Universite libre de Bruxelles", "Belgium", "ich2026/scientific-piet-maes.jpg?v=piet-scale-20260603", "https://orcid.org/0000-0002-4571-5232"),
+    ("Piet Maes", "President Elect ISH", "Universite libre de Bruxelles", "Belgium", "ich2026/scientific-piet-maes.jpg?v=piet-matte-20260603", "https://orcid.org/0000-0002-4571-5232"),
     ("Colleen B. Jonsson", "Secretary ISH", "University of Tennessee Health Science Center", "USA", "ich2026/scientific-colleen-jonsson.jpg", "https://orcid.org/0000-0002-2640-7672"),
     ("Jin Won Song", "Past-President ISH", "Korea University College of Medicine", "Korea", "ich2026/scientific-jin-won-song.jpg", "https://orcid.org/0000-0003-0796-8332"),
     ("Satoru Arai", "Scientific Committee", "National Institute of Infectious Diseases / Japan Institute for Health Security", "Japan", "ich2026/scientific-satoru-arai.jpg", "https://orcid.org/0000-0001-5865-0717"),
@@ -974,7 +974,7 @@ def committee_grid(
 def committee_teaser(prefix: str) -> str:
     highlights = [
         ("Nicole Tischler", "President ISH", "ich2026/scientific-nicole-tischler.jpg"),
-        ("Piet Maes", "President Elect ISH", "ich2026/scientific-piet-maes.jpg?v=piet-scale-20260603"),
+        ("Piet Maes", "President Elect ISH", "ich2026/scientific-piet-maes.jpg?v=piet-matte-20260603"),
         ("Marcela Ferres", "Local Organizing Committee", "ich2026/local-marcela-ferres.jpg"),
         ("Pablo Vial", "Local Organizing Committee", "ich2026/local-pablo-vial.jpg"),
     ]
