@@ -973,10 +973,10 @@ def committee_grid(
 
 def committee_teaser(prefix: str) -> str:
     highlights = [
-        ("Nicole Tischler", "President ISH", "ich2026/scientific-nicole-tischler.jpg"),
+        ("Nicole Tischler", "President ISH", "ich2026/scientific-nicole-tischler-teaser.jpg"),
         ("Piet Maes", "President Elect ISH", "ich2026/scientific-piet-maes-teaser.jpg"),
-        ("Marcela Ferres", "Local Organizing Committee", "ich2026/local-marcela-ferres.jpg"),
-        ("Pablo Vial", "Local Organizing Committee", "ich2026/local-pablo-vial.jpg"),
+        ("Marcela Ferres", "Local Organizing Committee", "ich2026/local-marcela-ferres-teaser.jpg"),
+        ("Pablo Vial", "Local Organizing Committee", "ich2026/local-pablo-vial-teaser.jpg"),
     ]
     portraits = []
     for name, role, image in highlights:

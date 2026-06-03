@@ -4724,6 +4724,109 @@
     ],
     "width": 720
   },
+  "ich2026/local-marcela-ferres-teaser.jpg": {
+    "bytes": 87021,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 3023,
+          "height": 200,
+          "path": "optimized/ich2026/local-marcela-ferres-teaser-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 4362,
+          "height": 300,
+          "path": "optimized/ich2026/local-marcela-ferres-teaser-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 5412,
+          "height": 400,
+          "path": "optimized/ich2026/local-marcela-ferres-teaser-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 7696,
+          "height": 600,
+          "path": "optimized/ich2026/local-marcela-ferres-teaser-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 13547,
+          "height": 1125,
+          "path": "optimized/ich2026/local-marcela-ferres-teaser-900.avif",
+          "width": 900
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 3570,
+          "height": 200,
+          "path": "optimized/ich2026/local-marcela-ferres-teaser-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 5682,
+          "height": 300,
+          "path": "optimized/ich2026/local-marcela-ferres-teaser-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 7608,
+          "height": 400,
+          "path": "optimized/ich2026/local-marcela-ferres-teaser-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 11654,
+          "height": 600,
+          "path": "optimized/ich2026/local-marcela-ferres-teaser-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 24940,
+          "height": 1125,
+          "path": "optimized/ich2026/local-marcela-ferres-teaser-900.webp",
+          "width": 900
+        }
+      ]
+    },
+    "height": 1125,
+    "variants": [
+      {
+        "bytes": 3570,
+        "height": 200,
+        "path": "optimized/ich2026/local-marcela-ferres-teaser-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 5682,
+        "height": 300,
+        "path": "optimized/ich2026/local-marcela-ferres-teaser-240.webp",
+        "width": 240
+      },
+      {
+        "bytes": 7608,
+        "height": 400,
+        "path": "optimized/ich2026/local-marcela-ferres-teaser-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 11654,
+        "height": 600,
+        "path": "optimized/ich2026/local-marcela-ferres-teaser-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 24940,
+        "height": 1125,
+        "path": "optimized/ich2026/local-marcela-ferres-teaser-900.webp",
+        "width": 900
+      }
+    ],
+    "width": 900
+  },
   "ich2026/local-marcela-ferres.jpg": {
     "bytes": 42492,
     "formats": {
@@ -5135,6 +5238,109 @@
       }
     ],
     "width": 720
+  },
+  "ich2026/local-pablo-vial-teaser.jpg": {
+    "bytes": 108153,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2199,
+          "height": 200,
+          "path": "optimized/ich2026/local-pablo-vial-teaser-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 3564,
+          "height": 300,
+          "path": "optimized/ich2026/local-pablo-vial-teaser-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 4965,
+          "height": 400,
+          "path": "optimized/ich2026/local-pablo-vial-teaser-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 8558,
+          "height": 600,
+          "path": "optimized/ich2026/local-pablo-vial-teaser-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 19085,
+          "height": 1125,
+          "path": "optimized/ich2026/local-pablo-vial-teaser-900.avif",
+          "width": 900
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2790,
+          "height": 200,
+          "path": "optimized/ich2026/local-pablo-vial-teaser-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 4800,
+          "height": 300,
+          "path": "optimized/ich2026/local-pablo-vial-teaser-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 7164,
+          "height": 400,
+          "path": "optimized/ich2026/local-pablo-vial-teaser-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 13316,
+          "height": 600,
+          "path": "optimized/ich2026/local-pablo-vial-teaser-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 32388,
+          "height": 1125,
+          "path": "optimized/ich2026/local-pablo-vial-teaser-900.webp",
+          "width": 900
+        }
+      ]
+    },
+    "height": 1125,
+    "variants": [
+      {
+        "bytes": 2790,
+        "height": 200,
+        "path": "optimized/ich2026/local-pablo-vial-teaser-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 4800,
+        "height": 300,
+        "path": "optimized/ich2026/local-pablo-vial-teaser-240.webp",
+        "width": 240
+      },
+      {
+        "bytes": 7164,
+        "height": 400,
+        "path": "optimized/ich2026/local-pablo-vial-teaser-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 13316,
+        "height": 600,
+        "path": "optimized/ich2026/local-pablo-vial-teaser-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 32388,
+        "height": 1125,
+        "path": "optimized/ich2026/local-pablo-vial-teaser-900.webp",
+        "width": 900
+      }
+    ],
+    "width": 900
   },
   "ich2026/local-pablo-vial.jpg": {
     "bytes": 53209,
@@ -5753,6 +5959,109 @@
       }
     ],
     "width": 720
+  },
+  "ich2026/scientific-nicole-tischler-teaser.jpg": {
+    "bytes": 84996,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2493,
+          "height": 200,
+          "path": "optimized/ich2026/scientific-nicole-tischler-teaser-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 3524,
+          "height": 300,
+          "path": "optimized/ich2026/scientific-nicole-tischler-teaser-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 4565,
+          "height": 400,
+          "path": "optimized/ich2026/scientific-nicole-tischler-teaser-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 6564,
+          "height": 600,
+          "path": "optimized/ich2026/scientific-nicole-tischler-teaser-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 12096,
+          "height": 1125,
+          "path": "optimized/ich2026/scientific-nicole-tischler-teaser-900.avif",
+          "width": 900
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2980,
+          "height": 200,
+          "path": "optimized/ich2026/scientific-nicole-tischler-teaser-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 4676,
+          "height": 300,
+          "path": "optimized/ich2026/scientific-nicole-tischler-teaser-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 6684,
+          "height": 400,
+          "path": "optimized/ich2026/scientific-nicole-tischler-teaser-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 10728,
+          "height": 600,
+          "path": "optimized/ich2026/scientific-nicole-tischler-teaser-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 23446,
+          "height": 1125,
+          "path": "optimized/ich2026/scientific-nicole-tischler-teaser-900.webp",
+          "width": 900
+        }
+      ]
+    },
+    "height": 1125,
+    "variants": [
+      {
+        "bytes": 2980,
+        "height": 200,
+        "path": "optimized/ich2026/scientific-nicole-tischler-teaser-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 4676,
+        "height": 300,
+        "path": "optimized/ich2026/scientific-nicole-tischler-teaser-240.webp",
+        "width": 240
+      },
+      {
+        "bytes": 6684,
+        "height": 400,
+        "path": "optimized/ich2026/scientific-nicole-tischler-teaser-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 10728,
+        "height": 600,
+        "path": "optimized/ich2026/scientific-nicole-tischler-teaser-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 23446,
+        "height": 1125,
+        "path": "optimized/ich2026/scientific-nicole-tischler-teaser-900.webp",
+        "width": 900
+      }
+    ],
+    "width": 900
   },
   "ich2026/scientific-nicole-tischler.jpg": {
     "bytes": 41079,
