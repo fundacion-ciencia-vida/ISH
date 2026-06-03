@@ -1374,6 +1374,109 @@
     ],
     "width": 640
   },
+  "board/piet-maes.jpg": {
+    "bytes": 53358,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2166,
+          "height": 160,
+          "path": "optimized/board/piet-maes-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 3330,
+          "height": 240,
+          "path": "optimized/board/piet-maes-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 4231,
+          "height": 320,
+          "path": "optimized/board/piet-maes-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 6464,
+          "height": 480,
+          "path": "optimized/board/piet-maes-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 8762,
+          "height": 640,
+          "path": "optimized/board/piet-maes-640.avif",
+          "width": 640
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2754,
+          "height": 160,
+          "path": "optimized/board/piet-maes-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 4492,
+          "height": 240,
+          "path": "optimized/board/piet-maes-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 6434,
+          "height": 320,
+          "path": "optimized/board/piet-maes-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 10498,
+          "height": 480,
+          "path": "optimized/board/piet-maes-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 15398,
+          "height": 640,
+          "path": "optimized/board/piet-maes-640.webp",
+          "width": 640
+        }
+      ]
+    },
+    "height": 640,
+    "variants": [
+      {
+        "bytes": 2754,
+        "height": 160,
+        "path": "optimized/board/piet-maes-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 4492,
+        "height": 240,
+        "path": "optimized/board/piet-maes-240.webp",
+        "width": 240
+      },
+      {
+        "bytes": 6434,
+        "height": 320,
+        "path": "optimized/board/piet-maes-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 10498,
+        "height": 480,
+        "path": "optimized/board/piet-maes-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 15398,
+        "height": 640,
+        "path": "optimized/board/piet-maes-640.webp",
+        "width": 640
+      }
+    ],
+    "width": 640
+  },
   "board/roger-hewson.jpg": {
     "bytes": 37829,
     "formats": {
@@ -5755,35 +5858,35 @@
     "width": 720
   },
   "ich2026/scientific-piet-maes.jpg": {
-    "bytes": 80558,
+    "bytes": 64517,
     "formats": {
       "avif": [
         {
-          "bytes": 2480,
+          "bytes": 2168,
           "height": 160,
           "path": "optimized/ich2026/scientific-piet-maes-160.avif",
           "width": 160
         },
         {
-          "bytes": 3690,
+          "bytes": 3339,
           "height": 240,
           "path": "optimized/ich2026/scientific-piet-maes-240.avif",
           "width": 240
         },
         {
-          "bytes": 4934,
+          "bytes": 4239,
           "height": 320,
           "path": "optimized/ich2026/scientific-piet-maes-320.avif",
           "width": 320
         },
         {
-          "bytes": 7297,
+          "bytes": 6405,
           "height": 480,
           "path": "optimized/ich2026/scientific-piet-maes-480.avif",
           "width": 480
         },
         {
-          "bytes": 11822,
+          "bytes": 10295,
           "height": 720,
           "path": "optimized/ich2026/scientific-piet-maes-720.avif",
           "width": 720
@@ -5791,31 +5894,31 @@
       ],
       "webp": [
         {
-          "bytes": 3122,
+          "bytes": 2748,
           "height": 160,
           "path": "optimized/ich2026/scientific-piet-maes-160.webp",
           "width": 160
         },
         {
-          "bytes": 5118,
+          "bytes": 4526,
           "height": 240,
           "path": "optimized/ich2026/scientific-piet-maes-240.webp",
           "width": 240
         },
         {
-          "bytes": 7322,
+          "bytes": 6436,
           "height": 320,
           "path": "optimized/ich2026/scientific-piet-maes-320.webp",
           "width": 320
         },
         {
-          "bytes": 12126,
+          "bytes": 10430,
           "height": 480,
           "path": "optimized/ich2026/scientific-piet-maes-480.webp",
           "width": 480
         },
         {
-          "bytes": 21450,
+          "bytes": 17774,
           "height": 720,
           "path": "optimized/ich2026/scientific-piet-maes-720.webp",
           "width": 720
@@ -5825,31 +5928,31 @@
     "height": 720,
     "variants": [
       {
-        "bytes": 3122,
+        "bytes": 2748,
         "height": 160,
         "path": "optimized/ich2026/scientific-piet-maes-160.webp",
         "width": 160
       },
       {
-        "bytes": 5118,
+        "bytes": 4526,
         "height": 240,
         "path": "optimized/ich2026/scientific-piet-maes-240.webp",
         "width": 240
       },
       {
-        "bytes": 7322,
+        "bytes": 6436,
         "height": 320,
         "path": "optimized/ich2026/scientific-piet-maes-320.webp",
         "width": 320
       },
       {
-        "bytes": 12126,
+        "bytes": 10430,
         "height": 480,
         "path": "optimized/ich2026/scientific-piet-maes-480.webp",
         "width": 480
       },
       {
-        "bytes": 21450,
+        "bytes": 17774,
         "height": 720,
         "path": "optimized/ich2026/scientific-piet-maes-720.webp",
         "width": 720
