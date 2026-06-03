@@ -166,7 +166,7 @@ CONFERENCE_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSfMc-cPx3hL8-Q67gN3u
 
 BOARD = [
     ("Nicole Tischler", "President ISH | Chile", "board/nicole-tischler.jpg", "https://orcid.org/0000-0002-4578-4780"),
-    ("Piet Maes", "President Elect | Belgium", "board/piet-maes.jpg?v=piet-home-frame-20260603", "https://orcid.org/0000-0002-4571-5232"),
+    ("Piet Maes", "President Elect | Belgium", "board/piet-maes.jpg?v=piet-home-normal-20260603", "https://orcid.org/0000-0002-4571-5232"),
     ("Colleen B. Jonsson", "Secretary ISH | USA", "board/colleen-jonsson.jpg", "https://orcid.org/0000-0002-2640-7672"),
     ("Jin Won Song", "Past-President | Korea", "board/jin-won-song.jpg", "https://orcid.org/0000-0003-0796-8332"),
     ("Satoru Arai", "Japan", "board/satoru-arai.jpg", "https://orcid.org/0000-0001-5865-0717"),
