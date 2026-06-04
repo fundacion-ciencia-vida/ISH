@@ -1050,7 +1050,10 @@ def ich2026_page(prefix: str) -> str:
           <p class="hero-lede">November 2-5 2026</p>
           <div class="ich-hero-meta" aria-label="Conference details">
             <span>Venue & Location</span>
-            <strong>Hotel Bellavista, Lake District</strong>
+            <strong class="ich-hero-map-line">
+              <span>Hotel Bellavista, Lake District</span>
+              <a class="text-link inline-map-link" href="https://goo.gl/maps/dv2jUC4hSGLvr2Ld9" target="_blank" rel="noreferrer" aria-label="Open Hotel Bellavista in Google Maps">{travel_icon("map-pin")}<span>Open map</span></a>
+            </strong>
             <span>Specialized workshop</span>
             <strong>Andes Virus, November 5</strong>
           </div>
@@ -1665,7 +1668,7 @@ def about_page(prefix: str) -> str:
           </div>
           <div class="prose reveal">
             <p>This society was founded in 1989 with its first Meeting in Seoul (Korea), to promote the advancement and promulgation of knowledge on hantaviruses and the diseases they cause. It also fosters collaboration and the exchange of expertise in all areas of knowledge, including viral epidemiology and ecology, viral replication, host interactions, pathogenesis, advances in vaccine and therapeutics, diagnostics and clinical management.</p>
-            <p>The society is led by an International Advisory Board composed of members from countries most affected by hantaviruses, reflecting its global scope and commitment to addressing regional challenges. Since its establishment, the society has convened a triennial meeting that brings together researchers, clinicians, and public health professionals. The next International Hantavirus Conference (ICH) will be held in November 2026 at Hotel Bellavista, Puerto Varas, Chile <a class="text-link inline-map-link" href="https://goo.gl/maps/dv2jUC4hSGLvr2Ld9" target="_blank" rel="noreferrer" aria-label="Open Hotel Bellavista in Google Maps">{travel_icon("map-pin")}<span>Open map</span></a>.</p>
+            <p>The society is led by an International Advisory Board composed of members from countries most affected by hantaviruses, reflecting its global scope and commitment to addressing regional challenges. Since its establishment, the society has convened a triennial meeting that brings together researchers, clinicians, and public health professionals. The next International Hantavirus Conference (ICH) will be held in November 2026 in Puerto Varas, Chile.</p>
             <a class="button button-primary" href="{MEMBERSHIP_FORM}" target="_blank" rel="noreferrer">Apply for ISH Membership</a>
           </div>
         </div>
