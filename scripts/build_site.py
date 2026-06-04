@@ -1202,7 +1202,7 @@ def programme_page(prefix: str) -> str:
           </div>
           <div class="program-grid program-support">
             <article class="program-track reveal"><p class="track-date">November 2-4</p><h3>International Hantavirus Conference</h3><p>The meeting will cover the following topics:</p><ul><li>Viral epidemiology, evolution &amp; genetics</li><li>Virus ecology and climate change</li><li>Viral replication</li><li>Virus-host interactions</li><li>Pathogenesis</li><li>Vaccines &amp; therapeutics</li><li>Clinical aspects &amp; diagnostics</li></ul></article>
-            <article class="program-track highlight reveal"><p class="track-date">November 5</p><h3>Andes Virus Workshop</h3><p>Topics will cover the following aspects:</p><ul><li>Translation of vaccine &amp; therapeutics candidates</li><li>Early diagnosis</li><li>Management of Andes virus-exposed persons</li><li>Surveillance of Andes virus</li><li>Regional Network</li><li>Other topics</li><li>Round Table discussion</li></ul><p class="track-note">This workshop will count with simultaneous translation (English-Spanish; Spanish-English).</p></article>
+            <article class="program-track highlight reveal"><p class="track-date">November 5</p><h3>Andes Virus Workshop</h3><p>Topics will cover the following aspects:</p><ul><li>Translation of vaccine &amp; therapeutics candidates</li><li>Early diagnosis</li><li>Management of Andes virus-exposed persons</li><li>Surveillance of Andes virus</li><li>Regional Network</li><li>Other topics</li><li>Round Table discussion</li></ul><p class="track-note">This workshop will be conducted with simultaneous translation (English-Spanish; Spanish-English).</p></article>
           </div>
         </div>
       </section>"""
