@@ -557,8 +557,6 @@ main p {
 }
 
 @media (min-width: 781px) {
-  main .hero-lede,
-  main .page-hero-copy .hero-lede,
   main .section-heading p:not(.eyebrow),
   main .prose p,
   main .conference-details p,
@@ -572,7 +570,9 @@ main p {
   main .ich-workshop .prose p {
     text-align: justify;
     text-align-last: left;
-    hyphens: auto;
+    hyphens: manual;
+    overflow-wrap: normal;
+    word-break: normal;
   }
 }
 
