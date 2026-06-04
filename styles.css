@@ -3025,6 +3025,25 @@ body.lightbox-open {
   text-decoration-thickness: 1px;
 }
 
+.inline-map-link {
+  gap: 6px;
+  min-height: 28px;
+  margin-left: 2px;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.inline-map-link .travel-link-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+}
+
+.inline-map-link .travel-link-icon svg {
+  width: 15px;
+  height: 15px;
+}
+
 .venue-image {
   margin: 0;
 }
