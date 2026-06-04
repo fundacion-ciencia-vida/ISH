@@ -1140,19 +1140,21 @@ def organizing_committees_page(prefix: str) -> str:
             <button type="button" data-committee-filter="scientific">Scientific</button>
             <button type="button" data-committee-filter="local">Local</button>
           </div>
-          <div class="committee-section" data-committee-section="scientific">
-            <div class="committee-label reveal">
-              <span>Scientific Committee</span>
-              <p>International scientific direction for the conference programme.</p>
+          <div class="committee-directory-columns" data-committee-view="all">
+            <div class="committee-section" data-committee-section="scientific">
+              <div class="committee-label reveal">
+                <span>Scientific Committee</span>
+                <p>International scientific direction for the conference programme.</p>
+              </div>
+              {scientific_people}
             </div>
-            {scientific_people}
-          </div>
-          <div class="committee-section" data-committee-section="local">
-            <div class="committee-label reveal">
-              <span>Local Organizing Committee</span>
-              <p>Chilean host institutions coordinating the Puerto Varas meeting.</p>
+            <div class="committee-section" data-committee-section="local">
+              <div class="committee-label reveal">
+                <span>Local Organizing Committee</span>
+                <p>Chilean host institutions coordinating the Puerto Varas meeting.</p>
+              </div>
+              {local_people}
             </div>
-            {local_people}
           </div>
         </div>
       </section>"""

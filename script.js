@@ -405,6 +405,7 @@ document.addEventListener("keydown", (event) => {
 
 const committeeFilters = Array.from(document.querySelectorAll("[data-committee-filter]"));
 const committeeSections = Array.from(document.querySelectorAll("[data-committee-section]"));
+const committeeDirectory = document.querySelector("[data-committee-view]");
 
 function setCommitteeFilter(filter) {
   committeeFilters.forEach((button) => {
@@ -417,6 +418,10 @@ function setCommitteeFilter(filter) {
     const visible = filter === "all" || section.dataset.committeeSection === filter;
     section.classList.toggle("is-hidden", !visible);
   });
+
+  if (committeeDirectory) {
+    committeeDirectory.dataset.committeeView = filter;
+  }
 }
 
 committeeFilters.forEach((button) => {
