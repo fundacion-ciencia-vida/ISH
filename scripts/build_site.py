@@ -32,7 +32,7 @@ OG_IMAGES: dict[str, str] = {
 
 HERO_IMAGES: dict[str, str] = {
     "home": "ui/home-science-hero.webp?v=virus-fill-20260521",
-    "about": "about-hantavirus-microscopy-pixnio.jpg",
+    "about": "ui/home-science-hero.webp?v=virus-fill-20260521",
     "former": "former-meetings/2023-seoul-2.jpg",
     "communications": "ich2026/hantavirus-em.jpg",
     "ich2026": "ich2026/from-zip/pvaras2.jpg",
@@ -972,21 +972,6 @@ def committee_grid(
 
 
 def committee_teaser(prefix: str) -> str:
-    highlights = [
-        ("Nicole Tischler", "President ISH", "ich2026/scientific-nicole-tischler-teaser.jpg"),
-        ("Piet Maes", "President Elect ISH", "ich2026/scientific-piet-maes-teaser.jpg"),
-        ("Marcela Ferres", "Local Organizing Committee", "ich2026/local-marcela-ferres-teaser.jpg"),
-        ("Pablo Vial", "Local Organizing Committee", "ich2026/local-pablo-vial-teaser.jpg"),
-    ]
-    portraits = []
-    for name, role, image in highlights:
-        portraits.append(
-            f"""
-            <figure class="committee-teaser-person reveal">
-              {responsive_image(prefix, image, name, loading="lazy", decoding="async", sizes="(max-width: 780px) 46vw, 180px")}
-              <figcaption><strong>{escape(name)}</strong><span>{escape(role)}</span></figcaption>
-            </figure>"""
-        )
     return f"""
       <section class="section committee-teaser">
         <div class="section-shell committee-teaser-layout">
@@ -995,9 +980,6 @@ def committee_teaser(prefix: str) -> str:
             <h2>Scientific and local teams coordinating ICH2026.</h2>
             <p>Committee details now live on a dedicated page so the conference homepage stays focused and easy to scan.</p>
             <a class="button button-primary" href="{local(prefix, "ich2026/organizing-committees/")}">View committees</a>
-          </div>
-          <div class="committee-teaser-grid" aria-label="ICH2026 committee highlights">
-            {"".join(portraits)}
           </div>
         </div>
       </section>"""
@@ -1668,7 +1650,7 @@ def contact_page(prefix: str) -> str:
 
 def about_page(prefix: str) -> str:
     return f"""
-      {page_hero(prefix, "About ISH", "About the International Society for Hantaviruses", "Founded in 1989 with its first Meeting in Seoul (Korea).", "about-hantavirus-microscopy-pixnio.jpg", [("Apply for ISH Membership", MEMBERSHIP_FORM, "button-primary")], image_credit="Viral image reference: CDC / C. S. Goldsmith, 1995.")}
+      {page_hero(prefix, "About ISH", "About the International Society for Hantaviruses", "Founded in 1989 with its first Meeting in Seoul (Korea).", "ui/home-science-hero.webp?v=virus-fill-20260521", [("Apply for ISH Membership", MEMBERSHIP_FORM, "button-primary")])}
       <section class="section intro-band">
         <div class="section-shell about-logo-card reveal">
           {responsive_image(prefix, "ui/logo.png", "International Society for Hantaviruses logo", loading="lazy", decoding="async", sizes="190px")}

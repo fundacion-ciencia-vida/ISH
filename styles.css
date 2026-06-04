@@ -266,7 +266,7 @@ main:focus {
   outline: none;
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1440px) {
   .subnav-strip {
     display: flex;
   }
@@ -3937,7 +3937,7 @@ body.lightbox-open {
   }
 }
 
-@media (max-width: 1240px) and (min-width: 781px) {
+@media (max-width: 1440px) and (min-width: 781px) {
   .site-header {
     gap: 18px;
     min-height: var(--header-height);
@@ -4961,7 +4961,7 @@ body.lightbox-open {
   background: var(--lake);
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1440px) {
   :root[data-theme="dark"] .site-nav {
     background: var(--paper);
     border-color: rgba(220, 232, 229, 0.12);
@@ -5261,8 +5261,8 @@ body.lightbox-open {
 
 .committee-teaser-layout {
   display: grid;
-  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
-  gap: 58px;
+  grid-template-columns: minmax(0, 720px);
+  gap: 24px;
   align-items: center;
 }
 
@@ -5605,7 +5605,7 @@ body[data-page="committees"] .button-primary {
 }
 
 /* Keep tablet header controls aligned while the primary nav is collapsed. */
-@media (max-width: 1240px) and (min-width: 781px) {
+@media (max-width: 1440px) and (min-width: 781px) {
   .site-header {
     justify-content: flex-start;
     gap: 12px;
@@ -5817,7 +5817,7 @@ body[data-page="committees"] .button-primary {
   border-radius: 4px;
 }
 
-@media (prefers-color-scheme: dark) and (max-width: 1240px) {
+@media (prefers-color-scheme: dark) and (max-width: 1440px) {
   :root:not([data-theme="light"]) .site-nav {
     background: var(--paper);
     border-color: rgba(220, 232, 229, 0.12);
@@ -6224,7 +6224,7 @@ body[data-page="programme"] .program-track.highlight li::before {
   background: var(--ich-teal);
 }
 
-@media (max-width: 1240px) and (min-width: 781px) {
+@media (max-width: 1440px) and (min-width: 781px) {
   .menu-backdrop {
     background: rgba(5, 22, 40, 0.36);
   }
