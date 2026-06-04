@@ -2875,7 +2875,7 @@ body.lightbox-open {
   width: 196px;
   height: 196px;
   object-fit: cover;
-  border: 4px solid var(--white);
+  border: 2px solid var(--white);
   border-radius: 6px;
   box-shadow: 0 14px 34px rgba(11, 17, 16, 0.11);
   filter: saturate(0.92);
@@ -3233,7 +3233,7 @@ body.lightbox-open {
   background:
     linear-gradient(135deg, rgba(31, 111, 120, 0.08), rgba(184, 138, 42, 0.05)),
     var(--surface);
-  border: 3px solid var(--white);
+  border: 2px solid var(--white);
   border-radius: 6px;
   box-shadow: 0 10px 24px rgba(11, 17, 16, 0.1);
   filter: saturate(0.96);
@@ -6881,7 +6881,7 @@ body[data-page="committees"] .committee-directory-grid .committee-person img {
   width: 168px;
   height: 168px;
   margin-left: 22px;
-  border-width: 4px;
+  border-width: 2px;
 }
 
 body[data-page="committees"] .committee-directory-grid .committee-person div {
@@ -6897,7 +6897,7 @@ body[data-page="committees"] .committee-directory-columns[data-committee-view="a
   width: 104px;
   height: 104px;
   margin-left: 18px;
-  border-width: 3px;
+  border-width: 2px;
 }
 
 body[data-page="committees"] .committee-directory-columns[data-committee-view="all"] .committee-directory-grid .committee-person div {
@@ -6979,7 +6979,7 @@ body:is([data-page="about"], [data-page="home"]) .advisor-officer .advisor-photo
   width: calc(100% - 22px);
   margin: 11px auto 0;
   aspect-ratio: 1 / 1;
-  border: 4px solid var(--white);
+  border: 2px solid var(--white);
   border-radius: 8px;
 }
 
@@ -7001,7 +7001,7 @@ body[data-page="committees"] .committee-directory-grid .committee-person img[alt
 }
 
 body:is([data-page="about"], [data-page="home"]) .advisor-honorary {
-  grid-column: 5 / span 4;
+  grid-column: 5 / span 3;
 }
 
 body:is([data-page="about"], [data-page="home"]) .advisor-copy {
@@ -7019,7 +7019,7 @@ body:is([data-page="about"], [data-page="home"]) .advisor-copy {
   }
 
   body:is([data-page="about"], [data-page="home"]) .advisor-honorary {
-    grid-column: 2 / span 4;
+    grid-column: 2 / span 3;
   }
 
   body:is([data-page="about"], [data-page="home"]) .advisor-photo,
