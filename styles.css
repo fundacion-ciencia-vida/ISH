@@ -552,6 +552,30 @@ p {
   margin-top: 0;
 }
 
+main p {
+  text-wrap: pretty;
+}
+
+@media (min-width: 781px) {
+  main .hero-lede,
+  main .page-hero-copy .hero-lede,
+  main .section-heading p:not(.eyebrow),
+  main .prose p,
+  main .conference-details p,
+  main .venue-copy p:not(.eyebrow),
+  main .program-intro p:not(.eyebrow),
+  main .program-day p,
+  main .program-track p:not(:first-child),
+  main .news-lead-card p,
+  main .news-feature-copy p,
+  main .news-section-note,
+  main .ich-workshop .prose p {
+    text-align: justify;
+    text-align-last: left;
+    hyphens: auto;
+  }
+}
+
 h1,
 h2 {
   font-family: "Source Serif 4", Georgia, serif;
