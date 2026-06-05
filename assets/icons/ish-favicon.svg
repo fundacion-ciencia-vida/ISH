@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
   <title>ISH favicon</title>
   <rect width="512" height="512" fill="#0b5cad"/>
-  <text x="256" y="340" text-anchor="middle" fill="#ffffff" font-family="Inter, Arial, Helvetica, sans-serif" font-size="275" font-weight="900">ISH</text>
+  <rect y="420" width="512" height="92" fill="#e7af34"/>
+  <text x="256" y="340" text-anchor="middle" fill="#ffffff" font-family="Inter, Arial, Helvetica, sans-serif" font-size="290" font-weight="900">ISH</text>
 </svg>
