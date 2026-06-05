@@ -22,10 +22,10 @@ OG_IMAGES: dict[str, str] = {
     "communications": "ui/social-preview.jpg",
     "ich2026": "ich2026/ich2026-hero-emblem.jpg",
     "keynote": "ich2026/conference-volcano.jpg",
-    "programme": "ich2026/conference-volcano.jpg",
+    "programme": "ich2026/ich2026-logo-landscape.png",
     "registration": "venue/puerto-varas-waterfront.jpg",
     "venue": "venue/hotel-bellavista-window.jpg",
-    "sponsors": "ich2026/ich2026-logo-landscape.png",
+    "sponsors": "ich2026/pto-varas2.png",
     "committees": "ich2026/ich2026-logo-landscape.png",
     "contact": "ui/social-preview.jpg",
 }
@@ -37,10 +37,10 @@ HERO_IMAGES: dict[str, str] = {
     "communications": "ich2026/hantavirus-em.jpg",
     "ich2026": "ich2026/ich2026-hero-emblem.jpg",
     "keynote": "ich2026/conference-volcano.jpg",
-    "programme": "ich2026/conference-volcano.jpg",
+    "programme": "ich2026/ich2026-logo-landscape.png",
     "registration": "venue/puerto-varas-waterfront.jpg",
     "venue": "venue/hotel-bellavista-window.jpg",
-    "sponsors": "ich2026/ich2026-logo-landscape.png",
+    "sponsors": "ich2026/pto-varas2.png",
     "committees": "ich2026/ich2026-logo-landscape.png",
 }
 
@@ -1193,7 +1193,7 @@ def keynote_page(prefix: str) -> str:
 def programme_page(prefix: str) -> str:
     crumbs = [("Home", local(prefix)), ("ICH2026", local(prefix, "ich2026/")), ("Programme", None)]
     return f"""
-      {page_hero(prefix, "ICH2026 Program", "International Hantavirus Conference", "November 2-4, followed by the Andes Virus Workshop on November 5.", "ich2026/conference-volcano.jpg", [("Registration", local(prefix, "ich2026/abstracts-registration/"), "button-primary")], breadcrumbs=crumbs)}
+      {page_hero(prefix, "ICH2026 Program", "International Hantavirus Conference", "November 2-4, followed by the Andes Virus Workshop on November 5.", "ich2026/ich2026-logo-landscape.png", [("Registration", local(prefix, "ich2026/abstracts-registration/"), "button-primary")], breadcrumbs=crumbs)}
       <section class="section program">
         <div class="section-shell">
           <div class="program-intro reveal">
@@ -1338,7 +1338,7 @@ def sponsors_page(prefix: str) -> str:
         )
     crumbs = [("Home", local(prefix)), ("ICH2026", local(prefix, "ich2026/")), ("Partners & Sponsors", None)]
     return f"""
-      {page_hero(prefix, "Partners & sponsors", "ICH2026 partners and sponsors.", "Organizations supporting the ICH2026 scientific meeting in Puerto Varas, Chile.", "ich2026/ich2026-logo-landscape.png", breadcrumbs=crumbs)}
+      {page_hero(prefix, "Partners & sponsors", "ICH2026 partners and sponsors.", "Organizations supporting the ICH2026 scientific meeting in Puerto Varas, Chile.", "ich2026/pto-varas2.png", breadcrumbs=crumbs)}
       <section class="section sponsors"><div class="section-shell sponsors-layout">{"".join(groups)}</div></section>"""
 
 

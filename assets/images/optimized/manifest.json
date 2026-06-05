@@ -4755,6 +4755,127 @@
     ],
     "width": 720
   },
+  "ich2026/pto-varas2.png": {
+    "bytes": 2360247,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 6211,
+          "height": 180,
+          "path": "optimized/ich2026/pto-varas2-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 12270,
+          "height": 270,
+          "path": "optimized/ich2026/pto-varas2-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 20762,
+          "height": 360,
+          "path": "optimized/ich2026/pto-varas2-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 44232,
+          "height": 540,
+          "path": "optimized/ich2026/pto-varas2-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 69451,
+          "height": 720,
+          "path": "optimized/ich2026/pto-varas2-1280.avif",
+          "width": 1280
+        },
+        {
+          "bytes": 99848,
+          "height": 941,
+          "path": "optimized/ich2026/pto-varas2-1672.avif",
+          "width": 1672
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 7550,
+          "height": 180,
+          "path": "optimized/ich2026/pto-varas2-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 15808,
+          "height": 270,
+          "path": "optimized/ich2026/pto-varas2-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 27166,
+          "height": 360,
+          "path": "optimized/ich2026/pto-varas2-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 56260,
+          "height": 540,
+          "path": "optimized/ich2026/pto-varas2-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 91484,
+          "height": 720,
+          "path": "optimized/ich2026/pto-varas2-1280.webp",
+          "width": 1280
+        },
+        {
+          "bytes": 137506,
+          "height": 941,
+          "path": "optimized/ich2026/pto-varas2-1672.webp",
+          "width": 1672
+        }
+      ]
+    },
+    "height": 941,
+    "variants": [
+      {
+        "bytes": 7550,
+        "height": 180,
+        "path": "optimized/ich2026/pto-varas2-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 15808,
+        "height": 270,
+        "path": "optimized/ich2026/pto-varas2-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 27166,
+        "height": 360,
+        "path": "optimized/ich2026/pto-varas2-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 56260,
+        "height": 540,
+        "path": "optimized/ich2026/pto-varas2-960.webp",
+        "width": 960
+      },
+      {
+        "bytes": 91484,
+        "height": 720,
+        "path": "optimized/ich2026/pto-varas2-1280.webp",
+        "width": 1280
+      },
+      {
+        "bytes": 137506,
+        "height": 941,
+        "path": "optimized/ich2026/pto-varas2-1672.webp",
+        "width": 1672
+      }
+    ],
+    "width": 1672
+  },
   "ich2026/scientific-boris-klempa.jpg": {
     "bytes": 47787,
     "formats": {

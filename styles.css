@@ -6212,8 +6212,8 @@ body[data-page="venue"] .page-hero {
 }
 
 body[data-page="sponsors"] .page-hero {
-  --hero-focal-x: 50%;
-  --hero-focal-y: 50%;
+  --hero-focal-x: 58%;
+  --hero-focal-y: 52%;
 }
 
 @media (max-width: 1180px) {
