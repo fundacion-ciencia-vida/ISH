@@ -3301,109 +3301,6 @@
     ],
     "width": 1600
   },
-  "ich2026/from-zip/volcan-puerto-varas.jpg": {
-    "bytes": 334515,
-    "formats": {
-      "avif": [
-        {
-          "bytes": 9765,
-          "height": 213,
-          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-320.avif",
-          "width": 320
-        },
-        {
-          "bytes": 20002,
-          "height": 320,
-          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-480.avif",
-          "width": 480
-        },
-        {
-          "bytes": 33237,
-          "height": 427,
-          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-640.avif",
-          "width": 640
-        },
-        {
-          "bytes": 65444,
-          "height": 640,
-          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-960.avif",
-          "width": 960
-        },
-        {
-          "bytes": 91234,
-          "height": 800,
-          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-1200.avif",
-          "width": 1200
-        }
-      ],
-      "webp": [
-        {
-          "bytes": 12042,
-          "height": 213,
-          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-320.webp",
-          "width": 320
-        },
-        {
-          "bytes": 25178,
-          "height": 320,
-          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-480.webp",
-          "width": 480
-        },
-        {
-          "bytes": 42438,
-          "height": 427,
-          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-640.webp",
-          "width": 640
-        },
-        {
-          "bytes": 85142,
-          "height": 640,
-          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-960.webp",
-          "width": 960
-        },
-        {
-          "bytes": 122724,
-          "height": 800,
-          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-1200.webp",
-          "width": 1200
-        }
-      ]
-    },
-    "height": 800,
-    "variants": [
-      {
-        "bytes": 12042,
-        "height": 213,
-        "path": "optimized/ich2026/from-zip/volcan-puerto-varas-320.webp",
-        "width": 320
-      },
-      {
-        "bytes": 25178,
-        "height": 320,
-        "path": "optimized/ich2026/from-zip/volcan-puerto-varas-480.webp",
-        "width": 480
-      },
-      {
-        "bytes": 42438,
-        "height": 427,
-        "path": "optimized/ich2026/from-zip/volcan-puerto-varas-640.webp",
-        "width": 640
-      },
-      {
-        "bytes": 85142,
-        "height": 640,
-        "path": "optimized/ich2026/from-zip/volcan-puerto-varas-960.webp",
-        "width": 960
-      },
-      {
-        "bytes": 122724,
-        "height": 800,
-        "path": "optimized/ich2026/from-zip/volcan-puerto-varas-1200.webp",
-        "width": 1200
-      }
-    ],
-    "width": 1200
-  },
   "ich2026/hantavirus-em.jpg": {
     "bytes": 89331,
     "formats": {
@@ -3490,41 +3387,41 @@
     "width": 700
   },
   "ich2026/ich2026-hero-emblem.jpg": {
-    "bytes": 226027,
+    "bytes": 424027,
     "formats": {
       "avif": [
         {
-          "bytes": 2603,
+          "bytes": 5585,
           "height": 180,
           "path": "optimized/ich2026/ich2026-hero-emblem-320.avif",
           "width": 320
         },
         {
-          "bytes": 4402,
+          "bytes": 11269,
           "height": 270,
           "path": "optimized/ich2026/ich2026-hero-emblem-480.avif",
           "width": 480
         },
         {
-          "bytes": 6619,
+          "bytes": 18699,
           "height": 360,
           "path": "optimized/ich2026/ich2026-hero-emblem-640.avif",
           "width": 640
         },
         {
-          "bytes": 12136,
+          "bytes": 37704,
           "height": 540,
           "path": "optimized/ich2026/ich2026-hero-emblem-960.avif",
           "width": 960
         },
         {
-          "bytes": 18298,
+          "bytes": 56693,
           "height": 720,
           "path": "optimized/ich2026/ich2026-hero-emblem-1280.avif",
           "width": 1280
         },
         {
-          "bytes": 30543,
+          "bytes": 100354,
           "height": 1080,
           "path": "optimized/ich2026/ich2026-hero-emblem-1920.avif",
           "width": 1920
@@ -3532,37 +3429,37 @@
       ],
       "webp": [
         {
-          "bytes": 3178,
+          "bytes": 7810,
           "height": 180,
           "path": "optimized/ich2026/ich2026-hero-emblem-320.webp",
           "width": 320
         },
         {
-          "bytes": 5760,
+          "bytes": 15902,
           "height": 270,
           "path": "optimized/ich2026/ich2026-hero-emblem-480.webp",
           "width": 480
         },
         {
-          "bytes": 8818,
+          "bytes": 26850,
           "height": 360,
           "path": "optimized/ich2026/ich2026-hero-emblem-640.webp",
           "width": 640
         },
         {
-          "bytes": 17660,
+          "bytes": 54178,
           "height": 540,
           "path": "optimized/ich2026/ich2026-hero-emblem-960.webp",
           "width": 960
         },
         {
-          "bytes": 28130,
+          "bytes": 84252,
           "height": 720,
           "path": "optimized/ich2026/ich2026-hero-emblem-1280.webp",
           "width": 1280
         },
         {
-          "bytes": 51476,
+          "bytes": 157016,
           "height": 1080,
           "path": "optimized/ich2026/ich2026-hero-emblem-1920.webp",
           "width": 1920
@@ -3572,37 +3469,37 @@
     "height": 1080,
     "variants": [
       {
-        "bytes": 3178,
+        "bytes": 7810,
         "height": 180,
         "path": "optimized/ich2026/ich2026-hero-emblem-320.webp",
         "width": 320
       },
       {
-        "bytes": 5760,
+        "bytes": 15902,
         "height": 270,
         "path": "optimized/ich2026/ich2026-hero-emblem-480.webp",
         "width": 480
       },
       {
-        "bytes": 8818,
+        "bytes": 26850,
         "height": 360,
         "path": "optimized/ich2026/ich2026-hero-emblem-640.webp",
         "width": 640
       },
       {
-        "bytes": 17660,
+        "bytes": 54178,
         "height": 540,
         "path": "optimized/ich2026/ich2026-hero-emblem-960.webp",
         "width": 960
       },
       {
-        "bytes": 28130,
+        "bytes": 84252,
         "height": 720,
         "path": "optimized/ich2026/ich2026-hero-emblem-1280.webp",
         "width": 1280
       },
       {
-        "bytes": 51476,
+        "bytes": 157016,
         "height": 1080,
         "path": "optimized/ich2026/ich2026-hero-emblem-1920.webp",
         "width": 1920
