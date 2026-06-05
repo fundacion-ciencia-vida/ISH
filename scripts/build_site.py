@@ -1111,10 +1111,6 @@ def ich2026_page(prefix: str) -> str:
             <p>The 2026 meeting of the International Society for Hantaviruses will take place in Puerto Varas, located in the scenic Lake District in Southern Chile widely regarded as a gateway to Patagonia. The city sits at the foot of the iconic Osorno Volcano in southern Chile, providing a spectacular natural setting for scientific exchange and collaboration.</p>
             <p>The conference will bring together scientists and health professionals from around the world to share and discuss the latest advances across a broad range of topics, including viral epidemiology, ecology, virus-host interactions, pathogenesis, clinical aspects of disease, and the development of vaccines and therapeutics.</p>
           </div>
-          <figure class="ich-story-figure reveal">
-            {responsive_image(prefix, "venue/puerto-varas-waterfront.jpg", "Puerto Varas waterfront and Lake Llanquihue", loading="lazy", decoding="async", sizes="(max-width: 1060px) 100vw, 420px")}
-            <figcaption>Puerto Varas, Lake Llanquihue and the Chilean Lake District.</figcaption>
-          </figure>
         </div>
       </section>
       <section class="section data-section">

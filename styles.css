@@ -5462,20 +5462,21 @@ body.lightbox-open {
   background:
     linear-gradient(180deg, rgba(223, 241, 251, 0.5), transparent 46%),
     var(--paper);
+  scroll-margin-top: calc(var(--header-height) + 74px);
+}
+
+.ich-committee-inline .section-shell {
+  width: min(1440px, calc(100% - 40px));
 }
 
 .ich-committee-inline .section-heading.compact {
-  max-width: 940px;
+  max-width: 1080px;
 }
 
 .ich-committee-inline .section-heading.compact p:not(.eyebrow) {
-  max-width: 620px;
+  max-width: 720px;
   color: var(--muted);
   font-size: 17px;
-}
-
-.ich-committee-inline .committee-directory-columns[data-committee-view="all"] .committee-directory-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .committee-directory-columns[data-committee-view="all"] .committee-directory-grid {
@@ -5490,6 +5491,55 @@ body.lightbox-open {
 .committee-person img {
   width: 118px;
   height: 118px;
+}
+
+body[data-page="ich2026"] .ich-committee-inline .committee-directory-columns {
+  gap: 34px;
+}
+
+body[data-page="ich2026"] .ich-committee-inline .committee-person {
+  grid-template-columns: 132px minmax(0, 1fr);
+  height: 166px;
+  min-height: 166px;
+  max-height: 166px;
+}
+
+body[data-page="ich2026"] .ich-committee-inline .committee-person img {
+  width: 102px;
+  height: 102px;
+  margin-left: 18px;
+}
+
+body[data-page="ich2026"] .ich-committee-inline .committee-person div {
+  min-width: 0;
+  padding: 18px 18px 18px 0;
+}
+
+body[data-page="ich2026"] .ich-committee-inline .committee-person h3 {
+  display: -webkit-box;
+  margin-bottom: 2px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+body[data-page="ich2026"] .ich-committee-inline .committee-person h3 a {
+  display: inline;
+}
+
+body[data-page="ich2026"] .ich-committee-inline .committee-person p,
+body[data-page="ich2026"] .ich-committee-inline .committee-person span {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+
+body[data-page="ich2026"] .ich-committee-inline .committee-person p {
+  -webkit-line-clamp: 1;
+}
+
+body[data-page="ich2026"] .ich-committee-inline .committee-person span {
+  -webkit-line-clamp: 2;
 }
 
 .hotel-planning {
@@ -7106,6 +7156,73 @@ body[data-page="committees"] .committee-directory-columns[data-committee-view="a
     width: 120px;
     height: 120px;
     margin-left: 16px;
+  }
+}
+
+@media (max-width: 1180px) and (min-width: 781px) {
+  body[data-page="ich2026"] .ich-committee-inline .committee-directory-columns {
+    grid-template-columns: 1fr;
+  }
+
+  body[data-page="ich2026"] .ich-committee-inline .committee-directory-columns[data-committee-view="all"] .committee-directory-grid,
+  body[data-page="ich2026"] .ich-committee-inline .committee-directory-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body[data-page="ich2026"] .ich-committee-inline .committee-person {
+    grid-template-columns: 126px minmax(0, 1fr);
+    height: 178px;
+    min-height: 178px;
+    max-height: 178px;
+  }
+
+  body[data-page="ich2026"] .ich-committee-inline .committee-person img {
+    width: 96px;
+    height: 96px;
+    margin-left: 16px;
+  }
+}
+
+@media (max-width: 780px) {
+  body[data-page="ich2026"] .ich-committee-inline .section-shell {
+    width: min(100% - 28px, var(--max));
+  }
+
+  body[data-page="ich2026"] .ich-committee-inline .committee-directory-columns[data-committee-view="all"] .committee-directory-grid,
+  body[data-page="ich2026"] .ich-committee-inline .committee-directory-grid {
+    grid-template-columns: 1fr;
+  }
+
+  body[data-page="ich2026"] .ich-committee-inline .committee-person {
+    grid-template-columns: 108px minmax(0, 1fr);
+    height: 152px;
+    min-height: 152px;
+    max-height: 152px;
+  }
+
+  body[data-page="ich2026"] .ich-committee-inline .committee-person img {
+    width: 82px;
+    height: 82px;
+    margin-left: 16px;
+  }
+
+  body[data-page="ich2026"] .ich-committee-inline .committee-person div {
+    padding: 16px 16px 16px 0;
+  }
+}
+
+@media (max-width: 420px) {
+  body[data-page="ich2026"] .ich-committee-inline .committee-person {
+    grid-template-columns: 100px minmax(0, 1fr);
+    height: 156px;
+    min-height: 156px;
+    max-height: 156px;
+  }
+
+  body[data-page="ich2026"] .ich-committee-inline .committee-person img {
+    width: 76px;
+    height: 76px;
+    margin-left: 14px;
   }
 }
 
