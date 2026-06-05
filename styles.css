@@ -6187,11 +6187,16 @@ body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [
 }
 
 body[data-page="ich2026"] .ich-hero-bg {
-  --hero-focal-x: 52%;
-  --hero-focal-y: 46%;
+  --hero-focal-x: 55%;
+  --hero-focal-y: 50%;
 }
 
-body:is([data-page="keynote"], [data-page="programme"]) .page-hero {
+body[data-page="keynote"] .page-hero {
+  --hero-focal-x: 47%;
+  --hero-focal-y: 18%;
+}
+
+body[data-page="programme"] .page-hero {
   --hero-focal-x: 47%;
   --hero-focal-y: 32%;
 }
@@ -6213,8 +6218,8 @@ body[data-page="sponsors"] .page-hero {
 
 @media (max-width: 1180px) {
   body[data-page="ich2026"] .ich-hero-bg {
-    --hero-focal-x: 55%;
-    --hero-focal-y: 48%;
+    --hero-focal-x: 58%;
+    --hero-focal-y: 50%;
   }
 
   body[data-page="committees"] .page-hero {
@@ -6222,7 +6227,12 @@ body[data-page="sponsors"] .page-hero {
     --hero-focal-y: 32%;
   }
 
-  body:is([data-page="keynote"], [data-page="programme"]) .page-hero {
+  body[data-page="keynote"] .page-hero {
+    --hero-focal-x: 47%;
+    --hero-focal-y: 16%;
+  }
+
+  body[data-page="programme"] .page-hero {
     --hero-focal-x: 47%;
     --hero-focal-y: 30%;
   }
@@ -6240,7 +6250,7 @@ body[data-page="sponsors"] .page-hero {
 
 @media (max-width: 900px) {
   body[data-page="ich2026"] .ich-hero-bg {
-    --hero-focal-x: 57%;
+    --hero-focal-x: 42%;
     --hero-focal-y: 50%;
   }
 
@@ -6249,7 +6259,12 @@ body[data-page="sponsors"] .page-hero {
     --hero-focal-y: 32%;
   }
 
-  body:is([data-page="keynote"], [data-page="programme"]) .page-hero {
+  body[data-page="keynote"] .page-hero {
+    --hero-focal-x: 47%;
+    --hero-focal-y: 14%;
+  }
+
+  body[data-page="programme"] .page-hero {
     --hero-focal-x: 47%;
     --hero-focal-y: 28%;
   }
@@ -6298,8 +6313,8 @@ body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [
 body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .page-hero-overlay,
 body[data-page="ich2026"] .ich-hero-overlay {
   background:
-    linear-gradient(90deg, rgba(16, 41, 77, 0.88) 0%, rgba(16, 41, 77, 0.58) 46%, rgba(16, 41, 77, 0.18) 100%),
-    rgba(67, 175, 215, 0.12);
+    linear-gradient(90deg, rgba(16, 41, 77, 0.9) 0%, rgba(16, 41, 77, 0.62) 42%, rgba(16, 41, 77, 0.08) 78%, rgba(16, 41, 77, 0.03) 100%),
+    rgba(67, 175, 215, 0.08);
 }
 
 body[data-page="ich2026"] .ich-hero::after,
@@ -7088,7 +7103,7 @@ body:is([data-page="about"], [data-page="home"]) .advisor-photo img[alt="Piet Ma
 
 @media (max-width: 780px) {
   body[data-page="ich2026"] .ich-hero-bg {
-    --hero-focal-x: 58%;
+    --hero-focal-x: 42%;
     --hero-focal-y: 50%;
   }
 
@@ -7097,7 +7112,12 @@ body:is([data-page="about"], [data-page="home"]) .advisor-photo img[alt="Piet Ma
     --hero-focal-y: 32%;
   }
 
-  body:is([data-page="keynote"], [data-page="programme"]) .page-hero {
+  body[data-page="keynote"] .page-hero {
+    --hero-focal-x: 47%;
+    --hero-focal-y: 14%;
+  }
+
+  body[data-page="programme"] .page-hero {
     --hero-focal-x: 47%;
     --hero-focal-y: 28%;
   }
