@@ -734,8 +734,6 @@ def doc(out_path: str, active: str, title: str, description: str, body: str) -> 
     <link rel="apple-touch-icon" sizes="180x180" href="{prefix}assets/icons/apple-touch-icon.png?v={file_version("assets/icons/apple-touch-icon.png")}">
     <link rel="manifest" href="{prefix}site.webmanifest?v={file_version("site.webmanifest")}">
 {hero_preload}
-    <link rel="preload" href="{prefix}assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="{prefix}assets/fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{prefix}assets/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="{prefix}{FONTSHEET}?v={file_version(FONTSHEET)}">
 {THEME_BOOTSTRAP}
