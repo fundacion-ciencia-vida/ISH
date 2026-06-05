@@ -1,143 +1,4 @@
 {
-  "about-hantavirus-microscopy-pixnio.jpg": {
-    "bytes": 1911757,
-    "formats": {
-      "avif": [
-        {
-          "bytes": 13257,
-          "height": 213,
-          "path": "optimized/about-hantavirus-microscopy-pixnio-320.avif",
-          "width": 320
-        },
-        {
-          "bytes": 27814,
-          "height": 319,
-          "path": "optimized/about-hantavirus-microscopy-pixnio-480.avif",
-          "width": 480
-        },
-        {
-          "bytes": 46673,
-          "height": 425,
-          "path": "optimized/about-hantavirus-microscopy-pixnio-640.avif",
-          "width": 640
-        },
-        {
-          "bytes": 85510,
-          "height": 638,
-          "path": "optimized/about-hantavirus-microscopy-pixnio-960.avif",
-          "width": 960
-        },
-        {
-          "bytes": 116350,
-          "height": 851,
-          "path": "optimized/about-hantavirus-microscopy-pixnio-1280.avif",
-          "width": 1280
-        },
-        {
-          "bytes": 145720,
-          "height": 1063,
-          "path": "optimized/about-hantavirus-microscopy-pixnio-1600.avif",
-          "width": 1600
-        },
-        {
-          "bytes": 181995,
-          "height": 1276,
-          "path": "optimized/about-hantavirus-microscopy-pixnio-1920.avif",
-          "width": 1920
-        }
-      ],
-      "webp": [
-        {
-          "bytes": 14634,
-          "height": 213,
-          "path": "optimized/about-hantavirus-microscopy-pixnio-320.webp",
-          "width": 320
-        },
-        {
-          "bytes": 31152,
-          "height": 319,
-          "path": "optimized/about-hantavirus-microscopy-pixnio-480.webp",
-          "width": 480
-        },
-        {
-          "bytes": 54824,
-          "height": 425,
-          "path": "optimized/about-hantavirus-microscopy-pixnio-640.webp",
-          "width": 640
-        },
-        {
-          "bytes": 110770,
-          "height": 638,
-          "path": "optimized/about-hantavirus-microscopy-pixnio-960.webp",
-          "width": 960
-        },
-        {
-          "bytes": 173062,
-          "height": 851,
-          "path": "optimized/about-hantavirus-microscopy-pixnio-1280.webp",
-          "width": 1280
-        },
-        {
-          "bytes": 236810,
-          "height": 1063,
-          "path": "optimized/about-hantavirus-microscopy-pixnio-1600.webp",
-          "width": 1600
-        },
-        {
-          "bytes": 311072,
-          "height": 1276,
-          "path": "optimized/about-hantavirus-microscopy-pixnio-1920.webp",
-          "width": 1920
-        }
-      ]
-    },
-    "height": 3050,
-    "variants": [
-      {
-        "bytes": 14634,
-        "height": 213,
-        "path": "optimized/about-hantavirus-microscopy-pixnio-320.webp",
-        "width": 320
-      },
-      {
-        "bytes": 31152,
-        "height": 319,
-        "path": "optimized/about-hantavirus-microscopy-pixnio-480.webp",
-        "width": 480
-      },
-      {
-        "bytes": 54824,
-        "height": 425,
-        "path": "optimized/about-hantavirus-microscopy-pixnio-640.webp",
-        "width": 640
-      },
-      {
-        "bytes": 110770,
-        "height": 638,
-        "path": "optimized/about-hantavirus-microscopy-pixnio-960.webp",
-        "width": 960
-      },
-      {
-        "bytes": 173062,
-        "height": 851,
-        "path": "optimized/about-hantavirus-microscopy-pixnio-1280.webp",
-        "width": 1280
-      },
-      {
-        "bytes": 236810,
-        "height": 1063,
-        "path": "optimized/about-hantavirus-microscopy-pixnio-1600.webp",
-        "width": 1600
-      },
-      {
-        "bytes": 311072,
-        "height": 1276,
-        "path": "optimized/about-hantavirus-microscopy-pixnio-1920.webp",
-        "width": 1920
-      }
-    ],
-    "width": 4590
-  },
   "board/almeka-markotic.jpg": {
     "bytes": 35325,
     "formats": {
@@ -3543,472 +3404,6 @@
     ],
     "width": 1200
   },
-  "ich2026/generated/abstract-registration.jpg": {
-    "bytes": 180386,
-    "formats": {
-      "avif": [
-        {
-          "bytes": 5888,
-          "height": 200,
-          "path": "optimized/ich2026/generated/abstract-registration-320.avif",
-          "width": 320
-        },
-        {
-          "bytes": 9275,
-          "height": 300,
-          "path": "optimized/ich2026/generated/abstract-registration-480.avif",
-          "width": 480
-        },
-        {
-          "bytes": 12573,
-          "height": 400,
-          "path": "optimized/ich2026/generated/abstract-registration-640.avif",
-          "width": 640
-        },
-        {
-          "bytes": 18758,
-          "height": 600,
-          "path": "optimized/ich2026/generated/abstract-registration-960.avif",
-          "width": 960
-        },
-        {
-          "bytes": 24892,
-          "height": 800,
-          "path": "optimized/ich2026/generated/abstract-registration-1280.avif",
-          "width": 1280
-        },
-        {
-          "bytes": 31143,
-          "height": 1000,
-          "path": "optimized/ich2026/generated/abstract-registration-1600.avif",
-          "width": 1600
-        }
-      ],
-      "webp": [
-        {
-          "bytes": 8308,
-          "height": 200,
-          "path": "optimized/ich2026/generated/abstract-registration-320.webp",
-          "width": 320
-        },
-        {
-          "bytes": 14122,
-          "height": 300,
-          "path": "optimized/ich2026/generated/abstract-registration-480.webp",
-          "width": 480
-        },
-        {
-          "bytes": 20348,
-          "height": 400,
-          "path": "optimized/ich2026/generated/abstract-registration-640.webp",
-          "width": 640
-        },
-        {
-          "bytes": 33122,
-          "height": 600,
-          "path": "optimized/ich2026/generated/abstract-registration-960.webp",
-          "width": 960
-        },
-        {
-          "bytes": 46322,
-          "height": 800,
-          "path": "optimized/ich2026/generated/abstract-registration-1280.webp",
-          "width": 1280
-        },
-        {
-          "bytes": 60420,
-          "height": 1000,
-          "path": "optimized/ich2026/generated/abstract-registration-1600.webp",
-          "width": 1600
-        }
-      ]
-    },
-    "height": 1000,
-    "variants": [
-      {
-        "bytes": 8308,
-        "height": 200,
-        "path": "optimized/ich2026/generated/abstract-registration-320.webp",
-        "width": 320
-      },
-      {
-        "bytes": 14122,
-        "height": 300,
-        "path": "optimized/ich2026/generated/abstract-registration-480.webp",
-        "width": 480
-      },
-      {
-        "bytes": 20348,
-        "height": 400,
-        "path": "optimized/ich2026/generated/abstract-registration-640.webp",
-        "width": 640
-      },
-      {
-        "bytes": 33122,
-        "height": 600,
-        "path": "optimized/ich2026/generated/abstract-registration-960.webp",
-        "width": 960
-      },
-      {
-        "bytes": 46322,
-        "height": 800,
-        "path": "optimized/ich2026/generated/abstract-registration-1280.webp",
-        "width": 1280
-      },
-      {
-        "bytes": 60420,
-        "height": 1000,
-        "path": "optimized/ich2026/generated/abstract-registration-1600.webp",
-        "width": 1600
-      }
-    ],
-    "width": 1600
-  },
-  "ich2026/generated/andes-virus-workshop.jpg": {
-    "bytes": 244554,
-    "formats": {
-      "avif": [
-        {
-          "bytes": 7622,
-          "height": 200,
-          "path": "optimized/ich2026/generated/andes-virus-workshop-320.avif",
-          "width": 320
-        },
-        {
-          "bytes": 12929,
-          "height": 300,
-          "path": "optimized/ich2026/generated/andes-virus-workshop-480.avif",
-          "width": 480
-        },
-        {
-          "bytes": 18526,
-          "height": 400,
-          "path": "optimized/ich2026/generated/andes-virus-workshop-640.avif",
-          "width": 640
-        },
-        {
-          "bytes": 29944,
-          "height": 600,
-          "path": "optimized/ich2026/generated/andes-virus-workshop-960.avif",
-          "width": 960
-        },
-        {
-          "bytes": 40770,
-          "height": 800,
-          "path": "optimized/ich2026/generated/andes-virus-workshop-1280.avif",
-          "width": 1280
-        },
-        {
-          "bytes": 52233,
-          "height": 1000,
-          "path": "optimized/ich2026/generated/andes-virus-workshop-1600.avif",
-          "width": 1600
-        }
-      ],
-      "webp": [
-        {
-          "bytes": 10526,
-          "height": 200,
-          "path": "optimized/ich2026/generated/andes-virus-workshop-320.webp",
-          "width": 320
-        },
-        {
-          "bytes": 19034,
-          "height": 300,
-          "path": "optimized/ich2026/generated/andes-virus-workshop-480.webp",
-          "width": 480
-        },
-        {
-          "bytes": 27952,
-          "height": 400,
-          "path": "optimized/ich2026/generated/andes-virus-workshop-640.webp",
-          "width": 640
-        },
-        {
-          "bytes": 48054,
-          "height": 600,
-          "path": "optimized/ich2026/generated/andes-virus-workshop-960.webp",
-          "width": 960
-        },
-        {
-          "bytes": 68436,
-          "height": 800,
-          "path": "optimized/ich2026/generated/andes-virus-workshop-1280.webp",
-          "width": 1280
-        },
-        {
-          "bytes": 91286,
-          "height": 1000,
-          "path": "optimized/ich2026/generated/andes-virus-workshop-1600.webp",
-          "width": 1600
-        }
-      ]
-    },
-    "height": 1000,
-    "variants": [
-      {
-        "bytes": 10526,
-        "height": 200,
-        "path": "optimized/ich2026/generated/andes-virus-workshop-320.webp",
-        "width": 320
-      },
-      {
-        "bytes": 19034,
-        "height": 300,
-        "path": "optimized/ich2026/generated/andes-virus-workshop-480.webp",
-        "width": 480
-      },
-      {
-        "bytes": 27952,
-        "height": 400,
-        "path": "optimized/ich2026/generated/andes-virus-workshop-640.webp",
-        "width": 640
-      },
-      {
-        "bytes": 48054,
-        "height": 600,
-        "path": "optimized/ich2026/generated/andes-virus-workshop-960.webp",
-        "width": 960
-      },
-      {
-        "bytes": 68436,
-        "height": 800,
-        "path": "optimized/ich2026/generated/andes-virus-workshop-1280.webp",
-        "width": 1280
-      },
-      {
-        "bytes": 91286,
-        "height": 1000,
-        "path": "optimized/ich2026/generated/andes-virus-workshop-1600.webp",
-        "width": 1600
-      }
-    ],
-    "width": 1600
-  },
-  "ich2026/generated/keynote-speakers.jpg": {
-    "bytes": 245895,
-    "formats": {
-      "avif": [
-        {
-          "bytes": 7330,
-          "height": 200,
-          "path": "optimized/ich2026/generated/keynote-speakers-320.avif",
-          "width": 320
-        },
-        {
-          "bytes": 13059,
-          "height": 300,
-          "path": "optimized/ich2026/generated/keynote-speakers-480.avif",
-          "width": 480
-        },
-        {
-          "bytes": 19836,
-          "height": 400,
-          "path": "optimized/ich2026/generated/keynote-speakers-640.avif",
-          "width": 640
-        },
-        {
-          "bytes": 34774,
-          "height": 600,
-          "path": "optimized/ich2026/generated/keynote-speakers-960.avif",
-          "width": 960
-        },
-        {
-          "bytes": 47928,
-          "height": 800,
-          "path": "optimized/ich2026/generated/keynote-speakers-1280.avif",
-          "width": 1280
-        },
-        {
-          "bytes": 61784,
-          "height": 1000,
-          "path": "optimized/ich2026/generated/keynote-speakers-1600.avif",
-          "width": 1600
-        }
-      ],
-      "webp": [
-        {
-          "bytes": 9458,
-          "height": 200,
-          "path": "optimized/ich2026/generated/keynote-speakers-320.webp",
-          "width": 320
-        },
-        {
-          "bytes": 17576,
-          "height": 300,
-          "path": "optimized/ich2026/generated/keynote-speakers-480.webp",
-          "width": 480
-        },
-        {
-          "bytes": 27210,
-          "height": 400,
-          "path": "optimized/ich2026/generated/keynote-speakers-640.webp",
-          "width": 640
-        },
-        {
-          "bytes": 51012,
-          "height": 600,
-          "path": "optimized/ich2026/generated/keynote-speakers-960.webp",
-          "width": 960
-        },
-        {
-          "bytes": 75414,
-          "height": 800,
-          "path": "optimized/ich2026/generated/keynote-speakers-1280.webp",
-          "width": 1280
-        },
-        {
-          "bytes": 101196,
-          "height": 1000,
-          "path": "optimized/ich2026/generated/keynote-speakers-1600.webp",
-          "width": 1600
-        }
-      ]
-    },
-    "height": 1000,
-    "variants": [
-      {
-        "bytes": 9458,
-        "height": 200,
-        "path": "optimized/ich2026/generated/keynote-speakers-320.webp",
-        "width": 320
-      },
-      {
-        "bytes": 17576,
-        "height": 300,
-        "path": "optimized/ich2026/generated/keynote-speakers-480.webp",
-        "width": 480
-      },
-      {
-        "bytes": 27210,
-        "height": 400,
-        "path": "optimized/ich2026/generated/keynote-speakers-640.webp",
-        "width": 640
-      },
-      {
-        "bytes": 51012,
-        "height": 600,
-        "path": "optimized/ich2026/generated/keynote-speakers-960.webp",
-        "width": 960
-      },
-      {
-        "bytes": 75414,
-        "height": 800,
-        "path": "optimized/ich2026/generated/keynote-speakers-1280.webp",
-        "width": 1280
-      },
-      {
-        "bytes": 101196,
-        "height": 1000,
-        "path": "optimized/ich2026/generated/keynote-speakers-1600.webp",
-        "width": 1600
-      }
-    ],
-    "width": 1600
-  },
-  "ich2026/generated/scientific-program.jpg": {
-    "bytes": 197609,
-    "formats": {
-      "avif": [
-        {
-          "bytes": 2884,
-          "height": 100,
-          "path": "optimized/ich2026/generated/scientific-program-160.avif",
-          "width": 160
-        },
-        {
-          "bytes": 4842,
-          "height": 150,
-          "path": "optimized/ich2026/generated/scientific-program-240.avif",
-          "width": 240
-        },
-        {
-          "bytes": 6901,
-          "height": 200,
-          "path": "optimized/ich2026/generated/scientific-program-320.avif",
-          "width": 320
-        },
-        {
-          "bytes": 11412,
-          "height": 300,
-          "path": "optimized/ich2026/generated/scientific-program-480.avif",
-          "width": 480
-        },
-        {
-          "bytes": 40246,
-          "height": 1000,
-          "path": "optimized/ich2026/generated/scientific-program-1600.avif",
-          "width": 1600
-        }
-      ],
-      "webp": [
-        {
-          "bytes": 3262,
-          "height": 100,
-          "path": "optimized/ich2026/generated/scientific-program-160.webp",
-          "width": 160
-        },
-        {
-          "bytes": 5810,
-          "height": 150,
-          "path": "optimized/ich2026/generated/scientific-program-240.webp",
-          "width": 240
-        },
-        {
-          "bytes": 8652,
-          "height": 200,
-          "path": "optimized/ich2026/generated/scientific-program-320.webp",
-          "width": 320
-        },
-        {
-          "bytes": 15138,
-          "height": 300,
-          "path": "optimized/ich2026/generated/scientific-program-480.webp",
-          "width": 480
-        },
-        {
-          "bytes": 66250,
-          "height": 1000,
-          "path": "optimized/ich2026/generated/scientific-program-1600.webp",
-          "width": 1600
-        }
-      ]
-    },
-    "height": 1000,
-    "variants": [
-      {
-        "bytes": 3262,
-        "height": 100,
-        "path": "optimized/ich2026/generated/scientific-program-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 5810,
-        "height": 150,
-        "path": "optimized/ich2026/generated/scientific-program-240.webp",
-        "width": 240
-      },
-      {
-        "bytes": 8652,
-        "height": 200,
-        "path": "optimized/ich2026/generated/scientific-program-320.webp",
-        "width": 320
-      },
-      {
-        "bytes": 15138,
-        "height": 300,
-        "path": "optimized/ich2026/generated/scientific-program-480.webp",
-        "width": 480
-      },
-      {
-        "bytes": 66250,
-        "height": 1000,
-        "path": "optimized/ich2026/generated/scientific-program-1600.webp",
-        "width": 1600
-      }
-    ],
-    "width": 1600
-  },
   "ich2026/hantavirus-em.jpg": {
     "bytes": 89331,
     "formats": {
@@ -4093,6 +3488,127 @@
       }
     ],
     "width": 700
+  },
+  "ich2026/ich2026-hero-composite.jpg": {
+    "bytes": 450674,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 6847,
+          "height": 180,
+          "path": "optimized/ich2026/ich2026-hero-composite-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 14280,
+          "height": 270,
+          "path": "optimized/ich2026/ich2026-hero-composite-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 24344,
+          "height": 360,
+          "path": "optimized/ich2026/ich2026-hero-composite-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 52600,
+          "height": 540,
+          "path": "optimized/ich2026/ich2026-hero-composite-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 83304,
+          "height": 720,
+          "path": "optimized/ich2026/ich2026-hero-composite-1280.avif",
+          "width": 1280
+        },
+        {
+          "bytes": 145221,
+          "height": 1080,
+          "path": "optimized/ich2026/ich2026-hero-composite-1920.avif",
+          "width": 1920
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 9112,
+          "height": 180,
+          "path": "optimized/ich2026/ich2026-hero-composite-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 19104,
+          "height": 270,
+          "path": "optimized/ich2026/ich2026-hero-composite-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 33102,
+          "height": 360,
+          "path": "optimized/ich2026/ich2026-hero-composite-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 70268,
+          "height": 540,
+          "path": "optimized/ich2026/ich2026-hero-composite-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 116754,
+          "height": 720,
+          "path": "optimized/ich2026/ich2026-hero-composite-1280.webp",
+          "width": 1280
+        },
+        {
+          "bytes": 220208,
+          "height": 1080,
+          "path": "optimized/ich2026/ich2026-hero-composite-1920.webp",
+          "width": 1920
+        }
+      ]
+    },
+    "height": 1080,
+    "variants": [
+      {
+        "bytes": 9112,
+        "height": 180,
+        "path": "optimized/ich2026/ich2026-hero-composite-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 19104,
+        "height": 270,
+        "path": "optimized/ich2026/ich2026-hero-composite-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 33102,
+        "height": 360,
+        "path": "optimized/ich2026/ich2026-hero-composite-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 70268,
+        "height": 540,
+        "path": "optimized/ich2026/ich2026-hero-composite-960.webp",
+        "width": 960
+      },
+      {
+        "bytes": 116754,
+        "height": 720,
+        "path": "optimized/ich2026/ich2026-hero-composite-1280.webp",
+        "width": 1280
+      },
+      {
+        "bytes": 220208,
+        "height": 1080,
+        "path": "optimized/ich2026/ich2026-hero-composite-1920.webp",
+        "width": 1920
+      }
+    ],
+    "width": 1920
   },
   "ich2026/ich2026-logo-landscape.png": {
     "bytes": 343470,
@@ -4724,109 +4240,6 @@
     ],
     "width": 720
   },
-  "ich2026/local-marcela-ferres-teaser.jpg": {
-    "bytes": 87021,
-    "formats": {
-      "avif": [
-        {
-          "bytes": 3023,
-          "height": 200,
-          "path": "optimized/ich2026/local-marcela-ferres-teaser-160.avif",
-          "width": 160
-        },
-        {
-          "bytes": 4362,
-          "height": 300,
-          "path": "optimized/ich2026/local-marcela-ferres-teaser-240.avif",
-          "width": 240
-        },
-        {
-          "bytes": 5412,
-          "height": 400,
-          "path": "optimized/ich2026/local-marcela-ferres-teaser-320.avif",
-          "width": 320
-        },
-        {
-          "bytes": 7696,
-          "height": 600,
-          "path": "optimized/ich2026/local-marcela-ferres-teaser-480.avif",
-          "width": 480
-        },
-        {
-          "bytes": 13547,
-          "height": 1125,
-          "path": "optimized/ich2026/local-marcela-ferres-teaser-900.avif",
-          "width": 900
-        }
-      ],
-      "webp": [
-        {
-          "bytes": 3570,
-          "height": 200,
-          "path": "optimized/ich2026/local-marcela-ferres-teaser-160.webp",
-          "width": 160
-        },
-        {
-          "bytes": 5682,
-          "height": 300,
-          "path": "optimized/ich2026/local-marcela-ferres-teaser-240.webp",
-          "width": 240
-        },
-        {
-          "bytes": 7608,
-          "height": 400,
-          "path": "optimized/ich2026/local-marcela-ferres-teaser-320.webp",
-          "width": 320
-        },
-        {
-          "bytes": 11654,
-          "height": 600,
-          "path": "optimized/ich2026/local-marcela-ferres-teaser-480.webp",
-          "width": 480
-        },
-        {
-          "bytes": 24940,
-          "height": 1125,
-          "path": "optimized/ich2026/local-marcela-ferres-teaser-900.webp",
-          "width": 900
-        }
-      ]
-    },
-    "height": 1125,
-    "variants": [
-      {
-        "bytes": 3570,
-        "height": 200,
-        "path": "optimized/ich2026/local-marcela-ferres-teaser-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 5682,
-        "height": 300,
-        "path": "optimized/ich2026/local-marcela-ferres-teaser-240.webp",
-        "width": 240
-      },
-      {
-        "bytes": 7608,
-        "height": 400,
-        "path": "optimized/ich2026/local-marcela-ferres-teaser-320.webp",
-        "width": 320
-      },
-      {
-        "bytes": 11654,
-        "height": 600,
-        "path": "optimized/ich2026/local-marcela-ferres-teaser-480.webp",
-        "width": 480
-      },
-      {
-        "bytes": 24940,
-        "height": 1125,
-        "path": "optimized/ich2026/local-marcela-ferres-teaser-900.webp",
-        "width": 900
-      }
-    ],
-    "width": 900
-  },
   "ich2026/local-marcela-ferres.jpg": {
     "bytes": 42492,
     "formats": {
@@ -5238,109 +4651,6 @@
       }
     ],
     "width": 720
-  },
-  "ich2026/local-pablo-vial-teaser.jpg": {
-    "bytes": 108153,
-    "formats": {
-      "avif": [
-        {
-          "bytes": 2199,
-          "height": 200,
-          "path": "optimized/ich2026/local-pablo-vial-teaser-160.avif",
-          "width": 160
-        },
-        {
-          "bytes": 3564,
-          "height": 300,
-          "path": "optimized/ich2026/local-pablo-vial-teaser-240.avif",
-          "width": 240
-        },
-        {
-          "bytes": 4965,
-          "height": 400,
-          "path": "optimized/ich2026/local-pablo-vial-teaser-320.avif",
-          "width": 320
-        },
-        {
-          "bytes": 8558,
-          "height": 600,
-          "path": "optimized/ich2026/local-pablo-vial-teaser-480.avif",
-          "width": 480
-        },
-        {
-          "bytes": 19085,
-          "height": 1125,
-          "path": "optimized/ich2026/local-pablo-vial-teaser-900.avif",
-          "width": 900
-        }
-      ],
-      "webp": [
-        {
-          "bytes": 2790,
-          "height": 200,
-          "path": "optimized/ich2026/local-pablo-vial-teaser-160.webp",
-          "width": 160
-        },
-        {
-          "bytes": 4800,
-          "height": 300,
-          "path": "optimized/ich2026/local-pablo-vial-teaser-240.webp",
-          "width": 240
-        },
-        {
-          "bytes": 7164,
-          "height": 400,
-          "path": "optimized/ich2026/local-pablo-vial-teaser-320.webp",
-          "width": 320
-        },
-        {
-          "bytes": 13316,
-          "height": 600,
-          "path": "optimized/ich2026/local-pablo-vial-teaser-480.webp",
-          "width": 480
-        },
-        {
-          "bytes": 32388,
-          "height": 1125,
-          "path": "optimized/ich2026/local-pablo-vial-teaser-900.webp",
-          "width": 900
-        }
-      ]
-    },
-    "height": 1125,
-    "variants": [
-      {
-        "bytes": 2790,
-        "height": 200,
-        "path": "optimized/ich2026/local-pablo-vial-teaser-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 4800,
-        "height": 300,
-        "path": "optimized/ich2026/local-pablo-vial-teaser-240.webp",
-        "width": 240
-      },
-      {
-        "bytes": 7164,
-        "height": 400,
-        "path": "optimized/ich2026/local-pablo-vial-teaser-320.webp",
-        "width": 320
-      },
-      {
-        "bytes": 13316,
-        "height": 600,
-        "path": "optimized/ich2026/local-pablo-vial-teaser-480.webp",
-        "width": 480
-      },
-      {
-        "bytes": 32388,
-        "height": 1125,
-        "path": "optimized/ich2026/local-pablo-vial-teaser-900.webp",
-        "width": 900
-      }
-    ],
-    "width": 900
   },
   "ich2026/local-pablo-vial.jpg": {
     "bytes": 53209,
@@ -5960,109 +5270,6 @@
     ],
     "width": 720
   },
-  "ich2026/scientific-nicole-tischler-teaser.jpg": {
-    "bytes": 84996,
-    "formats": {
-      "avif": [
-        {
-          "bytes": 2493,
-          "height": 200,
-          "path": "optimized/ich2026/scientific-nicole-tischler-teaser-160.avif",
-          "width": 160
-        },
-        {
-          "bytes": 3524,
-          "height": 300,
-          "path": "optimized/ich2026/scientific-nicole-tischler-teaser-240.avif",
-          "width": 240
-        },
-        {
-          "bytes": 4565,
-          "height": 400,
-          "path": "optimized/ich2026/scientific-nicole-tischler-teaser-320.avif",
-          "width": 320
-        },
-        {
-          "bytes": 6564,
-          "height": 600,
-          "path": "optimized/ich2026/scientific-nicole-tischler-teaser-480.avif",
-          "width": 480
-        },
-        {
-          "bytes": 12096,
-          "height": 1125,
-          "path": "optimized/ich2026/scientific-nicole-tischler-teaser-900.avif",
-          "width": 900
-        }
-      ],
-      "webp": [
-        {
-          "bytes": 2980,
-          "height": 200,
-          "path": "optimized/ich2026/scientific-nicole-tischler-teaser-160.webp",
-          "width": 160
-        },
-        {
-          "bytes": 4676,
-          "height": 300,
-          "path": "optimized/ich2026/scientific-nicole-tischler-teaser-240.webp",
-          "width": 240
-        },
-        {
-          "bytes": 6684,
-          "height": 400,
-          "path": "optimized/ich2026/scientific-nicole-tischler-teaser-320.webp",
-          "width": 320
-        },
-        {
-          "bytes": 10728,
-          "height": 600,
-          "path": "optimized/ich2026/scientific-nicole-tischler-teaser-480.webp",
-          "width": 480
-        },
-        {
-          "bytes": 23446,
-          "height": 1125,
-          "path": "optimized/ich2026/scientific-nicole-tischler-teaser-900.webp",
-          "width": 900
-        }
-      ]
-    },
-    "height": 1125,
-    "variants": [
-      {
-        "bytes": 2980,
-        "height": 200,
-        "path": "optimized/ich2026/scientific-nicole-tischler-teaser-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 4676,
-        "height": 300,
-        "path": "optimized/ich2026/scientific-nicole-tischler-teaser-240.webp",
-        "width": 240
-      },
-      {
-        "bytes": 6684,
-        "height": 400,
-        "path": "optimized/ich2026/scientific-nicole-tischler-teaser-320.webp",
-        "width": 320
-      },
-      {
-        "bytes": 10728,
-        "height": 600,
-        "path": "optimized/ich2026/scientific-nicole-tischler-teaser-480.webp",
-        "width": 480
-      },
-      {
-        "bytes": 23446,
-        "height": 1125,
-        "path": "optimized/ich2026/scientific-nicole-tischler-teaser-900.webp",
-        "width": 900
-      }
-    ],
-    "width": 900
-  },
   "ich2026/scientific-nicole-tischler.jpg": {
     "bytes": 41079,
     "formats": {
@@ -6161,212 +5368,6 @@
         "bytes": 14050,
         "height": 720,
         "path": "optimized/ich2026/scientific-nicole-tischler-720.webp",
-        "width": 720
-      }
-    ],
-    "width": 720
-  },
-  "ich2026/scientific-piet-maes-teaser.jpg": {
-    "bytes": 159278,
-    "formats": {
-      "avif": [
-        {
-          "bytes": 2340,
-          "height": 200,
-          "path": "optimized/ich2026/scientific-piet-maes-teaser-160.avif",
-          "width": 160
-        },
-        {
-          "bytes": 3584,
-          "height": 300,
-          "path": "optimized/ich2026/scientific-piet-maes-teaser-240.avif",
-          "width": 240
-        },
-        {
-          "bytes": 4893,
-          "height": 400,
-          "path": "optimized/ich2026/scientific-piet-maes-teaser-320.avif",
-          "width": 320
-        },
-        {
-          "bytes": 8058,
-          "height": 600,
-          "path": "optimized/ich2026/scientific-piet-maes-teaser-480.avif",
-          "width": 480
-        },
-        {
-          "bytes": 27811,
-          "height": 1125,
-          "path": "optimized/ich2026/scientific-piet-maes-teaser-900.avif",
-          "width": 900
-        }
-      ],
-      "webp": [
-        {
-          "bytes": 3012,
-          "height": 200,
-          "path": "optimized/ich2026/scientific-piet-maes-teaser-160.webp",
-          "width": 160
-        },
-        {
-          "bytes": 5122,
-          "height": 300,
-          "path": "optimized/ich2026/scientific-piet-maes-teaser-240.webp",
-          "width": 240
-        },
-        {
-          "bytes": 7374,
-          "height": 400,
-          "path": "optimized/ich2026/scientific-piet-maes-teaser-320.webp",
-          "width": 320
-        },
-        {
-          "bytes": 13536,
-          "height": 600,
-          "path": "optimized/ich2026/scientific-piet-maes-teaser-480.webp",
-          "width": 480
-        },
-        {
-          "bytes": 48442,
-          "height": 1125,
-          "path": "optimized/ich2026/scientific-piet-maes-teaser-900.webp",
-          "width": 900
-        }
-      ]
-    },
-    "height": 1125,
-    "variants": [
-      {
-        "bytes": 3012,
-        "height": 200,
-        "path": "optimized/ich2026/scientific-piet-maes-teaser-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 5122,
-        "height": 300,
-        "path": "optimized/ich2026/scientific-piet-maes-teaser-240.webp",
-        "width": 240
-      },
-      {
-        "bytes": 7374,
-        "height": 400,
-        "path": "optimized/ich2026/scientific-piet-maes-teaser-320.webp",
-        "width": 320
-      },
-      {
-        "bytes": 13536,
-        "height": 600,
-        "path": "optimized/ich2026/scientific-piet-maes-teaser-480.webp",
-        "width": 480
-      },
-      {
-        "bytes": 48442,
-        "height": 1125,
-        "path": "optimized/ich2026/scientific-piet-maes-teaser-900.webp",
-        "width": 900
-      }
-    ],
-    "width": 900
-  },
-  "ich2026/scientific-piet-maes.jpg": {
-    "bytes": 64517,
-    "formats": {
-      "avif": [
-        {
-          "bytes": 2168,
-          "height": 160,
-          "path": "optimized/ich2026/scientific-piet-maes-160.avif",
-          "width": 160
-        },
-        {
-          "bytes": 3339,
-          "height": 240,
-          "path": "optimized/ich2026/scientific-piet-maes-240.avif",
-          "width": 240
-        },
-        {
-          "bytes": 4239,
-          "height": 320,
-          "path": "optimized/ich2026/scientific-piet-maes-320.avif",
-          "width": 320
-        },
-        {
-          "bytes": 6405,
-          "height": 480,
-          "path": "optimized/ich2026/scientific-piet-maes-480.avif",
-          "width": 480
-        },
-        {
-          "bytes": 10295,
-          "height": 720,
-          "path": "optimized/ich2026/scientific-piet-maes-720.avif",
-          "width": 720
-        }
-      ],
-      "webp": [
-        {
-          "bytes": 2748,
-          "height": 160,
-          "path": "optimized/ich2026/scientific-piet-maes-160.webp",
-          "width": 160
-        },
-        {
-          "bytes": 4526,
-          "height": 240,
-          "path": "optimized/ich2026/scientific-piet-maes-240.webp",
-          "width": 240
-        },
-        {
-          "bytes": 6436,
-          "height": 320,
-          "path": "optimized/ich2026/scientific-piet-maes-320.webp",
-          "width": 320
-        },
-        {
-          "bytes": 10430,
-          "height": 480,
-          "path": "optimized/ich2026/scientific-piet-maes-480.webp",
-          "width": 480
-        },
-        {
-          "bytes": 17774,
-          "height": 720,
-          "path": "optimized/ich2026/scientific-piet-maes-720.webp",
-          "width": 720
-        }
-      ]
-    },
-    "height": 720,
-    "variants": [
-      {
-        "bytes": 2748,
-        "height": 160,
-        "path": "optimized/ich2026/scientific-piet-maes-160.webp",
-        "width": 160
-      },
-      {
-        "bytes": 4526,
-        "height": 240,
-        "path": "optimized/ich2026/scientific-piet-maes-240.webp",
-        "width": 240
-      },
-      {
-        "bytes": 6436,
-        "height": 320,
-        "path": "optimized/ich2026/scientific-piet-maes-320.webp",
-        "width": 320
-      },
-      {
-        "bytes": 10430,
-        "height": 480,
-        "path": "optimized/ich2026/scientific-piet-maes-480.webp",
-        "width": 480
-      },
-      {
-        "bytes": 17774,
-        "height": 720,
-        "path": "optimized/ich2026/scientific-piet-maes-720.webp",
         "width": 720
       }
     ],
@@ -8884,108 +7885,90 @@
     ],
     "width": 1280
   },
-  "venue/hotel-bellavista.jpg": {
-    "bytes": 209862,
+  "venue/hotel-bellavista-window.jpg": {
+    "bytes": 131145,
     "formats": {
       "avif": [
         {
-          "bytes": 11002,
-          "height": 220,
-          "path": "optimized/venue/hotel-bellavista-320.avif",
+          "bytes": 5157,
+          "height": 213,
+          "path": "optimized/venue/hotel-bellavista-window-320.avif",
           "width": 320
         },
         {
-          "bytes": 20501,
-          "height": 329,
-          "path": "optimized/venue/hotel-bellavista-480.avif",
+          "bytes": 8833,
+          "height": 320,
+          "path": "optimized/venue/hotel-bellavista-window-480.avif",
           "width": 480
         },
         {
-          "bytes": 32304,
-          "height": 439,
-          "path": "optimized/venue/hotel-bellavista-640.avif",
+          "bytes": 13323,
+          "height": 427,
+          "path": "optimized/venue/hotel-bellavista-window-640.avif",
           "width": 640
         },
         {
-          "bytes": 62860,
-          "height": 659,
-          "path": "optimized/venue/hotel-bellavista-960.avif",
-          "width": 960
-        },
-        {
-          "bytes": 88449,
-          "height": 758,
-          "path": "optimized/venue/hotel-bellavista-1105.avif",
-          "width": 1105
+          "bytes": 21352,
+          "height": 575,
+          "path": "optimized/venue/hotel-bellavista-window-862.avif",
+          "width": 862
         }
       ],
       "webp": [
         {
-          "bytes": 14502,
-          "height": 220,
-          "path": "optimized/venue/hotel-bellavista-320.webp",
+          "bytes": 8554,
+          "height": 213,
+          "path": "optimized/venue/hotel-bellavista-window-320.webp",
           "width": 320
         },
         {
-          "bytes": 27994,
-          "height": 329,
-          "path": "optimized/venue/hotel-bellavista-480.webp",
+          "bytes": 15758,
+          "height": 320,
+          "path": "optimized/venue/hotel-bellavista-window-480.webp",
           "width": 480
         },
         {
-          "bytes": 45716,
-          "height": 439,
-          "path": "optimized/venue/hotel-bellavista-640.webp",
+          "bytes": 24062,
+          "height": 427,
+          "path": "optimized/venue/hotel-bellavista-window-640.webp",
           "width": 640
         },
         {
-          "bytes": 90302,
-          "height": 659,
-          "path": "optimized/venue/hotel-bellavista-960.webp",
-          "width": 960
-        },
-        {
-          "bytes": 122310,
-          "height": 758,
-          "path": "optimized/venue/hotel-bellavista-1105.webp",
-          "width": 1105
+          "bytes": 39324,
+          "height": 575,
+          "path": "optimized/venue/hotel-bellavista-window-862.webp",
+          "width": 862
         }
       ]
     },
-    "height": 758,
+    "height": 575,
     "variants": [
       {
-        "bytes": 14502,
-        "height": 220,
-        "path": "optimized/venue/hotel-bellavista-320.webp",
+        "bytes": 8554,
+        "height": 213,
+        "path": "optimized/venue/hotel-bellavista-window-320.webp",
         "width": 320
       },
       {
-        "bytes": 27994,
-        "height": 329,
-        "path": "optimized/venue/hotel-bellavista-480.webp",
+        "bytes": 15758,
+        "height": 320,
+        "path": "optimized/venue/hotel-bellavista-window-480.webp",
         "width": 480
       },
       {
-        "bytes": 45716,
-        "height": 439,
-        "path": "optimized/venue/hotel-bellavista-640.webp",
+        "bytes": 24062,
+        "height": 427,
+        "path": "optimized/venue/hotel-bellavista-window-640.webp",
         "width": 640
       },
       {
-        "bytes": 90302,
-        "height": 659,
-        "path": "optimized/venue/hotel-bellavista-960.webp",
-        "width": 960
-      },
-      {
-        "bytes": 122310,
-        "height": 758,
-        "path": "optimized/venue/hotel-bellavista-1105.webp",
-        "width": 1105
+        "bytes": 39324,
+        "height": 575,
+        "path": "optimized/venue/hotel-bellavista-window-862.webp",
+        "width": 862
       }
     ],
-    "width": 1105
+    "width": 862
   },
   "venue/puerto-varas-waterfront.jpg": {
     "bytes": 131479,

@@ -20,11 +20,11 @@ OG_IMAGES: dict[str, str] = {
     "about": "ui/social-preview.jpg",
     "former": "ui/social-preview.jpg",
     "communications": "ui/social-preview.jpg",
-    "ich2026": "ich2026/from-zip/pvaras2.jpg",
+    "ich2026": "ich2026/ich2026-hero-composite.jpg",
     "keynote": "ich2026/conference-volcano.jpg",
     "programme": "ich2026/conference-volcano.jpg",
     "registration": "venue/puerto-varas-waterfront.jpg",
-    "venue": "venue/hotel-bellavista.jpg",
+    "venue": "venue/hotel-bellavista-window.jpg",
     "sponsors": "ich2026/ich2026-logo-landscape.png",
     "committees": "ich2026/ich2026-logo-landscape.png",
     "contact": "ui/social-preview.jpg",
@@ -35,11 +35,11 @@ HERO_IMAGES: dict[str, str] = {
     "about": "ui/home-science-hero.webp?v=virus-fill-20260521",
     "former": "former-meetings/2023-seoul-2.jpg",
     "communications": "ich2026/hantavirus-em.jpg",
-    "ich2026": "ich2026/from-zip/pvaras2.jpg",
+    "ich2026": "ich2026/ich2026-hero-composite.jpg",
     "keynote": "ich2026/conference-volcano.jpg",
     "programme": "ich2026/conference-volcano.jpg",
     "registration": "venue/puerto-varas-waterfront.jpg",
-    "venue": "venue/hotel-bellavista.jpg",
+    "venue": "venue/hotel-bellavista-window.jpg",
     "sponsors": "ich2026/ich2026-logo-landscape.png",
     "committees": "ich2026/ich2026-logo-landscape.png",
 }
@@ -104,7 +104,7 @@ CONFERENCE_JSON_LD_TEMPLATE = """{
       "url": "__SITE_URL__"
     },
     "url": "__SITE_URL__/ich2026",
-    "image": "__SITE_URL__/assets/images/ich2026/conference-volcano.jpg",
+    "image": "__SITE_URL__/assets/images/ich2026/ich2026-hero-composite.jpg",
     "description": "International Conference on Hantaviruses 2026 in Puerto Varas, Chile. Covering viral epidemiology, ecology, virus-host interactions, pathogenesis, vaccines and therapeutics."
   }"""
 
@@ -1039,12 +1039,9 @@ def location_carousel(prefix: str) -> str:
 def ich2026_page(prefix: str) -> str:
     return f"""
       <section class="ich-hero" aria-labelledby="ich-title">
-        {responsive_image(prefix, "ich2026/from-zip/pvaras2.jpg", "Puerto Varas, Lake Llanquihue and Osorno Volcano", class_name="ich-hero-bg", fetchpriority="high", sizes="100vw")}
+        {responsive_image(prefix, "ich2026/ich2026-hero-composite.jpg", "Puerto Varas, Lake Llanquihue, Osorno Volcano and the ICH2026 visual identity", class_name="ich-hero-bg", fetchpriority="high", sizes="100vw")}
         <div class="ich-hero-overlay"></div>
         <div class="ich-hero-copy reveal is-visible">
-          <div class="ich-meeting-mark">
-            {responsive_image(prefix, "ich2026/ich2026-logo-landscape.png", "ICH2026 Puerto Varas conference illustration", loading="eager", decoding="async", sizes="(max-width: 780px) 340px, 520px")}
-          </div>
           <p class="eyebrow">International Conference on Hantaviruses</p>
           <h1 id="ich-title">Puerto Varas | Chile</h1>
           <p class="hero-lede">November 2-5 2026</p>
@@ -1085,7 +1082,6 @@ def ich2026_page(prefix: str) -> str:
             <figcaption>Puerto Varas, Lake Llanquihue and the Chilean Lake District.</figcaption>
           </figure>
         </div>
-        {location_carousel(prefix)}
       </section>
       <section class="section data-section">
         <div class="section-shell">
@@ -1095,6 +1091,9 @@ def ich2026_page(prefix: str) -> str:
             <p>The International Conference on Hantaviruses will provide an excellent platform for students, postdoctoral researchers, and established scientists to present their latest findings and engage with the international hantavirus research community. In addition, the organizing committee has invited leading experts in the field to deliver keynote lectures highlighting cutting-edge developments in hantavirus research.</p>
           </div>
         </div>
+      </section>
+      <section class="section intro-band">
+        {location_carousel(prefix)}
       </section>
       {committee_teaser(prefix)}
       <section class="section ich-workshop">
@@ -1230,7 +1229,7 @@ def venue_page(prefix: str) -> str:
     links = "".join(travel_link_card(icon, label, description, href) for icon, label, description, href in TRAVEL_LINKS)
     crumbs = [("Home", local(prefix)), ("ICH2026", local(prefix, "ich2026/")), ("Venue & Travel", None)]
     return f"""
-      {page_hero(prefix, "ICH2026 Venue & Travel", "Hotel Bellavista, Puerto Varas.", "The 2026 meeting will take place in the Hotel Bellavista, Puerto Varas.", "venue/hotel-bellavista.jpg", [("Open map", "https://goo.gl/maps/dv2jUC4hSGLvr2Ld9", "button-primary"), ("Hotel Bellavista", "https://hotelbellavista.cl/reuniones-y-eventos-corporativos-2/", "button-secondary")], breadcrumbs=crumbs)}
+      {page_hero(prefix, "ICH2026 Venue & Travel", "Hotel Bellavista, Puerto Varas.", "The 2026 meeting will take place in the Hotel Bellavista, Puerto Varas.", "venue/hotel-bellavista-window.jpg", [("Open map", "https://goo.gl/maps/dv2jUC4hSGLvr2Ld9", "button-primary"), ("Hotel Bellavista", "https://hotelbellavista.cl/reuniones-y-eventos-corporativos-2/", "button-secondary")], breadcrumbs=crumbs)}
       <section class="section venue">
         <div class="section-shell venue-layout">
           <div class="venue-copy reveal">

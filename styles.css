@@ -976,24 +976,6 @@ h3 {
   color: var(--white);
 }
 
-.ich-meeting-mark {
-  display: grid;
-  place-items: center;
-  width: min(360px, 48vw);
-  margin-bottom: 22px;
-  padding: 14px 18px;
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(255, 255, 255, 0.72);
-  border-radius: 8px;
-  box-shadow: 0 18px 60px rgba(5, 22, 40, 0.28);
-}
-
-.ich-meeting-mark img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
 .ich-hero h1 {
   max-width: none;
   margin-bottom: 12px;
@@ -4477,12 +4459,6 @@ body.lightbox-open {
     margin: 0 auto 44px;
   }
 
-  .ich-meeting-mark {
-    width: min(280px, 72vw);
-    margin-bottom: 18px;
-    padding: 10px 12px;
-  }
-
   .ich-hero h1 {
     font-size: clamp(22px, 6.8vw, 30px);
     white-space: nowrap;
@@ -5372,11 +5348,6 @@ body.lightbox-open {
   --hero-focal-y: 32%;
 }
 
-.ich-meeting-mark {
-  width: min(520px, 52vw);
-  padding: 16px 20px;
-}
-
 .location-carousel {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
@@ -5718,10 +5689,6 @@ body[data-page="committees"] .page-hero {
   .committee-directory-grid,
   .news-grid {
     grid-template-columns: 1fr;
-  }
-
-  .ich-meeting-mark {
-    width: min(340px, 82vw);
   }
 
   .committee-person {
@@ -6220,8 +6187,8 @@ body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [
 }
 
 body[data-page="ich2026"] .ich-hero-bg {
-  --hero-focal-x: 50%;
-  --hero-focal-y: 32%;
+  --hero-focal-x: 52%;
+  --hero-focal-y: 46%;
 }
 
 body:is([data-page="keynote"], [data-page="programme"]) .page-hero {
@@ -6235,8 +6202,8 @@ body[data-page="registration"] .page-hero {
 }
 
 body[data-page="venue"] .page-hero {
-  --hero-focal-x: 48%;
-  --hero-focal-y: 54%;
+  --hero-focal-x: 57%;
+  --hero-focal-y: 50%;
 }
 
 body[data-page="sponsors"] .page-hero {
@@ -6245,7 +6212,11 @@ body[data-page="sponsors"] .page-hero {
 }
 
 @media (max-width: 1180px) {
-  body[data-page="ich2026"] .ich-hero-bg,
+  body[data-page="ich2026"] .ich-hero-bg {
+    --hero-focal-x: 55%;
+    --hero-focal-y: 48%;
+  }
+
   body[data-page="committees"] .page-hero {
     --hero-focal-x: 52%;
     --hero-focal-y: 32%;
@@ -6262,13 +6233,17 @@ body[data-page="sponsors"] .page-hero {
   }
 
   body[data-page="venue"] .page-hero {
-    --hero-focal-x: 50%;
-    --hero-focal-y: 54%;
+    --hero-focal-x: 58%;
+    --hero-focal-y: 50%;
   }
 }
 
 @media (max-width: 900px) {
-  body[data-page="ich2026"] .ich-hero-bg,
+  body[data-page="ich2026"] .ich-hero-bg {
+    --hero-focal-x: 57%;
+    --hero-focal-y: 50%;
+  }
+
   body[data-page="committees"] .page-hero {
     --hero-focal-x: 53%;
     --hero-focal-y: 32%;
@@ -6285,8 +6260,8 @@ body[data-page="sponsors"] .page-hero {
   }
 
   body[data-page="venue"] .page-hero {
-    --hero-focal-x: 50%;
-    --hero-focal-y: 54%;
+    --hero-focal-x: 60%;
+    --hero-focal-y: 50%;
   }
 }
 
@@ -7112,7 +7087,11 @@ body:is([data-page="about"], [data-page="home"]) .advisor-photo img[alt="Piet Ma
 }
 
 @media (max-width: 780px) {
-  body[data-page="ich2026"] .ich-hero-bg,
+  body[data-page="ich2026"] .ich-hero-bg {
+    --hero-focal-x: 58%;
+    --hero-focal-y: 50%;
+  }
+
   body[data-page="committees"] .page-hero {
     --hero-focal-x: 53%;
     --hero-focal-y: 32%;
@@ -7129,8 +7108,8 @@ body:is([data-page="about"], [data-page="home"]) .advisor-photo img[alt="Piet Ma
   }
 
   body[data-page="venue"] .page-hero {
-    --hero-focal-x: 50%;
-    --hero-focal-y: 54%;
+    --hero-focal-x: 61%;
+    --hero-focal-y: 50%;
   }
 }
 
