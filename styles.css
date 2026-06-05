@@ -3450,9 +3450,9 @@ body.lightbox-open {
   display: grid;
   align-content: center;
   justify-items: center;
-  gap: 14px;
-  min-height: 184px;
-  padding: 20px;
+  gap: 16px;
+  min-height: 224px;
+  padding: 18px 20px;
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: 6px;
@@ -3466,8 +3466,8 @@ body.lightbox-open {
 }
 
 .sponsor img {
-  width: min(220px, 100%);
-  max-height: 92px;
+  width: min(360px, 100%);
+  max-height: 150px;
   object-fit: contain;
   filter: saturate(0.96);
 }

@@ -20,7 +20,7 @@ OG_IMAGES: dict[str, str] = {
     "about": "ui/social-preview.jpg",
     "former": "ui/social-preview.jpg",
     "communications": "ui/social-preview.jpg",
-    "ich2026": "ich2026/ich2026-hero-composite.jpg",
+    "ich2026": "ich2026/ich2026-hero-emblem.jpg",
     "keynote": "ich2026/conference-volcano.jpg",
     "programme": "ich2026/conference-volcano.jpg",
     "registration": "venue/puerto-varas-waterfront.jpg",
@@ -35,7 +35,7 @@ HERO_IMAGES: dict[str, str] = {
     "about": "ui/home-science-hero.webp?v=virus-fill-20260521",
     "former": "former-meetings/2023-seoul-2.jpg",
     "communications": "ich2026/hantavirus-em.jpg",
-    "ich2026": "ich2026/ich2026-hero-composite.jpg",
+    "ich2026": "ich2026/ich2026-hero-emblem.jpg",
     "keynote": "ich2026/conference-volcano.jpg",
     "programme": "ich2026/conference-volcano.jpg",
     "registration": "venue/puerto-varas-waterfront.jpg",
@@ -104,7 +104,7 @@ CONFERENCE_JSON_LD_TEMPLATE = """{
       "url": "__SITE_URL__"
     },
     "url": "__SITE_URL__/ich2026",
-    "image": "__SITE_URL__/assets/images/ich2026/ich2026-hero-composite.jpg",
+    "image": "__SITE_URL__/assets/images/ich2026/ich2026-hero-emblem.jpg",
     "description": "International Conference on Hantaviruses 2026 in Puerto Varas, Chile. Covering viral epidemiology, ecology, virus-host interactions, pathogenesis, vaccines and therapeutics."
   }"""
 
@@ -1039,7 +1039,7 @@ def location_carousel(prefix: str) -> str:
 def ich2026_page(prefix: str) -> str:
     return f"""
       <section class="ich-hero" aria-labelledby="ich-title">
-        {responsive_image(prefix, "ich2026/ich2026-hero-composite.jpg", "Puerto Varas, Lake Llanquihue, Osorno Volcano and the ICH2026 visual identity", class_name="ich-hero-bg", fetchpriority="high", sizes="100vw")}
+        {responsive_image(prefix, "ich2026/ich2026-hero-emblem.jpg", "ICH2026 conference visual identity emblem on a scientific blue background", class_name="ich-hero-bg", fetchpriority="high", sizes="100vw")}
         <div class="ich-hero-overlay"></div>
         <div class="ich-hero-copy reveal is-visible">
           <p class="eyebrow">International Conference on Hantaviruses</p>
@@ -1323,7 +1323,7 @@ def sponsors_page(prefix: str) -> str:
     groups = []
     for category, label in SPONSOR_GROUP_LABELS:
         cards = "".join(
-            f'<a class="sponsor reveal" href="{href}" target="_blank" rel="noreferrer">{responsive_image(prefix, image, name, loading="lazy", decoding="async", sizes="220px")}<span>{escape(name)}</span></a>'
+            f'<a class="sponsor reveal" href="{href}" target="_blank" rel="noreferrer">{responsive_image(prefix, image, name, loading="lazy", decoding="async", sizes="360px")}<span>{escape(name)}</span></a>'
             for item_category, name, href, image in SPONSORS
             if item_category == category
         )
