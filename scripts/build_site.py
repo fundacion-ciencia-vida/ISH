@@ -736,6 +736,7 @@ def doc(out_path: str, active: str, title: str, description: str, body: str) -> 
 {hero_preload}
     <link rel="preload" href="{prefix}assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{prefix}assets/fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{prefix}assets/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="{prefix}{FONTSHEET}?v={file_version(FONTSHEET)}">
 {THEME_BOOTSTRAP}
     <link rel="stylesheet" href="{prefix}{STYLESHEET}?v={file_version(STYLESHEET)}">{json_ld}
