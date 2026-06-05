@@ -132,7 +132,6 @@ NAV = [
     ("programme", "Programme", "ich2026/programme/"),
     ("registration", "Registration", "ich2026/abstracts-registration/"),
     ("venue", "Venue", "ich2026/venue/"),
-    ("committees", "Committees", "ich2026/organizing-committees/"),
     ("sponsors", "Partners & Sponsors", "ich2026/partners-sponsors/"),
 ]
 
@@ -153,13 +152,12 @@ NAV_GROUPS = [
             ("programme", "Programme", "ich2026/programme/"),
             ("registration", "Registration", "ich2026/abstracts-registration/"),
             ("venue", "Venue", "ich2026/venue/"),
-            ("committees", "Committees", "ich2026/organizing-committees/"),
             ("sponsors", "Partners & Sponsors", "ich2026/partners-sponsors/"),
         ],
     ),
 ]
 
-ICH_NAV_KEYS = {"ich2026", "keynote", "programme", "registration", "venue", "committees", "sponsors"}
+ICH_NAV_KEYS = {"ich2026", "keynote", "programme", "registration", "venue", "sponsors"}
 
 MEMBERSHIP_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSc0IHUnT80-qDJn2wU4pLXKQ1F_VEdcziqVL-47iGGAwsLBEA/viewform?pli=1"
 CONFERENCE_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSfMc-cPx3hL8-Q67gN3uFLpQiZlgOD5lr03vvze29w4axGWtQ/viewform"
@@ -317,8 +315,7 @@ TRAVEL_ICONS = {
 LOCATION_CAROUSEL_IMAGES = [
     ("01", "Puerto Varas and Osorno Volcano", "Osorno Volcano and Puerto Varas church by Lake Llanquihue", "ich2026/from-zip/pvaras.webp"),
     ("02", "Lake District setting", "Panoramic Puerto Varas view with Lake Llanquihue and Osorno Volcano", "ich2026/from-zip/pvaras2.jpg"),
-    ("03", "Osorno Volcano", "Osorno Volcano summit and visitor chairlift", "ich2026/from-zip/volcan-puerto-varas.jpg"),
-    ("04", "Lake Llanquihue activities", "Kayaks on Lake Llanquihue near Puerto Varas", "ich2026/from-zip/sea-kayak-puerto-varas.jpg"),
+    ("03", "Lake Llanquihue activities", "Kayaks on Lake Llanquihue near Puerto Varas", "ich2026/from-zip/sea-kayak-puerto-varas.jpg"),
 ]
 
 
@@ -684,7 +681,7 @@ def footer(prefix: str) -> str:
         <a href="{local(prefix, "communications/")}">Communications</a>
         <a href="{local(prefix, "ich2026/")}">ICH2026</a>
         <a href="{local(prefix, "ich2026/abstracts-registration/")}">Registration</a>
-        <a href="{local(prefix, "ich2026/organizing-committees/")}">Committees</a>
+        <a href="{local(prefix, "ich2026/#committees")}">Committees</a>
       </nav>
       <nav aria-label="Contact and actions">
         <strong>Contact</strong>
@@ -985,6 +982,43 @@ def committee_teaser(prefix: str) -> str:
       </section>"""
 
 
+def committee_directory_section(prefix: str, section_id: str | None = None) -> str:
+    scientific_people = committee_grid(prefix, SCIENTIFIC_COMMITTEE, "committee-people-grid committee-directory-grid")
+    local_people = committee_grid(prefix, LOCAL_COMMITTEE, "committee-people-grid committee-directory-grid")
+    id_attr = f' id="{escape(section_id)}"' if section_id else ""
+    return f"""
+      <section class="section committees committee-directory ich-committee-inline"{id_attr}>
+        <div class="section-shell">
+          <div class="section-heading compact reveal">
+            <p class="eyebrow">Organizing Committees</p>
+            <h2>International scientific direction and Chilean local organization.</h2>
+            <p>Scientific and local teams coordinating ICH2026 in Puerto Varas.</p>
+          </div>
+          <div class="committee-tabs reveal" role="group" aria-label="Filter committees">
+            <button type="button" class="is-active" data-committee-filter="all">All</button>
+            <button type="button" data-committee-filter="scientific">Scientific</button>
+            <button type="button" data-committee-filter="local">Local</button>
+          </div>
+          <div class="committee-directory-columns" data-committee-view="all">
+            <div class="committee-section" data-committee-section="scientific">
+              <div class="committee-label reveal">
+                <span>Scientific Committee</span>
+                <p>International scientific direction for the conference programme.</p>
+              </div>
+              {scientific_people}
+            </div>
+            <div class="committee-section" data-committee-section="local">
+              <div class="committee-label reveal">
+                <span>Local Organizing Committee</span>
+                <p>Chilean host institutions coordinating the Puerto Varas meeting.</p>
+              </div>
+              {local_people}
+            </div>
+          </div>
+        </div>
+      </section>"""
+
+
 def location_carousel(prefix: str) -> str:
     total = len(LOCATION_CAROUSEL_IMAGES)
     slides: list[str] = []
@@ -1095,7 +1129,7 @@ def ich2026_page(prefix: str) -> str:
       <section class="section intro-band">
         {location_carousel(prefix)}
       </section>
-      {committee_teaser(prefix)}
+      {committee_directory_section(prefix, "committees")}
       <section class="section ich-workshop">
         <div class="section-shell ich-workshop-layout">
           <div class="section-heading reveal">
@@ -1124,45 +1158,15 @@ def ich2026_page(prefix: str) -> str:
 
 def organizing_committees_page(prefix: str) -> str:
     crumbs = [("Home", local(prefix)), ("ICH2026", local(prefix, "ich2026/")), ("Committees", None)]
-    scientific_people = committee_grid(prefix, SCIENTIFIC_COMMITTEE, "committee-people-grid committee-directory-grid")
-    local_people = committee_grid(prefix, LOCAL_COMMITTEE, "committee-people-grid committee-directory-grid")
     return f"""
       {page_hero(prefix, "ICH2026 Committees", "Organizing Committees", "Scientific and local teams coordinating ICH2026 in Puerto Varas.", "ich2026/from-zip/pvaras2.jpg", [("Partners & sponsors", local(prefix, "ich2026/partners-sponsors/"), "button-primary"), ("Programme", local(prefix, "ich2026/programme/"), "button-secondary")], breadcrumbs=crumbs)}
-      <section class="section committees committee-directory">
-        <div class="section-shell">
-          <div class="section-heading compact reveal">
-            <p class="eyebrow">Conference governance</p>
-            <h2>International scientific direction and Chilean local organization.</h2>
-          </div>
-          <div class="committee-tabs reveal" role="group" aria-label="Filter committees">
-            <button type="button" class="is-active" data-committee-filter="all">All</button>
-            <button type="button" data-committee-filter="scientific">Scientific</button>
-            <button type="button" data-committee-filter="local">Local</button>
-          </div>
-          <div class="committee-directory-columns" data-committee-view="all">
-            <div class="committee-section" data-committee-section="scientific">
-              <div class="committee-label reveal">
-                <span>Scientific Committee</span>
-                <p>International scientific direction for the conference programme.</p>
-              </div>
-              {scientific_people}
-            </div>
-            <div class="committee-section" data-committee-section="local">
-              <div class="committee-label reveal">
-                <span>Local Organizing Committee</span>
-                <p>Chilean host institutions coordinating the Puerto Varas meeting.</p>
-              </div>
-              {local_people}
-            </div>
-          </div>
-        </div>
-      </section>"""
+      {committee_directory_section(prefix)}"""
 
 
 def keynote_page(prefix: str) -> str:
     crumbs = [("Home", local(prefix)), ("ICH2026", local(prefix, "ich2026/")), ("Keynote Speakers", None)]
     return f"""
-      {page_hero(prefix, "Keynote speakers", "ICH2026 Keynote Speakers", "Invited speakers for the International Conference on Hantaviruses.", "ich2026/conference-volcano.jpg", breadcrumbs=crumbs)}
+      {page_hero(prefix, "Keynote speakers", "ICH2026 Keynote Speakers", "Invited experts presenting clinical, virological and countermeasure perspectives for ICH2026.", "ich2026/conference-volcano.jpg", breadcrumbs=crumbs)}
       <section class="section speakers">
         <div class="section-shell speaker-grid">
           <article class="speaker reveal">
@@ -1170,9 +1174,9 @@ def keynote_page(prefix: str) -> str:
             <div>
               <h2>Dr. Marcela Ferres</h2>
               <p class="speaker-meta">Pontificia Universidad Catolica, Chile</p>
-              <p>Dr. Marcela Ferres is a professor, pediatric infectious diseases specialist, and director of the Infectious Diseases and Molecular Virology Laboratory at the Faculty of Medicine, Universidad Catolica de Chile, and Red de Salud UC CHRISTUS, Santiago, Chile. She has more than 29 years of experience in clinical hantavirus research, working closely with Dr. Pablo Vial's group at Universidad del Desarrollo.</p>
-              <p>Her research focuses on the epidemiological, cellular, and molecular factors involved in person-to-person transmission of Andes virus. She has contributed to landmark studies identifying key transmission risks and advancing early diagnostic methods, including RT-PCR. Her work has also explored viral presence in different body fluids, highlighting potential transmission routes such as saliva and maternal milk.</p>
-              <p>More recently, her team successfully isolated a new Andes virus strain from a household contact during the incubation period. Dr. Ferres has authored more than 30 peer-reviewed publications in hantavirus, SARS-CoV-2, and diagnostic virology, and is the author of a Clinical Virology book, currently preparing its third edition.</p>
+              <p>Dr. Marcela Ferres is a professor, pediatric infectious diseases specialist, and director of the Infectious Diseases and Molecular Virology Laboratory at the Faculty of Medicine, Universidad Catolica de Chile, and Red de Salud UC CHRISTUS in Santiago.</p>
+              <p>Her hantavirus research focuses on the epidemiological, cellular and molecular factors involved in person-to-person transmission of Andes virus. Her work has contributed to studies on transmission risks, early diagnostic methods and viral detection in different body fluids.</p>
+              <p>Dr. Ferres has authored more than 30 peer-reviewed publications in hantavirus, SARS-CoV-2 and diagnostic virology, and is the author of a Clinical Virology book currently in preparation for its third edition.</p>
               <a class="text-link" href="https://orcid.org/0000-0001-9415-4657" target="_blank" rel="noreferrer">ORCID profile</a>
             </div>
           </article>
@@ -1181,8 +1185,8 @@ def keynote_page(prefix: str) -> str:
             <div>
               <h2>Dr. Jay Hooper</h2>
               <p class="speaker-meta">United States Army Medical Research Institute of Infectious Diseases (USAMRIID), USA</p>
-              <p>Dr. Jay Hooper is the Chief of the Molecular Virology Branch at USAMRIID. He has more than 30 years of research experience working with lethal viruses, mostly in Biosafety Level 3 and BSL-4 high-containment. His research is aimed at the discovery and development of medical countermeasures targeting high consequence viral diseases of military importance, including hemorrhagic fever and diseases caused by poxviruses.</p>
-              <p>Dr. Hooper received a B.A. in Biology from Colby College in 1986 and a Ph.D. in Virology from Harvard University in 1995. His research has resulted in more than 100 peer-reviewed publications and 15 patents.</p>
+              <p>Dr. Jay Hooper is Chief of the Molecular Virology Branch at USAMRIID. His work focuses on the discovery and development of medical countermeasures against high-consequence viral diseases, including hemorrhagic fevers and diseases caused by poxviruses.</p>
+              <p>He has more than 30 years of research experience with lethal viruses, largely in BSL-3 and BSL-4 high-containment settings. Dr. Hooper received a B.A. in Biology from Colby College and a Ph.D. in Virology from Harvard University; his research has produced more than 100 peer-reviewed publications and 15 patents.</p>
               <a class="text-link" href="https://orcid.org/0000-0002-4475-0415" target="_blank" rel="noreferrer">ORCID profile</a>
             </div>
           </article>

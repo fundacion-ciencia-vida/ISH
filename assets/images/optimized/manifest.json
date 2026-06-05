@@ -3490,41 +3490,41 @@
     "width": 700
   },
   "ich2026/ich2026-hero-emblem.jpg": {
-    "bytes": 191657,
+    "bytes": 226027,
     "formats": {
       "avif": [
         {
-          "bytes": 2617,
+          "bytes": 2603,
           "height": 180,
           "path": "optimized/ich2026/ich2026-hero-emblem-320.avif",
           "width": 320
         },
         {
-          "bytes": 4410,
+          "bytes": 4402,
           "height": 270,
           "path": "optimized/ich2026/ich2026-hero-emblem-480.avif",
           "width": 480
         },
         {
-          "bytes": 6509,
+          "bytes": 6619,
           "height": 360,
           "path": "optimized/ich2026/ich2026-hero-emblem-640.avif",
           "width": 640
         },
         {
-          "bytes": 11133,
+          "bytes": 12136,
           "height": 540,
           "path": "optimized/ich2026/ich2026-hero-emblem-960.avif",
           "width": 960
         },
         {
-          "bytes": 15514,
+          "bytes": 18298,
           "height": 720,
           "path": "optimized/ich2026/ich2026-hero-emblem-1280.avif",
           "width": 1280
         },
         {
-          "bytes": 26984,
+          "bytes": 30543,
           "height": 1080,
           "path": "optimized/ich2026/ich2026-hero-emblem-1920.avif",
           "width": 1920
@@ -3532,37 +3532,37 @@
       ],
       "webp": [
         {
-          "bytes": 3844,
+          "bytes": 3178,
           "height": 180,
           "path": "optimized/ich2026/ich2026-hero-emblem-320.webp",
           "width": 320
         },
         {
-          "bytes": 6830,
+          "bytes": 5760,
           "height": 270,
           "path": "optimized/ich2026/ich2026-hero-emblem-480.webp",
           "width": 480
         },
         {
-          "bytes": 10636,
+          "bytes": 8818,
           "height": 360,
           "path": "optimized/ich2026/ich2026-hero-emblem-640.webp",
           "width": 640
         },
         {
-          "bytes": 19118,
+          "bytes": 17660,
           "height": 540,
           "path": "optimized/ich2026/ich2026-hero-emblem-960.webp",
           "width": 960
         },
         {
-          "bytes": 27752,
+          "bytes": 28130,
           "height": 720,
           "path": "optimized/ich2026/ich2026-hero-emblem-1280.webp",
           "width": 1280
         },
         {
-          "bytes": 49802,
+          "bytes": 51476,
           "height": 1080,
           "path": "optimized/ich2026/ich2026-hero-emblem-1920.webp",
           "width": 1920
@@ -3572,37 +3572,37 @@
     "height": 1080,
     "variants": [
       {
-        "bytes": 3844,
+        "bytes": 3178,
         "height": 180,
         "path": "optimized/ich2026/ich2026-hero-emblem-320.webp",
         "width": 320
       },
       {
-        "bytes": 6830,
+        "bytes": 5760,
         "height": 270,
         "path": "optimized/ich2026/ich2026-hero-emblem-480.webp",
         "width": 480
       },
       {
-        "bytes": 10636,
+        "bytes": 8818,
         "height": 360,
         "path": "optimized/ich2026/ich2026-hero-emblem-640.webp",
         "width": 640
       },
       {
-        "bytes": 19118,
+        "bytes": 17660,
         "height": 540,
         "path": "optimized/ich2026/ich2026-hero-emblem-960.webp",
         "width": 960
       },
       {
-        "bytes": 27752,
+        "bytes": 28130,
         "height": 720,
         "path": "optimized/ich2026/ich2026-hero-emblem-1280.webp",
         "width": 1280
       },
       {
-        "bytes": 49802,
+        "bytes": 51476,
         "height": 1080,
         "path": "optimized/ich2026/ich2026-hero-emblem-1920.webp",
         "width": 1920
