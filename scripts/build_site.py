@@ -20,9 +20,9 @@ OG_IMAGES: dict[str, str] = {
     "about": "ui/social-preview.jpg",
     "former": "ui/social-preview.jpg",
     "communications": "ui/social-preview.jpg",
-    "ich2026": "ich2026/ich2026-hero-emblem.jpg",
+    "ich2026": "ich2026/ich2026-logo-landscape.png",
     "keynote": "ich2026/conference-volcano.jpg",
-    "programme": "ich2026/ich2026-logo-landscape.png",
+    "programme": "ich2026/ich2026-hero-emblem.jpg",
     "registration": "venue/puerto-varas-waterfront.jpg",
     "venue": "venue/hotel-bellavista-window.jpg",
     "sponsors": "ich2026/pto-varas2.png",
@@ -35,9 +35,9 @@ HERO_IMAGES: dict[str, str] = {
     "about": "ui/home-science-hero.webp?v=virus-fill-20260521",
     "former": "former-meetings/2023-seoul-2.jpg",
     "communications": "ich2026/hantavirus-em.jpg",
-    "ich2026": "ich2026/ich2026-hero-emblem.jpg",
+    "ich2026": "ich2026/ich2026-logo-landscape.png",
     "keynote": "ich2026/conference-volcano.jpg",
-    "programme": "ich2026/ich2026-logo-landscape.png",
+    "programme": "ich2026/ich2026-hero-emblem.jpg",
     "registration": "venue/puerto-varas-waterfront.jpg",
     "venue": "venue/hotel-bellavista-window.jpg",
     "sponsors": "ich2026/pto-varas2.png",
@@ -104,7 +104,7 @@ CONFERENCE_JSON_LD_TEMPLATE = """{
       "url": "__SITE_URL__"
     },
     "url": "__SITE_URL__/ich2026",
-    "image": "__SITE_URL__/assets/images/ich2026/ich2026-hero-emblem.jpg",
+    "image": "__SITE_URL__/assets/images/ich2026/ich2026-logo-landscape.png",
     "description": "International Conference on Hantaviruses 2026 in Puerto Varas, Chile. Covering viral epidemiology, ecology, virus-host interactions, pathogenesis, vaccines and therapeutics."
   }"""
 
@@ -316,6 +316,7 @@ LOCATION_CAROUSEL_IMAGES = [
     ("01", "Puerto Varas and Osorno Volcano", "Osorno Volcano and Puerto Varas church by Lake Llanquihue", "ich2026/from-zip/pvaras.webp"),
     ("02", "Lake District setting", "Panoramic Puerto Varas view with Lake Llanquihue and Osorno Volcano", "ich2026/from-zip/pvaras2.jpg"),
     ("03", "Lake Llanquihue activities", "Kayaks on Lake Llanquihue near Puerto Varas", "ich2026/from-zip/sea-kayak-puerto-varas.jpg"),
+    ("04", "Osorno Volcano view", "Osorno Volcano seen from the Puerto Varas area", "ich2026/from-zip/volcan-puerto-varas.jpg"),
 ]
 
 
@@ -1072,7 +1073,7 @@ def location_carousel(prefix: str) -> str:
 def ich2026_page(prefix: str) -> str:
     return f"""
       <section class="ich-hero" aria-labelledby="ich-title">
-        {responsive_image(prefix, "ich2026/ich2026-hero-emblem.jpg", "ICH2026 conference visual identity emblem on a scientific blue background", class_name="ich-hero-bg", fetchpriority="high", sizes="100vw")}
+        {responsive_image(prefix, "ich2026/ich2026-logo-landscape.png", "ICH2026 conference visual identity over the Puerto Varas and Osorno Volcano illustration", class_name="ich-hero-bg", fetchpriority="high", sizes="100vw")}
         <div class="ich-hero-overlay"></div>
         <div class="ich-hero-copy reveal is-visible">
           <p class="eyebrow">International Conference on Hantaviruses</p>
@@ -1192,7 +1193,7 @@ def keynote_page(prefix: str) -> str:
 def programme_page(prefix: str) -> str:
     crumbs = [("Home", local(prefix)), ("ICH2026", local(prefix, "ich2026/")), ("Programme", None)]
     return f"""
-      {page_hero(prefix, "ICH2026 Program", "International Hantavirus Conference", "November 2-4, followed by the Andes Virus Workshop on November 5.", "ich2026/ich2026-logo-landscape.png", [("Registration", local(prefix, "ich2026/abstracts-registration/"), "button-primary")], breadcrumbs=crumbs)}
+      {page_hero(prefix, "ICH2026 Program", "International Hantavirus Conference", "November 2-4, followed by the Andes Virus Workshop on November 5.", "ich2026/ich2026-hero-emblem.jpg", [("Registration", local(prefix, "ich2026/abstracts-registration/"), "button-primary")], breadcrumbs=crumbs)}
       <section class="section program">
         <div class="section-shell">
           <div class="program-intro reveal">

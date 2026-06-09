@@ -3301,6 +3301,109 @@
     ],
     "width": 1600
   },
+  "ich2026/from-zip/volcan-puerto-varas.jpg": {
+    "bytes": 334515,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 9765,
+          "height": 213,
+          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 20002,
+          "height": 320,
+          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 33237,
+          "height": 427,
+          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 65444,
+          "height": 640,
+          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 91234,
+          "height": 800,
+          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-1200.avif",
+          "width": 1200
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 12042,
+          "height": 213,
+          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 25178,
+          "height": 320,
+          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 42438,
+          "height": 427,
+          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 85142,
+          "height": 640,
+          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 122724,
+          "height": 800,
+          "path": "optimized/ich2026/from-zip/volcan-puerto-varas-1200.webp",
+          "width": 1200
+        }
+      ]
+    },
+    "height": 800,
+    "variants": [
+      {
+        "bytes": 12042,
+        "height": 213,
+        "path": "optimized/ich2026/from-zip/volcan-puerto-varas-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 25178,
+        "height": 320,
+        "path": "optimized/ich2026/from-zip/volcan-puerto-varas-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 42438,
+        "height": 427,
+        "path": "optimized/ich2026/from-zip/volcan-puerto-varas-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 85142,
+        "height": 640,
+        "path": "optimized/ich2026/from-zip/volcan-puerto-varas-960.webp",
+        "width": 960
+      },
+      {
+        "bytes": 122724,
+        "height": 800,
+        "path": "optimized/ich2026/from-zip/volcan-puerto-varas-1200.webp",
+        "width": 1200
+      }
+    ],
+    "width": 1200
+  },
   "ich2026/hantavirus-em.jpg": {
     "bytes": 89331,
     "formats": {

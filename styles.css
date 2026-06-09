@@ -6289,7 +6289,7 @@ body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [
 }
 
 body[data-page="ich2026"] .ich-hero-bg {
-  --hero-focal-x: 55%;
+  --hero-focal-x: 64%;
   --hero-focal-y: 50%;
 }
 
@@ -6320,7 +6320,7 @@ body[data-page="sponsors"] .page-hero {
 
 @media (max-width: 1180px) {
   body[data-page="ich2026"] .ich-hero-bg {
-    --hero-focal-x: 58%;
+    --hero-focal-x: 66%;
     --hero-focal-y: 50%;
   }
 
@@ -6352,7 +6352,7 @@ body[data-page="sponsors"] .page-hero {
 
 @media (max-width: 900px) {
   body[data-page="ich2026"] .ich-hero-bg {
-    --hero-focal-x: 32%;
+    --hero-focal-x: 68%;
     --hero-focal-y: 50%;
   }
 
@@ -7276,7 +7276,7 @@ body:is([data-page="about"], [data-page="home"]) .advisor-photo img[alt="Piet Ma
 
 @media (max-width: 780px) {
   body[data-page="ich2026"] .ich-hero-bg {
-    --hero-focal-x: 32%;
+    --hero-focal-x: 68%;
     --hero-focal-y: 50%;
   }
 
