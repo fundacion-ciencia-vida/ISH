@@ -293,7 +293,7 @@ FORMER_GALLERIES = [
 
 TRAVEL_LINKS = [
     ("document", "Practical tips for visiting Chile", "PDF guide with practical advice for ICH2026 visitors.", PRACTICAL_TIPS_CHILE),
-    ("hotel", "Hotel Bellavista", "Conference venue and event facilities.", "https://hotelbellavista.cl/reuniones-y-eventos-corporativos-2/"),
+    ("hotel", "Hotel Bellavista", "Conference venue and event facilities.", "https://hotelbellavista.cl/"),
     ("map-pin", "Venue map", "Av. Vicente Perez Rosales #060, Puerto Varas.", "https://goo.gl/maps/dv2jUC4hSGLvr2Ld9"),
     ("plane", "Santiago airport", "International arrival at Arturo Merino Benítez Airport.", "https://thesantiagoairport.com/"),
     ("route", "Santiago day trips", "Optional stop-over ideas near Santiago.", "https://www.tripadvisor.com/Attractions-g294305-Activities-c42-t205-Santiago_Santiago_Metropolitan_Region.html"),
@@ -1275,7 +1275,7 @@ def venue_page(prefix: str) -> str:
     links = "".join(travel_link_card(prefix, icon, label, description, href) for icon, label, description, href in TRAVEL_LINKS)
     crumbs = [("Home", local(prefix)), ("ICH2026", local(prefix, "ich2026/")), ("Venue & Travel", None)]
     return f"""
-      {page_hero(prefix, "ICH2026 Venue & Travel", "Hotel Bellavista, Puerto Varas.", "The 2026 meeting will take place in the Hotel Bellavista, Puerto Varas.", "venue/hotel-bellavista-window.jpg", [("Open map", "https://goo.gl/maps/dv2jUC4hSGLvr2Ld9", "button-primary"), ("Practical tips", local(prefix, PRACTICAL_TIPS_CHILE), "button-secondary"), ("Hotel Bellavista", "https://hotelbellavista.cl/reuniones-y-eventos-corporativos-2/", "button-secondary")], breadcrumbs=crumbs)}
+      {page_hero(prefix, "ICH2026 Venue & Travel", "Hotel Bellavista, Puerto Varas.", "The 2026 meeting will take place in the Hotel Bellavista, Puerto Varas.", "venue/hotel-bellavista-window.jpg", [("Open map", "https://goo.gl/maps/dv2jUC4hSGLvr2Ld9", "button-primary"), ("Practical tips", local(prefix, PRACTICAL_TIPS_CHILE), "button-secondary"), ("Hotel Bellavista", "https://hotelbellavista.cl/", "button-secondary")], breadcrumbs=crumbs)}
       <section class="section venue">
         <div class="section-shell venue-layout">
           <div class="venue-copy reveal">
