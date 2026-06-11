@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-SITE_URL = os.environ.get("SITE_URL", "https://ache1312.github.io/hantavirussociety").rstrip("/")
+SITE_URL = os.environ.get("SITE_URL", "https://fundacion-ciencia-vida.github.io/ISH").rstrip("/")
 STYLESHEET = "styles.min.css"
 FONTSHEET = "fonts.min.css"
 SCRIPT = "script.min.js"
@@ -160,7 +160,7 @@ NAV_GROUPS = [
 ICH_NAV_KEYS = {"ich2026", "keynote", "programme", "registration", "venue", "sponsors"}
 
 MEMBERSHIP_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSc0IHUnT80-qDJn2wU4pLXKQ1F_VEdcziqVL-47iGGAwsLBEA/viewform?pli=1"
-CONFERENCE_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSfMc-cPx3hL8-Q67gN3uFLpQiZlgOD5lr03vvze29w4axGWtQ/viewform"
+CONFERENCE_FORM = "https://4id.network/ich2026/login"
 
 BOARD = [
     ("Nicole Tischler", "President ISH | Chile", "board/nicole-tischler.jpg", "https://orcid.org/0000-0002-4578-4780"),
@@ -1097,9 +1097,9 @@ def ich2026_page(prefix: str) -> str:
       </section>
       <section class="conference-summary" aria-label="ICH2026 quick facts">
         <div class="summary-item"><span>Dates</span><strong>November 2-5, 2026</strong></div>
-        <div class="summary-item"><span>City</span><strong>Puerto Varas, Chile</strong></div>
-        <div class="summary-item"><span>Venue</span><strong>Hotel Bellavista</strong></div>
-        <div class="summary-item"><span>Focus</span><strong>Hantavirus science and Andes Virus workshop</strong></div>
+        <div class="summary-item"><span>Abstract deadline</span><strong>July 15, 2026</strong></div>
+        <div class="summary-item"><span>Early bird</span><strong>Until August 15</strong></div>
+        <div class="summary-item"><span>Registration</span><strong>Open through 4ID</strong></div>
       </section>
       <section class="section intro-band">
         <div class="section-shell ich-story">
@@ -1212,14 +1212,55 @@ def programme_page(prefix: str) -> str:
 def registration_page(prefix: str) -> str:
     crumbs = [("Home", local(prefix)), ("ICH2026", local(prefix, "ich2026/")), ("Abstracts & Registration", None)]
     return f"""
-      {page_hero(prefix, "ICH2026 Registration & Abstract Submission", "Registration and abstract submission.", "Abstract submission opens in May 2026, with early bird registration planned for May-July.", "venue/puerto-varas-waterfront.jpg", [("Conference form", CONFERENCE_FORM, "button-primary"), ("Contact", contact_href(prefix), "button-secondary")], breadcrumbs=crumbs)}
+      {page_hero(prefix, "ICH2026 Registration & Abstract Submission", "Registration and abstract submission.", "Submit abstracts until July 15, 2026. Early bird registration is available until August 15.", "venue/puerto-varas-waterfront.jpg", [("Submit abstract / register", CONFERENCE_FORM, "button-primary"), ("Contact", contact_href(prefix), "button-secondary")], breadcrumbs=crumbs)}
       <section class="section intro-band">
         <div class="section-shell registration-flow-layout">
-          <div class="section-heading reveal"><p class="eyebrow">Registration flow</p><h2>ICH2026 Registration & Abstract Submission</h2><p>Comming soon ...</p><p>We apologize for the delay. Our team is currently supporting the cruise ship emergency.</p></div>
+          <div class="section-heading reveal"><p class="eyebrow">Deadlines</p><h2>Registration and abstract submission are open.</h2><p>Use the 4ID portal to submit abstracts and complete registration for ICH2026.</p><a class="button button-primary" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Submit abstract / register</a></div>
           <div class="registration-flow">
-            <article class="registration-item reveal"><span>Abstract Submission</span><strong>Opening May 2026</strong><a class="text-link" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Link</a></article>
-            <article class="registration-item reveal"><span>Early Bird Registration</span><strong>May - July</strong><a class="text-link" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Link</a></article>
-            <article class="registration-item reveal"><span>Standar Registration</span><strong>August - October</strong><a class="text-link" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Link</a></article>
+            <article class="registration-item reveal"><span>Abstract submission deadline</span><strong>Until July 15</strong><p>Abstract submission is handled through the same 4ID portal as registration.</p><a class="text-link" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Open submission portal</a></article>
+            <article class="registration-item reveal"><span>Early bird registration</span><strong>Until August 15</strong><p>Early bird fees apply to ICH2026 registration from November 2-4.</p><a class="text-link" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Register early</a></article>
+            <article class="registration-item reveal"><span>Late registration</span><strong>Until October 15</strong><p>Late fees apply after the early bird period closes.</p><a class="text-link" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Register</a></article>
+          </div>
+        </div>
+      </section>
+      <section class="section data-section">
+        <div class="section-shell">
+          <div class="section-heading compact reveal">
+            <p class="eyebrow">Registration fees</p>
+            <h2>ICH2026 registration, November 2-4.</h2>
+            <p>Fees are listed in Chilean pesos (CLP).</p>
+          </div>
+          <div class="fee-table-wrap reveal">
+            <table class="fee-table">
+              <caption>ICH2026 registration fees</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Category</th>
+                  <th scope="col">Early bird<br><span>until August 15</span></th>
+                  <th scope="col">Late<br><span>until October 15</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Undergraduate Students</th><td>$240.000</td><td>$275.000</td></tr>
+                <tr><th scope="row">Graduate Students</th><td>$280.000</td><td>$350.000</td></tr>
+                <tr><th scope="row">Postdocs &amp; Research Assistants</th><td>$320.000</td><td>$390.000</td></tr>
+                <tr><th scope="row">Standard <span>Research Professors, Physicians, Others</span></th><td>$380.000</td><td>$450.000</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="section intro-band">
+        <div class="section-shell andv-fee-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">ANDV Workshop</p>
+            <h2>Andes Virus Workshop, November 5.</h2>
+          </div>
+          <div class="andv-fee-card reveal">
+            <span>All categories</span>
+            <strong>$20.000</strong>
+            <p>Workshop registration is available only together with ICH2026 registration.</p>
+            <a class="button button-primary" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Register through 4ID</a>
           </div>
         </div>
       </section>"""
