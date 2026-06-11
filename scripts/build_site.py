@@ -955,17 +955,22 @@ def committee_grid(
     people: list[tuple[str, str, str, str, str, str]],
     class_name: str = "committee-people-grid",
 ) -> str:
+    def affiliation_html(affiliation: str) -> str:
+        if affiliation == "National Institute of Infectious Diseases / Japan Institute for Health Security":
+            return "National Institute of Infectious Diseases<br>Japan Institute for Health Security"
+        return escape(affiliation)
+
     cards = []
     for name, role, affiliation, location, image, href in people:
         location_html = f"<span>{escape(location)}</span>" if location else ""
         cards.append(
             f"""
             <article class="committee-person reveal" role="listitem">
-              {responsive_image(prefix, image, name, loading="lazy", decoding="async", sizes="(max-width: 520px) 112px, (max-width: 780px) 128px, 180px")}
+              {responsive_image(prefix, image, name, loading="lazy", decoding="async", sizes="(max-width: 520px) 156px, (max-width: 780px) 166px, 312px")}
               <div>
                 <h3><a href="{href}" target="_blank" rel="noreferrer">{escape(name)}</a></h3>
                 <p>{escape(role)}</p>
-                <span>{escape(affiliation)}</span>
+                <span>{affiliation_html(affiliation)}</span>
                 {location_html}
               </div>
             </article>"""
