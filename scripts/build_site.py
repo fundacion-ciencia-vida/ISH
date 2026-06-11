@@ -799,13 +799,14 @@ def home_page(
           <div class="hero-panel-meta" aria-label="Conference location and venue">
             <span>Puerto Varas, Chile</span>
             <span>Hotel Bellavista</span>
+            <span class="hero-panel-deadline">Abstract deadline: July 15, 2026</span>
           </div>
           <div class="countdown" data-countdown="2026-11-02" aria-label="Time until ICH2026">
             <div class="countdown-unit"><span class="countdown-val" data-unit="days">--</span><span class="countdown-label">Days</span></div>
             <div class="countdown-unit"><span class="countdown-val" data-unit="hours">--</span><span class="countdown-label">Hours</span></div>
             <div class="countdown-unit"><span class="countdown-val" data-unit="minutes">--</span><span class="countdown-label">Minutes</span></div>
           </div>
-          <a class="hero-panel-link" href="{local(prefix, "ich2026/programme/")}">Programme</a>
+          <a class="hero-panel-link" href="{local(prefix, "ich2026/abstracts-registration/")}">Submit abstract</a>
         </aside>
       </section>
       <section class="section intro-band">

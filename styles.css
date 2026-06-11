@@ -850,6 +850,13 @@ h3 {
   line-height: 1.35;
 }
 
+.hero-panel-meta .hero-panel-deadline {
+  grid-column: 1 / -1;
+  padding-top: 2px;
+  color: var(--white);
+  font-size: 12px;
+}
+
 .hero-panel-link {
   display: inline-flex;
   align-items: center;
