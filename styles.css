@@ -2135,6 +2135,11 @@ h3 {
   cursor: zoom-in;
 }
 
+.archive-material-image .responsive-image {
+  width: 100%;
+  height: 100%;
+}
+
 .archive-material-image img {
   width: 100%;
   height: 100%;
