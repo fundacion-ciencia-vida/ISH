@@ -161,6 +161,7 @@ ICH_NAV_KEYS = {"ich2026", "keynote", "programme", "registration", "venue", "spo
 
 MEMBERSHIP_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSc0IHUnT80-qDJn2wU4pLXKQ1F_VEdcziqVL-47iGGAwsLBEA/viewform?pli=1"
 CONFERENCE_FORM = "https://4id.network/ich2026/login"
+PRACTICAL_TIPS_CHILE = "assets/documents/ich2026/practical-tips-visit-chile.pdf"
 
 BOARD = [
     ("Nicole Tischler", "President ISH | Chile", "board/nicole-tischler.jpg", "https://orcid.org/0000-0002-4578-4780"),
@@ -235,17 +236,17 @@ SPONSOR_GROUP_LABELS = [
 
 FORMER_MEETINGS = [
     ("XII", "2023", "Seoul, Republic of Korea", "International Conference on Hantaviruses", "assets/documents/former-meetings/2023-seoul-abstract-book.pdf", "former-meetings/2023-seoul-1.jpg", ""),
-    ("XI", "2019", "Leuven, Belgium", "International Conference on HFRS, HPS & Hantaviruses", "assets/documents/former-meetings/2019-leuven-abstract-book.pdf", "former-meetings/2019-leuven-1.jpg", "Meeting report pending"),
-    ("X", "2016", "Colorado, USA", "Abstract Book", "assets/documents/former-meetings/2016-colorado-abstract-book.pdf", "former-meetings/2016-colorado-1.jpg", "Meeting report pending"),
+    ("XI", "2019", "Leuven, Belgium", "International Conference on HFRS, HPS & Hantaviruses", "assets/documents/former-meetings/2019-leuven-abstract-book.pdf", "former-meetings/2019-leuven-1.jpg", "assets/documents/former-meetings/meeting-reports/2019-leuven-meeting-report.pdf"),
+    ("X", "2016", "Colorado, USA", "Abstract Book", "assets/documents/former-meetings/2016-colorado-abstract-book.pdf", "former-meetings/2016-colorado-1.jpg", "assets/documents/former-meetings/meeting-reports/2016-colorado-meeting-report-draft.pdf"),
     ("IX", "2013", "Beijing, China", "Abstract Book", "assets/documents/former-meetings/2013-beijing-abstract-book.pdf", "former-meetings/2013-china-1.jpg", "Meeting report pending"),
     ("VIII", "2010", "Athens, Greece", "", "", "", ""),
     ("VII", "2007", "Buenos Aires, Argentina", "", "", "", ""),
     ("VI", "2004", "Seoul, Republic of Korea", "", "", "", ""),
-    ("V", "2001", "Annecy, France", "", "", "", "Meeting report pending"),
+    ("V", "2001", "Annecy, France", "", "", "", "assets/documents/former-meetings/meeting-reports/2001-annecy-meeting-report.pdf"),
     ("IV", "1998", "Atlanta, USA", "International Conference on HFRS", "", "", "Summary pending"),
-    ("III", "1995", "Helsinki, Finland", "", "", "", "Meeting report pending"),
+    ("III", "1995", "Helsinki, Finland", "", "", "", "assets/documents/former-meetings/meeting-reports/1995-helsinki-meeting-report.pdf"),
     ("II", "1992", "Beijing, China", "", "", "", "Meeting report pending"),
-    ("I", "1989", "Seoul, Korea", "", "", "", "Meeting report pending"),
+    ("I", "1989", "Seoul, Korea", "", "", "", "assets/documents/former-meetings/meeting-reports/1989-seoul-meeting-report.pdf"),
 ]
 
 FORMER_GALLERIES = [
@@ -291,6 +292,7 @@ FORMER_GALLERIES = [
 ]
 
 TRAVEL_LINKS = [
+    ("document", "Practical tips for visiting Chile", "PDF guide with practical advice for ICH2026 visitors.", PRACTICAL_TIPS_CHILE),
     ("hotel", "Hotel Bellavista", "Conference venue and event facilities.", "https://hotelbellavista.cl/reuniones-y-eventos-corporativos-2/"),
     ("map-pin", "Venue map", "Av. Vicente Perez Rosales #060, Puerto Varas.", "https://goo.gl/maps/dv2jUC4hSGLvr2Ld9"),
     ("plane", "Santiago airport", "International arrival at Arturo Merino Benítez Airport.", "https://thesantiagoairport.com/"),
@@ -304,6 +306,7 @@ TRAVEL_LINKS = [
 
 TRAVEL_ICONS = {
     "car": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14l-1.6-5.2A3 3 0 0 0 14.5 10h-5a3 3 0 0 0-2.9 1.8L5 17Z"/><path d="M7 17v2"/><path d="M17 17v2"/><path d="M6.5 14h11"/><circle cx="8" cy="17" r="1"/><circle cx="16" cy="17" r="1"/></svg>',
+    "document": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M14 3v5h5"/><path d="M8.5 13h7"/><path d="M8.5 16h5"/></svg>',
     "hotel": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v15"/><path d="M16 10h2a2 2 0 0 1 2 2v9"/><path d="M8 8h.01"/><path d="M12 8h.01"/><path d="M8 12h.01"/><path d="M12 12h.01"/><path d="M9 21v-4h3v4"/><path d="M3 21h18"/></svg>',
     "mail": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="m4 8 8 6 8-6"/></svg>',
     "map-pin": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>',
@@ -597,10 +600,11 @@ def travel_icon(name: str) -> str:
     return f'<span class="travel-link-icon" aria-hidden="true">{TRAVEL_ICONS[name]}</span>'
 
 
-def travel_link_card(icon: str, label: str, description: str, href: str) -> str:
-    target = "" if href.startswith("mailto:") else ' target="_blank" rel="noreferrer"'
+def travel_link_card(prefix: str, icon: str, label: str, description: str, href: str) -> str:
+    resolved_href = href if href.startswith(("http://", "https://", "mailto:")) else local(prefix, href)
+    target = "" if resolved_href.startswith("mailto:") else ' target="_blank" rel="noreferrer"'
     return (
-        f'<a class="travel-link" href="{escape(href, quote=True)}"{target}>'
+        f'<a class="travel-link" href="{escape(resolved_href, quote=True)}"{target}>'
         f'{travel_icon(icon)}'
         f'<span class="travel-link-copy"><strong>{escape(label)}</strong><small>{escape(description)}</small></span>'
         "</a>"
@@ -1268,10 +1272,10 @@ def registration_page(prefix: str) -> str:
 
 
 def venue_page(prefix: str) -> str:
-    links = "".join(travel_link_card(icon, label, description, href) for icon, label, description, href in TRAVEL_LINKS)
+    links = "".join(travel_link_card(prefix, icon, label, description, href) for icon, label, description, href in TRAVEL_LINKS)
     crumbs = [("Home", local(prefix)), ("ICH2026", local(prefix, "ich2026/")), ("Venue & Travel", None)]
     return f"""
-      {page_hero(prefix, "ICH2026 Venue & Travel", "Hotel Bellavista, Puerto Varas.", "The 2026 meeting will take place in the Hotel Bellavista, Puerto Varas.", "venue/hotel-bellavista-window.jpg", [("Open map", "https://goo.gl/maps/dv2jUC4hSGLvr2Ld9", "button-primary"), ("Hotel Bellavista", "https://hotelbellavista.cl/reuniones-y-eventos-corporativos-2/", "button-secondary")], breadcrumbs=crumbs)}
+      {page_hero(prefix, "ICH2026 Venue & Travel", "Hotel Bellavista, Puerto Varas.", "The 2026 meeting will take place in the Hotel Bellavista, Puerto Varas.", "venue/hotel-bellavista-window.jpg", [("Open map", "https://goo.gl/maps/dv2jUC4hSGLvr2Ld9", "button-primary"), ("Practical tips", local(prefix, PRACTICAL_TIPS_CHILE), "button-secondary"), ("Hotel Bellavista", "https://hotelbellavista.cl/reuniones-y-eventos-corporativos-2/", "button-secondary")], breadcrumbs=crumbs)}
       <section class="section venue">
         <div class="section-shell venue-layout">
           <div class="venue-copy reveal">
@@ -1438,21 +1442,37 @@ def timeline_abstract_link(prefix: str, label: str, href: str) -> str:
     )
 
 
+def timeline_report_link(prefix: str, href: str) -> str:
+    if not href or not href.startswith("assets/"):
+        return ""
+    return (
+        f'<a class="archive-timeline-abstract archive-timeline-report" href="{local(prefix, href)}" target="_blank" rel="noreferrer" '
+        'aria-label="Meeting Report">'
+        '<span class="archive-timeline-abstract-icon" aria-hidden="true">'
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" '
+        'stroke-linecap="round" stroke-linejoin="round">'
+        '<path d="M7 3h7l4 4v14H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/>'
+        '<path d="M14 3v5h5"/><path d="M9 12h6"/><path d="M9 15h4"/>'
+        '</svg></span><span>Report</span></a>'
+    )
+
+
 def former_meetings_timeline(prefix: str) -> str:
     items = []
     timeline_entries = list(
         reversed(
             [
-                (number, year, location, abstract_label, abstract_href, False)
-                for number, year, location, abstract_label, abstract_href, *_ in FORMER_MEETINGS
+                (number, year, location, abstract_label, abstract_href, report_href, False)
+                for number, year, location, abstract_label, abstract_href, _, report_href in FORMER_MEETINGS
             ]
         )
     )
-    timeline_entries.append(("XIII", "2026", "Puerto Varas, Chile", "", "", True))
-    for index, (number, year, location, abstract_label, abstract_href, is_upcoming) in enumerate(timeline_entries):
+    timeline_entries.append(("XIII", "2026", "Puerto Varas, Chile", "", "", "", True))
+    for index, (number, year, location, abstract_label, abstract_href, report_href, is_upcoming) in enumerate(timeline_entries):
         item_class = "archive-timeline-item is-upcoming" if is_upcoming else "archive-timeline-item"
         timeline_tag = '<span class="archive-timeline-tag">Next ICH</span>' if is_upcoming else ""
-        abstract_html = timeline_abstract_link(prefix, abstract_label, abstract_href)
+        links = timeline_abstract_link(prefix, abstract_label, abstract_href) + timeline_report_link(prefix, report_href)
+        document_links = f'<div class="archive-timeline-links">{links}</div>' if links else ""
         items.append(
             f"""
             <li class="{item_class}" style="--timeline-index: {index}">
@@ -1461,7 +1481,7 @@ def former_meetings_timeline(prefix: str) -> str:
                 <span class="archive-timeline-no">{escape(number)}</span>
                 <time class="archive-timeline-year" datetime="{escape(year)}">{escape(year)}</time>
                 <strong class="archive-timeline-location">{escape(location)}</strong>
-                {abstract_html}
+                {document_links}
               </div>
             </li>"""
         )
@@ -1475,9 +1495,9 @@ def former_meetings_timeline(prefix: str) -> str:
 
 def former_meeting_materials(prefix: str) -> str:
     cards = []
-    meeting_lookup = {year: (abstract_label, abstract_href) for _, year, _, abstract_label, abstract_href, _, _ in FORMER_MEETINGS}
-    for number, year, location, images in FORMER_GALLERIES:
-        abstract_label, abstract_href = meeting_lookup.get(year, ("Abstract Book", ""))
+    meeting_lookup = {year: (number, abstract_label, abstract_href) for number, year, _, abstract_label, abstract_href, _, _ in FORMER_MEETINGS}
+    for _, year, location, images in FORMER_GALLERIES:
+        number, abstract_label, abstract_href = meeting_lookup.get(year, ("", "Abstract Book", ""))
         if not images and not abstract_href:
             continue
         lead = images[0] if images else "ui/society-archive-2.png"
@@ -1493,22 +1513,22 @@ def former_meeting_materials(prefix: str) -> str:
                 f'data-lightbox-caption="{escape(caption)}" data-lightbox-alt="{escape(f"ICH {year} {location} photo {index}")}" tabindex="-1" aria-hidden="true">Photo {index}</a>'
             )
         hidden_gallery = "".join(gallery_links[1:])
+        materials_label = f"{escape(number)} | {escape(year)}"
         lead_caption = f"ICH {year} | {location} | Photo 1 of {photo_count}"
         photo_label = f"{photo_count} photo" if photo_count == 1 else f"{photo_count} photos"
-        materials_label = f"{escape(number)} | {escape(year)}"
         lead_lightbox_src = optimized_image_url(prefix, lead)
         cards.append(
             f"""
             <article class="archive-material reveal">
               <a class="archive-material-image" href="{img(prefix, lead)}" data-lightbox-src="{lead_lightbox_src}" data-lightbox-full-src="{img(prefix, lead)}" data-lightbox-group="{escape(gallery_id)}" data-lightbox-caption="{escape(lead_caption)}" aria-label="Open {escape(photo_label)} from ICH {escape(year)} in {escape(location)}">
-                {responsive_image(prefix, lead, f"ICH {year} {location}", loading="lazy", decoding="async", sizes="(max-width: 780px) 92vw, 560px")}
+                {responsive_image(prefix, lead, f"ICH {year} {location}", loading="lazy", decoding="async", sizes="(max-width: 780px) 92vw, 360px")}
                 <span class="archive-photo-count">{escape(photo_label)}</span>
                 <span class="archive-gallery-label">View gallery</span>
               </a>
               <div class="archive-material-copy">
                 <span>{materials_label}</span>
                 <h3>{escape(location)}</h3>
-                {abstract_book_link(prefix, abstract_label or "Abstract Book", abstract_href)}
+                {abstract_book_link(prefix, "Abstract Book", abstract_href)}
                 {hidden_gallery}
               </div>
             </article>"""
