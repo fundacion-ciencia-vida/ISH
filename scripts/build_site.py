@@ -345,6 +345,7 @@ IMAGE_DIMENSION_FALLBACKS = {
     "ui/home-hero-global-medallion.webp": (1855, 848),
     "ui/home-hero-microscopy-aesthetic.webp": (1855, 848),
     "ui/home-hero-logo-background.webp": (1855, 848),
+    "ich2026/4id.jpg": (1530, 768),
     "ich2026/from-zip/pradera-puerto-varas-public-domain.jpg": (1600, 1200),
 }
 FILE_VERSION_CACHE: dict[str, str] = {}
@@ -1230,6 +1231,12 @@ def registration_page(prefix: str) -> str:
       <section class="section intro-band">
         <div class="section-shell registration-flow-layout">
           <div class="section-heading reveal"><p class="eyebrow">Deadlines</p><h2>Registration and abstract submission are open.</h2><p>Use the 4ID portal to submit abstracts and complete registration for ICH2026.</p><p>Abstracts should be 250 words maximum, excluding title, authors, and affiliations.</p><a class="button button-primary" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Submit abstract / register</a></div>
+          <figure class="registration-portal reveal">
+            <a href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer" aria-label="Open the 4ID ICH2026 submission and registration portal">
+              {responsive_image(prefix, "ich2026/4id.jpg", "4ID platform for ICH2026 registration and abstract submission", loading="lazy", decoding="async", sizes="(max-width: 780px) 92vw, 620px")}
+            </a>
+            <figcaption>4ID registration portal</figcaption>
+          </figure>
         </div>
       </section>
       <section class="section data-section">

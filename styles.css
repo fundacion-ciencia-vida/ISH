@@ -3748,6 +3748,40 @@ body.lightbox-open {
   border-top: 1px solid var(--line);
 }
 
+.registration-portal {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding-top: 6px;
+}
+
+.registration-portal a {
+  display: block;
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid rgba(31, 111, 120, 0.16);
+  border-radius: 8px;
+  box-shadow: 0 22px 62px rgba(11, 17, 16, 0.1);
+}
+
+.registration-portal .responsive-image,
+.registration-portal img {
+  display: block;
+  width: 100%;
+}
+
+.registration-portal img {
+  height: auto;
+  object-fit: contain;
+}
+
+.registration-portal figcaption {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
 .registration-item {
   min-height: 0;
   padding: 26px 0;
