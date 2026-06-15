@@ -989,14 +989,9 @@ h3 {
   right: clamp(18px, 4.5vw, 64px);
   z-index: 3;
   display: grid;
-  width: clamp(92px, 9vw, 132px);
+  width: clamp(136px, 13vw, 210px);
   aspect-ratio: 512 / 396;
   place-items: center;
-  padding: clamp(10px, 1.1vw, 14px);
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.72);
-  border-radius: 8px;
-  box-shadow: 0 18px 48px rgba(6, 18, 31, 0.24);
 }
 
 .ich-hero-ish-logo .responsive-image,
@@ -4693,13 +4688,21 @@ body.lightbox-open {
     margin: 0 auto 44px;
   }
 
+  .ich-hero-ish-logo {
+    width: clamp(118px, 31vw, 132px);
+  }
+
+  .ich-hero .eyebrow {
+    max-width: calc(100% - 154px);
+  }
+
   .ich-hero h1 {
     font-size: clamp(22px, 6.8vw, 30px);
     white-space: nowrap;
   }
 
   .ich-hero .eyebrow {
-    max-width: 330px;
+    max-width: calc(100% - 154px);
     margin-bottom: 14px;
     font-size: clamp(18px, 5vw, 22px);
     line-height: 1.28;
