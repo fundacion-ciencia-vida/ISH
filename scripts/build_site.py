@@ -317,7 +317,7 @@ TRAVEL_ICONS = {
 
 LOCATION_CAROUSEL_IMAGES = [
     ("01", "Puerto Varas and Osorno Volcano", "Osorno Volcano and Puerto Varas church by Lake Llanquihue", "ich2026/from-zip/pvaras.webp"),
-    ("02", "Lake District setting", "Panoramic Puerto Varas view with Lake Llanquihue and Osorno Volcano", "ich2026/from-zip/pvaras2.jpg"),
+    ("02", "Puerto Varas countryside", "Pasture along Camino a Alerce near Puerto Varas", "ich2026/from-zip/pradera-puerto-varas-public-domain.jpg"),
     ("03", "Lake Llanquihue activities", "Kayaks on Lake Llanquihue near Puerto Varas", "ich2026/from-zip/sea-kayak-puerto-varas.jpg"),
     ("04", "Osorno Volcano view", "Osorno Volcano seen from the Puerto Varas area", "ich2026/from-zip/volcan-puerto-varas.jpg"),
 ]
@@ -345,6 +345,7 @@ IMAGE_DIMENSION_FALLBACKS = {
     "ui/home-hero-global-medallion.webp": (1855, 848),
     "ui/home-hero-microscopy-aesthetic.webp": (1855, 848),
     "ui/home-hero-logo-background.webp": (1855, 848),
+    "ich2026/from-zip/pradera-puerto-varas-public-domain.jpg": (1600, 1200),
 }
 FILE_VERSION_CACHE: dict[str, str] = {}
 
@@ -1085,6 +1086,9 @@ def ich2026_page(prefix: str) -> str:
       <section class="ich-hero" aria-labelledby="ich-title">
         {responsive_image(prefix, "ich2026/ich2026-logo-landscape.png", "ICH2026 conference visual identity over the Puerto Varas and Osorno Volcano illustration", class_name="ich-hero-bg", fetchpriority="high", sizes="100vw")}
         <div class="ich-hero-overlay"></div>
+        <a class="ich-hero-ish-logo" href="{local(prefix)}" aria-label="International Society for Hantaviruses home">
+          {responsive_image(prefix, "ui/logo.png", "International Society for Hantaviruses logo", loading="eager", decoding="async", sizes="(max-width: 780px) 96px, 132px")}
+        </a>
         <div class="ich-hero-copy reveal is-visible">
           <p class="eyebrow">International Conference on Hantaviruses</p>
           <h1 id="ich-title">Puerto Varas | Chile</h1>
@@ -1225,12 +1229,7 @@ def registration_page(prefix: str) -> str:
       {page_hero(prefix, "ICH2026 Registration & Abstract Submission", "Registration and abstract submission.", "Submit abstracts until July 15, 2026. Early bird registration is available until August 15.", "venue/puerto-varas-waterfront.jpg", [("Submit abstract / register", CONFERENCE_FORM, "button-primary"), ("Contact", contact_href(prefix), "button-secondary")], breadcrumbs=crumbs)}
       <section class="section intro-band">
         <div class="section-shell registration-flow-layout">
-          <div class="section-heading reveal"><p class="eyebrow">Deadlines</p><h2>Registration and abstract submission are open.</h2><p>Use the 4ID portal to submit abstracts and complete registration for ICH2026.</p><a class="button button-primary" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Submit abstract / register</a></div>
-          <div class="registration-flow">
-            <article class="registration-item reveal"><span>Abstract submission deadline</span><strong>Until July 15</strong><p>Abstract submission is handled through the same 4ID portal as registration.</p><a class="text-link" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Open submission portal</a></article>
-            <article class="registration-item reveal"><span>Early bird registration</span><strong>Until August 15</strong><p>Early bird fees apply to ICH2026 registration from November 2-4.</p><a class="text-link" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Register early</a></article>
-            <article class="registration-item reveal"><span>Late registration</span><strong>Until October 15</strong><p>Late fees apply after the early bird period closes.</p><a class="text-link" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Register</a></article>
-          </div>
+          <div class="section-heading reveal"><p class="eyebrow">Deadlines</p><h2>Registration and abstract submission are open.</h2><p>Use the 4ID portal to submit abstracts and complete registration for ICH2026.</p><p>Abstracts should be 250 words maximum, excluding title, authors, and affiliations.</p><a class="button button-primary" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Submit abstract / register</a></div>
         </div>
       </section>
       <section class="section data-section">
@@ -1505,7 +1504,7 @@ def former_meeting_materials(prefix: str) -> str:
         lead_lightbox_src = optimized_image_url(prefix, lead)
         cards.append(
             f"""
-            <article class="archive-material reveal">
+            <article class="archive-material reveal" data-archive-year="{escape(year)}">
               <a class="archive-material-image" href="{img(prefix, lead)}" data-lightbox-src="{lead_lightbox_src}" data-lightbox-full-src="{img(prefix, lead)}" data-lightbox-group="{escape(gallery_id)}" data-lightbox-caption="{escape(lead_caption)}" aria-label="Open {escape(photo_label)} from ICH {escape(year)} in {escape(location)}">
                 {responsive_image(prefix, lead, f"ICH {year} {location}", loading="lazy", decoding="async", sizes="(max-width: 780px) 92vw, 360px")}
                 <span class="archive-photo-count">{escape(photo_label)}</span>
