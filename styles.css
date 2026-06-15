@@ -3761,6 +3761,14 @@ body.lightbox-open {
   border-top: 1px solid var(--line);
 }
 
+.section-heading .fee-exchange-reference {
+  max-width: 640px;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
 .fee-table {
   width: 100%;
   min-width: 720px;

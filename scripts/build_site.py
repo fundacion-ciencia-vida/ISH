@@ -1239,6 +1239,7 @@ def registration_page(prefix: str) -> str:
             <p class="eyebrow">Registration fees</p>
             <h2>ICH2026 registration, November 2-4.</h2>
             <p>Fees are listed in Chilean pesos (CLP).</p>
+            <p class="fee-exchange-reference">Reference exchange rate, June 15, 2026: 1 USD ~ 899 CLP; 1 EUR ~ 1,041 CLP.</p>
           </div>
           <div class="fee-table-wrap reveal">
             <table class="fee-table">
@@ -1251,10 +1252,10 @@ def registration_page(prefix: str) -> str:
                 </tr>
               </thead>
               <tbody>
-                <tr><th scope="row">Undergraduate Students</th><td>$240.000</td><td>$275.000</td></tr>
-                <tr><th scope="row">Graduate Students</th><td>$280.000</td><td>$350.000</td></tr>
-                <tr><th scope="row">Postdocs &amp; Research Assistants</th><td>$320.000</td><td>$390.000</td></tr>
-                <tr><th scope="row">Standard <span>Research Professors, Physicians, Others</span></th><td>$380.000</td><td>$450.000</td></tr>
+                <tr><th scope="row">Undergraduate Students</th><td>$240,000</td><td>$275,000</td></tr>
+                <tr><th scope="row">Graduate Students</th><td>$280,000</td><td>$350,000</td></tr>
+                <tr><th scope="row">Postdocs &amp; Research Assistants</th><td>$320,000</td><td>$390,000</td></tr>
+                <tr><th scope="row">Standard <span>Research Professors, Physicians, Others</span></th><td>$380,000</td><td>$450,000</td></tr>
               </tbody>
             </table>
           </div>
@@ -1268,7 +1269,7 @@ def registration_page(prefix: str) -> str:
           </div>
           <div class="andv-fee-card reveal">
             <span>All categories</span>
-            <strong class="andv-workshop-price">$20.000</strong>
+            <strong class="andv-workshop-price">$20,000</strong>
             <p>Workshop registration is available only together with ICH2026 registration.</p>
             <a class="button button-primary" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Register through 4ID</a>
           </div>
@@ -1301,26 +1302,6 @@ def venue_page(prefix: str) -> str:
             </div>
           </div>
           <figure class="venue-image reveal">{responsive_image(prefix, "venue/puerto-varas-waterfront.jpg", "Hotel Bellavista conference room", loading="lazy", decoding="async", sizes="(max-width: 1060px) 100vw, 520px")}<figcaption>Hotel Bellavista conference facilities</figcaption></figure>
-        </div>
-      </section>
-      <section class="section hotel-planning">
-        <div class="section-shell hotel-planning-layout">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Hotels</p>
-            <h2>Accommodation information will be incorporated as it is confirmed.</h2>
-          </div>
-          <div class="hotel-planning-list reveal" aria-label="Hotel information status">
-            <article>
-              <span>Puerto Varas</span>
-              <h3>Conference-area hotels</h3>
-              <p>A curated list of hotels near Hotel Bellavista and central Puerto Varas will be added after confirmation by the organizing team.</p>
-            </article>
-            <article>
-              <span>Santiago airport</span>
-              <h3>Stop-over hotels</h3>
-              <p>Recommended hotels near Arturo Merino Benitez International Airport (SCL) will be added for participants who need an overnight connection before flying to Puerto Montt.</p>
-            </article>
-          </div>
         </div>
       </section>
       <section class="section intro-band">
