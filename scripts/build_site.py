@@ -1245,7 +1245,6 @@ def registration_page(prefix: str) -> str:
             <p class="eyebrow">Registration fees</p>
             <h2>ICH2026 registration, November 2-4.</h2>
             <p>Fees are listed in Chilean pesos (CLP). USD amounts are approximate.</p>
-            <p class="fee-exchange-reference">Reference exchange rate, June 16, 2026: 1 USD ~ 870 CLP; 1 EUR ~ 1,030 CLP.</p>
           </div>
           <div class="fee-table-wrap reveal">
             <table class="fee-table">
