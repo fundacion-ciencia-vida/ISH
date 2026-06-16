@@ -317,7 +317,7 @@ TRAVEL_ICONS = {
 
 LOCATION_CAROUSEL_IMAGES = [
     ("01", "Puerto Varas and Osorno Volcano", "Osorno Volcano and Puerto Varas church by Lake Llanquihue", "ich2026/from-zip/pvaras.webp"),
-    ("02", "Puerto Varas countryside", "Pasture along Camino a Alerce near Puerto Varas", "ich2026/from-zip/pradera-puerto-varas-public-domain.jpg"),
+    ("02", "Lake District waterfall", "Waterfall in the Puerto Varas and Lake District area", "ich2026/from-zip/salto.jpg"),
     ("03", "Lake Llanquihue activities", "Kayaks on Lake Llanquihue near Puerto Varas", "ich2026/from-zip/sea-kayak-puerto-varas.jpg"),
     ("04", "Osorno Volcano view", "Osorno Volcano seen from the Puerto Varas area", "ich2026/from-zip/volcan-puerto-varas.jpg"),
 ]
@@ -346,7 +346,7 @@ IMAGE_DIMENSION_FALLBACKS = {
     "ui/home-hero-microscopy-aesthetic.webp": (1855, 848),
     "ui/home-hero-logo-background.webp": (1855, 848),
     "ich2026/4id.jpg": (1530, 768),
-    "ich2026/from-zip/pradera-puerto-varas-public-domain.jpg": (1600, 1200),
+    "ich2026/from-zip/salto.jpg": (1000, 563),
 }
 FILE_VERSION_CACHE: dict[str, str] = {}
 
