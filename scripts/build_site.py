@@ -1244,8 +1244,8 @@ def registration_page(prefix: str) -> str:
           <div class="section-heading compact reveal">
             <p class="eyebrow">Registration fees</p>
             <h2>ICH2026 registration, November 2-4.</h2>
-            <p>Fees are listed in Chilean pesos (CLP).</p>
-            <p class="fee-exchange-reference">Reference exchange rate, June 15, 2026: 1 USD ~ 899 CLP; 1 EUR ~ 1,041 CLP.</p>
+            <p>Fees are listed in Chilean pesos (CLP). USD amounts are approximate.</p>
+            <p class="fee-exchange-reference">Reference exchange rate, June 16, 2026: 1 USD ~ 890 CLP; 1 EUR ~ 1,030 CLP.</p>
           </div>
           <div class="fee-table-wrap reveal">
             <table class="fee-table">
@@ -1253,15 +1253,17 @@ def registration_page(prefix: str) -> str:
               <thead>
                 <tr>
                   <th scope="col">Category</th>
-                  <th scope="col">Early bird<br><span>until August 15</span></th>
-                  <th scope="col">Late<br><span>until October 15</span></th>
+                  <th scope="col">Early bird<br><span>Chilean Pesos</span></th>
+                  <th scope="col">USD<br><span>approx.</span></th>
+                  <th scope="col">Late<br><span>Chilean Pesos</span></th>
+                  <th scope="col">USD<br><span>approx.</span></th>
                 </tr>
               </thead>
               <tbody>
-                <tr><th scope="row">Undergraduate Students</th><td>$240,000</td><td>$275,000</td></tr>
-                <tr><th scope="row">Graduate Students</th><td>$280,000</td><td>$350,000</td></tr>
-                <tr><th scope="row">Postdocs &amp; Research Assistants</th><td>$320,000</td><td>$390,000</td></tr>
-                <tr><th scope="row">Standard <span>Research Professors, Physicians, Others</span></th><td>$380,000</td><td>$450,000</td></tr>
+                <tr><th scope="row">Undergraduate Students</th><td>$240,000</td><td class="fee-usd">~US$270</td><td>$275,000</td><td class="fee-usd">~US$309</td></tr>
+                <tr><th scope="row">Graduate Students</th><td>$280,000</td><td class="fee-usd">~US$315</td><td>$350,000</td><td class="fee-usd">~US$393</td></tr>
+                <tr><th scope="row">Postdocs &amp; Research Assistants</th><td>$320,000</td><td class="fee-usd">~US$360</td><td>$390,000</td><td class="fee-usd">~US$438</td></tr>
+                <tr><th scope="row">Standard <span>Research Professors, Physicians, Others</span></th><td>$380,000</td><td class="fee-usd">~US$427</td><td>$450,000</td><td class="fee-usd">~US$506</td></tr>
               </tbody>
             </table>
           </div>
@@ -1276,6 +1278,7 @@ def registration_page(prefix: str) -> str:
           <div class="andv-fee-card reveal">
             <span>All categories</span>
             <strong class="andv-workshop-price">$20,000</strong>
+            <em class="andv-workshop-usd">~US$23</em>
             <p>Workshop registration is available only together with ICH2026 registration.</p>
             <a class="button button-primary" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Register through 4ID</a>
           </div>

@@ -3830,7 +3830,7 @@ body.lightbox-open {
 
 .fee-table {
   width: 100%;
-  min-width: 720px;
+  min-width: 880px;
   border-collapse: collapse;
   color: var(--ink);
 }
@@ -3864,8 +3864,8 @@ body.lightbox-open {
 
 .fee-table thead th:not(:first-child),
 .fee-table tbody td {
-  width: 22%;
-  padding-left: 28px;
+  width: 15%;
+  padding-left: 22px;
 }
 
 .fee-table thead span,
@@ -3891,6 +3891,12 @@ body.lightbox-open {
   font-weight: 850;
   line-height: 1.15;
   white-space: nowrap;
+}
+
+.fee-table .fee-usd {
+  color: var(--muted);
+  font-size: 20px;
+  font-weight: 800;
 }
 
 .andv-fee-layout {
@@ -3923,6 +3929,16 @@ body.lightbox-open {
 
 .andv-fee-card .andv-workshop-price {
   font-size: clamp(26px, 3.6vw, 42px);
+  margin-bottom: 8px;
+}
+
+.andv-workshop-usd {
+  display: block;
+  margin-bottom: 18px;
+  color: var(--muted);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
 }
 
 .andv-fee-card p {
@@ -3938,7 +3954,7 @@ body.lightbox-open {
   }
 
   .fee-table {
-    min-width: 640px;
+    min-width: 760px;
   }
 
   .fee-table th,
@@ -3957,7 +3973,11 @@ body.lightbox-open {
   }
 
   .fee-table tbody td {
-    font-size: 21px;
+    font-size: 19px;
+  }
+
+  .fee-table .fee-usd {
+    font-size: 17px;
   }
 }
 
