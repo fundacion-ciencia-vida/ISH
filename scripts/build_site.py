@@ -1227,10 +1227,10 @@ def programme_page(prefix: str) -> str:
 def registration_page(prefix: str) -> str:
     crumbs = [("Home", local(prefix)), ("ICH2026", local(prefix, "ich2026/")), ("Abstracts & Registration", None)]
     return f"""
-      {page_hero(prefix, "ICH2026 Registration & Abstract Submission", "Registration and abstract submission.", "Early bird registration is available until August 15.", "venue/puerto-varas-waterfront.jpg", [("Submit abstract / register", CONFERENCE_FORM, "button-primary"), ("Contact", contact_href(prefix), "button-secondary")], breadcrumbs=crumbs)}
+      {page_hero(prefix, "ICH2026 Registration & Abstract Submission", "Registration and abstract submission.", "Submit abstracts and complete registration through the official 4ID portal.", "venue/puerto-varas-waterfront.jpg", [("Submit abstract / register", CONFERENCE_FORM, "button-primary"), ("Contact", contact_href(prefix), "button-secondary")], breadcrumbs=crumbs)}
       <section class="section intro-band">
         <div class="section-shell registration-flow-layout">
-          <div class="section-heading reveal"><p class="eyebrow">Deadlines</p><h2>Registration and abstract submission are open.</h2><p>Use the 4ID portal to submit abstracts and complete registration for ICH2026.</p><p>Abstract submission deadline: July 16, 2026.</p><p>Abstracts should be 250 words maximum, excluding title, authors, and affiliations.</p><a class="button button-primary" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Submit abstract / register</a></div>
+          <div class="section-heading reveal"><p class="eyebrow">Deadlines</p><h2>Registration and abstract submission are open.</h2><p>Use the 4ID portal to submit abstracts and complete registration for ICH2026.</p><p>Abstract submission deadline: July 16, 2026.</p><p>Early bird registration deadline: August 15, 2026.</p><p>Abstracts should be 250 words maximum, excluding title, authors, and affiliations.</p><a class="button button-primary" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Submit abstract / register</a></div>
           <figure class="registration-portal reveal">
             <a href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer" aria-label="Open the 4ID ICH2026 submission and registration portal">
               {responsive_image(prefix, "ich2026/4id.png", "4ID platform for ICH2026 registration and abstract submission", loading="lazy", decoding="async", sizes="(max-width: 780px) 92vw, 620px")}
