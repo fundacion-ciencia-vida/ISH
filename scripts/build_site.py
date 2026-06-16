@@ -1245,7 +1245,7 @@ def registration_page(prefix: str) -> str:
             <p class="eyebrow">Registration fees</p>
             <h2>ICH2026 registration, November 2-4.</h2>
             <p>Fees are listed in Chilean pesos (CLP). USD amounts are approximate.</p>
-            <p class="fee-exchange-reference">Reference exchange rate, June 16, 2026: 1 USD ~ 890 CLP; 1 EUR ~ 1,030 CLP.</p>
+            <p class="fee-exchange-reference">Reference exchange rate, June 16, 2026: 1 USD ~ 870 CLP; 1 EUR ~ 1,030 CLP.</p>
           </div>
           <div class="fee-table-wrap reveal">
             <table class="fee-table">
@@ -1260,10 +1260,10 @@ def registration_page(prefix: str) -> str:
                 </tr>
               </thead>
               <tbody>
-                <tr><th scope="row">Undergraduate Students</th><td>$240,000</td><td class="fee-usd">~US$270</td><td>$275,000</td><td class="fee-usd">~US$309</td></tr>
-                <tr><th scope="row">Graduate Students</th><td>$280,000</td><td class="fee-usd">~US$315</td><td>$350,000</td><td class="fee-usd">~US$393</td></tr>
-                <tr><th scope="row">Postdocs &amp; Research Assistants</th><td>$320,000</td><td class="fee-usd">~US$360</td><td>$390,000</td><td class="fee-usd">~US$438</td></tr>
-                <tr><th scope="row">Standard <span>Research Professors, Physicians, Others</span></th><td>$380,000</td><td class="fee-usd">~US$427</td><td>$450,000</td><td class="fee-usd">~US$506</td></tr>
+                <tr><th scope="row">Undergraduate Students</th><td>$240,000</td><td class="fee-usd">US$276</td><td>$275,000</td><td class="fee-usd">US$316</td></tr>
+                <tr><th scope="row">Graduate Students</th><td>$280,000</td><td class="fee-usd">US$322</td><td>$350,000</td><td class="fee-usd">US$402</td></tr>
+                <tr><th scope="row">Postdocs &amp; Research Assistants</th><td>$320,000</td><td class="fee-usd">US$368</td><td>$390,000</td><td class="fee-usd">US$448</td></tr>
+                <tr><th scope="row">Standard <span>Research Professors, Physicians, Others</span></th><td>$380,000</td><td class="fee-usd">US$437</td><td>$450,000</td><td class="fee-usd">US$517</td></tr>
               </tbody>
             </table>
           </div>
