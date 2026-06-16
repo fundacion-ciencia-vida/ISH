@@ -1351,7 +1351,7 @@ def venue_page(prefix: str) -> str:
             <p>Puerto Varas is a scenic lakeside city located in southern Chile, known for:</p>
             <ul><li>Lake Llanquihue</li><li>Osorno Volcano</li><li>Easy access to national parks and research sites</li></ul>
             <h3>Travel Tips</h3>
-            <ul><li>Currency: Chilean Peso (CLP)</li><li>Most taxis and services accept cards, but carrying some cash is recommended</li><li>Weather can change quickly - bring appropriate clothing</li><li>Spanish is the local language, but basic English is commonly understood in tourism services</li></ul>
+            <ul><li>Currency: Chilean Peso (CLP)</li><li>Most taxis and services accept cards, but carrying some cash is recommended</li><li>ATMs usually offer foreign-language menus and dispense Chilean pesos. Cash withdrawal limits are commonly around US$200 equivalent per transaction.</li><li>Weather can change quickly - bring appropriate clothing</li><li>Spanish is the local language, but basic English is commonly understood in tourism services</li></ul>
           </article>
         </div>
       </section>
