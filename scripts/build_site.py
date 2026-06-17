@@ -204,7 +204,7 @@ LOCAL_COMMITTEE = [
     ("Marcela Ferres", "Local Organizing Committee", "Pontificia Universidad Catolica de Chile", "", "ich2026/local-marcela-ferres.jpg", "https://orcid.org/0000-0001-9415-4657"),
     ("Juan Hormazabal", "Local Organizing Committee", "Universidad del Desarrollo", "", "ich2026/local-juan-hormazabal.jpg", "https://orcid.org/0000-0003-0726-2778"),
     ("Nicole Le Corre", "Local Organizing Committee", "Pontificia Universidad Catolica de Chile", "", "ich2026/local-nicole-le-corre.jpg", "https://orcid.org/0000-0002-9361-4049"),
-    ("Constanza Martinez-Valdevenito", "Local Organizing Committee", "Pontificia Universidad Catolica de Chile", "", "ich2026/local-constanza-martinez-valdevenito.jpg", "https://orcid.org/0000-0002-2836-9817"),
+    ("Constanza Martinez-Valdebenito", "Local Organizing Committee", "Pontificia Universidad Catolica de Chile", "", "ich2026/local-constanza-martinez-valdevenito.jpg", "https://orcid.org/0000-0002-2836-9817"),
     ("Nicole Tischler", "Local Organizing Committee", "Fundacion Ciencia & Vida / Universidad San Sebastian", "", "ich2026/scientific-nicole-tischler.jpg", "https://orcid.org/0000-0002-4578-4780"),
     ("Fernando Torres-Perez", "Local Organizing Committee", "Pontificia Universidad Catolica de Valparaiso", "", "ich2026/local-fernando-torres-perez.jpg", "https://orcid.org/0000-0001-8655-7288"),
     ("Cecilia Vial", "Local Organizing Committee", "Universidad del Desarrollo", "", "ich2026/local-cecilia-vial.jpg", "https://orcid.org/0000-0002-0399-6144"),
