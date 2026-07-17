@@ -805,7 +805,7 @@ def home_page(
           <div class="hero-panel-meta" aria-label="Conference location and venue">
             <span>Puerto Varas, Chile</span>
             <span>Hotel Bellavista</span>
-            <span class="hero-panel-deadline">Abstract deadline: July 16, 2026</span>
+            <span class="hero-panel-deadline">Abstract deadline: August 2, 2026</span>
           </div>
           <div class="countdown" data-countdown="2026-11-02" aria-label="Time until ICH2026">
             <div class="countdown-unit"><span class="countdown-val" data-unit="days">--</span><span class="countdown-label">Days</span></div>
@@ -1112,7 +1112,7 @@ def ich2026_page(prefix: str) -> str:
       </section>
       <section class="conference-summary" aria-label="ICH2026 quick facts">
         <div class="summary-item"><span>Dates</span><strong>November 2-5, 2026</strong></div>
-        <div class="summary-item"><span>Abstract deadline</span><strong>July 16, 2026</strong></div>
+        <div class="summary-item"><span>Abstract deadline</span><strong>August 2, 2026</strong></div>
         <div class="summary-item"><span>Early bird</span><strong>Until August 15</strong></div>
         <div class="summary-item"><span>Registration</span><strong>Open through 4ID</strong></div>
       </section>
@@ -1230,7 +1230,7 @@ def registration_page(prefix: str) -> str:
       {page_hero(prefix, "ICH2026 Registration & Abstract Submission", "Registration and abstract submission.", "Submit abstracts and complete registration through the official 4ID portal.", "venue/puerto-varas-waterfront.jpg", [("Submit abstract / register", CONFERENCE_FORM, "button-primary"), ("Contact", contact_href(prefix), "button-secondary")], breadcrumbs=crumbs)}
       <section class="section intro-band">
         <div class="section-shell registration-flow-layout">
-          <div class="section-heading reveal"><p class="eyebrow">Deadlines</p><h2>Registration and abstract submission are open.</h2><p>Use the 4ID portal to submit abstracts and complete registration for ICH2026.</p><p>Abstract submission deadline: July 16, 2026.</p><p>Early bird registration deadline: August 15, 2026.</p><p>Abstracts should be 250 words maximum, excluding title, authors, and affiliations.</p><a class="button button-primary" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Submit abstract / register</a></div>
+          <div class="section-heading reveal"><p class="eyebrow">Deadlines</p><h2>Registration and abstract submission are open.</h2><p>Use the 4ID portal to submit abstracts and complete registration for ICH2026.</p><p>Abstract submission deadline: August 2, 2026.</p><p>Early bird registration deadline: August 15, 2026.</p><p>Abstracts should be 250 words maximum, excluding title, authors, and affiliations.</p><a class="button button-primary" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Submit abstract / register</a></div>
           <figure class="registration-portal reveal">
             <a href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer" aria-label="Open the 4ID ICH2026 submission and registration portal">
               {responsive_image(prefix, "ich2026/4id.png", "4ID platform for ICH2026 registration and abstract submission", loading="lazy", decoding="async", sizes="(max-width: 780px) 92vw, 620px")}
@@ -1245,6 +1245,7 @@ def registration_page(prefix: str) -> str:
             <p class="eyebrow">Registration fees</p>
             <h2>ICH2026 registration, November 2-4.</h2>
             <p>Fees are listed in Chilean pesos (CLP). USD amounts are approximate.</p>
+            <p>The ICH2026 registration fee includes the Opening Reception on November 1, lunches on November 2 and 4, coffee breaks, and the Gala Dinner on November 4. For participants attending the Andes Virus Workshop on November 5, lunch and coffee breaks are also included.</p>
           </div>
           <div class="fee-table-wrap reveal">
             <table class="fee-table">
