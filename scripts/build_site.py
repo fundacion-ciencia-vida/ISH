@@ -1279,6 +1279,7 @@ def registration_page(prefix: str) -> str:
             <span>All categories</span>
             <strong class="andv-workshop-price">$20,000</strong>
             <em class="andv-workshop-usd">~US$23</em>
+            <p>Participants may register for the ANDV Workshop separately or together with ICH2026.</p>
             <a class="button button-primary" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Register through 4ID</a>
           </div>
         </div>
