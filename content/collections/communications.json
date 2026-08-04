@@ -21,7 +21,27 @@
       "description": "An open virtual consultation for experts involved in hantavirus vaccine research and development.",
       "body_html": "<p>Following the recent Pre-Clinical Models Working Group discussion, the Hantavirus CORC is convening a Vaccine Working Group meeting for experts involved in hantavirus vaccine research and development.</p><h3>Meeting objectives</h3><ul><li>Share updates on current vaccine development activities.</li><li>Identify key research priorities and remaining knowledge gaps.</li><li>Explore opportunities for collaboration to strengthen global preparedness and response for hantavirus outbreaks.</li></ul><h3>Meeting details</h3><p><strong>Thursday, September 10, 2026</strong><br>13:00-15:00 CET (2 hours)<br>Virtual open consultation webinar via Zoom.</p><p>Questions submitted through the Zoom chat will be reviewed and addressed during the discussion. Zoom password: <strong>@Hanta!1</strong>.</p><p>A detailed agenda will be circulated closer to the meeting date. Convened by the R&amp;D Blueprint on behalf of the Hantavirus CORC.</p>",
       "url": "https://who.zoom.us/j/95193938502",
-      "label": "Join the Zoom meeting"
+      "label": "Join the Zoom meeting",
+      "presentation": "event",
+      "event": {
+        "label": "Virtual open consultation",
+        "date_iso": "2026-09-10",
+        "date_label": "Thursday, September 10, 2026",
+        "time": "13:00-15:00 CET",
+        "duration": "2 hours",
+        "format": "Online webinar",
+        "platform": "Zoom",
+        "introduction": "Following the recent Pre-Clinical Models Working Group discussion, the Hantavirus CORC is convening a Vaccine Working Group meeting for experts involved in hantavirus vaccine research and development.",
+        "objectives": [
+          "Share updates on current vaccine development activities.",
+          "Identify key research priorities and remaining knowledge gaps.",
+          "Explore opportunities for collaboration to strengthen global preparedness and response for hantavirus outbreaks."
+        ],
+        "questions": "Questions submitted through the Zoom chat will be reviewed and addressed during the discussion.",
+        "agenda_note": "A detailed agenda will be circulated closer to the meeting date.",
+        "organizer": "Convened by the R&D Blueprint on behalf of the Hantavirus CORC.",
+        "password": "@Hanta!1"
+      }
     },
     {"id": "andes-statement", "category": "ISH statement", "date": "May 19, 2026", "title": "Andes virus transmission and current outbreak investigation", "description": "Statement from ISH and members of the international hantavirus research and clinical community, linked to the Zenodo record supplied by the team.", "url": "https://zenodo.org/records/20298312", "label": "Open Zenodo record", "featured": false},
     {"id": "who-testing", "category": "WHO guidance", "date": "May 15, 2026", "title": "Laboratory testing of Andes virus infection", "description": "WHO interim guidance for laboratory testing of Andes virus infection.", "url": "https://www.who.int/publications/i/item/B09765", "label": "Read WHO guidance"},

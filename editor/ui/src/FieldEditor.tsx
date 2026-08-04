@@ -15,7 +15,7 @@ interface Props {
   allowArrayStructure?: boolean;
 }
 
-const multilineKeys = new Set(["description", "lede", "heading", "introduction", "note", "caption", "affiliation", "historical_note"]);
+const multilineKeys = new Set(["description", "lede", "heading", "introduction", "note", "caption", "affiliation", "historical_note", "questions", "agenda_note", "organizer"]);
 
 const fieldLabels: Record<string, string> = {
   abstract_deadline: "Fecha limite de abstracts",
@@ -64,6 +64,11 @@ const fieldLabels: Record<string, string> = {
   email: "Correo electronico",
   end_date: "Fecha de termino",
   eyebrow: "Antetitulo",
+  event: "Datos del evento",
+  event_date: "Fecha del evento",
+  date_iso: "Fecha interna (AAAA-MM-DD)",
+  date_label: "Fecha visible",
+  duration: "Duracion",
   focal_x: "Encuadre horizontal (%)",
   focal_y: "Encuadre vertical (%)",
   featured: "Destacada",
@@ -102,6 +107,9 @@ const fieldLabels: Record<string, string> = {
   opportunity_grid: "Oportunidades",
   page_id: "Pagina de destino",
   paragraphs: "Parrafos",
+  password: "Contrasena de acceso",
+  platform: "Plataforma",
+  presentation: "Presentacion",
   price: "Precio",
   practical_tips: "Consejos practicos",
   public_url: "URL publica",
@@ -112,6 +120,7 @@ const fieldLabels: Record<string, string> = {
   role: "Cargo",
   route: "Ruta",
   rows: "Filas",
+  questions: "Participacion y preguntas",
   social_image: "Imagen para redes sociales",
   speakers: "Conferencistas",
   sponsors: "Socios y auspiciadores",
@@ -126,6 +135,7 @@ const fieldLabels: Record<string, string> = {
   style: "Estilo",
   tag: "Etiqueta breve",
   title: "Titulo",
+  time: "Horario",
   tracks: "Bloques de programa",
   travel_links: "Enlaces para el viaje",
   upcoming: "Proximo",
@@ -134,6 +144,9 @@ const fieldLabels: Record<string, string> = {
   values: "Valores",
   venue: "Lugar",
   visible: "Visible",
+  agenda_note: "Nota sobre la agenda",
+  organizer: "Organiza",
+  format: "Modalidad",
   workshop_date: "Fecha del workshop",
   workshop_name: "Nombre del workshop",
   year: "Ano",

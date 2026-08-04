@@ -2559,19 +2559,74 @@ def render_communications(prefix: str, section: dict[str, object]) -> str:
         alt = str(item.get("image_alt", "")).strip() or str(item.get("title", ""))
         return f'<div class="{class_name}">{responsive_image(prefix, image, alt, loading="lazy", decoding="async", sizes=sizes)}</div>'
 
+    def event_item(item: dict[str, object]) -> str:
+        event = item.get("event", {})
+        if not isinstance(event, dict):
+            event = {}
+        event_id = re.sub(r"[^a-z0-9_-]+", "-", str(item.get("id", "event")).lower()).strip("-")
+        title_id = f"{event_id}-title"
+        objectives = "".join(
+            f'<li><span>{index:02d}</span><p>{escape(str(objective))}</p></li>'
+            for index, objective in enumerate(event.get("objectives", []), start=1)
+        )
+        href = str(item.get("url", ""))
+        date_iso = escape(str(event.get("date_iso", "")), quote=True)
+        date_label = escape(str(event.get("date_label", item.get("date", ""))))
+        event_label = escape(str(event.get("label", "Open consultation")))
+        event_time = escape(str(event.get("time", "")))
+        event_duration = escape(str(event.get("duration", "")))
+        event_format = escape(str(event.get("format", "Virtual")))
+        event_platform = escape(str(event.get("platform", "")))
+        password = escape(str(event.get("password", "")))
+        return f'''
+          <article class="news-event-feature reveal" id="{event_id}" aria-labelledby="{title_id}">
+            <header class="news-event-intro">
+              <div class="news-event-kicker"><span>{escape(str(item.get('category', '')))}</span><span>{event_label}</span></div>
+              <h3 id="{title_id}">{escape(str(item.get('title', '')))}</h3>
+              <p>{escape(str(event.get('introduction', item.get('description', ''))))}</p>
+            </header>
+            <div class="news-event-details">
+              <div class="news-event-schedule" aria-label="Meeting details">
+                <div><span>Date</span><time datetime="{date_iso}">{date_label}</time></div>
+                <div><span>Time</span><strong>{event_time}</strong><small>{event_duration}</small></div>
+                <div><span>Format</span><strong>{event_format}</strong><small>{event_platform}</small></div>
+              </div>
+              <section class="news-event-objectives" aria-labelledby="{event_id}-objectives">
+                <h4 id="{event_id}-objectives">Meeting objectives</h4>
+                <ol>{objectives}</ol>
+              </section>
+            </div>
+            <footer class="news-event-footer">
+              <div class="news-event-notes">
+                <p>{escape(str(event.get('questions', '')))}</p>
+                <p>{escape(str(event.get('agenda_note', '')))}</p>
+                <p class="news-event-organizer">{escape(str(event.get('organizer', '')))}</p>
+              </div>
+              <div class="news-event-access">
+                <span>Zoom password</span>
+                <strong>{password}</strong>
+                <a class="button button-primary" href="{escape(href, quote=True)}"{external_attrs(href)}>{escape(str(item.get('label', 'Join meeting')))}</a>
+              </div>
+            </footer>
+          </article>'''
+
     lead = next((item for item in items if item.get("featured")), items[0])
+    event_items = [item for item in items if item is not lead and item.get("presentation") == "event"]
     cards = []
     for item in items:
-        if item is lead:
+        if item is lead or item in event_items:
             continue
         href = str(item.get("url", ""))
         cards.append(
             f'<article class="news-card reveal">{item_image(item, "news-card-media", "(max-width: 780px) 92vw, 420px")}<span class="news-card-type">{escape(item.get("category", ""))}</span><span class="news-card-date">{escape(item.get("date", ""))}</span><h3>{escape(item.get("title", ""))}</h3>{item_body(item)}<a class="news-card-link" href="{escape(href, quote=True)}"{external_attrs(href)}><strong>{escape(item.get("label", "Open"))}</strong></a></article>'
         )
     lead_href = str(lead.get("url", ""))
+    events_html = "".join(event_item(item) for item in event_items)
+    event_list = f'<div class="section-shell news-event-list">{events_html}</div>' if events_html else ""
+    grid_class = "news-grid news-grid-after-events" if events_html else "news-grid"
     html = f"""
       <section class="section intro-band newsroom"><div class="section-shell news-lead-single"><article class="news-lead-card reveal">{item_image(lead, "news-lead-media", "(max-width: 780px) 100vw, 1180px")}<div class="news-kicker"><span>{escape(lead.get('category', ''))}</span><time>{escape(lead.get('date', ''))}</time></div><h2>{escape(lead.get('title', ''))}</h2>{item_body(lead)}<a class="button button-primary" href="{escape(lead_href, quote=True)}"{external_attrs(lead_href)}>{escape(lead.get('label', 'Open'))}</a></article></div></section>
-      <section class="section news-updates"><div class="section-shell two-column news-section-heading"><div class="section-heading reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', 'Latest updates')))}</p><h2>{escape(str(data.get('heading', '')))}</h2></div></div><div class="section-shell news-grid" role="list">{''.join(cards)}</div></section>"""
+      <section class="section news-updates"><div class="section-shell two-column news-section-heading"><div class="section-heading reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', 'Latest updates')))}</p><h2>{escape(str(data.get('heading', '')))}</h2></div></div>{event_list}<div class="section-shell {grid_class}" role="list">{''.join(cards)}</div></section>"""
     return mark_content_section(html, section)
 
 

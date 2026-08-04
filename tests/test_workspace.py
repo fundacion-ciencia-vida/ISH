@@ -155,7 +155,12 @@ class GeneratorIntegrationTests(unittest.TestCase):
             self.assertIn("https://forms.gle/SqXDscDq8BuauHgP6", registration)
             self.assertIn("https://forms.gle/Ak6Bkg3GCUzKKMrw7", registration)
             self.assertIn("Connie S. Schmaljohn", awards)
+            self.assertNotIn("Earlier conference materials list this lectureship as", awards)
             self.assertIn("https://who.zoom.us/j/95193938502", communications)
+            self.assertIn('class="news-event-feature', communications)
+            self.assertIn('id="hantavirus-corc-vaccine-working-group"', communications)
+            self.assertIn('datetime="2026-09-10"', communications)
+            self.assertIn("@Hanta!1", communications)
             self.assertNotIn("{{conference.", registration)
 
     def test_internal_generator_allows_incomplete_draft_preview(self) -> None:
