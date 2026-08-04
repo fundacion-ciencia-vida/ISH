@@ -1,0 +1,88 @@
+name: Build ISH Editor
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "editor-v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            artifact: ISH-Editor-Windows
+            output: dist/ISH-Editor.exe
+          - os: macos-latest
+            artifact: ISH-Editor-macOS
+            output: dist/ISH-Editor-macOS.dmg
+          - os: ubuntu-latest
+            artifact: ISH-Editor-Linux
+            output: dist/ISH-Editor-x86_64.AppImage
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: editor/ui/package-lock.json
+
+      - name: Build editor interface
+        working-directory: editor/ui
+        run: |
+          npm ci
+          npm run build
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: editor/requirements.txt
+
+      - name: Install packaging dependencies
+        run: python -m pip install -r editor/requirements.txt
+
+      - name: Test editor and generator
+        run: python -m unittest discover -s tests -v
+
+      - name: Build application
+        run: pyinstaller --noconfirm --clean packaging/ish_editor.spec
+
+      - name: Create macOS disk image
+        if: runner.os == 'macOS'
+        run: hdiutil create -volname "ISH Editor" -srcfolder "dist/ISH-Editor.app" -ov -format UDZO "dist/ISH-Editor-macOS.dmg"
+
+      - name: Create Linux AppImage
+        if: runner.os == 'Linux'
+        shell: bash
+        run: |
+          mkdir -p AppDir/usr/bin
+          cp dist/ISH-Editor AppDir/usr/bin/ISH-Editor
+          cp assets/images/ui/logo.png AppDir/ish-editor.png
+          printf '%s\n' '#!/bin/sh' 'HERE="$(dirname "$(readlink -f "$0")")"' 'exec "$HERE/usr/bin/ISH-Editor" "$@"' > AppDir/AppRun
+          printf '%s\n' '[Desktop Entry]' 'Type=Application' 'Name=ISH Editor' 'Exec=ISH-Editor' 'Icon=ish-editor' 'Categories=Office;WebDevelopment;' 'Terminal=false' > AppDir/ish-editor.desktop
+          chmod +x AppDir/AppRun AppDir/usr/bin/ISH-Editor
+          curl -L --fail -o appimagetool https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage
+          chmod +x appimagetool
+          ARCH=x86_64 APPIMAGE_EXTRACT_AND_RUN=1 ./appimagetool AppDir dist/ISH-Editor-x86_64.AppImage
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.artifact }}
+          path: ${{ matrix.output }}
+          if-no-files-found: error
+
+      - name: Attach package to tagged release
+        if: startsWith(github.ref, 'refs/tags/editor-v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ matrix.output }}
+          generate_release_notes: true

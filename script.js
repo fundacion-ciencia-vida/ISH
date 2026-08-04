@@ -20,6 +20,43 @@ const sections = navLinks
   })
   .filter(Boolean);
 
+const editorPreview = window.parent !== window && window.location.pathname.startsWith("/preview/");
+
+if (editorPreview) {
+  body.classList.add("cms-preview-mode");
+  window.parent.postMessage({ type: "ish-preview-ready" }, "*");
+
+  document.addEventListener(
+    "click",
+    (event) => {
+      const target = event.target instanceof Element ? event.target.closest("[data-cms-section]") : null;
+      if (!target) return;
+      event.preventDefault();
+      event.stopPropagation();
+      window.parent.postMessage(
+        { type: "ish-select-section", sectionId: target.getAttribute("data-cms-section") },
+        "*"
+      );
+    },
+    true
+  );
+
+  window.addEventListener("message", (event) => {
+    if (event.data?.type !== "ish-highlight-section") return;
+    document.querySelectorAll(".cms-preview-selected").forEach((element) => {
+      element.classList.remove("cms-preview-selected");
+    });
+    const sectionId = event.data.sectionId;
+    if (!sectionId) return;
+    const target = Array.from(document.querySelectorAll("[data-cms-section]")).find(
+      (element) => element.getAttribute("data-cms-section") === sectionId
+    );
+    if (!target) return;
+    target.classList.add("cms-preview-selected");
+    target.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+}
+
 function storedTheme() {
   try {
     const value = localStorage.getItem(themeStorageKey);

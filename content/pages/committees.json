@@ -1,0 +1,15 @@
+{
+  "id": "committees",
+  "route": "ich2026/organizing-committees",
+  "core_route": true,
+  "title": "Organizing Committees | ICH2026",
+  "description": "Scientific and local organizing committees for ICH2026.",
+  "social_image": "ich2026/ich2026-logo-landscape.png",
+  "hero_image": "ich2026/from-zip/pvaras2.jpg",
+  "conference_page": true,
+  "show_in_navigation": false,
+  "sections": [
+    {"id": "hero", "type": "page_hero", "visible": true, "locked": true, "data": {"eyebrow": "ICH2026 Committees", "title": "Organizing Committees", "lede": "Scientific and local teams coordinating ICH2026 in Puerto Varas.", "image": "ich2026/from-zip/pvaras2.jpg", "breadcrumbs": true, "actions": [{"label": "Partners & sponsors", "page_id": "sponsors", "style": "primary"}, {"label": "Programme", "page_id": "programme", "style": "secondary"}]}},
+    {"id": "committees", "type": "committees", "visible": true, "data": {"eyebrow": "Organizing Committees", "heading": "International scientific direction and Chilean local organization.", "collection": "committees", "show_teasers": false}}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "sponsors",
+  "route": "ich2026/partners-sponsors",
+  "core_route": true,
+  "title": "Partners & Sponsors | ICH2026",
+  "description": "Partners and sponsors for ICH2026.",
+  "social_image": "ich2026/pto-varas2.png",
+  "hero_image": "ich2026/pto-varas2.png",
+  "conference_page": true,
+  "sections": [
+    {"id": "hero", "type": "page_hero", "visible": true, "locked": true, "data": {"eyebrow": "Partners & sponsors", "title": "ICH2026 partners and sponsors.", "lede": "Organizations supporting the ICH2026 scientific meeting in Puerto Varas, Chile.", "image": "ich2026/pto-varas2.png", "breadcrumbs": true}},
+    {"id": "sponsors", "type": "sponsors", "visible": true, "data": {"collection": "sponsors", "groups": ["Scientific societies", "Universities & research partners", "Sponsors"]}}
+  ]
+}

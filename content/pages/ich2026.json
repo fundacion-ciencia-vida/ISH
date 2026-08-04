@@ -1,0 +1,54 @@
+{
+  "id": "ich2026",
+  "route": "ich2026",
+  "core_route": true,
+  "title": "ICH2026 | International Society for Hantaviruses",
+  "description": "International Conference on Hantaviruses 2026 in Puerto Varas, Chile.",
+  "social_image": "ich2026/ich2026-logo-landscape.png",
+  "hero_image": "ich2026/ich2026-logo-landscape.png",
+  "conference_page": true,
+  "sections": [
+    {
+      "id": "hero",
+      "type": "conference_hero",
+      "visible": true,
+      "locked": true,
+      "data": {
+        "image": "ich2026/ich2026-logo-landscape.png",
+        "image_alt": "ICH2026 conference visual identity over the Puerto Varas and Osorno Volcano illustration",
+        "eyebrow": "International Conference on Hantaviruses",
+        "title": "Puerto Varas | Chile",
+        "lede": "November 2-5 2026",
+        "meta": [
+          {"label": "Venue & Location", "value": "Hotel Bellavista, Lake District", "url": "https://goo.gl/maps/dv2jUC4hSGLvr2Ld9", "link_label": "Open map"},
+          {"label": "Specialized workshop", "value": "Andes Virus, November 5"}
+        ],
+        "actions": [
+          {"label": "Abstracts & registration", "page_id": "registration", "style": "primary"},
+          {"label": "Scientific programme", "page_id": "programme", "style": "secondary"},
+          {"label": "Venue", "page_id": "venue", "style": "secondary"}
+        ]
+      }
+    },
+    {
+      "id": "quick-facts",
+      "type": "summary",
+      "visible": true,
+      "data": {
+        "aria_label": "ICH2026 quick facts",
+        "items": [
+          {"label": "Dates", "conference_field": "dates_label"},
+          {"label": "Abstract deadline", "conference_field": "abstract_deadline"},
+          {"label": "Early bird", "conference_field": "early_bird_deadline"},
+          {"label": "Registration", "value": "Open through 4ID"}
+        ]
+      }
+    },
+    {"id": "location-intro", "type": "split_text", "visible": true, "variant": "intro", "data": {"eyebrow": "Venue & Location", "heading": "Puerto Varas, located in the scenic Lake District in Southern Chile.", "paragraphs": ["The 2026 meeting of the International Society for Hantaviruses will take place in Puerto Varas, located in the scenic Lake District in Southern Chile widely regarded as a gateway to Patagonia. The city sits at the foot of the iconic Osorno Volcano in southern Chile, providing a spectacular natural setting for scientific exchange and collaboration.", "The conference will bring together scientists and health professionals from around the world to share and discuss the latest advances across a broad range of topics, including viral epidemiology, ecology, virus-host interactions, pathogenesis, clinical aspects of disease, and the development of vaccines and therapeutics."]}},
+    {"id": "science-intro", "type": "heading_text", "visible": true, "variant": "data", "data": {"eyebrow": "Scientific Program & Keynote Speakers", "heading": "An excellent platform for students, postdoctoral researchers, and established scientists.", "paragraphs": ["The International Conference on Hantaviruses will provide an excellent platform for students, postdoctoral researchers, and established scientists to present their latest findings and engage with the international hantavirus research community. In addition, the organizing committee has invited leading experts in the field to deliver keynote lectures highlighting cutting-edge developments in hantavirus research."]}},
+    {"id": "location-carousel", "type": "carousel", "visible": true, "variant": "intro", "data": {"eyebrow": "Puerto Varas", "heading": "A meeting place shaped by lakes, volcanoes and southern landscapes.", "collection": "location_carousel"}},
+    {"id": "committees", "type": "committees", "visible": true, "data": {"eyebrow": "Organizing Committees", "heading": "International scientific direction and Chilean local organization.", "collection": "committees", "show_teasers": true}},
+    {"id": "workshop", "type": "split_text", "visible": true, "variant": "workshop", "data": {"eyebrow": "Specialized Workshop: Andes Virus", "heading": "A one-day workshop dedicated to Andes virus.", "paragraphs": ["In addition to the traditional ICH scientific program, the conference will feature on November 5 a one-day workshop dedicated to Andes virus, a pathogen of particular regional importance. This workshop will provide an opportunity for researchers, clinicians, and public health professionals to discuss the local epidemiology, clinical management, and public health response to hantavirus cardiopulmonary syndrome.", "Local authorities and decision-makers will also be invited to participate, fostering dialogue between the scientific community and public health stakeholders.", "Registration is open. Participants may attend the ANDV Workshop without registering for ICH2026, or add the workshop to their conference registration."], "actions": [{"label": "Workshop programme", "page_id": "programme", "style": "primary"}, {"label": "Workshop registration", "page_id": "registration", "style": "secondary-light"}]}},
+    {"id": "sponsors-cta", "type": "cta", "visible": true, "variant": "intro", "data": {"eyebrow": "Partners & Sponsors", "heading": "Institutions and sponsors supporting the Puerto Varas meeting.", "actions": [{"label": "View partners & sponsors", "page_id": "sponsors", "style": "primary"}]}}
+  ]
+}

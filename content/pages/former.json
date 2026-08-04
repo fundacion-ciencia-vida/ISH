@@ -1,0 +1,17 @@
+{
+  "id": "former",
+  "route": "former-meetings",
+  "core_route": true,
+  "title": "Former Meetings | International Society for Hantaviruses",
+  "description": "Former International Hantavirus Conference meetings.",
+  "social_image": "ui/social-preview.jpg",
+  "hero_image": "former-meetings/2023-seoul-2.jpg",
+  "conference_page": false,
+  "sections": [
+    {"id": "hero", "type": "page_hero", "visible": true, "locked": true, "data": {"eyebrow": "Society archive", "title": "Former Meetings", "lede": "A concise archive of International Hantavirus Conference milestones.", "image": "former-meetings/2023-seoul-2.jpg", "actions": [{"label": "ICH2026", "page_id": "ich2026", "style": "primary"}]}},
+    {"id": "archive-intro", "type": "split_text", "visible": true, "variant": "intro", "data": {"eyebrow": "International meetings", "heading": "Triennial exchange across hantavirus research communities.", "paragraphs": ["The International Society for Hantaviruses was founded in 1989 with its first meeting in Seoul, Korea. This archive now includes photo and abstract-book material recovered from the Webpage asset package."]}},
+    {"id": "awards", "type": "split_text", "visible": true, "variant": "awards", "data": {"eyebrow": "Lectureship awards", "heading": "Two lectureship awards frame the scientific legacy of each triennial ICH.", "paragraphs": ["At each triennial ICH, the Ho-Wang Lee Lifetime Achievement Award recognizes a senior hantavirologist for exceptional contributions to hantavirus research, while the Joel M. Dalrymple Memorial Award honors an early- to mid-career researcher whose innovative and forward-looking work reflects the legacy of Dr. Dalrymple at the U.S. Army Medical Research Institute of Infectious Diseases."]}},
+    {"id": "timeline", "type": "former_timeline", "visible": true, "data": {"eyebrow": "Conference timeline", "heading": "International Hantavirus Conference editions, 1989-2026.", "collection": "former_meetings", "upcoming": {"number": "XIII", "year": "2026", "location": "Puerto Varas, Chile", "tag": "Next ICH"}}},
+    {"id": "materials", "type": "former_materials", "visible": true, "data": {"eyebrow": "Photos & abstracts", "heading": "Available visual records and abstract books.", "collection": "former_meetings"}}
+  ]
+}

@@ -1,11 +1,18 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import os
 from html.parser import HTMLParser
 from pathlib import Path
 
+try:
+    from .content_store import ContentValidationError, load_content_bundle
+except ImportError:
+    from content_store import ContentValidationError, load_content_bundle
 
-ROOT = Path(__file__).resolve().parents[1]
+
+SOURCE_ROOT = Path(os.environ.get("ISH_SOURCE_ROOT", Path(__file__).resolve().parents[1])).resolve()
+ROOT = Path(os.environ.get("ISH_OUTPUT_ROOT", SOURCE_ROOT)).resolve()
 
 
 class SiteParser(HTMLParser):
@@ -52,19 +59,37 @@ class SiteParser(HTMLParser):
 
 
 def html_files() -> list[Path]:
-    return sorted([ROOT / "index.html", ROOT / "contact" / "index.html", ROOT / "about-ish" / "index.html", *ROOT.joinpath("ich2026").glob("**/index.html")])
+    bundle = load_content_bundle()
+    files = []
+    for page in bundle["pages"]:
+        route = str(page.get("route", "")).strip("/")
+        files.append(ROOT / route / "index.html" if route else ROOT / "index.html")
+    return sorted(files)
 
 
 def validate() -> list[str]:
     errors: list[str] = []
     source_types = {"image/avif": 0, "image/webp": 0}
 
+    try:
+        load_content_bundle()
+    except ContentValidationError as exc:
+        errors.append(f"Content validation failed: {exc}")
+
     for html in html_files():
+        if not html.exists():
+            errors.append(f"Generated page is missing: {html.relative_to(ROOT)}")
+            continue
         parser = SiteParser(html)
         parser.feed(html.read_text(encoding="utf-8"))
 
         for asset in parser.assets:
-            if not (parser.base / asset).resolve().exists():
+            output_asset = (parser.base / asset).resolve()
+            try:
+                source_asset = SOURCE_ROOT / output_asset.relative_to(ROOT)
+            except ValueError:
+                source_asset = output_asset
+            if not output_asset.exists() and not source_asset.exists():
                 errors.append(f"{html.relative_to(ROOT)} references missing asset: {asset}")
 
         for image in parser.images:
@@ -90,7 +115,7 @@ def validate() -> list[str]:
         if parser.external_runtime_hosts:
             errors.append(f"{html.relative_to(ROOT)} links external font runtime hosts")
 
-    styles = (ROOT / "styles.css").read_text(encoding="utf-8")
+    styles = (SOURCE_ROOT / "styles.css").read_text(encoding="utf-8")
     if ".responsive-image {\n  display: contents;" in styles:
         errors.append("styles.css regressed responsive-image to display: contents")
     if not (ROOT / "styles.min.css").exists():

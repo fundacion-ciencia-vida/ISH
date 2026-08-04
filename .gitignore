@@ -1,2 +1,14 @@
 .playwright-cli/
 output/
+.ish-editor/
+__pycache__/
+*.pyc
+editor/ui/node_modules/
+editor/ui/dist/
+editor/ui/*.tsbuildinfo
+editor/ui/vite.config.js
+editor/ui/vite.config.d.ts
+editor/build/
+editor/dist/
+/build/
+/dist/

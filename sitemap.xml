@@ -1,62 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://fundacion-ciencia-vida.github.io/ISH/</loc>
+    <loc>https://www.hantavirussociety.org/about-ish/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.hantavirussociety.org/awards/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hantavirussociety.org/ich2026/organizing-committees/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hantavirussociety.org/communications/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hantavirussociety.org/contact/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hantavirussociety.org/former-meetings/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hantavirussociety.org/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://fundacion-ciencia-vida.github.io/ISH/about-ish/</loc>
+    <loc>https://www.hantavirussociety.org/ich2026/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://fundacion-ciencia-vida.github.io/ISH/former-meetings/</loc>
+    <loc>https://www.hantavirussociety.org/ich2026/keynote-speakers/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fundacion-ciencia-vida.github.io/ISH/communications/</loc>
+    <loc>https://www.hantavirussociety.org/ich2026/programme/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fundacion-ciencia-vida.github.io/ISH/ich2026/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://fundacion-ciencia-vida.github.io/ISH/ich2026/keynote-speakers/</loc>
+    <loc>https://www.hantavirussociety.org/ich2026/abstracts-registration/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fundacion-ciencia-vida.github.io/ISH/ich2026/programme/</loc>
+    <loc>https://www.hantavirussociety.org/ich2026/partners-sponsors/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fundacion-ciencia-vida.github.io/ISH/ich2026/abstracts-registration/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fundacion-ciencia-vida.github.io/ISH/ich2026/venue/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fundacion-ciencia-vida.github.io/ISH/ich2026/organizing-committees/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fundacion-ciencia-vida.github.io/ISH/ich2026/partners-sponsors/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fundacion-ciencia-vida.github.io/ISH/contact/</loc>
+    <loc>https://www.hantavirussociety.org/ich2026/venue/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

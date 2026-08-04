@@ -1,0 +1,18 @@
+{
+  "items": [
+    {"id": "bd", "group": "Sponsors", "name": "BD", "url": "https://www.bd.com/en-us/", "image": "sponsors/poster/bd.png"},
+    {"id": "thermofisher", "group": "Sponsors", "name": "Thermo Fisher Scientific", "url": "https://www.thermofisher.com/us/en/home.html", "image": "sponsors/poster/thermofisher-scientific.png"},
+    {"id": "imerlab", "group": "Sponsors", "name": "IMERLAB", "url": "https://www.imerlab.cl/", "image": "sponsors/poster/imerlab.png"},
+    {"id": "anasac", "group": "Sponsors", "name": "Anasac", "url": "https://anasac.cl/", "image": "sponsors/poster/anasac.png"},
+    {"id": "somich", "group": "Scientific societies", "name": "Sociedad Chilena de Microbiologia", "url": "https://somich.cl/", "image": "sponsors/poster/somich.png"},
+    {"id": "sochinf", "group": "Scientific societies", "name": "Sociedad Chilena de Infectologia", "url": "https://sochinf.cl/", "image": "sponsors/poster/sociedad-chilena-infectologia.png"},
+    {"id": "sbbmch", "group": "Scientific societies", "name": "Sociedad de Bioquimica y Biologia Molecular de Chile", "url": "https://www.sbbmch.cl/", "image": "sponsors/poster/sociedad-bioquimica.png"},
+    {"id": "ish", "group": "Scientific societies", "name": "International Society for Hantaviruses", "url": "/", "image": "sponsors/poster/ish.png"},
+    {"id": "uss", "group": "Universities & research partners", "name": "Universidad San Sebastian", "url": "https://www.uss.cl/", "image": "sponsors/poster/universidad-san-sebastian.png"},
+    {"id": "fcv", "group": "Universities & research partners", "name": "Fundacion Ciencia & Vida", "url": "https://www.cienciavida.org/", "image": "sponsors/poster/fundacion-ciencia-vida.png"},
+    {"id": "puc", "group": "Universities & research partners", "name": "Pontificia Universidad Catolica de Chile", "url": "https://www.uc.cl/", "image": "sponsors/poster/pontificia-universidad-catolica.png"},
+    {"id": "udd", "group": "Universities & research partners", "name": "Universidad del Desarrollo", "url": "https://www.udd.cl/", "image": "sponsors/poster/universidad-del-desarrollo.png"},
+    {"id": "ccv", "group": "Universities & research partners", "name": "Centro Ciencia & Vida", "url": "https://www.cienciavida.org/", "image": "sponsors/poster/centro-ciencia-vida.png"},
+    {"id": "anid", "group": "Universities & research partners", "name": "ANID", "url": "https://anid.cl/", "image": "sponsors/poster/anid.png"}
+  ]
+}

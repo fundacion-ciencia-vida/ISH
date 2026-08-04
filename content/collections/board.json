@@ -1,0 +1,21 @@
+{
+  "items": [
+    {"id": "nicole-tischler", "name": "Nicole Tischler", "role": "President ISH", "country": "Chile", "image": "board/nicole-tischler.jpg", "url": "https://orcid.org/0000-0002-4578-4780", "officer": true},
+    {"id": "piet-maes", "name": "Piet Maes", "role": "President Elect", "country": "Belgium", "image": "board/piet-maes.jpg?v=piet-unified-css-frame-20260603", "url": "https://orcid.org/0000-0002-4571-5232", "officer": true},
+    {"id": "colleen-jonsson", "name": "Colleen B. Jonsson", "role": "Secretary ISH", "country": "USA", "image": "board/colleen-jonsson.jpg", "url": "https://orcid.org/0000-0002-2640-7672", "officer": true},
+    {"id": "jin-won-song", "name": "Jin Won Song", "role": "Past-President", "country": "Korea", "image": "board/jin-won-song.jpg", "url": "https://orcid.org/0000-0003-0796-8332", "officer": true},
+    {"id": "satoru-arai", "name": "Satoru Arai", "role": "International Advisory Board", "country": "Japan", "image": "board/satoru-arai.jpg", "url": "https://orcid.org/0000-0001-5865-0717"},
+    {"id": "tatjana-avsic-zupanc", "name": "Tatjana Avsic-Zupanc", "role": "International Advisory Board", "country": "Slovenia", "image": "board/tatjana-avsic-zupanc.jpg", "url": "https://orcid.org/0000-0001-6243-0688"},
+    {"id": "roger-hewson", "name": "Roger Hewson", "role": "International Advisory Board", "country": "United Kingdom", "image": "board/roger-hewson.jpg", "url": "https://orcid.org/0000-0003-2273-3152"},
+    {"id": "boris-klempa", "name": "Boris Klempa", "role": "International Advisory Board", "country": "Slovakia", "image": "board/boris-klempa.jpg", "url": "https://orcid.org/0000-0002-6931-1224"},
+    {"id": "jonas-klingstrom", "name": "Jonas Klingstrom", "role": "International Advisory Board", "country": "Sweden", "image": "board/jonas-klingstrom.jpg", "url": "https://orcid.org/0000-0001-9076-1441"},
+    {"id": "dexin-li", "name": "Dexin Li", "role": "International Advisory Board", "country": "China", "image": "board/dexin-li.jpg", "url": ""},
+    {"id": "mifang-liang", "name": "Mifang Liang", "role": "International Advisory Board", "country": "China", "image": "board/mifang-liang.jpg", "url": ""},
+    {"id": "alemka-markotic", "name": "Alemka Markotic", "role": "International Advisory Board", "country": "Croatia", "image": "board/almeka-markotic.jpg", "url": "https://orcid.org/0000-0003-4104-7940"},
+    {"id": "valeria-martinez", "name": "Valeria Martinez", "role": "International Advisory Board", "country": "Argentina", "image": "board/valeria-martinez.jpg", "url": "https://orcid.org/0000-0002-4356-8136"},
+    {"id": "gustavo-palacios", "name": "Gustavo Palacios", "role": "International Advisory Board", "country": "USA", "image": "board/gustavo-palacios.jpg", "url": "https://orcid.org/0000-0001-5062-1938"},
+    {"id": "anna-papa", "name": "Anna Papa", "role": "International Advisory Board", "country": "Greece", "image": "board/anna-papa.jpg", "url": "https://orcid.org/0000-0002-6643-3322"},
+    {"id": "liudmila-yashina", "name": "Liudmila Yashina", "role": "International Advisory Board", "country": "Russia", "image": "board/liudmila-yashina.jpg", "url": "https://orcid.org/0000-0003-2844-7835"},
+    {"id": "connie-schmaljohn", "name": "Connie Schmaljohn", "role": "Honorary Member", "country": "USA", "image": "board/connie-schmaljohn.jpg", "url": "https://orcid.org/0000-0001-8852-5482", "honorary": true}
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "items": [
+    {
+      "id": "dalrymple-1995",
+      "award": "dalrymple",
+      "year": "1995",
+      "recipient": "Ho Wang Lee",
+      "location": "Helsinki, Finland"
+    },
+    {
+      "id": "dalrymple-1998",
+      "award": "dalrymple",
+      "year": "1998",
+      "recipient": "CJ Peters",
+      "location": "Atlanta, Georgia, USA"
+    },
+    {
+      "id": "dalrymple-2001",
+      "award": "dalrymple",
+      "year": "2001",
+      "recipient": "Charlie Calisher",
+      "location": "Annecy, France"
+    },
+    {
+      "id": "dalrymple-2004",
+      "award": "dalrymple",
+      "year": "2004",
+      "recipient": "Juhani Lahdevirta",
+      "location": "Seoul, Republic of Korea"
+    },
+    {
+      "id": "dalrymple-2007",
+      "award": "dalrymple",
+      "year": "2007",
+      "recipient": "Connie Schmaljohn",
+      "location": "Buenos Aires, Argentina"
+    },
+    {
+      "id": "dalrymple-2010",
+      "award": "dalrymple",
+      "year": "2010",
+      "recipient": "Jiro Arikawa",
+      "location": "Athens, Greece"
+    },
+    {
+      "id": "dalrymple-2013",
+      "award": "dalrymple",
+      "year": "2013",
+      "recipient": "Tatjana Avšič-Županc and Richard Yanagihara",
+      "location": "Beijing, China"
+    },
+    {
+      "id": "dalrymple-2016",
+      "award": "dalrymple",
+      "year": "2016",
+      "recipient": "Irina Gavrilovskaya",
+      "location": "Fort Collins, Colorado, USA"
+    },
+    {
+      "id": "dalrymple-2019",
+      "award": "dalrymple",
+      "year": "2019",
+      "recipient": "Boris Klempa",
+      "location": "Leuven, Belgium"
+    },
+    {
+      "id": "dalrymple-2023",
+      "award": "dalrymple",
+      "year": "2023",
+      "recipient": "Miša Korva",
+      "location": "Seoul, Republic of Korea"
+    },
+    {
+      "id": "lee-ho-wang-2013",
+      "award": "lee-ho-wang",
+      "year": "2013",
+      "recipient": "Jin-Won Song",
+      "location": "Beijing, China"
+    },
+    {
+      "id": "lee-ho-wang-2016",
+      "award": "lee-ho-wang",
+      "year": "2016",
+      "recipient": "James LeDuc",
+      "location": "Fort Collins, Colorado, USA"
+    },
+    {
+      "id": "lee-ho-wang-2019",
+      "award": "lee-ho-wang",
+      "year": "2019",
+      "recipient": "Antti Vaheri",
+      "location": "Leuven, Belgium"
+    },
+    {
+      "id": "lee-ho-wang-2023",
+      "award": "lee-ho-wang",
+      "year": "2023",
+      "recipient": "Connie S. Schmaljohn",
+      "location": "Seoul, Republic of Korea"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "programme",
+  "route": "ich2026/programme",
+  "core_route": true,
+  "title": "Programme | ICH2026",
+  "description": "Scientific programme for ICH2026.",
+  "social_image": "ich2026/ich2026-hero-emblem.jpg",
+  "hero_image": "ich2026/ich2026-hero-emblem.jpg",
+  "conference_page": true,
+  "sections": [
+    {"id": "hero", "type": "page_hero", "visible": true, "locked": true, "data": {"eyebrow": "ICH2026 Program", "title": "International Hantavirus Conference", "lede": "November 2-4, followed by the Andes Virus Workshop on November 5.", "image": "ich2026/ich2026-hero-emblem.jpg", "breadcrumbs": true, "actions": [{"label": "Registration", "page_id": "registration", "style": "primary"}]}},
+    {"id": "programme", "type": "programme_tracks", "visible": true, "data": {"eyebrow": "Programme overview", "heading": "Scientific sessions and a focused Andes Virus Workshop.", "introduction": "The programme separates the main conference themes from the workshop day, keeping topics easy to scan for researchers, clinicians and public-health teams.", "tracks": [{"date": "November 2-4", "title": "International Hantavirus Conference", "description": "The meeting will cover the following topics:", "items": ["Viral epidemiology, evolution & genetics", "Virus ecology and climate change", "Viral replication", "Virus-host interactions", "Pathogenesis", "Vaccines & therapeutics", "Clinical aspects & diagnostics"], "highlight": false, "note": ""}, {"date": "November 5", "title": "Andes Virus Workshop", "description": "Topics will cover the following aspects:", "items": ["Translation of vaccine & therapeutics candidates", "Early diagnosis", "Management of Andes virus-exposed persons", "Surveillance of Andes virus", "Regional Network", "Other topics", "Round Table discussion"], "highlight": true, "note": "This workshop will be conducted with simultaneous translation (English-Spanish; Spanish-English)."}]}}
+  ]
+}

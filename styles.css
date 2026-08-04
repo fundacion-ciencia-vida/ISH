@@ -27,6 +27,44 @@ html {
   scroll-padding-top: calc(var(--header-height) + 64px);
 }
 
+body.cms-preview-mode [data-cms-section] {
+  cursor: pointer;
+}
+
+body.cms-preview-mode [data-cms-section]:hover {
+  outline: 2px solid rgba(8, 127, 115, 0.55);
+  outline-offset: -2px;
+}
+
+body.cms-preview-mode [data-cms-section].cms-preview-selected {
+  outline: 3px solid #087f73;
+  outline-offset: -3px;
+}
+
+.cms-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: clamp(16px, 2vw, 28px);
+}
+
+.cms-gallery figure {
+  margin: 0;
+}
+
+.cms-gallery picture,
+.cms-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.cms-gallery figcaption {
+  padding-top: 8px;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
 body {
   margin: 0;
   overflow-x: clip;
@@ -767,6 +805,19 @@ h3 {
   background: rgba(255, 255, 255, 0.12);
 }
 
+.button-outline {
+  border-color: var(--line);
+  color: var(--ink);
+  background: transparent;
+}
+
+.button-outline:hover,
+.button-outline:focus-visible {
+  border-color: var(--lake);
+  color: var(--lake);
+  background: var(--surface);
+}
+
 .button-ghost {
   border-color: rgba(184, 138, 42, 0.7);
   color: var(--white);
@@ -1435,7 +1486,33 @@ h3 {
   bottom: 0;
   left: 0;
   height: 6px;
+  z-index: 3;
   background: linear-gradient(90deg, var(--accent), var(--lake), #e7af34);
+}
+
+.news-lead-card > :not(.news-lead-media) {
+  position: relative;
+  z-index: 2;
+}
+
+.news-lead-media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.news-lead-media picture,
+.news-lead-media img,
+.news-card-media picture,
+.news-card-media img {
+  width: 100%;
+  height: 100%;
+}
+
+.news-lead-media img,
+.news-card-media img {
+  object-fit: cover;
 }
 
 .news-lead-card h2 {
@@ -1452,6 +1529,34 @@ h3 {
   color: rgba(255, 255, 255, 0.78);
   font-size: clamp(19px, 1.8vw, 23px);
   line-height: 1.45;
+}
+
+.news-lead-card .news-rich-body {
+  max-width: 720px;
+  margin-bottom: 28px;
+}
+
+.news-lead-card .news-rich-body p,
+.news-lead-card .news-rich-body li {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.news-lead-card .news-rich-body p {
+  margin-bottom: 12px;
+}
+
+.news-lead-card .news-rich-body > :last-child {
+  margin-bottom: 0;
+}
+
+.news-lead-card .news-rich-body h2,
+.news-lead-card .news-rich-body h3 {
+  margin: 18px 0 8px;
+  color: var(--white);
+  font-size: 22px;
+  line-height: 1.25;
 }
 
 .news-brief-panel {
@@ -1621,6 +1726,13 @@ h3 {
   transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
+.news-card-media {
+  height: 168px;
+  margin: -28px -28px 24px;
+  overflow: hidden;
+  background: var(--surface-soft);
+}
+
 .news-card::before {
   content: "";
   position: absolute;
@@ -1666,9 +1778,26 @@ h3 {
   font-size: 15px;
 }
 
-.news-card strong {
+.news-card .news-rich-body h2,
+.news-card .news-rich-body h3 {
+  margin: 16px 0 8px;
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+.news-card .news-rich-body li {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.news-card-link {
   align-self: end;
   margin-top: 34px;
+  color: var(--accent-strong);
+  text-decoration: none;
+}
+
+.news-card strong {
   color: var(--accent-strong);
   font-size: 13px;
 }
@@ -1804,6 +1933,172 @@ h3 {
   max-width: 880px;
   color: var(--muted);
   font-size: 18px;
+}
+
+body[data-page="awards"] .page-hero {
+  --hero-focal-x: 50%;
+  --hero-focal-y: 42%;
+}
+
+.award-profiles-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+  gap: 72px;
+  align-items: start;
+}
+
+.award-profiles-intro h2,
+.award-history-lead h2 {
+  max-width: 780px;
+}
+
+.award-profiles-intro > p:not(.eyebrow),
+.award-history-lead .section-heading > p:not(.eyebrow) {
+  max-width: 680px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.award-profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 64px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.award-profile {
+  min-width: 0;
+  padding: 34px 42px 38px 0;
+}
+
+.award-profile + .award-profile {
+  padding-right: 0;
+  padding-left: 42px;
+  border-left: 1px solid var(--line);
+}
+
+.award-profile-number {
+  display: block;
+  margin-bottom: 52px;
+  color: var(--lake);
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.award-profile h3 {
+  max-width: 560px;
+  margin: 0 0 18px;
+  font-size: clamp(26px, 3vw, 40px);
+  line-height: 1.08;
+}
+
+.award-profile > p {
+  max-width: 580px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.award-profile .award-historical-note {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+}
+
+.award-history-lead {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: 72px;
+  align-items: start;
+}
+
+.award-history-lead .hero-actions {
+  margin-top: 30px;
+}
+
+.award-history-figure {
+  display: grid;
+  gap: 11px;
+  margin: 0;
+}
+
+.award-history-figure .responsive-image,
+.award-history-figure img {
+  display: block;
+  width: 100%;
+}
+
+.award-history-figure img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.award-history-figure figcaption {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.award-history-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 72px;
+  margin-top: 76px;
+}
+
+.award-history-group h3 {
+  min-height: 2.4em;
+  max-width: 560px;
+  margin: 0 0 22px;
+  font-size: clamp(24px, 2.6vw, 34px);
+  line-height: 1.2;
+}
+
+.award-history-group ol {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+.award-recipient {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.award-recipient time {
+  color: var(--lake);
+  font-size: 13px;
+  font-weight: 850;
+  font-variant-numeric: tabular-nums;
+}
+
+.award-recipient strong,
+.award-recipient span {
+  display: block;
+}
+
+.award-recipient strong {
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.award-recipient span {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.4;
 }
 
 .archive-timeline-wrap {
@@ -3743,6 +4038,95 @@ body.lightbox-open {
   align-items: start;
 }
 
+.registration-opportunities .section-heading {
+  max-width: 900px;
+}
+
+.registration-opportunities .opportunity-introduction {
+  max-width: 680px;
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.opportunity-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 54px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.opportunity-item {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: 32px 42px 38px 0;
+}
+
+.opportunity-item + .opportunity-item {
+  padding-right: 0;
+  padding-left: 42px;
+  border-left: 1px solid var(--line);
+}
+
+.opportunity-meta {
+  display: flex;
+  min-height: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.opportunity-meta span,
+.opportunity-meta strong {
+  color: var(--lake);
+  font-size: 12px;
+  font-weight: 850;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.opportunity-meta strong {
+  color: var(--ink);
+  text-align: right;
+}
+
+.opportunity-item h3 {
+  max-width: 580px;
+  margin: 30px 0 16px;
+  font-size: clamp(25px, 2.7vw, 36px);
+  line-height: 1.08;
+}
+
+.opportunity-item > p {
+  max-width: 590px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.opportunity-item ul {
+  display: grid;
+  gap: 9px;
+  margin: 22px 0 0;
+  padding-left: 20px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.opportunity-item li::marker {
+  color: var(--lake);
+}
+
+.opportunity-item .hero-actions {
+  margin-top: auto;
+  padding-top: 30px;
+}
+
 .registration-flow {
   display: grid;
   border-top: 1px solid var(--line);
@@ -4317,6 +4701,8 @@ body.lightbox-open {
   .ich-workshop-layout,
   .registration-flow-layout,
   .andv-fee-layout,
+  .award-profiles-intro,
+  .award-history-lead,
   .contact-topics,
   .detail-grid,
   .contact-layout {
@@ -4424,6 +4810,35 @@ body.lightbox-open {
   .site-nav a[aria-current="page"],
   .site-nav a.active {
     box-shadow: inset 3px 0 0 var(--accent);
+  }
+}
+
+@media (max-width: 1380px) and (min-width: 781px) {
+  body[data-page="home"] .hero {
+    display: flex;
+    min-height: calc(100svh - var(--header-height));
+    padding: 96px 0 30px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
+    gap: 24px;
+  }
+
+  body[data-page="home"] .hero-content {
+    width: min(100% - 64px, 760px);
+    margin: 0 auto;
+  }
+
+  body[data-page="home"] .hero-panel {
+    position: relative;
+    inset: auto;
+    width: min(100% - 64px, 760px);
+    margin: 0 auto;
+  }
+
+  body[data-page="home"] h1 {
+    max-width: 760px;
+    font-size: 58px;
   }
 }
 
@@ -4684,12 +5099,53 @@ body.lightbox-open {
   .resource-grid,
   .profile-grid,
   .registration-grid,
+  .opportunity-grid,
+  .award-profile-grid,
+  .award-history-grid,
   .link-list,
   .travel-link-list,
   .travel-shortcuts,
   .site-footer-rich,
   .sponsor-grid {
     grid-template-columns: 1fr;
+  }
+
+  .opportunity-grid,
+  .award-profile-grid {
+    margin-top: 42px;
+  }
+
+  .opportunity-item,
+  .award-profile {
+    padding: 28px 0 32px;
+  }
+
+  .opportunity-item + .opportunity-item,
+  .award-profile + .award-profile {
+    padding: 32px 0;
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .opportunity-meta {
+    min-height: 0;
+  }
+
+  .opportunity-item h3 {
+    margin-top: 24px;
+  }
+
+  .award-profile-number {
+    margin-bottom: 30px;
+  }
+
+  .award-history-grid {
+    gap: 50px;
+    margin-top: 54px;
+  }
+
+  .award-history-group h3 {
+    min-height: 0;
   }
 
   .summary-item {
@@ -4889,6 +5345,16 @@ body.lightbox-open {
 
   h3 {
     font-size: 18px;
+  }
+
+  .opportunity-meta {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .opportunity-meta strong {
+    text-align: left;
   }
 
   .hero-actions,
@@ -7065,6 +7531,7 @@ body[data-page="programme"] .program-track.highlight li::before {
 .location-carousel .location-slide img {
   aspect-ratio: auto;
   object-fit: cover;
+  object-position: var(--location-focal-x, 50%) var(--location-focal-y, 50%);
 }
 
 .location-carousel .location-slide figcaption {

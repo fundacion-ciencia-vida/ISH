@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "id": "ich2026-august-updates",
+      "category": "ICH2026 update",
+      "date": "August 4, 2026",
+      "title": "ICH2026 deadlines, fellowships and award nominations",
+      "description": "Updated ICH2026 deadlines, registration support, lectureship award nominations and ANDV Workshop registration.",
+      "body_html": "<p>Several important ICH2026 opportunities and deadlines have been updated.</p><ul><li><strong>Final abstract submission:</strong> August 16, 2026. Oral presentations will be selected from submitted abstracts.</li><li><strong>Fellowship applications:</strong> August 23, 2026, for researchers based in South America.</li><li><strong>Early-bird registration:</strong> September 1, 2026.</li><li><strong>Lectureship award nominations:</strong> September 4, 2026.</li></ul><p>Registration is also open for the November 5 ANDV Workshop. Participants may attend the workshop without registering for ICH2026.</p>",
+      "url": "https://www.hantavirussociety.org/ich2026/abstracts-registration/",
+      "label": "View ICH2026 registration updates",
+      "image": "ich2026/ich2026-logo-landscape.png",
+      "image_alt": "ICH2026 conference visual identity",
+      "featured": true
+    },
+    {
+      "id": "hantavirus-corc-vaccine-working-group",
+      "category": "Hantavirus CORC",
+      "date": "September 10, 2026",
+      "title": "Vaccine Working Group open consultation",
+      "description": "An open virtual consultation for experts involved in hantavirus vaccine research and development.",
+      "body_html": "<p>Following the recent Pre-Clinical Models Working Group discussion, the Hantavirus CORC is convening a Vaccine Working Group meeting for experts involved in hantavirus vaccine research and development.</p><h3>Meeting objectives</h3><ul><li>Share updates on current vaccine development activities.</li><li>Identify key research priorities and remaining knowledge gaps.</li><li>Explore opportunities for collaboration to strengthen global preparedness and response for hantavirus outbreaks.</li></ul><h3>Meeting details</h3><p><strong>Thursday, September 10, 2026</strong><br>13:00-15:00 CET (2 hours)<br>Virtual open consultation webinar via Zoom.</p><p>Questions submitted through the Zoom chat will be reviewed and addressed during the discussion. Zoom password: <strong>@Hanta!1</strong>.</p><p>A detailed agenda will be circulated closer to the meeting date. Convened by the R&amp;D Blueprint on behalf of the Hantavirus CORC.</p>",
+      "url": "https://who.zoom.us/j/95193938502",
+      "label": "Join the Zoom meeting"
+    },
+    {"id": "andes-statement", "category": "ISH statement", "date": "May 19, 2026", "title": "Andes virus transmission and current outbreak investigation", "description": "Statement from ISH and members of the international hantavirus research and clinical community, linked to the Zenodo record supplied by the team.", "url": "https://zenodo.org/records/20298312", "label": "Open Zenodo record", "featured": false},
+    {"id": "who-testing", "category": "WHO guidance", "date": "May 15, 2026", "title": "Laboratory testing of Andes virus infection", "description": "WHO interim guidance for laboratory testing of Andes virus infection.", "url": "https://www.who.int/publications/i/item/B09765", "label": "Read WHO guidance"},
+    {"id": "ecdc-outbreak", "category": "ECDC update", "date": "May 2026", "title": "Andes hantavirus outbreak in cruise ship", "description": "ECDC epidemiological update and associated guidance for the Andes hantavirus outbreak.", "url": "https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak", "label": "View ECDC update"},
+    {"id": "who-focus", "category": "WHO webinar", "date": "May 20, 2026", "title": "Hantavirus in Focus I: what we know and what it means", "description": "WHO EPI-WIN webinar on the current multi-country hantavirus event, public-health implications and community protection.", "url": "https://www.who.int/news-room/events/detail/2026/05/20/default-calendar/hantavirus-in-focus-i-what-we-know-and-what-it-means", "label": "View WHO webinar"},
+    {"id": "who-blueprint", "category": "WHO R&D Blueprint", "date": "WHO", "title": "R&D Blueprint for epidemics", "description": "WHO programme for rapid activation of research and development during epidemics, including the Andes virus MCM R&D consultation.", "url": "https://www.who.int/teams/blueprint", "label": "Open WHO Blueprint"},
+    {"id": "who-consultation", "category": "WHO consultation", "date": "May 15, 2026", "title": "Emergency scientific consultation on Andes virus MCM R&D", "description": "WHO convened an emergency scientific consultation on Andes virus medical countermeasures. Session 1 was chaired by Nicole Tischler.", "url": "https://www.who.int/news-room/events/detail/2026/05/15/default-calendar/emergency-scientific-consultation-on-andes-virus-medical-countermeasures-(mcm)-r-d", "label": "View WHO event"},
+    {"id": "who-topic", "category": "Public-health resource", "date": "WHO", "title": "WHO hantavirus health topic", "description": "A reference point for public-health context, disease information and international guidance.", "url": "https://www.who.int/health-topics/hantavirus#tab=tab_1", "label": "Read WHO topic"},
+    {"id": "pha4ge", "category": "Webinar", "date": "PHA4GE", "title": "Hantavirus and genomic epidemiology", "description": "A scientific webinar focused on sequencing, genomic epidemiology and implementation questions for hantavirus surveillance.", "url": "https://pha4ge.org/webinars/hantavirus-and-genomic-epidemiology-has-it-been-smooth-sailing/", "label": "Watch webinar"}
+  ]
+}

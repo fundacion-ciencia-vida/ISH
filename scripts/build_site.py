@@ -7,8 +7,14 @@ import re
 from html import escape
 from pathlib import Path
 
+try:
+    from .content_store import collection_item_complete, load_content_bundle, sanitize_rich_html
+except ImportError:
+    from content_store import collection_item_complete, load_content_bundle, sanitize_rich_html
 
-ROOT = Path(__file__).resolve().parents[1]
+
+ROOT = Path(os.environ.get("ISH_SOURCE_ROOT", Path(__file__).resolve().parents[1])).resolve()
+OUTPUT_ROOT = Path(os.environ.get("ISH_OUTPUT_ROOT", ROOT)).resolve()
 
 SITE_URL = os.environ.get("SITE_URL", "https://fundacion-ciencia-vida.github.io/ISH").rstrip("/")
 STYLESHEET = "styles.min.css"
@@ -316,11 +322,114 @@ TRAVEL_ICONS = {
 }
 
 LOCATION_CAROUSEL_IMAGES = [
-    ("01", "Puerto Varas and Osorno Volcano", "Osorno Volcano and Puerto Varas church by Lake Llanquihue", "ich2026/from-zip/pvaras.webp"),
-    ("02", "Lake District waterfall", "Waterfall in the Puerto Varas and Lake District area", "ich2026/from-zip/salto.jpg"),
-    ("03", "Lake Llanquihue activities", "Kayaks on Lake Llanquihue near Puerto Varas", "ich2026/from-zip/sea-kayak-puerto-varas.jpg"),
-    ("04", "Osorno Volcano view", "Osorno Volcano seen from the Puerto Varas area", "ich2026/from-zip/volcan-puerto-varas.jpg"),
+    ("01", "Puerto Varas and Osorno Volcano", "Osorno Volcano and Puerto Varas church by Lake Llanquihue", "ich2026/from-zip/pvaras.webp", 50, 50),
+    ("02", "Lake District waterfall", "Waterfall in the Puerto Varas and Lake District area", "ich2026/from-zip/salto.jpg", 50, 50),
+    ("03", "Lake Llanquihue activities", "Kayaks on Lake Llanquihue near Puerto Varas", "ich2026/from-zip/sea-kayak-puerto-varas.jpg", 50, 50),
+    ("04", "Osorno Volcano view", "Osorno Volcano seen from the Puerto Varas area", "ich2026/from-zip/volcan-puerto-varas.jpg", 50, 50),
 ]
+
+
+CONTENT = load_content_bundle()
+SITE_CONTENT = CONTENT["site"]
+COLLECTIONS = {
+    name: [item for item in items if collection_item_complete(name, item)]
+    for name, items in CONTENT["collections"].items()
+}
+CONTENT_PAGES = CONTENT["pages"]
+PAGE_BY_ID = {page["id"]: page for page in CONTENT_PAGES}
+
+SITE_URL = os.environ.get("SITE_URL", SITE_CONTENT.get("public_url", SITE_URL)).rstrip("/")
+MEMBERSHIP_FORM = SITE_CONTENT["links"]["membership"]
+CONFERENCE_FORM = SITE_CONTENT["links"]["registration"]
+PRACTICAL_TIPS_CHILE = SITE_CONTENT["links"]["practical_tips"]
+
+
+def _page_href(page_id: str) -> str:
+    page = PAGE_BY_ID[page_id]
+    route = page.get("route", "").strip("/")
+    return f"{route}/" if route else ""
+
+
+NAV_GROUPS = [
+    (
+        group["label"],
+        [
+            (item["page_id"], item["label"], _page_href(item["page_id"]))
+            for item in group.get("items", [])
+            if item.get("page_id") in PAGE_BY_ID
+        ],
+    )
+    for group in SITE_CONTENT["navigation"].get("groups", [])
+]
+NAV = [item for _, items in NAV_GROUPS for item in items]
+ICH_NAV_KEYS = set(SITE_CONTENT["navigation"].get("conference_subnav", []))
+CONFERENCE_PAGE_KEYS = {page["id"] for page in CONTENT_PAGES if page.get("conference_page")}
+
+BOARD = [
+    (
+        person["name"],
+        (
+            f'{person.get("role", "International Advisory Board")} | {person.get("country", "")}'
+            if person.get("role") != "International Advisory Board"
+            else person.get("country", "")
+        ),
+        person["image"],
+        person.get("url", ""),
+    )
+    for person in COLLECTIONS.get("board", [])
+]
+
+
+def _committee_tuples(group: str) -> list[tuple[str, str, str, str, str, str]]:
+    return [
+        (
+            person["name"],
+            person.get("role", ""),
+            person.get("affiliation", ""),
+            person.get("location", ""),
+            person["image"],
+            person.get("url", ""),
+        )
+        for person in COLLECTIONS.get("committees", [])
+        if person.get("group") == group
+    ]
+
+
+SCIENTIFIC_COMMITTEE = _committee_tuples("scientific")
+LOCAL_COMMITTEE = _committee_tuples("local")
+SPONSORS = [
+    (item["group"], item["name"], SITE_URL + "/" if item.get("url") == "/" else item.get("url", ""), item["image"])
+    for item in COLLECTIONS.get("sponsors", [])
+]
+SPONSOR_GROUP_LABELS = [(name, name) for name in ["Scientific societies", "Universities & research partners", "Sponsors"]]
+FORMER_MEETINGS = [
+    (
+        item["number"],
+        item["year"],
+        item["location"],
+        item.get("abstract_label", ""),
+        item.get("abstract_url", ""),
+        item.get("images", [""])[0] if item.get("images") else "",
+        item.get("report_url", ""),
+    )
+    for item in COLLECTIONS.get("former_meetings", [])
+]
+FORMER_GALLERIES = [
+    (item["number"], item["year"], item["location"], item.get("images", []))
+    for item in COLLECTIONS.get("former_meetings", [])
+    if item.get("images")
+]
+TRAVEL_LINKS = [
+    (item.get("icon", "document"), item["label"], item.get("description", ""), item.get("url", ""))
+    for item in COLLECTIONS.get("travel_links", [])
+]
+LOCATION_CAROUSEL_IMAGES = [
+    (item.get("number", ""), item["title"], item.get("alt", ""), item["image"], item.get("focal_x", 50), item.get("focal_y", 50))
+    for item in COLLECTIONS.get("location_carousel", [])
+]
+
+OG_IMAGES = {page["id"]: page.get("social_image", SITE_CONTENT.get("default_social_image", "ui/social-preview.jpg")) for page in CONTENT_PAGES}
+HERO_IMAGES = {page["id"]: page.get("hero_image", page.get("social_image", "ui/social-preview.jpg")) for page in CONTENT_PAGES}
 
 
 def prefix_for(out_path: str) -> str:
@@ -455,9 +564,10 @@ def minify_js(source: str) -> str:
 
 
 def minify_static_assets() -> None:
-    (ROOT / STYLESHEET).write_text(minify_css((ROOT / "styles.css").read_text(encoding="utf-8")), encoding="utf-8")
-    (ROOT / FONTSHEET).write_text(minify_css((ROOT / "fonts.css").read_text(encoding="utf-8")), encoding="utf-8")
-    (ROOT / SCRIPT).write_text(minify_js((ROOT / "script.js").read_text(encoding="utf-8")), encoding="utf-8")
+    OUTPUT_ROOT.mkdir(parents=True, exist_ok=True)
+    (OUTPUT_ROOT / STYLESHEET).write_text(minify_css((ROOT / "styles.css").read_text(encoding="utf-8")), encoding="utf-8")
+    (OUTPUT_ROOT / FONTSHEET).write_text(minify_css((ROOT / "fonts.css").read_text(encoding="utf-8")), encoding="utf-8")
+    (OUTPUT_ROOT / SCRIPT).write_text(minify_js((ROOT / "script.js").read_text(encoding="utf-8")), encoding="utf-8")
 
 
 def file_version(path: str) -> str:
@@ -532,6 +642,9 @@ def responsive_image(
     aria_hidden: str = "",
     picture_attrs_extra: dict[str, object] | None = None,
 ) -> str:
+    asset_path = asset_path.strip()
+    if not asset_path:
+        return ""
     manifest = IMAGE_MANIFEST.get(asset_key(asset_path))
     image_attrs: dict[str, object] = {
         "class": class_name,
@@ -587,7 +700,7 @@ def external_attrs(href: str) -> str:
 
 
 def contact_href(prefix: str) -> str:
-    return local(prefix, "about-ish/#contact")
+    return local(prefix, _page_href("contact"))
 
 
 def attrs(**values: str) -> str:
@@ -595,7 +708,32 @@ def attrs(**values: str) -> str:
 
 
 def conference_json_ld() -> str:
-    return CONFERENCE_JSON_LD_TEMPLATE.replace("__SITE_URL__", SITE_URL)
+    conference = SITE_CONTENT["conference"]
+    payload = {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": conference["name"],
+        "alternateName": conference["short_name"],
+        "startDate": conference["start_date"],
+        "endDate": conference["end_date"],
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+            "@type": "Place",
+            "name": conference["venue"],
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Puerto Varas",
+                "addressRegion": "Los Lagos",
+                "addressCountry": "CL",
+            },
+        },
+        "organizer": {"@type": "Organization", "name": SITE_CONTENT["name"], "url": SITE_URL},
+        "url": f'{SITE_URL}/{_page_href("ich2026")}'.rstrip("/"),
+        "image": f'{SITE_URL}/assets/images/{PAGE_BY_ID["ich2026"]["social_image"]}',
+        "description": PAGE_BY_ID["ich2026"]["description"],
+    }
+    return json.dumps(payload, ensure_ascii=True, separators=(",", ":"))
 
 
 def travel_icon(name: str) -> str:
@@ -636,11 +774,11 @@ def header(prefix: str, active: str) -> str:
         )
     return f"""
     <header class="site-header" data-header>
-      <a class="brand" href="{local(prefix)}" aria-label="International Society for Hantaviruses">
-        {responsive_image(prefix, "ui/logo.png", "International Society for Hantaviruses logo", class_name="brand-logo", loading="eager", decoding="async", sizes="140px")}
+      <a class="brand" href="{local(prefix)}" aria-label="{escape(SITE_CONTENT['name'], quote=True)}">
+        {responsive_image(prefix, SITE_CONTENT['brand']['logo'], f"{SITE_CONTENT['name']} logo", class_name="brand-logo", loading="eager", decoding="async", sizes="140px")}
         <span class="brand-copy">
-          <strong>International Society</strong>
-          <span>for Hantaviruses</span>
+          <strong>{escape(SITE_CONTENT['brand']['line_1'])}</strong>
+          <span>{escape(SITE_CONTENT['brand']['line_2'])}</span>
         </span>
       </a>
       <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>
@@ -675,25 +813,23 @@ def ich_subnav(prefix: str, active: str) -> str:
 
 
 def footer(prefix: str) -> str:
+    contacts = "".join(
+        f'<a href="mailto:{escape(item["email"], quote=True)}">Contact {escape(item["label"])}: {escape(item["email"])}</a>'
+        for item in SITE_CONTENT.get("contacts", [])
+    )
     return f"""
     <footer class="site-footer-rich">
       <div>
-        {responsive_image(prefix, "ui/logo.png", "International Society for Hantaviruses logo", loading="lazy", decoding="async", sizes="190px")}
-        <p>Website of the International Society for Hantaviruses.</p>
+        {responsive_image(prefix, SITE_CONTENT['brand']['logo'], f"{SITE_CONTENT['name']} logo", loading="lazy", decoding="async", sizes="190px")}
+        <p>{escape(SITE_CONTENT['footer']['description'])}</p>
       </div>
       <nav aria-label="Site pages">
-        <strong>Site</strong>
-        <a href="{local(prefix, "about-ish/")}">About ISH</a>
-        <a href="{local(prefix, "former-meetings/")}">Former Meetings</a>
-        <a href="{local(prefix, "communications/")}">Communications</a>
-        <a href="{local(prefix, "ich2026/")}">ICH2026</a>
-        <a href="{local(prefix, "ich2026/abstracts-registration/")}">Registration</a>
-        <a href="{local(prefix, "ich2026/#committees")}">Committees</a>
+        <strong>{escape(SITE_CONTENT['footer']['site_heading'])}</strong>
+        {''.join(f'<a href="{local(prefix, href)}">{escape(label)}</a>' for _, label, href in NAV)}
       </nav>
       <nav aria-label="Contact and actions">
-        <strong>Contact</strong>
-        <a href="mailto:ish@hantavirussociety.org">Contact ISH: ish@hantavirussociety.org</a>
-        <a href="mailto:ICH2026@hantavirussociety.org">Contact ICH2026: ICH2026@hantavirussociety.org</a>
+        <strong>{escape(SITE_CONTENT['footer']['contact_heading'])}</strong>
+        {contacts}
         <a href="{MEMBERSHIP_FORM}" target="_blank" rel="noreferrer">Apply for ISH membership</a>
         <a href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">ICH2026 registration form</a>
       </nav>
@@ -702,7 +838,7 @@ def footer(prefix: str) -> str:
 
 def doc(out_path: str, active: str, title: str, description: str, body: str) -> str:
     prefix = prefix_for(out_path)
-    subnav = ich_subnav(prefix, active) if active in ICH_NAV_KEYS else ""
+    subnav = ich_subnav(prefix, active) if active in CONFERENCE_PAGE_KEYS else ""
     hero_preload = preload_image(prefix, HERO_IMAGES[active]) if active in HERO_IMAGES else ""
 
     page_dir = str(Path(out_path).parent)
@@ -710,11 +846,11 @@ def doc(out_path: str, active: str, title: str, description: str, body: str) -> 
     og_image = SITE_URL + "/assets/images/" + OG_IMAGES.get(active, "ui/home-science-hero.webp")
 
     json_ld = ""
-    if active in ICH_NAV_KEYS:
+    if active in CONFERENCE_PAGE_KEYS:
         json_ld = f'\n    <script type="application/ld+json">{conference_json_ld()}</script>'
 
     return f"""<!doctype html>
-<html lang="en">
+<html lang="{escape(SITE_CONTENT.get('language', 'en'), quote=True)}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -726,7 +862,7 @@ def doc(out_path: str, active: str, title: str, description: str, body: str) -> 
     <meta property="og:description" content="{escape(description)}">
     <meta property="og:image" content="{og_image}">
     <meta property="og:url" content="{canonical}">
-    <meta property="og:site_name" content="International Society for Hantaviruses">
+    <meta property="og:site_name" content="{escape(SITE_CONTENT['name'], quote=True)}">
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{escape(title)}">
@@ -1037,7 +1173,7 @@ def location_carousel(prefix: str) -> str:
     thumbs: list[str] = []
     dots: list[str] = []
 
-    for index, (number, title, alt, image_path) in enumerate(LOCATION_CAROUSEL_IMAGES):
+    for index, (number, title, alt, image_path, focal_x, focal_y) in enumerate(LOCATION_CAROUSEL_IMAGES):
         active_class = " is-active" if index == 0 else ""
         aria_hidden = "false" if index == 0 else "true"
         aria_pressed = "true" if index == 0 else "false"
@@ -1046,7 +1182,7 @@ def location_carousel(prefix: str) -> str:
 
         slides.append(
             f"""
-            <figure class="location-slide{active_class}" data-location-slide aria-hidden="{aria_hidden}">
+            <figure class="location-slide{active_class}" data-location-slide aria-hidden="{aria_hidden}" style="--location-focal-x:{float(focal_x):g}%;--location-focal-y:{float(focal_y):g}%">
               {responsive_image(prefix, image_path, alt, loading="lazy", decoding="async", sizes="(max-width: 780px) 92vw, 900px")}
               <figcaption><span>{number} / {total:02d}</span><strong>{safe_title}</strong></figcaption>
             </figure>"""
@@ -1230,7 +1366,7 @@ def registration_page(prefix: str) -> str:
       {page_hero(prefix, "ICH2026 Registration & Abstract Submission", "Registration and abstract submission.", "Submit abstracts and complete registration through the official 4ID portal.", "venue/puerto-varas-waterfront.jpg", [("Submit abstract / register", CONFERENCE_FORM, "button-primary"), ("Contact", contact_href(prefix), "button-secondary")], breadcrumbs=crumbs)}
       <section class="section intro-band">
         <div class="section-shell registration-flow-layout">
-          <div class="section-heading reveal"><p class="eyebrow">Deadlines</p><h2>Registration and abstract submission are open.</h2><p>Use the 4ID portal to submit abstracts and complete registration for ICH2026.</p><p>Abstract submission deadline: August 16, 2026.</p><p>Early bird registration deadline: August 15, 2026.</p><p>Abstracts should be 250 words maximum, excluding title, authors, and affiliations.</p><a class="button button-primary" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Submit abstract / register</a></div>
+          <div class="section-heading reveal"><p class="eyebrow">Deadlines</p><h2>Registration and abstract submission are open.</h2><p>Use the 4ID portal to submit abstracts and complete registration for ICH2026.</p><p>Abstract submission deadline: August 16, 2026.</p><p>Early bird registration deadline: September 1, 2026.</p><p>Abstracts should be 250 words maximum, excluding title, authors, and affiliations.</p><a class="button button-primary" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Submit abstract / register</a></div>
           <figure class="registration-portal reveal">
             <a href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer" aria-label="Open the 4ID ICH2026 submission and registration portal">
               {responsive_image(prefix, "ich2026/4id.png", "4ID platform for ICH2026 registration and abstract submission", loading="lazy", decoding="async", sizes="(max-width: 780px) 92vw, 620px")}
@@ -1749,19 +1885,820 @@ def about_page(prefix: str) -> str:
       {contact_section()}"""
 
 
+def interpolate_content(value: str) -> str:
+    conference = SITE_CONTENT.get("conference", {})
+
+    def replace(match: re.Match[str]) -> str:
+        return str(conference.get(match.group(1), match.group(0)))
+
+    return re.sub(r"\{\{conference\.([a-z0-9_]+)\}\}", replace, value)
+
+
+def content_page_href(prefix: str, page_id: str) -> str:
+    page = PAGE_BY_ID.get(page_id)
+    if not page:
+        return "#"
+    return local(prefix, _page_href(page_id))
+
+
+def content_href(prefix: str, item: dict[str, object]) -> str:
+    if item.get("page_id"):
+        return content_page_href(prefix, str(item["page_id"]))
+    if item.get("site_link"):
+        href = str(SITE_CONTENT.get("links", {}).get(str(item["site_link"]), "#"))
+    else:
+        href = str(item.get("url") or item.get("href") or "#")
+    if href.startswith(("http://", "https://", "mailto:", "tel:", "#")):
+        return href
+    return local(prefix, href.lstrip("/"))
+
+
+def content_actions(prefix: str, actions: list[dict[str, object]], *, page_actions: bool = False) -> str:
+    if not actions:
+        return ""
+    links = []
+    class_map = {
+        "primary": "button-primary",
+        "secondary": "button-secondary",
+        "outline": "button-outline",
+        "ghost": "button-ghost",
+        "secondary-light": "button-secondary light",
+    }
+    for action in actions:
+        href = content_href(prefix, action)
+        label = escape(interpolate_content(str(action.get("label", "Open"))))
+        klass = class_map.get(str(action.get("style", "primary")), "button-primary")
+        links.append(f'<a class="button {klass}" href="{escape(href, quote=True)}"{external_attrs(href)}>{label}</a>')
+    extra = " page-actions" if page_actions else ""
+    return f'<div class="hero-actions{extra}">{"".join(links)}</div>'
+
+
+def content_paragraphs(data: dict[str, object]) -> str:
+    paragraphs = data.get("paragraphs", [])
+    if not isinstance(paragraphs, list):
+        return ""
+    return "".join(f"<p>{escape(interpolate_content(str(paragraph)))}</p>" for paragraph in paragraphs)
+
+
+def mark_content_section(html: str, section: dict[str, object]) -> str:
+    section_id = escape(str(section.get("id", "section")), quote=True)
+    section_type = escape(str(section.get("type", "unknown")), quote=True)
+    marker = f'data-cms-section="{section_id}" data-cms-type="{section_type}"'
+    return re.sub(r"<(section|div)(\s)", rf"<\1 {marker}\2", html, count=1)
+
+
+def content_breadcrumbs(prefix: str, page: dict[str, object]) -> list[tuple[str, str | None]]:
+    crumbs: list[tuple[str, str | None]] = [("Home", local(prefix))]
+    if page.get("conference_page") and page["id"] != "ich2026":
+        crumbs.append(("ICH2026", content_page_href(prefix, "ich2026")))
+    crumbs.append((str(page.get("title", page["id"])).split(" | ", 1)[0], None))
+    return crumbs
+
+
+def render_home_hero(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    conference = SITE_CONTENT["conference"]
+    image_path = str(data.get("image", "ui/home-science-hero.webp"))
+    hero_media = responsive_image(
+        prefix,
+        image_path,
+        str(data.get("image_alt", "")),
+        picture_class="hero-media is-active",
+        loading="eager",
+        decoding="async",
+        fetchpriority="high",
+        sizes="100vw",
+        picture_attrs_extra={"aria_hidden": "false"},
+    )
+    actions = data.get("actions", [])
+    actions_html = content_actions(prefix, actions if isinstance(actions, list) else [])
+    panel_href = content_page_href(prefix, str(data.get("panel_link_page_id", "registration")))
+    html = f"""
+      <section class="hero" aria-labelledby="hero-title" data-active-hero="0">
+        <div class="hero-slides">{hero_media}</div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal is-visible">
+          <p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p>
+          <h1 id="hero-title">{escape(str(data.get('title', '')))}</h1>
+          <p class="hero-lede">{escape(str(data.get('lede', '')))}</p>
+          {actions_html}
+        </div>
+        <aside class="hero-panel" aria-label="ICH2026 conference brief">
+          <div class="hero-panel-kicker">{escape(str(data.get('panel_kicker', 'ICH2026')))}</div>
+          <span class="hero-panel-title">{escape(str(data.get('panel_title', '')))}</span>
+          <strong class="hero-panel-date">{escape(str(data.get('panel_date', conference['dates_label'])))}</strong>
+          <div class="hero-panel-meta" aria-label="Conference location and venue">
+            <span>{escape(str(data.get('panel_location', conference['location'])))}</span>
+            <span>{escape(str(data.get('panel_venue', conference['venue'])))}</span>
+            <span class="hero-panel-deadline">{escape(str(data.get('panel_deadline_prefix', 'Abstract deadline:')))} {escape(conference['abstract_deadline'])}</span>
+          </div>
+          <div class="countdown" data-countdown="{escape(str(data.get('countdown_date', conference['start_date'])), quote=True)}" aria-label="Time until ICH2026">
+            <div class="countdown-unit"><span class="countdown-val" data-unit="days">--</span><span class="countdown-label">Days</span></div>
+            <div class="countdown-unit"><span class="countdown-val" data-unit="hours">--</span><span class="countdown-label">Hours</span></div>
+            <div class="countdown-unit"><span class="countdown-val" data-unit="minutes">--</span><span class="countdown-label">Minutes</span></div>
+          </div>
+          <a class="hero-panel-link" href="{panel_href}">{escape(str(data.get('panel_link_label', 'Submit abstract')))}</a>
+        </aside>
+      </section>"""
+    return mark_content_section(html, section)
+
+
+def render_page_hero(prefix: str, page: dict[str, object], section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    actions = data.get("actions", [])
+    ctas = []
+    class_map = {
+        "primary": "button-primary",
+        "secondary": "button-secondary",
+        "ghost": "button-ghost",
+    }
+    if isinstance(actions, list):
+        for action in actions:
+            ctas.append(
+                (
+                    str(action.get("label", "Open")),
+                    content_href(prefix, action),
+                    class_map.get(str(action.get("style", "primary")), "button-primary"),
+                )
+            )
+    crumbs = content_breadcrumbs(prefix, page) if data.get("breadcrumbs") else None
+    html = page_hero(
+        prefix,
+        str(data.get("eyebrow", "")),
+        str(data.get("title", page.get("title", ""))),
+        str(data.get("lede", "")),
+        str(data.get("image", page.get("hero_image", "ui/social-preview.jpg"))),
+        ctas or None,
+        breadcrumbs=crumbs,
+        image_credit=str(data.get("image_credit", "")),
+    )
+    return mark_content_section(html, section)
+
+
+def render_split_text(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    variant = str(section.get("variant", "intro"))
+    actions = data.get("actions", [])
+    actions_html = content_actions(prefix, actions if isinstance(actions, list) else [])
+    copy = content_paragraphs(data) + actions_html
+    if variant == "workshop":
+        html = f"""
+          <section class="section ich-workshop"><div class="section-shell ich-workshop-layout">
+            <div class="section-heading reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(interpolate_content(str(data.get('heading', ''))))}</h2></div>
+            <div class="prose reveal">{copy}</div>
+          </div></section>"""
+    elif variant == "awards":
+        html = f"""
+          <section class="section intro-band"><div class="section-shell archive-awards reveal">
+            <p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p>
+            <div><h2>{escape(interpolate_content(str(data.get('heading', ''))))}</h2>{copy}</div>
+          </div></section>"""
+    else:
+        html = f"""
+          <section class="section intro-band"><div class="section-shell two-column">
+            <div class="section-heading reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(interpolate_content(str(data.get('heading', ''))))}</h2></div>
+            <div class="prose reveal">{copy}</div>
+          </div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_heading_text(section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    variant = str(section.get("variant", "data"))
+    section_class = "data-section" if variant == "data" else "intro-band"
+    html = f"""
+      <section class="section {section_class}"><div class="section-shell">
+        <div class="section-heading compact reveal">
+          <p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p>
+          <h2>{escape(str(data.get('heading', '')))}</h2>
+          {content_paragraphs(data)}
+        </div>
+      </div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_single_image(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    html = f"""
+      <section class="section intro-band"><div class="section-shell society-gallery single-image" aria-label="{escape(str(data.get('caption', 'Image')), quote=True)}">
+        <figure class="reveal">{responsive_image(prefix, str(data.get('image', '')), str(data.get('alt', '')), loading='lazy', decoding='async', sizes='(max-width: 780px) 100vw, 1180px')}<figcaption>{escape(str(data.get('caption', '')))}</figcaption></figure>
+      </div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_logo_mark(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    html = f"""
+      <section class="section intro-band"><div class="section-shell about-logo-card reveal">
+        {responsive_image(prefix, str(data.get('image', SITE_CONTENT['brand']['logo'])), str(data.get('alt', '')), loading='lazy', decoding='async', sizes='190px')}
+        <div><span>{escape(str(data.get('label', '')))}</span></div>
+      </div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_feature_grid(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    items_html = []
+    for item in data.get("items", []):
+        href = content_href(prefix, item)
+        items_html.append(
+            f'<a class="focus-item reveal" role="listitem" href="{escape(href, quote=True)}">'
+            f'<span>{escape(str(item.get("number", "")))}</span><h3>{escape(str(item.get("title", "")))}</h3>'
+            f'<p>{escape(str(item.get("description", "")))}</p><strong>{escape(str(item.get("link_label", "Learn more")))}</strong></a>'
+        )
+    html = f"""
+      <section class="section data-section"><div class="section-shell">
+        <div class="section-heading compact reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2></div>
+        <div class="focus-grid" role="list">{''.join(items_html)}</div>
+      </div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_opportunity_grid(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    items_html = []
+    for item in data.get("items", []):
+        if not isinstance(item, dict):
+            continue
+        details = item.get("details", [])
+        details_html = ""
+        if isinstance(details, list) and details:
+            details_html = "<ul>" + "".join(f"<li>{escape(str(detail))}</li>" for detail in details) + "</ul>"
+        actions = item.get("actions", [])
+        actions_html = content_actions(prefix, actions if isinstance(actions, list) else [])
+        deadline = interpolate_content(str(item.get("deadline", "")))
+        items_html.append(
+            '<article class="opportunity-item reveal" role="listitem">'
+            '<div class="opportunity-meta">'
+            f'<span>{escape(str(item.get("tag", "Opportunity")))}</span>'
+            f'<strong>{escape(str(item.get("deadline_label", "Deadline")))} {escape(deadline)}</strong>'
+            "</div>"
+            f'<h3>{escape(str(item.get("title", "")))}</h3>'
+            f'<p>{escape(str(item.get("description", "")))}</p>'
+            f"{details_html}{actions_html}</article>"
+        )
+    introduction = str(data.get("introduction", ""))
+    intro_html = f'<p class="opportunity-introduction">{escape(introduction)}</p>' if introduction else ""
+    html = f"""
+      <section class="section data-section registration-opportunities"><div class="section-shell">
+        <div class="section-heading compact reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2>{intro_html}</div>
+        <div class="opportunity-grid" role="list">{''.join(items_html)}</div>
+      </div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_award_profiles(section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    profiles = []
+    for item in data.get("items", []):
+        if not isinstance(item, dict):
+            continue
+        historical_note = str(item.get("historical_note", ""))
+        note_html = f'<p class="award-historical-note">{escape(historical_note)}</p>' if historical_note else ""
+        profiles.append(
+            '<article class="award-profile reveal" role="listitem">'
+            f'<span class="award-profile-number">{escape(str(item.get("number", "")))}</span>'
+            f'<h3>{escape(str(item.get("title", "")))}</h3>'
+            f'<p>{escape(str(item.get("description", "")))}</p>{note_html}</article>'
+        )
+    introduction = str(data.get("introduction", ""))
+    intro_html = f"<p>{escape(introduction)}</p>" if introduction else ""
+    html = f"""
+      <section class="section intro-band award-profiles-section"><div class="section-shell">
+        <div class="award-profiles-intro reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2>{intro_html}</div>
+        <div class="award-profile-grid" role="list">{''.join(profiles)}</div>
+      </div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_award_archive(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    award_items = COLLECTIONS.get(str(data.get("collection", "awards")), [])
+    group_sections = []
+    for group in data.get("groups", []):
+        if not isinstance(group, dict):
+            continue
+        group_id = str(group.get("id", ""))
+        recipients = sorted(
+            (item for item in award_items if str(item.get("award", "")) == group_id),
+            key=lambda item: int(str(item.get("year", "0"))) if str(item.get("year", "")).isdigit() else 0,
+            reverse=True,
+        )
+        rows = []
+        for recipient in recipients:
+            year = str(recipient.get("year", ""))
+            rows.append(
+                '<li class="award-recipient">'
+                f'<time datetime="{escape(year, quote=True)}">{escape(year)}</time>'
+                f'<div><strong>{escape(str(recipient.get("recipient", "")))}</strong><span>{escape(str(recipient.get("location", "")))}</span></div>'
+                "</li>"
+            )
+        group_sections.append(
+            '<section class="award-history-group">'
+            f'<h3>{escape(str(group.get("title", "")))}</h3><ol>{"".join(rows)}</ol></section>'
+        )
+    image_html = ""
+    image = str(data.get("image", ""))
+    if image:
+        image_html = (
+            '<figure class="award-history-figure reveal">'
+            f'{responsive_image(prefix, image, str(data.get("image_alt", "")), loading="lazy", decoding="async", sizes="(max-width: 780px) 92vw, 520px")}'
+            f'<figcaption>{escape(str(data.get("caption", "")))}</figcaption></figure>'
+        )
+    actions = data.get("actions", [])
+    html = f"""
+      <section class="section data-section award-history-section"><div class="section-shell">
+        <div class="award-history-lead"><div class="section-heading compact reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2><p>{escape(str(data.get('introduction', '')))}</p>{content_actions(prefix, actions if isinstance(actions, list) else [])}</div>{image_html}</div>
+        <div class="award-history-grid">{''.join(group_sections)}</div>
+      </div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_link_tags(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    href = content_page_href(prefix, str(data.get("page_id", "programme")))
+    links = "".join(f'<a href="{href}">{escape(str(label))}</a>' for label in data.get("items", []))
+    html = f"""
+      <section class="section research-domains"><div class="section-shell research-domain-layout">
+        <div class="section-heading reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2></div>
+        <div class="domain-list reveal" aria-label="Hantavirus research domains">{links}</div>
+      </div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_cta(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    actions = data.get("actions", [])
+    section_class = "intro-band" if section.get("variant") == "intro" else "contact-band"
+    html = f"""
+      <section class="section {section_class}"><div class="section-shell contact-layout">
+        <div class="section-heading reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2></div>
+        <div class="contact-actions reveal">{content_actions(prefix, actions if isinstance(actions, list) else [])}</div>
+      </div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_rich_text(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    actions = data.get("actions", [])
+    html = f"""
+      <section class="section intro-band"><div class="section-shell editable-rich-section">
+        <div class="section-heading compact reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2></div>
+        <div class="prose reveal">{sanitize_rich_html(str(data.get('body_html', '')))}{content_actions(prefix, actions if isinstance(actions, list) else [])}</div>
+      </div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_people_directory(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    html = f"""
+      <section class="section committees"><div class="section-shell">
+        <div class="section-heading compact reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2></div>
+        {advisory_grid(prefix)}
+      </div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_committees(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    scientific_people = committee_grid(prefix, SCIENTIFIC_COMMITTEE, "committee-people-grid committee-directory-grid")
+    local_people = committee_grid(prefix, LOCAL_COMMITTEE, "committee-people-grid committee-directory-grid")
+    html = f"""
+      <section class="section committees committee-directory ich-committee-inline" id="committees">
+        <div class="section-shell">
+          <div class="section-heading compact reveal">
+            <p class="eyebrow">{escape(str(data.get('eyebrow', 'Organizing Committees')))}</p>
+            <h2>{escape(str(data.get('heading', 'International scientific direction and Chilean local organization.')))}</h2>
+            <p>{escape(str(data.get('description', 'Scientific and local teams coordinating ICH2026 in Puerto Varas.')))}</p>
+          </div>
+          <div class="committee-tabs reveal" role="group" aria-label="Filter committees">
+            <button type="button" class="is-active" data-committee-filter="all">All</button>
+            <button type="button" data-committee-filter="scientific">Scientific</button>
+            <button type="button" data-committee-filter="local">Local</button>
+          </div>
+          <div class="committee-directory-columns" data-committee-view="all">
+            <div class="committee-section" data-committee-section="scientific">
+              <div class="committee-label reveal"><span>Scientific Committee</span><p>International scientific direction for the conference programme.</p></div>
+              {scientific_people}
+            </div>
+            <div class="committee-section" data-committee-section="local">
+              <div class="committee-label reveal"><span>Local Organizing Committee</span><p>Chilean host institutions coordinating the Puerto Varas meeting.</p></div>
+              {local_people}
+            </div>
+          </div>
+        </div>
+      </section>"""
+    return mark_content_section(html, section)
+
+
+def render_contact(section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    contacts = "".join(
+        f'<a class="contact-email" href="mailto:{escape(item["email"], quote=True)}">{escape(item["label"])}: {escape(item["email"])}</a>'
+        for item in SITE_CONTENT.get("contacts", [])
+    )
+    html = f"""
+      <section class="section contact" id="contact"><div class="section-shell contact-layout">
+        <div class="section-heading reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', 'Contact')))}</p><h2>{escape(str(data.get('heading', 'Institutional and ICH2026 contacts')))}</h2></div>
+        <div class="contact-actions reveal">{contacts}</div>
+      </div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_conference_hero(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    meta_html = []
+    for item in data.get("meta", []):
+        link = ""
+        if item.get("url"):
+            href = str(item["url"])
+            link = (
+                f'<a class="text-link inline-map-link" href="{escape(href, quote=True)}" target="_blank" rel="noreferrer">'
+                f'{travel_icon("map-pin")}<span>{escape(str(item.get("link_label", "Open")))}</span></a>'
+            )
+        value_class = " class=\"ich-hero-map-line\"" if link else ""
+        meta_html.append(
+            f'<span>{escape(str(item.get("label", "")))}</span><strong{value_class}><span>{escape(str(item.get("value", "")))}</span>{link}</strong>'
+        )
+    actions = data.get("actions", [])
+    html = f"""
+      <section class="ich-hero" aria-labelledby="ich-title">
+        {responsive_image(prefix, str(data.get('image', 'ich2026/ich2026-logo-landscape.png')), str(data.get('image_alt', '')), class_name='ich-hero-bg', fetchpriority='high', sizes='100vw')}
+        <div class="ich-hero-overlay"></div>
+        <a class="ich-hero-ish-logo" href="{local(prefix)}" aria-label="{escape(SITE_CONTENT['name'], quote=True)} home">
+          {responsive_image(prefix, SITE_CONTENT['brand']['logo'], f"{SITE_CONTENT['name']} logo", loading='eager', decoding='async', sizes='(max-width: 780px) 96px, 132px')}
+        </a>
+        <div class="ich-hero-copy reveal is-visible">
+          <p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p>
+          <h1 id="ich-title">{escape(str(data.get('title', '')))}</h1>
+          <p class="hero-lede">{escape(str(data.get('lede', '')))}</p>
+          <div class="ich-hero-meta" aria-label="Conference details">{''.join(meta_html)}</div>
+          {content_actions(prefix, actions if isinstance(actions, list) else [], page_actions=True)}
+        </div>
+      </section>"""
+    return mark_content_section(html, section)
+
+
+def render_summary(section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    conference = SITE_CONTENT.get("conference", {})
+    items = []
+    for item in data.get("items", []):
+        value = item.get("value", "")
+        if item.get("conference_field"):
+            value = conference.get(item["conference_field"], value)
+        items.append(f'<div class="summary-item"><span>{escape(str(item.get("label", "")))}</span><strong>{escape(str(value))}</strong></div>')
+    html = f'<section class="conference-summary" aria-label="{escape(str(data.get("aria_label", "Quick facts")), quote=True)}">{"".join(items)}</section>'
+    return mark_content_section(html, section)
+
+
+def render_carousel(prefix: str, section: dict[str, object]) -> str:
+    html = f'<section class="section intro-band">{location_carousel(prefix)}</section>'
+    return mark_content_section(html, section)
+
+
+def render_speakers(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    people = COLLECTIONS.get(str(data.get("collection", "speakers")), [])
+    cards = []
+    for person in people:
+        paragraphs = "".join(f'<p>{escape(str(paragraph))}</p>' for paragraph in person.get("paragraphs", []))
+        link = ""
+        if person.get("url"):
+            link = f'<a class="text-link" href="{escape(person["url"], quote=True)}" target="_blank" rel="noreferrer">{escape(person.get("link_label", "Profile"))}</a>'
+        cards.append(
+            f'<article class="speaker reveal">{responsive_image(prefix, person["image"], person["name"], loading="lazy", decoding="async", sizes="196px")}<div><h2>{escape(person["name"])}</h2><p class="speaker-meta">{escape(person.get("affiliation", ""))}</p>{paragraphs}{link}</div></article>'
+        )
+    html = f'<section class="section speakers"><div class="section-shell speaker-grid">{"".join(cards)}</div></section>'
+    return mark_content_section(html, section)
+
+
+def render_programme_tracks(section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    tracks = []
+    for track in data.get("tracks", []):
+        class_name = "program-track highlight reveal" if track.get("highlight") else "program-track reveal"
+        items = "".join(f"<li>{escape(str(item))}</li>" for item in track.get("items", []))
+        note = f'<p class="track-note">{escape(str(track.get("note", "")))}</p>' if track.get("note") else ""
+        tracks.append(
+            f'<article class="{class_name}"><p class="track-date">{escape(str(track.get("date", "")))}</p><h3>{escape(str(track.get("title", "")))}</h3><p>{escape(str(track.get("description", "")))}</p><ul>{items}</ul>{note}</article>'
+        )
+    html = f"""
+      <section class="section program"><div class="section-shell">
+        <div class="program-intro reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2><p>{escape(str(data.get('introduction', '')))}</p></div>
+        <div class="program-grid program-support">{''.join(tracks)}</div>
+      </div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_media_split(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    image_href = content_href(prefix, {"site_link": data.get("image_url_site_link")}) if data.get("image_url_site_link") else ""
+    image_html = responsive_image(prefix, str(data.get("image", "")), str(data.get("image_alt", "")), loading="lazy", decoding="async", sizes="(max-width: 780px) 92vw, 620px")
+    if image_href:
+        image_html = f'<a href="{escape(image_href, quote=True)}"{external_attrs(image_href)} aria-label="Open linked resource">{image_html}</a>'
+    actions = data.get("actions", [])
+    html = f"""
+      <section class="section intro-band"><div class="section-shell registration-flow-layout">
+        <div class="section-heading reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2>{content_paragraphs(data)}{content_actions(prefix, actions if isinstance(actions, list) else [])}</div>
+        <figure class="registration-portal reveal">{image_html}<figcaption>{escape(str(data.get('caption', '')))}</figcaption></figure>
+      </div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_fee_table(section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    columns = data.get("columns", [])
+    rows = data.get("rows", [])
+    headings = []
+    for column in columns:
+        detail = f'<br><span>{escape(str(column.get("detail", "")))}</span>' if column.get("detail") else ""
+        headings.append(f'<th scope="col">{escape(str(column.get("label", "")))}{detail}</th>')
+    body_rows = []
+    for row in rows:
+        detail = f' <span>{escape(str(row.get("category_detail", "")))}</span>' if row.get("category_detail") else ""
+        values = []
+        for index, value in enumerate(row.get("values", []), start=1):
+            klass = ' class="fee-usd"' if index in {2, 4} else ""
+            values.append(f'<td{klass}>{escape(str(value))}</td>')
+        body_rows.append(f'<tr><th scope="row">{escape(str(row.get("category", "")))}{detail}</th>{"".join(values)}</tr>')
+    html = f"""
+      <section class="section data-section"><div class="section-shell">
+        <div class="section-heading compact reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2>{content_paragraphs(data)}</div>
+        <div class="fee-table-wrap reveal"><table class="fee-table"><caption>{escape(str(data.get('caption', 'Registration fees')))}</caption><thead><tr>{''.join(headings)}</tr></thead><tbody>{''.join(body_rows)}</tbody></table></div>
+      </div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_price_callout(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    actions = data.get("actions", [])
+    html = f"""
+      <section class="section intro-band"><div class="section-shell andv-fee-layout">
+        <div class="section-heading reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2></div>
+        <div class="andv-fee-card reveal"><span>{escape(str(data.get('label', '')))}</span><strong class="andv-workshop-price">{escape(str(data.get('price', '')))}</strong><em class="andv-workshop-usd">{escape(str(data.get('secondary_price', '')))}</em><p>{escape(str(data.get('description', '')))}</p>{content_actions(prefix, actions if isinstance(actions, list) else [])}</div>
+      </div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_venue_overview(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    steps = "".join(
+        f'<div><span>{escape(str(item.get("label", "")))}</span><strong>{escape(str(item.get("title", "")))}</strong><small>{escape(str(item.get("description", "")))}</small></div>'
+        for item in data.get("steps", [])
+    )
+    shortcuts = []
+    for item in data.get("shortcuts", []):
+        shortcuts.append(
+            f'<a href="{escape(str(item.get("url", "")), quote=True)}" target="_blank" rel="noreferrer">{travel_icon(str(item.get("icon", "car")))}<span><strong>{escape(str(item.get("title", "")))}</strong><small>{escape(str(item.get("description", "")))}</small></span></a>'
+        )
+    html = f"""
+      <section class="section venue"><div class="section-shell venue-layout">
+        <div class="venue-copy reveal">
+          <p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2>
+          <div class="venue-address"><span>{escape(str(data.get('address_label', 'Venue address')))}</span><a href="{escape(str(data.get('map_url', '')), quote=True)}" target="_blank" rel="noreferrer">{escape(str(data.get('address', '')))}</a></div>
+          <div class="travel-steps">{steps}</div><div class="travel-shortcuts" aria-label="Priority travel resources">{''.join(shortcuts)}</div>
+        </div>
+        <figure class="venue-image reveal">{responsive_image(prefix, str(data.get('image', '')), str(data.get('image_alt', '')), loading='lazy', decoding='async', sizes='(max-width: 1060px) 100vw, 520px')}<figcaption>{escape(str(data.get('caption', '')))}</figcaption></figure>
+      </div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_article_list(section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    articles = []
+    for article in data.get("articles", []):
+        articles.append(
+            f'<article class="reveal"><p class="eyebrow">{escape(str(article.get("eyebrow", "")))}</p><h2>{escape(str(article.get("heading", "")))}</h2>{sanitize_rich_html(str(article.get("body_html", "")))}</article>'
+        )
+    html = f'<section class="section intro-band"><div class="section-shell travel-detail-list">{"".join(articles)}</div></section>'
+    return mark_content_section(html, section)
+
+
+def render_resource_links(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    items = COLLECTIONS.get(str(data.get("collection", "travel_links")), [])
+    links = "".join(
+        travel_link_card(prefix, str(item.get("icon", "document")), str(item.get("label", "")), str(item.get("description", "")), str(item.get("url", "")))
+        for item in items
+    )
+    html = f"""
+      <section class="section data-section"><div class="section-shell"><div class="section-heading compact reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2></div><div class="travel-link-list reveal">{links}</div></div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_sponsors(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    sponsors = COLLECTIONS.get(str(data.get("collection", "sponsors")), [])
+    groups = []
+    for group_name in data.get("groups", []):
+        cards = []
+        for item in sponsors:
+            if item.get("group") != group_name:
+                continue
+            href = SITE_URL + "/" if item.get("url") == "/" else str(item.get("url", ""))
+            cards.append(
+                f'<a class="sponsor reveal" href="{escape(href, quote=True)}"{external_attrs(href)}>{responsive_image(prefix, item["image"], item["name"], loading="lazy", decoding="async", sizes="360px")}<span>{escape(item["name"])}</span></a>'
+            )
+        group_id = re.sub(r"[^a-z0-9]+", "-", str(group_name).lower()).strip("-")
+        groups.append(
+            f'<section class="sponsor-group" aria-labelledby="sponsor-group-{group_id}"><div class="sponsor-group-heading reveal"><h2 id="sponsor-group-{group_id}">{escape(str(group_name))}</h2></div><div class="sponsor-grid" role="list">{"".join(cards)}</div></section>'
+        )
+    html = f'<section class="section sponsors"><div class="section-shell sponsors-layout">{"".join(groups)}</div></section>'
+    return mark_content_section(html, section)
+
+
+def render_communications(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    items = [
+        item
+        for item in COLLECTIONS.get(str(data.get("collection", "communications")), [])
+        if item.get("published") is not False
+    ]
+    if not items:
+        return ""
+
+    def item_body(item: dict[str, object]) -> str:
+        rich = sanitize_rich_html(str(item.get("body_html", "")))
+        if rich:
+            return f'<div class="news-rich-body">{rich}</div>'
+        return f'<div class="news-rich-body"><p>{escape(str(item.get("description", "")))}</p></div>'
+
+    def item_image(item: dict[str, object], class_name: str, sizes: str) -> str:
+        image = str(item.get("image", "")).strip()
+        if not image:
+            return ""
+        alt = str(item.get("image_alt", "")).strip() or str(item.get("title", ""))
+        return f'<div class="{class_name}">{responsive_image(prefix, image, alt, loading="lazy", decoding="async", sizes=sizes)}</div>'
+
+    lead = next((item for item in items if item.get("featured")), items[0])
+    cards = []
+    for item in items:
+        if item is lead:
+            continue
+        href = str(item.get("url", ""))
+        cards.append(
+            f'<article class="news-card reveal">{item_image(item, "news-card-media", "(max-width: 780px) 92vw, 420px")}<span class="news-card-type">{escape(item.get("category", ""))}</span><span class="news-card-date">{escape(item.get("date", ""))}</span><h3>{escape(item.get("title", ""))}</h3>{item_body(item)}<a class="news-card-link" href="{escape(href, quote=True)}"{external_attrs(href)}><strong>{escape(item.get("label", "Open"))}</strong></a></article>'
+        )
+    lead_href = str(lead.get("url", ""))
+    html = f"""
+      <section class="section intro-band newsroom"><div class="section-shell news-lead-single"><article class="news-lead-card reveal">{item_image(lead, "news-lead-media", "(max-width: 780px) 100vw, 1180px")}<div class="news-kicker"><span>{escape(lead.get('category', ''))}</span><time>{escape(lead.get('date', ''))}</time></div><h2>{escape(lead.get('title', ''))}</h2>{item_body(lead)}<a class="button button-primary" href="{escape(lead_href, quote=True)}"{external_attrs(lead_href)}>{escape(lead.get('label', 'Open'))}</a></article></div></section>
+      <section class="section news-updates"><div class="section-shell two-column news-section-heading"><div class="section-heading reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', 'Latest updates')))}</p><h2>{escape(str(data.get('heading', '')))}</h2></div></div><div class="section-shell news-grid" role="list">{''.join(cards)}</div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_former_timeline(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    html = f"""
+      <section class="section data-section"><div class="section-shell"><div class="section-heading compact reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2></div>{former_meetings_timeline(prefix)}</div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_former_materials(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    html = f"""
+      <section class="section intro-band"><div class="section-shell"><div class="section-heading compact reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2></div>{former_meeting_materials(prefix)}</div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_gallery(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    figures = []
+    for index, item in enumerate(data.get("items", []), start=1):
+        figures.append(
+            f'<figure class="reveal">{responsive_image(prefix, str(item.get("image", "")), str(item.get("alt", "")), loading="lazy", decoding="async", sizes="(max-width: 780px) 92vw, 420px")}<figcaption>{escape(str(item.get("caption", f"Image {index}")))}</figcaption></figure>'
+        )
+    html = f'<section class="section intro-band"><div class="section-shell"><div class="section-heading compact reveal"><p class="eyebrow">{escape(str(data.get("eyebrow", "Gallery")))}</p><h2>{escape(str(data.get("heading", "")))}</h2></div><div class="cms-gallery">{"".join(figures)}</div></div></section>'
+    return mark_content_section(html, section)
+
+
+def render_content_section(prefix: str, page: dict[str, object], section: dict[str, object]) -> str:
+    section_type = str(section.get("type", ""))
+    if section_type == "home_hero":
+        return render_home_hero(prefix, section)
+    if section_type == "page_hero":
+        return render_page_hero(prefix, page, section)
+    if section_type == "conference_hero":
+        return render_conference_hero(prefix, section)
+    if section_type == "split_text":
+        return render_split_text(prefix, section)
+    if section_type == "heading_text":
+        return render_heading_text(section)
+    if section_type == "single_image":
+        return render_single_image(prefix, section)
+    if section_type == "logo_mark":
+        return render_logo_mark(prefix, section)
+    if section_type == "feature_grid":
+        return render_feature_grid(prefix, section)
+    if section_type == "opportunity_grid":
+        return render_opportunity_grid(prefix, section)
+    if section_type == "award_profiles":
+        return render_award_profiles(section)
+    if section_type == "award_archive":
+        return render_award_archive(prefix, section)
+    if section_type == "link_tags":
+        return render_link_tags(prefix, section)
+    if section_type == "people_directory":
+        return render_people_directory(prefix, section)
+    if section_type == "committees":
+        return render_committees(prefix, section)
+    if section_type == "contact":
+        return render_contact(section)
+    if section_type == "cta":
+        return render_cta(prefix, section)
+    if section_type == "summary":
+        return render_summary(section)
+    if section_type == "carousel":
+        return render_carousel(prefix, section)
+    if section_type == "speakers":
+        return render_speakers(prefix, section)
+    if section_type == "programme_tracks":
+        return render_programme_tracks(section)
+    if section_type == "media_split":
+        return render_media_split(prefix, section)
+    if section_type == "fee_table":
+        return render_fee_table(section)
+    if section_type == "price_callout":
+        return render_price_callout(prefix, section)
+    if section_type == "venue_overview":
+        return render_venue_overview(prefix, section)
+    if section_type == "article_list":
+        return render_article_list(section)
+    if section_type == "resource_links":
+        return render_resource_links(prefix, section)
+    if section_type == "sponsors":
+        return render_sponsors(prefix, section)
+    if section_type == "communications":
+        return render_communications(prefix, section)
+    if section_type == "former_timeline":
+        return render_former_timeline(prefix, section)
+    if section_type == "former_materials":
+        return render_former_materials(prefix, section)
+    if section_type == "gallery":
+        return render_gallery(prefix, section)
+    if section_type == "rich_text":
+        return render_rich_text(prefix, section)
+    raise ValueError(f"Unsupported section type '{section_type}' in page '{page['id']}'.")
+
+
+def content_page(prefix: str, page_id: str) -> str:
+    page = PAGE_BY_ID[page_id]
+    return "".join(
+        render_content_section(prefix, page, section)
+        for section in page.get("sections", [])
+        if section.get("visible", True)
+    )
+
+
+def content_page_builder(page_id: str):
+    return lambda prefix: content_page(prefix, page_id)
+
+
+def output_path_for_page(page: dict[str, object]) -> str:
+    route = str(page.get("route", "")).strip("/")
+    return f"{route}/index.html" if route else "index.html"
+
+
 PAGES = [
-    ("index.html", "home", "International Society for Hantaviruses", "International Society for Hantaviruses and ICH2026 in Puerto Varas, Chile.", home_page),
-    ("about-ish/index.html", "about", "About ISH | International Society for Hantaviruses", "About the International Society for Hantaviruses.", about_page),
-    ("former-meetings/index.html", "former", "Former Meetings | International Society for Hantaviruses", "Former International Hantavirus Conference meetings.", former_meetings_page),
-    ("communications/index.html", "communications", "Communications | International Society for Hantaviruses", "Statements and scientific communications from the International Society for Hantaviruses.", communications_page),
-    ("ich2026/index.html", "ich2026", "ICH2026 | International Society for Hantaviruses", "International Conference on Hantaviruses 2026 in Puerto Varas, Chile.", ich2026_page),
-    ("ich2026/keynote-speakers/index.html", "keynote", "Keynote Speakers | ICH2026", "Keynote speakers for ICH2026.", keynote_page),
-    ("ich2026/programme/index.html", "programme", "Programme | ICH2026", "Scientific programme for ICH2026.", programme_page),
-    ("ich2026/abstracts-registration/index.html", "registration", "Abstracts & Registration | ICH2026", "Abstract submission and registration for ICH2026.", registration_page),
-    ("ich2026/venue/index.html", "venue", "Venue | ICH2026", "Venue and travel information for ICH2026.", venue_page),
-    ("ich2026/organizing-committees/index.html", "committees", "Organizing Committees | ICH2026", "Scientific and local organizing committees for ICH2026.", organizing_committees_page),
-    ("ich2026/partners-sponsors/index.html", "sponsors", "Partners & Sponsors | ICH2026", "Partners and sponsors for ICH2026.", sponsors_page),
-    ("contact/index.html", "contact", "Contact | ICH2026", "Contact the ICH2026 organizing team.", contact_page),
+    (
+        output_path_for_page(page),
+        page["id"],
+        page["title"],
+        page["description"],
+        content_page_builder(page["id"]),
+    )
+    for page in CONTENT_PAGES
 ]
 
 
@@ -1779,7 +2716,7 @@ def generate_sitemap() -> None:
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sitemap += "\n".join(urls)
     sitemap += "\n</urlset>\n"
-    (ROOT / "sitemap.xml").write_text(sitemap, encoding="utf-8")
+    (OUTPUT_ROOT / "sitemap.xml").write_text(sitemap, encoding="utf-8")
     print("sitemap.xml")
 
 
@@ -1789,7 +2726,7 @@ def main() -> None:
     for out_path, active, title, description, builder in PAGES:
         prefix = prefix_for(out_path)
         html = minify_html(clean_output(doc(out_path, active, title, description, builder(prefix))))
-        target = ROOT / out_path
+        target = OUTPUT_ROOT / out_path
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(html, encoding="utf-8")
         print(out_path)

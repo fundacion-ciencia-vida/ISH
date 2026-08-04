@@ -1,0 +1,14 @@
+{
+  "id": "keynote",
+  "route": "ich2026/keynote-speakers",
+  "core_route": true,
+  "title": "Keynote Speakers | ICH2026",
+  "description": "Keynote speakers for ICH2026.",
+  "social_image": "ich2026/conference-volcano.jpg",
+  "hero_image": "ich2026/conference-volcano.jpg",
+  "conference_page": true,
+  "sections": [
+    {"id": "hero", "type": "page_hero", "visible": true, "locked": true, "data": {"eyebrow": "Keynote speakers", "title": "ICH2026 Keynote Speakers", "lede": "Invited experts presenting clinical, virological and countermeasure perspectives for ICH2026.", "image": "ich2026/conference-volcano.jpg", "breadcrumbs": true}},
+    {"id": "speakers", "type": "speakers", "visible": true, "data": {"collection": "speakers"}}
+  ]
+}

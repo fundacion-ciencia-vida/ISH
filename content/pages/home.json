@@ -1,0 +1,115 @@
+{
+  "id": "home",
+  "route": "",
+  "core_route": true,
+  "title": "International Society for Hantaviruses",
+  "description": "International Society for Hantaviruses and ICH2026 in Puerto Varas, Chile.",
+  "social_image": "ui/social-preview.jpg",
+  "hero_image": "ui/home-science-hero.webp?v=virus-fill-20260521",
+  "conference_page": false,
+  "sections": [
+    {
+      "id": "home-hero",
+      "type": "home_hero",
+      "visible": true,
+      "locked": true,
+      "data": {
+        "image": "ui/home-science-hero.webp?v=virus-fill-20260521",
+        "image_alt": "Large International Society for Hantaviruses logo emblem on a clean scientific background",
+        "eyebrow": "Research collaboration since 1989",
+        "title": "International Society for Hantaviruses",
+        "lede": "A global scientific network advancing hantavirus research, clinical knowledge and international collaboration.",
+        "actions": [
+          {"label": "ICH2026 in Chile", "page_id": "ich2026", "style": "primary"},
+          {"label": "Apply for membership", "site_link": "membership", "style": "secondary"},
+          {"label": "Abstracts & registration", "page_id": "registration", "style": "ghost"}
+        ],
+        "panel_kicker": "ICH2026",
+        "panel_title": "International Conference on Hantaviruses",
+        "panel_date": "Nov 2-5, 2026",
+        "panel_location": "Puerto Varas, Chile",
+        "panel_venue": "Hotel Bellavista",
+        "panel_deadline_prefix": "Final abstract deadline:",
+        "countdown_date": "2026-11-02",
+        "panel_link_label": "Submit abstract",
+        "panel_link_page_id": "registration"
+      }
+    },
+    {
+      "id": "about-intro",
+      "type": "split_text",
+      "visible": true,
+      "variant": "intro",
+      "data": {
+        "eyebrow": "About ISH",
+        "heading": "Science-led coordination for a global zoonotic disease community.",
+        "paragraphs": [
+          "The International Society for Hantaviruses promotes knowledge on hantaviruses and associated diseases through research exchange, training and international scientific cooperation.",
+          "The society connects experts in epidemiology, ecology, viral replication, host-pathogen interaction, pathogenesis, diagnostics, clinical management, vaccines and therapeutics."
+        ]
+      }
+    },
+    {
+      "id": "seoul-photo",
+      "type": "single_image",
+      "visible": true,
+      "variant": "intro",
+      "data": {
+        "image": "ui/society-archive-2.png",
+        "alt": "ICH2023 Seoul meeting participants",
+        "caption": "ICH2023 Seoul | Republic of Korea"
+      }
+    },
+    {
+      "id": "research-focus",
+      "type": "feature_grid",
+      "visible": true,
+      "variant": "data",
+      "data": {
+        "eyebrow": "Research focus",
+        "heading": "A practical agenda for hantavirus science.",
+        "items": [
+          {"number": "01", "title": "Epidemiology & ecology", "description": "Tracking viral diversity, reservoirs, climate influence and regional transmission dynamics.", "link_label": "Programme themes", "page_id": "programme"},
+          {"number": "02", "title": "Virus-host biology", "description": "Understanding replication, immune response, pathogenesis and host-pathogen interaction.", "link_label": "Programme themes", "page_id": "programme"},
+          {"number": "03", "title": "Diagnostics & clinical management", "description": "Improving early diagnosis, clinical management and risk assessment after exposure.", "link_label": "Programme themes", "page_id": "programme"},
+          {"number": "04", "title": "Vaccines & therapeutics", "description": "Accelerating translational work on prevention, treatment and preparedness.", "link_label": "Programme themes", "page_id": "programme"}
+        ]
+      }
+    },
+    {
+      "id": "scientific-domains",
+      "type": "link_tags",
+      "visible": true,
+      "data": {
+        "eyebrow": "Scientific domains",
+        "heading": "From field ecology to clinical preparedness.",
+        "page_id": "programme",
+        "items": ["Reservoir ecology", "Viral evolution", "Host response", "Diagnostics", "Clinical management", "Vaccines", "Therapeutics"]
+      }
+    },
+    {
+      "id": "advisory-board",
+      "type": "people_directory",
+      "visible": true,
+      "data": {
+        "eyebrow": "International Advisory Board",
+        "heading": "A global board connecting countries affected by hantavirus disease.",
+        "collection": "board",
+        "style": "advisory"
+      }
+    },
+    {
+      "id": "membership-cta",
+      "type": "cta",
+      "visible": true,
+      "data": {
+        "eyebrow": "Membership",
+        "heading": "Join the international hantavirus research network.",
+        "actions": [
+          {"label": "Apply for ISH membership", "site_link": "membership", "style": "primary"},
+          {"label": "Contact ICH2026", "page_id": "contact", "style": "secondary-light"}
+        ]
+      }
+    }
+  ]
+}

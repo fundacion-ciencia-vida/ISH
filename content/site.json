@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "site": {
+    "name": "International Society for Hantaviruses",
+    "short_name": "ISH",
+    "language": "en",
+    "public_url": "https://www.hantavirussociety.org",
+    "default_social_image": "ui/social-preview.jpg",
+    "brand": {
+      "logo": "ui/logo.png",
+      "line_1": "International Society",
+      "line_2": "for Hantaviruses"
+    },
+    "links": {
+      "award_nominations": "https://forms.gle/Ak6Bkg3GCUzKKMrw7",
+      "fellowship_application": "https://forms.gle/SqXDscDq8BuauHgP6",
+      "membership": "https://docs.google.com/forms/d/e/1FAIpQLSc0IHUnT80-qDJn2wU4pLXKQ1F_VEdcziqVL-47iGGAwsLBEA/viewform?pli=1",
+      "registration": "https://4id.network/ich2026/login",
+      "practical_tips": "assets/documents/ich2026/practical-tips-visit-chile.pdf"
+    },
+    "contacts": [
+      {
+        "label": "ISH",
+        "email": "ish@hantavirussociety.org"
+      },
+      {
+        "label": "ICH2026",
+        "email": "ICH2026@hantavirussociety.org"
+      }
+    ],
+    "navigation": {
+      "groups": [
+        {
+          "id": "society",
+          "label": "Society",
+          "items": [
+            {
+              "page_id": "about",
+              "label": "About ISH"
+            },
+            {
+              "page_id": "awards",
+              "label": "ISH Awards"
+            },
+            {
+              "page_id": "former",
+              "label": "Former Meetings"
+            },
+            {
+              "page_id": "communications",
+              "label": "Communications"
+            }
+          ]
+        },
+        {
+          "id": "conference",
+          "label": "Conference",
+          "items": [
+            {
+              "page_id": "ich2026",
+              "label": "ICH2026"
+            },
+            {
+              "page_id": "keynote",
+              "label": "Keynotes"
+            },
+            {
+              "page_id": "programme",
+              "label": "Programme"
+            },
+            {
+              "page_id": "registration",
+              "label": "Registration"
+            },
+            {
+              "page_id": "venue",
+              "label": "Venue"
+            },
+            {
+              "page_id": "sponsors",
+              "label": "Partners & Sponsors"
+            }
+          ]
+        }
+      ],
+      "conference_subnav": [
+        "ich2026",
+        "keynote",
+        "programme",
+        "registration",
+        "venue",
+        "sponsors"
+      ]
+    },
+    "footer": {
+      "description": "Website of the International Society for Hantaviruses.",
+      "site_heading": "Site",
+      "contact_heading": "Contact"
+    },
+    "conference": {
+      "name": "International Conference on Hantaviruses 2026",
+      "short_name": "ICH2026",
+      "start_date": "2026-11-02",
+      "end_date": "2026-11-05",
+      "dates_label": "November 2-5, 2026",
+      "location": "Puerto Varas, Chile",
+      "venue": "Hotel Bellavista",
+      "abstract_deadline": "August 16, 2026",
+      "early_bird_deadline": "September 1, 2026",
+      "fellowship_deadline": "August 23, 2026",
+      "award_nominations_deadline": "September 4, 2026",
+      "workshop_name": "Andes Virus Workshop",
+      "workshop_date": "November 5"
+    }
+  }
+}

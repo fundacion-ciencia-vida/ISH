@@ -1,0 +1,14 @@
+{
+  "id": "contact",
+  "route": "contact",
+  "core_route": true,
+  "title": "Contact | ICH2026",
+  "description": "Contact the ICH2026 organizing team.",
+  "social_image": "ui/social-preview.jpg",
+  "hero_image": "ui/social-preview.jpg",
+  "conference_page": false,
+  "show_in_navigation": false,
+  "sections": [
+    {"id": "contact", "type": "contact", "visible": true, "locked": true, "data": {"eyebrow": "Contact", "heading": "Institutional and ICH2026 contacts"}}
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "id": "marcela-ferres",
+      "name": "Dr. Marcela Ferres",
+      "affiliation": "Pontificia Universidad Catolica, Chile",
+      "image": "speakers/marcela-ferres.png",
+      "url": "https://orcid.org/0000-0001-9415-4657",
+      "link_label": "ORCID profile",
+      "paragraphs": [
+        "Dr. Marcela Ferres is a professor, pediatric infectious diseases specialist, and director of the Infectious Diseases and Molecular Virology Laboratory at the Faculty of Medicine, Universidad Catolica de Chile, and Red de Salud UC CHRISTUS in Santiago.",
+        "Her hantavirus research focuses on the epidemiological, cellular and molecular factors involved in person-to-person transmission of Andes virus. Her work has contributed to studies on transmission risks, early diagnostic methods and viral detection in different body fluids.",
+        "Dr. Ferres has authored more than 30 peer-reviewed publications in hantavirus, SARS-CoV-2 and diagnostic virology, and is the author of a Clinical Virology book currently in preparation for its third edition."
+      ]
+    },
+    {
+      "id": "jay-hooper",
+      "name": "Dr. Jay Hooper",
+      "affiliation": "United States Army Medical Research Institute of Infectious Diseases (USAMRIID), USA",
+      "image": "speakers/jay-hooper.png",
+      "url": "https://orcid.org/0000-0002-4475-0415",
+      "link_label": "ORCID profile",
+      "paragraphs": [
+        "Dr. Jay Hooper is Chief of the Molecular Virology Branch at USAMRIID. His work focuses on the discovery and development of medical countermeasures against high-consequence viral diseases, including hemorrhagic fevers and diseases caused by poxviruses.",
+        "He has more than 30 years of research experience with lethal viruses, largely in BSL-3 and BSL-4 high-containment settings. Dr. Hooper received a B.A. in Biology from Colby College and a Ph.D. in Virology from Harvard University; his research has produced more than 100 peer-reviewed publications and 15 patents."
+      ]
+    }
+  ]
+}

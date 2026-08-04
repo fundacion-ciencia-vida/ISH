@@ -1,0 +1,16 @@
+{
+  "items": [
+    {"id": "2023-seoul", "number": "XII", "year": "2023", "location": "Seoul, Republic of Korea", "abstract_label": "International Conference on Hantaviruses", "abstract_url": "assets/documents/former-meetings/2023-seoul-abstract-book.pdf", "report_url": "", "images": ["former-meetings/2023-seoul-1.jpg", "former-meetings/2023-seoul-2.jpg", "former-meetings/2023-seoul-3.jpg"]},
+    {"id": "2019-leuven", "number": "XI", "year": "2019", "location": "Leuven, Belgium", "abstract_label": "International Conference on HFRS, HPS & Hantaviruses", "abstract_url": "assets/documents/former-meetings/2019-leuven-abstract-book.pdf", "report_url": "assets/documents/former-meetings/meeting-reports/2019-leuven-meeting-report.pdf", "images": ["former-meetings/2019-leuven-1.jpg", "former-meetings/2019-leuven-2.jpg"]},
+    {"id": "2016-colorado", "number": "X", "year": "2016", "location": "Colorado, USA", "abstract_label": "Abstract Book", "abstract_url": "assets/documents/former-meetings/2016-colorado-abstract-book.pdf", "report_url": "assets/documents/former-meetings/meeting-reports/2016-colorado-meeting-report-draft.pdf", "images": ["former-meetings/2016-colorado-1.jpg", "former-meetings/2016-colorado-2.jpg", "former-meetings/2016-colorado-3.jpg"]},
+    {"id": "2013-beijing", "number": "IX", "year": "2013", "location": "Beijing, China", "abstract_label": "Abstract Book", "abstract_url": "assets/documents/former-meetings/2013-beijing-abstract-book.pdf", "report_url": "Meeting report pending", "images": ["former-meetings/2013-china-1.jpg", "former-meetings/2013-china-2.jpg", "former-meetings/2013-china-3.jpg"]},
+    {"id": "2010-athens", "number": "VIII", "year": "2010", "location": "Athens, Greece", "abstract_label": "", "abstract_url": "", "report_url": "", "images": []},
+    {"id": "2007-buenos-aires", "number": "VII", "year": "2007", "location": "Buenos Aires, Argentina", "abstract_label": "", "abstract_url": "", "report_url": "", "images": []},
+    {"id": "2004-seoul", "number": "VI", "year": "2004", "location": "Seoul, Republic of Korea", "abstract_label": "", "abstract_url": "", "report_url": "", "images": []},
+    {"id": "2001-annecy", "number": "V", "year": "2001", "location": "Annecy, France", "abstract_label": "", "abstract_url": "", "report_url": "assets/documents/former-meetings/meeting-reports/2001-annecy-meeting-report.pdf", "images": []},
+    {"id": "1998-atlanta", "number": "IV", "year": "1998", "location": "Atlanta, USA", "abstract_label": "International Conference on HFRS", "abstract_url": "", "report_url": "Summary pending", "images": []},
+    {"id": "1995-helsinki", "number": "III", "year": "1995", "location": "Helsinki, Finland", "abstract_label": "", "abstract_url": "", "report_url": "assets/documents/former-meetings/meeting-reports/1995-helsinki-meeting-report.pdf", "images": []},
+    {"id": "1992-beijing", "number": "II", "year": "1992", "location": "Beijing, China", "abstract_label": "", "abstract_url": "", "report_url": "Meeting report pending", "images": []},
+    {"id": "1989-seoul", "number": "I", "year": "1989", "location": "Seoul, Korea", "abstract_label": "", "abstract_url": "", "report_url": "assets/documents/former-meetings/meeting-reports/1989-seoul-meeting-report.pdf", "images": []}
+  ]
+}

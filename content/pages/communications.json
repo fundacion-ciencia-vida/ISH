@@ -1,0 +1,14 @@
+{
+  "id": "communications",
+  "route": "communications",
+  "core_route": true,
+  "title": "Communications | International Society for Hantaviruses",
+  "description": "Statements and scientific communications from the International Society for Hantaviruses.",
+  "social_image": "ui/social-preview.jpg",
+  "hero_image": "ich2026/hantavirus-em.jpg",
+  "conference_page": false,
+  "sections": [
+    {"id": "hero", "type": "page_hero", "visible": true, "locked": true, "data": {"eyebrow": "Society communications", "title": "Communications", "lede": "Statements, public-health resources and scientific exchange updates.", "image": "ich2026/hantavirus-em.jpg"}},
+    {"id": "updates", "type": "communications", "visible": true, "data": {"eyebrow": "Latest updates", "heading": "Verified resources for the hantavirus community.", "collection": "communications"}}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "items": [
+    {"id": "puerto-varas", "number": "01", "title": "Puerto Varas and Osorno Volcano", "alt": "Osorno Volcano and Puerto Varas church by Lake Llanquihue", "image": "ich2026/from-zip/pvaras.webp", "focal_x": 50, "focal_y": 50},
+    {"id": "waterfall", "number": "02", "title": "Lake District waterfall", "alt": "Waterfall in the Puerto Varas and Lake District area", "image": "ich2026/from-zip/salto.jpg", "focal_x": 50, "focal_y": 50},
+    {"id": "kayaks", "number": "03", "title": "Lake Llanquihue activities", "alt": "Kayaks on Lake Llanquihue near Puerto Varas", "image": "ich2026/from-zip/sea-kayak-puerto-varas.jpg", "focal_x": 50, "focal_y": 50},
+    {"id": "osorno", "number": "04", "title": "Osorno Volcano view", "alt": "Osorno Volcano seen from the Puerto Varas area", "image": "ich2026/from-zip/volcan-puerto-varas.jpg", "focal_x": 50, "focal_y": 50}
+  ]
+}

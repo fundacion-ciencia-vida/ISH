@@ -13,6 +13,7 @@ OUTPUT_ROOT = SOURCE_ROOT / "optimized"
 MANIFEST = OUTPUT_ROOT / "manifest.json"
 SOURCE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp"}
 BUILD_SCRIPT = ROOT / "scripts" / "build_site.py"
+CONTENT_ROOT = ROOT / "content"
 DEFAULT_WIDTHS = (320, 480, 640, 960, 1280)
 HERO_WIDTHS = (320, 480, 640, 960, 1280, 1600, 1920)
 PROFILE_WIDTHS = (160, 240, 320, 480)
@@ -65,16 +66,18 @@ def avif_quality_for(path: Path) -> str:
 
 
 def referenced_assets() -> set[str]:
-    if not BUILD_SCRIPT.exists():
-        return set()
-    build_source = BUILD_SCRIPT.read_text(encoding="utf-8")
+    source_text = BUILD_SCRIPT.read_text(encoding="utf-8") if BUILD_SCRIPT.exists() else ""
+    if CONTENT_ROOT.exists():
+        source_text += "\n".join(
+            path.read_text(encoding="utf-8") for path in CONTENT_ROOT.rglob("*.json")
+        )
     return {
         str(path.relative_to(SOURCE_ROOT))
         for path in SOURCE_ROOT.rglob("*")
         if OUTPUT_ROOT not in path.parents
         and path.is_file()
         and path.suffix.lower() in SOURCE_EXTENSIONS
-        and str(path.relative_to(SOURCE_ROOT)) in build_source
+        and str(path.relative_to(SOURCE_ROOT)) in source_text
     }
 
 

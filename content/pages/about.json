@@ -1,0 +1,18 @@
+{
+  "id": "about",
+  "route": "about-ish",
+  "core_route": true,
+  "title": "About ISH | International Society for Hantaviruses",
+  "description": "About the International Society for Hantaviruses.",
+  "social_image": "ui/social-preview.jpg",
+  "hero_image": "ui/home-science-hero.webp?v=virus-fill-20260521",
+  "conference_page": false,
+  "sections": [
+    {"id": "hero", "type": "page_hero", "visible": true, "locked": true, "data": {"eyebrow": "About ISH", "title": "About the International Society for Hantaviruses", "lede": "Founded in 1989 with its first Meeting in Seoul (Korea).", "image": "ui/home-science-hero.webp?v=virus-fill-20260521", "actions": [{"label": "Apply for ISH Membership", "site_link": "membership", "style": "primary"}, {"label": "Explore ISH Awards", "page_id": "awards", "style": "secondary"}]}},
+    {"id": "about-logo", "type": "logo_mark", "visible": true, "data": {"image": "ui/logo.png", "alt": "International Society for Hantaviruses logo", "label": "International Society for Hantaviruses"}},
+    {"id": "about-copy", "type": "split_text", "visible": true, "variant": "intro", "data": {"eyebrow": "About ISH", "heading": "About the International Society for Hantaviruses", "paragraphs": ["This society was founded in 1989 with its first Meeting in Seoul (Korea), to promote the advancement and promulgation of knowledge on hantaviruses and the diseases they cause. It also fosters collaboration and the exchange of expertise in all areas of knowledge, including viral epidemiology and ecology, viral replication, host interactions, pathogenesis, advances in vaccine and therapeutics, diagnostics and clinical management.", "The society is led by an International Advisory Board composed of members from countries most affected by hantaviruses, reflecting its global scope and commitment to addressing regional challenges. Since its establishment, the society has convened a triennial meeting that brings together researchers, clinicians, and public health professionals. The next International Hantavirus Conference (ICH) will be held in November 2026 in Puerto Varas, Chile."], "actions": [{"label": "Apply for ISH Membership", "site_link": "membership", "style": "primary"}]}},
+    {"id": "seoul-photo", "type": "single_image", "visible": true, "variant": "intro", "data": {"image": "ui/society-archive-2.png", "alt": "ICH2023 Seoul meeting participants", "caption": "ICH2023 Seoul | Republic of Korea"}},
+    {"id": "advisory-board", "type": "people_directory", "visible": true, "data": {"eyebrow": "International Advisory Board", "heading": "Global advisory leadership across hantavirus-affected regions.", "collection": "board", "style": "advisory"}},
+    {"id": "contact", "type": "contact", "visible": true, "data": {"eyebrow": "Contact", "heading": "Institutional and ICH2026 contacts"}}
+  ]
+}

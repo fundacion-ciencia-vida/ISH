@@ -1,0 +1,120 @@
+{
+  "id": "awards",
+  "route": "awards",
+  "core_route": true,
+  "title": "ISH Awards | International Society for Hantaviruses",
+  "description": "ISH lectureship awards and previous recipients recognized by the international hantavirus community.",
+  "social_image": "former-meetings/2023-seoul-1.jpg",
+  "hero_image": "former-meetings/2023-seoul-1.jpg",
+  "conference_page": false,
+  "sections": [
+    {
+      "id": "hero",
+      "type": "page_hero",
+      "visible": true,
+      "locked": true,
+      "data": {
+        "eyebrow": "International Society for Hantaviruses",
+        "title": "ISH Lectureship Awards",
+        "lede": "Recognizing influential contributions across generations of hantavirus research.",
+        "image": "former-meetings/2023-seoul-1.jpg",
+        "image_credit": "Award presentation at ICH2023 in Seoul, Republic of Korea",
+        "breadcrumbs": true,
+        "actions": [
+          {
+            "label": "Submit an ICH2026 nomination",
+            "site_link": "award_nominations",
+            "style": "primary"
+          },
+          {
+            "label": "ICH2023 Abstract Book",
+            "url": "assets/documents/former-meetings/2023-seoul-abstract-book.pdf",
+            "style": "secondary"
+          }
+        ]
+      }
+    },
+    {
+      "id": "award-profiles",
+      "type": "award_profiles",
+      "visible": true,
+      "variant": "intro",
+      "data": {
+        "eyebrow": "The lectureships",
+        "heading": "Two awards presented at each triennial meeting.",
+        "introduction": "The ISH lectureship awards recognize scientific leadership, innovation and sustained service to the hantavirus field.",
+        "items": [
+          {
+            "number": "01",
+            "title": "Joel M. Dalrymple Memorial Award",
+            "description": "Recognizes an outstanding early- to mid-career investigator for innovative contributions to hantavirus research.",
+            "historical_note": "Earlier conference materials list this lectureship as the Joel M. Dalrymple Award."
+          },
+          {
+            "number": "02",
+            "title": "Lee Ho Wang Lifetime Achievement Award",
+            "description": "Honors a senior investigator for exceptional and sustained contributions to the field.",
+            "historical_note": "Earlier conference materials list this lectureship as the Ho Wang Lee Award."
+          }
+        ]
+      }
+    },
+    {
+      "id": "award-history",
+      "type": "award_archive",
+      "visible": true,
+      "variant": "data",
+      "data": {
+        "eyebrow": "Award history",
+        "heading": "Previous recipients.",
+        "introduction": "The archive is based on the ICH2023 Abstract Book, including the award lectures presented in Seoul.",
+        "collection": "awards",
+        "groups": [
+          {
+            "id": "dalrymple",
+            "title": "Joel M. Dalrymple Memorial Award"
+          },
+          {
+            "id": "lee-ho-wang",
+            "title": "Lee Ho Wang Lifetime Achievement Award"
+          }
+        ],
+        "image": "former-meetings/2023-seoul-3.jpg",
+        "image_alt": "ICH2023 lecture honoring Professor Ho Wang Lee and his contributions to hantavirology",
+        "caption": "ICH2023 lectureship programme, Seoul",
+        "actions": [
+          {
+            "label": "Open the ICH2023 Abstract Book",
+            "url": "assets/documents/former-meetings/2023-seoul-abstract-book.pdf",
+            "style": "outline"
+          }
+        ]
+      }
+    },
+    {
+      "id": "award-nominations",
+      "type": "split_text",
+      "visible": true,
+      "variant": "awards",
+      "data": {
+        "eyebrow": "ICH2026 nominations",
+        "heading": "Nominations are open until {{conference.award_nominations_deadline}}.",
+        "paragraphs": [
+          "Nominators are invited to submit proposals for the two ICH2026 lectureship awards through the official online form."
+        ],
+        "actions": [
+          {
+            "label": "Open nomination form",
+            "site_link": "award_nominations",
+            "style": "primary"
+          },
+          {
+            "label": "ICH2026 registration information",
+            "page_id": "registration",
+            "style": "outline"
+          }
+        ]
+      }
+    }
+  ]
+}
