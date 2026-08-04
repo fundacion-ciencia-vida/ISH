@@ -478,6 +478,52 @@ mobileQuery.addEventListener("change", () => {
 
 syncMenuAccessibility();
 
+const copyButtons = Array.from(document.querySelectorAll("[data-copy-text]"));
+
+async function copyText(value) {
+  if (navigator.clipboard?.writeText && window.isSecureContext) {
+    await navigator.clipboard.writeText(value);
+    return;
+  }
+
+  const textarea = document.createElement("textarea");
+  textarea.value = value;
+  textarea.setAttribute("readonly", "");
+  textarea.style.position = "fixed";
+  textarea.style.opacity = "0";
+  textarea.style.pointerEvents = "none";
+  body.appendChild(textarea);
+  textarea.select();
+  const copied = document.execCommand("copy");
+  textarea.remove();
+  if (!copied) throw new Error("Copy command was not available.");
+}
+
+copyButtons.forEach((button) => {
+  let resetTimer;
+  button.addEventListener("click", async () => {
+    const label = button.querySelector("[data-copy-label]");
+    const value = button.dataset.copyText || "";
+    if (!label || !value) return;
+
+    try {
+      await copyText(value);
+      window.clearTimeout(resetTimer);
+      button.classList.add("is-copied");
+      button.setAttribute("aria-label", "Zoom password copied");
+      label.textContent = "Copied";
+      resetTimer = window.setTimeout(() => {
+        button.classList.remove("is-copied");
+        button.setAttribute("aria-label", "Copy Zoom password");
+        label.textContent = "Copy";
+      }, 2200);
+    } catch {
+      button.setAttribute("aria-label", "Unable to copy Zoom password");
+      label.textContent = "Try again";
+    }
+  });
+});
+
 /* ── Scroll progress bar ── */
 const scrollProgress = document.querySelector(".scroll-progress");
 if (scrollProgress) {

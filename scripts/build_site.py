@@ -2604,7 +2604,13 @@ def render_communications(prefix: str, section: dict[str, object]) -> str:
               </div>
               <div class="news-event-access">
                 <span>Zoom password</span>
-                <strong>{password}</strong>
+                <div class="news-event-password">
+                  <strong>{password}</strong>
+                  <button class="news-copy-button" type="button" data-copy-text="{escape(str(event.get('password', '')), quote=True)}" aria-label="Copy Zoom password" title="Copy password">
+                    <span class="news-copy-icon" aria-hidden="true"></span>
+                    <span data-copy-label aria-live="polite">Copy</span>
+                  </button>
+                </div>
                 <a class="button button-primary" href="{escape(href, quote=True)}"{external_attrs(href)}>{escape(str(item.get('label', 'Join meeting')))}</a>
               </div>
             </footer>

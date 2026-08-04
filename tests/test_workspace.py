@@ -161,6 +161,8 @@ class GeneratorIntegrationTests(unittest.TestCase):
             self.assertIn('id="hantavirus-corc-vaccine-working-group"', communications)
             self.assertIn('datetime="2026-09-10"', communications)
             self.assertIn("@Hanta!1", communications)
+            self.assertIn('data-copy-text="@Hanta!1"', communications)
+            self.assertIn("Copy Zoom password", communications)
             self.assertNotIn("{{conference.", registration)
 
     def test_internal_generator_allows_incomplete_draft_preview(self) -> None:

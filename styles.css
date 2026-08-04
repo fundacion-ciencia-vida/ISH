@@ -1809,7 +1809,7 @@ h3 {
 }
 
 .news-event-schedule span,
-.news-event-access span {
+.news-event-access > span {
   color: var(--accent-strong);
   font-size: 11px;
   font-weight: 850;
@@ -1907,15 +1907,86 @@ h3 {
   min-width: 250px;
 }
 
-.news-event-access span,
-.news-event-access > strong {
+.news-event-access > span,
+.news-event-password {
   grid-column: 1;
 }
 
-.news-event-access > strong {
+.news-event-password {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.news-event-password > strong {
   color: var(--ink);
   font-size: 18px;
   font-weight: 850;
+}
+
+.news-copy-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-width: 72px;
+  min-height: 34px;
+  padding: 6px 10px;
+  color: var(--accent-strong);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1;
+  transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease;
+}
+
+.news-copy-button:hover,
+.news-copy-button:focus-visible {
+  color: var(--ink);
+  background: var(--surface);
+  border-color: rgba(47, 128, 237, 0.52);
+  outline: none;
+}
+
+.news-copy-button:focus-visible {
+  box-shadow: 0 0 0 3px rgba(47, 128, 237, 0.2);
+}
+
+.news-copy-button.is-copied {
+  color: #0d654d;
+  background: rgba(121, 189, 162, 0.16);
+  border-color: rgba(13, 101, 77, 0.4);
+}
+
+.news-copy-icon {
+  position: relative;
+  width: 13px;
+  height: 13px;
+  flex: 0 0 13px;
+}
+
+.news-copy-icon::before,
+.news-copy-icon::after {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  content: "";
+  border: 1.5px solid currentColor;
+  border-radius: 2px;
+}
+
+.news-copy-icon::before {
+  top: 0;
+  left: 0;
+}
+
+.news-copy-icon::after {
+  right: 0;
+  bottom: 0;
+  background: inherit;
 }
 
 .news-event-access .button {
