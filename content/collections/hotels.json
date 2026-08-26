@@ -1,0 +1,97 @@
+{
+  "items": [
+    {
+      "id": "hotel-bellavista",
+      "name": "Hotel Bellavista",
+      "category": "Conference venue",
+      "summary": "ICH2026 venue on the Puerto Varas waterfront.",
+      "distance": "On site",
+      "rates": [],
+      "rate_note": "No conference accommodation rate was supplied in the source documents.",
+      "booking_email": "reservas@hotelbellavista.cl",
+      "booking_phone": "+56 65 223 2011",
+      "booking_via": "Hotel Bellavista",
+      "url": "https://hotelbellavista.cl/",
+      "featured": true
+    },
+    {
+      "id": "radisson-puerto-varas",
+      "name": "Radisson Hotel Puerto Varas",
+      "category": "Premium alternative",
+      "summary": "Lakefront hotel in central Puerto Varas.",
+      "distance": "Confirm walking route",
+      "rates": [],
+      "rate_note": "Conference quotation available on request. Confirm room category, stay dates and final rate before booking.",
+      "booking_email": "comercial@jcaturismo.com",
+      "booking_phone": "+56 9 3890 9688",
+      "booking_via": "JCA Turismo quotation JCA194",
+      "url": "https://www.choicehotels.com/en-xl/chile/puerto-varas/radisson-hotels/cl013",
+      "featured": false
+    },
+    {
+      "id": "hotel-cabana-del-lago",
+      "name": "Hotel Cabaña del Lago",
+      "category": "Premium alternative",
+      "summary": "Limited availability in the Eco Cabins section, across from the hotel.",
+      "distance": "Confirm walking route",
+      "rates": [
+        {"room": "Eco Cabin Twin", "occupancy": "1 to 2 adults", "clp": "CLP 253,000", "usd": "US$327", "basis": "Per room, per night"},
+        {"room": "Eco Cabin Suite", "occupancy": "3 adults or 2 adults + 2 children", "clp": "CLP 328,000", "usd": "US$391", "basis": "Per room, per night"}
+      ],
+      "rate_note": "Rooms are available exclusively in the Eco Cabins section and availability is limited.",
+      "booking_email": "comercial@jcaturismo.com",
+      "booking_phone": "+56 9 3890 9688",
+      "booking_via": "JCA Turismo quotation JCA194",
+      "url": "https://hotelcabanadellago.cl/",
+      "featured": false
+    },
+    {
+      "id": "hotel-germania",
+      "name": "Hotel Germania",
+      "category": "Mid-range alternative",
+      "summary": "Standard single room with breakfast included.",
+      "distance": "Approximately 10 minutes on foot to Hotel Bellavista",
+      "rates": [
+        {"room": "Standard single room", "occupancy": "1 guest", "clp": "CLP 110,000", "usd": "", "basis": "Breakfast included"}
+      ],
+      "rate_note": "Confirm availability and final rate directly with the hotel.",
+      "booking_email": "reservas@germaniahotel.cl",
+      "booking_phone": "+56 9 4486 1944",
+      "booking_via": "Hotel Germania",
+      "url": "https://germaniahotel.cl/",
+      "featured": false
+    },
+    {
+      "id": "hotel-weisserhaus",
+      "name": "Hotel Weisserhaus",
+      "category": "Economical alternative",
+      "summary": "Standard single room with breakfast included.",
+      "distance": "Approximately 8 minutes on foot to Hotel Bellavista",
+      "rates": [
+        {"room": "Standard single room", "occupancy": "1 guest", "clp": "CLP 99,900", "usd": "", "basis": "Breakfast included"}
+      ],
+      "rate_note": "Confirm availability and final rate directly with the hotel.",
+      "booking_email": "reservas@weisserhaus.cl",
+      "booking_phone": "+56 65 234 6479",
+      "booking_via": "Hotel Weisserhaus",
+      "url": "https://www.weisserhaus.cl/",
+      "featured": false
+    },
+    {
+      "id": "hotel-el-greco",
+      "name": "El Greco Hotel Museo",
+      "category": "Most economical quoted option",
+      "summary": "Standard single room with breakfast included.",
+      "distance": "Approximately 5 to 7 minutes on foot to Hotel Bellavista",
+      "rates": [
+        {"room": "Standard single room", "occupancy": "1 guest", "clp": "CLP 80,000", "usd": "", "basis": "Breakfast included"}
+      ],
+      "rate_note": "Confirm availability and final rate directly with the hotel.",
+      "booking_email": "reservas@hotelelgreco.cl",
+      "booking_phone": "+56 65 223 3388",
+      "booking_via": "El Greco Hotel Museo",
+      "url": "https://turismo.ptovaras.cl/servicios-turisticos/servicio/el-greco",
+      "featured": false
+    }
+  ]
+}

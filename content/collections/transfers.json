@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "id": "jca-shared-airport-transfer",
+      "name": "JCA Turismo shared airport transfer",
+      "operator": "JCA Turismo",
+      "service_type": "Shared service",
+      "routes": [
+        "El Tepual Airport, Puerto Montt, to a hotel in Puerto Varas",
+        "A hotel in Puerto Varas to El Tepual Airport, Puerto Montt"
+      ],
+      "duration": "1 hour",
+      "clp_rate": "CLP 22,500",
+      "usd_rate": "US$25",
+      "price_basis": "Per passenger, each way",
+      "includes": "Transportation with a Spanish-speaking driver.",
+      "conditions": [
+        "Minimum 2 passengers",
+        "Net, non-commissionable rate",
+        "Quoted for November 2026"
+      ],
+      "phone": "+56 9 3890 9688",
+      "email": "comercial@jcaturismo.com",
+      "url": "https://www.jcaturismo.com/",
+      "primary": true
+    },
+    {
+      "id": "survip-airport-transfer",
+      "name": "Survip airport transfer",
+      "operator": "Survip",
+      "service_type": "Independent booking option",
+      "routes": ["El Tepual Airport, Puerto Montt, to Puerto Varas"],
+      "duration": "Confirm with operator",
+      "clp_rate": "",
+      "usd_rate": "",
+      "price_basis": "Current rate shown by operator",
+      "includes": "Review schedules, pickup details and availability on the provider website.",
+      "conditions": [],
+      "phone": "",
+      "email": "",
+      "url": "https://www.survip.cl/transfer-aeropuerto-puerto-montt-a-puerto-varas.php",
+      "primary": false
+    }
+  ]
+}

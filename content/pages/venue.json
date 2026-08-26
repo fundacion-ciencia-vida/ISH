@@ -2,20 +2,135 @@
   "id": "venue",
   "route": "ich2026/venue",
   "core_route": true,
-  "title": "Venue | ICH2026",
-  "description": "Venue and travel information for ICH2026.",
+  "title": "Venue & Travel | ICH2026",
+  "description": "Venue, airport transfers, accommodation and optional tours for ICH2026 in Puerto Varas.",
   "social_image": "venue/hotel-bellavista-window.jpg",
   "hero_image": "venue/hotel-bellavista-window.jpg",
   "conference_page": true,
   "sections": [
-    {"id": "hero", "type": "page_hero", "visible": true, "locked": true, "data": {"eyebrow": "ICH2026 Venue & Travel", "title": "Hotel Bellavista, Puerto Varas.", "lede": "The 2026 meeting will take place in the Hotel Bellavista, Puerto Varas.", "image": "venue/hotel-bellavista-window.jpg", "breadcrumbs": true, "actions": [{"label": "Open map", "url": "https://goo.gl/maps/dv2jUC4hSGLvr2Ld9", "style": "primary"}, {"label": "Practical tips", "site_link": "practical_tips", "style": "secondary"}, {"label": "Hotel Bellavista", "url": "https://hotelbellavista.cl/", "style": "secondary"}]}},
-    {"id": "venue-route", "type": "venue_overview", "visible": true, "data": {"eyebrow": "How to get to Puerto Varas", "heading": "A practical route into the Chilean Lake District.", "address_label": "Venue address", "address": "Av. Vicente Perez Rosales #060, Puerto Varas", "map_url": "https://goo.gl/maps/dv2jUC4hSGLvr2Ld9", "steps": [{"label": "Arrival", "title": "Santiago (SCL)", "description": "Immigration, luggage and domestic connection."}, {"label": "Connection", "title": "Puerto Montt (PMC)", "description": "Domestic flight to El Tepual Airport."}, {"label": "Transfer", "title": "Puerto Varas", "description": "Private transfer, taxi, bus or shuttle to the venue."}], "shortcuts": [{"icon": "car", "title": "Puerto Montt to Puerto Varas", "description": "Survip transfer from El Tepual Airport (PMC) to Puerto Varas.", "url": "https://www.survip.cl/transfer-aeropuerto-puerto-montt-a-puerto-varas.php"}, {"icon": "plane", "title": "Santiago SCL stop-over", "description": "Transfer service for participants staying overnight near Santiago airport.", "url": "https://ww2.trasladoaeropuerto.cl/"}], "image": "venue/puerto-varas-waterfront.jpg", "image_alt": "Hotel Bellavista conference room", "caption": "Hotel Bellavista conference facilities"}},
-    {"id": "travel-details", "type": "article_list", "visible": true, "variant": "intro", "data": {"articles": [
-      {"eyebrow": "International arrival", "heading": "Arrive through Santiago (SCL)", "body_html": "<p>Most international travelers will arrive at Arturo Merino Benitez International Airport (SCL) in Santiago, Chile.</p><h3>After landing</h3><ul><li>Proceed through immigration and customs</li><li>Collect your luggage</li><li>Follow signs for domestic connections</li></ul><p><strong>Tip:</strong> Allow at least 2-3 hours for connection time, especially if arriving from long-haul international flights.</p><p>Alternatively, you may prefer to make a stop-over in Santiago. The Santiago transfer contact below is for SCL airport transfers and can be useful for overnight stays before the domestic flight to Puerto Montt. A curated list of hotels near Santiago airport will be added once confirmed by the organizing team. It is also possible to book <a href=\"https://www.tripadvisor.com/Attractions-g294305-Activities-c42-t205-Santiago_Santiago_Metropolitan_Region.html\">day trips</a> to diverse destinations, close to, or in <a href=\"https://www.viator.com/Santiago/d713?pid=P00095352&amp;mcid=42383&amp;medium=link&amp;campaign=scltours\">Santiago</a>.</p>"},
-      {"eyebrow": "Domestic connection", "heading": "Fly from Santiago to Puerto Montt (PMC)", "body_html": "<p>From Santiago, take a domestic flight to El Tepual Airport (PMC) in Puerto Montt.</p><ul><li>Flight duration: approximately 1 hour 40 minutes</li><li>Airlines operate multiple daily flights</li></ul><p><strong>Tip:</strong> Puerto Montt is the main gateway to the Los Lagos region and Puerto Varas.</p>"},
-      {"eyebrow": "Airport transfer", "heading": "Connect from Puerto Montt Airport to Puerto Varas", "body_html": "<p>Puerto Varas is located approximately 20-30 km from the airport, with a travel time of about 25-30 minutes depending on traffic.</p><p>Upon arrival at the airport, you will find several transportation options.</p><h3>Private or Shared Transfer</h3><ul><li>Pre-booked or available at the airport</li><li>Drop-off directly at your hotel</li><li>Travel time: ~30 minutes</li><li>Approximate amount: 15-25 USD</li></ul><p>For the Puerto Montt to Puerto Varas route, participants can review the <a href=\"https://www.survip.cl/transfer-aeropuerto-puerto-montt-a-puerto-varas.php\">Survip transfer</a>. For participants spending a night in Santiago, the SCL transfer service is available through <a href=\"https://ww2.trasladoaeropuerto.cl/\">Airport Transfer</a>, <a href=\"https://api.whatsapp.com/send?phone=56976053701&amp;text=hola,%20lo%20contacto%20desde%20la%20p%C3%A1gina%20web\">WhatsApp +56976053701</a>, or <a href=\"mailto:reservas@trasladoaeropuerto.cl\">reservas@trasladoaeropuerto.cl</a>.</p><h3>Taxi</h3><ul><li>Available directly outside the terminal</li><li>Travel time: ~25-30 minutes</li><li>Safe and widely used</li><li>Estimated cost: 20-30 USD</li></ul><h3>Bus / Shuttle</h3><ul><li>Budget-friendly option</li><li>Travel time: ~30-40 minutes depending on route</li><li>Estimated cost: 2 USD</li><li>Departures from Puerto Montt bus terminal</li></ul><p>Taxis and transfers are the most convenient options for international travelers.</p>"},
-      {"eyebrow": "Final destination", "heading": "Puerto Varas", "body_html": "<p>Puerto Varas is a scenic lakeside city located in southern Chile, known for:</p><ul><li>Lake Llanquihue</li><li>Osorno Volcano</li><li>Easy access to national parks and research sites</li></ul><h3>Travel Tips</h3><ul><li>Currency: Chilean Peso (CLP)</li><li>Most taxis and services accept cards, but carrying some cash is recommended</li><li>ATMs usually offer foreign-language menus and dispense Chilean pesos. Cash withdrawal limits are commonly around US$200 equivalent per transaction.</li><li>Weather can change quickly - bring appropriate clothing</li><li>Spanish is the local language, but basic English is commonly understood in tourism services</li></ul>"}
-    ]}},
-    {"id": "travel-resources", "type": "resource_links", "visible": true, "variant": "data", "data": {"eyebrow": "Travel resources", "heading": "Venue, airport and transfer contacts for ICH2026 participants.", "collection": "travel_links"}}
+    {
+      "id": "hero",
+      "type": "page_hero",
+      "visible": true,
+      "locked": true,
+      "data": {
+        "eyebrow": "ICH2026 Venue & Travel",
+        "title": "Hotel Bellavista, Puerto Varas.",
+        "lede": "The 2026 meeting will take place at Hotel Bellavista on the shore of Lake Llanquihue.",
+        "image": "venue/hotel-bellavista-window.jpg",
+        "breadcrumbs": true,
+        "actions": [
+          {"label": "Open map", "url": "https://goo.gl/maps/dv2jUC4hSGLvr2Ld9", "style": "primary"},
+          {"label": "Practical tips", "site_link": "practical_tips", "style": "secondary"},
+          {"label": "Hotel Bellavista", "url": "https://hotelbellavista.cl/", "style": "secondary"}
+        ]
+      }
+    },
+    {
+      "id": "venue-navigation",
+      "type": "venue_anchor_nav",
+      "visible": true,
+      "data": {
+        "label": "Venue and travel sections",
+        "items": [
+          {"label": "Getting there", "url": "#getting-there"},
+          {"label": "Airport transfers", "url": "#airport-transfers"},
+          {"label": "Hotels", "url": "#hotels"},
+          {"label": "Optional tours", "url": "#optional-tours"},
+          {"label": "Santiago stopover", "url": "#santiago-stopover"}
+        ]
+      }
+    },
+    {
+      "id": "getting-there",
+      "type": "venue_overview",
+      "visible": true,
+      "data": {
+        "eyebrow": "Getting to Puerto Varas",
+        "heading": "A clear route into the Chilean Lake District.",
+        "address_label": "Conference venue",
+        "address": "Hotel Bellavista, Av. Vicente Pérez Rosales 060, Puerto Varas",
+        "map_url": "https://goo.gl/maps/dv2jUC4hSGLvr2Ld9",
+        "steps": [
+          {"label": "International arrival", "title": "Santiago (SCL)", "description": "Complete immigration and customs, then continue to domestic departures."},
+          {"label": "Domestic flight", "title": "Puerto Montt (PMC)", "description": "Fly to El Tepual Airport, the air gateway for Puerto Varas."},
+          {"label": "Ground transfer", "title": "Puerto Varas", "description": "Continue approximately 22 km from the airport to your hotel."}
+        ],
+        "shortcuts": [
+          {"icon": "car", "title": "Book an airport transfer", "description": "Review the quoted shared service between El Tepual Airport and Puerto Varas.", "url": "#airport-transfers"},
+          {"icon": "document", "title": "Practical tips for Chile", "description": "Open the visitor guide prepared for ICH2026 participants.", "url": "assets/documents/ich2026/practical-tips-visit-chile.pdf"}
+        ],
+        "image": "venue/puerto-varas-waterfront.jpg",
+        "image_alt": "Hotel Bellavista conference room prepared for an event",
+        "caption": "Hotel Bellavista conference facilities"
+      }
+    },
+    {
+      "id": "airport-transfers",
+      "type": "transfer_directory",
+      "visible": true,
+      "data": {
+        "eyebrow": "Airport transfers",
+        "heading": "El Tepual Airport (PMC) to Puerto Varas, and return.",
+        "introduction": "The quoted shared service operates in both directions. Reserve directly with the operator and confirm availability, pickup time and payment before travelling.",
+        "collection": "transfers"
+      }
+    },
+    {
+      "id": "hotels",
+      "type": "hotel_directory",
+      "visible": true,
+      "data": {
+        "eyebrow": "Accommodation",
+        "heading": "Hotels in Puerto Varas, from premium to more economical options.",
+        "introduction": "Hotel Bellavista is the conference venue. The alternatives below are ordered by positioning and quoted amount, where a complete rate was supplied.",
+        "collection": "hotels",
+        "note": "Rates were supplied for ICH2026 planning and may change. Availability, taxes, room category, stay dates and final payment conditions must be confirmed directly when booking."
+      }
+    },
+    {
+      "id": "optional-tours",
+      "type": "tour_directory",
+      "visible": true,
+      "data": {
+        "eyebrow": "Optional tours",
+        "heading": "Independent excursions around Puerto Varas.",
+        "introduction": "These optional services are offered by JCA Turismo and are not organized by, included in, or paid through ICH2026.",
+        "collection": "tours",
+        "operator": "JCA Turismo",
+        "phone": "+56 9 3890 9688",
+        "email": "comercial@jcaturismo.com",
+        "url": "https://www.jcaturismo.com/",
+        "conditions": "Quoted for November 2026. Shared service, minimum 2 passengers. Rates are net and non-commissionable. Book and pay directly with the operator."
+      }
+    },
+    {
+      "id": "santiago-stopover",
+      "type": "stopover_panel",
+      "visible": true,
+      "data": {
+        "eyebrow": "Optional Santiago stopover",
+        "heading": "Only for participants planning time in Santiago.",
+        "body_html": "<p>A stay in Santiago is optional and is not required to reach ICH2026. Travellers continuing directly should connect at Santiago Airport (SCL) to a domestic flight to Puerto Montt (PMC).</p><p>The resources below may be useful if you choose to stay overnight or add personal travel in Santiago. These services are independent of ICH2026.</p>",
+        "links": [
+          {"icon": "plane", "label": "Santiago Airport", "description": "Passenger information for Arturo Merino Benítez International Airport (SCL).", "url": "https://thesantiagoairport.com/"},
+          {"icon": "car", "label": "Santiago airport transfer", "description": "Independent SCL transfer service for an optional overnight stay.", "url": "https://ww2.trasladoaeropuerto.cl/"},
+          {"icon": "route", "label": "Ideas for a Santiago stopover", "description": "Optional activities to consider during a personal stopover.", "url": "https://www.tripadvisor.com/Attractions-g294305-Activities-c42-t205-Santiago_Santiago_Metropolitan_Region.html"}
+        ],
+        "transfer_email": "reservas@trasladoaeropuerto.cl",
+        "transfer_phone": "+56 9 7605 3701"
+      }
+    },
+    {
+      "id": "travel-resources",
+      "type": "resource_links",
+      "visible": true,
+      "variant": "data",
+      "data": {
+        "eyebrow": "Essential resources",
+        "heading": "Venue details and practical guidance for ICH2026 participants.",
+        "collection": "travel_links"
+      }
+    }
   ]
 }

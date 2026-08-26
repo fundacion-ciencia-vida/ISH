@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "id": "llanquihue-frutillar",
+      "name": "Llanquihue and Frutillar Excursion",
+      "duration": "4 hours",
+      "clp_rate": "CLP 35,000",
+      "usd_rate": "US$39",
+      "price_basis": "Per passenger",
+      "includes": "Transportation, museum entrance fee, and a Spanish-, English-, or Portuguese-speaking guide."
+    },
+    {
+      "id": "osorno-volcano",
+      "name": "Osorno Volcano Excursion",
+      "duration": "5 hours",
+      "clp_rate": "CLP 33,500",
+      "usd_rate": "US$37",
+      "price_basis": "Per passenger",
+      "includes": "Transportation and a Spanish-, English-, or Portuguese-speaking guide."
+    },
+    {
+      "id": "petrohue-todos-los-santos",
+      "name": "Petrohué Falls and Lake Todos los Santos Shore Excursion",
+      "duration": "5 hours",
+      "clp_rate": "CLP 42,000",
+      "usd_rate": "US$47",
+      "price_basis": "Per passenger",
+      "includes": "Transportation, a Spanish-, English-, or Portuguese-speaking guide, and admission to Petrohué Falls."
+    },
+    {
+      "id": "lahuen-nadi",
+      "name": "Lahuen Ñadi Natural Monument Excursion",
+      "duration": "4 hours",
+      "clp_rate": "CLP 37,500",
+      "usd_rate": "US$42",
+      "price_basis": "Per passenger",
+      "includes": "Transportation, a Spanish-, English-, or Portuguese-speaking guide, and admission to Lahuen Ñadi Natural Monument."
+    }
+  ]
+}

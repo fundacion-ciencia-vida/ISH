@@ -2473,17 +2473,170 @@ def render_venue_overview(prefix: str, section: dict[str, object]) -> str:
     )
     shortcuts = []
     for item in data.get("shortcuts", []):
+        href = content_href(prefix, item)
         shortcuts.append(
-            f'<a href="{escape(str(item.get("url", "")), quote=True)}" target="_blank" rel="noreferrer">{travel_icon(str(item.get("icon", "car")))}<span><strong>{escape(str(item.get("title", "")))}</strong><small>{escape(str(item.get("description", "")))}</small></span></a>'
+            f'<a href="{escape(href, quote=True)}"{external_attrs(href)}>{travel_icon(str(item.get("icon", "car")))}<span><strong>{escape(str(item.get("title", "")))}</strong><small>{escape(str(item.get("description", "")))}</small></span></a>'
         )
+    section_id = escape(str(section.get("id", "getting-there")), quote=True)
     html = f"""
-      <section class="section venue"><div class="section-shell venue-layout">
+      <section id="{section_id}" class="section venue"><div class="section-shell venue-layout">
         <div class="venue-copy reveal">
           <p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2>
           <div class="venue-address"><span>{escape(str(data.get('address_label', 'Venue address')))}</span><a href="{escape(str(data.get('map_url', '')), quote=True)}" target="_blank" rel="noreferrer">{escape(str(data.get('address', '')))}</a></div>
           <div class="travel-steps">{steps}</div><div class="travel-shortcuts" aria-label="Priority travel resources">{''.join(shortcuts)}</div>
         </div>
         <figure class="venue-image reveal">{responsive_image(prefix, str(data.get('image', '')), str(data.get('image_alt', '')), loading='lazy', decoding='async', sizes='(max-width: 1060px) 100vw, 520px')}<figcaption>{escape(str(data.get('caption', '')))}</figcaption></figure>
+      </div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_venue_anchor_nav(section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    links = "".join(
+        f'<a href="{escape(str(item.get("url", "#")), quote=True)}">{escape(str(item.get("label", "")))}</a>'
+        for item in data.get("items", [])
+    )
+    html = f"""
+      <section class="venue-anchor-band" aria-label="{escape(str(data.get('label', 'Venue and travel sections')), quote=True)}">
+        <div class="section-shell"><nav class="venue-anchor-nav">{links}</nav></div>
+      </section>"""
+    return mark_content_section(html, section)
+
+
+def render_transfer_directory(section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    items = COLLECTIONS.get(str(data.get("collection", "transfers")), [])
+    entries = []
+    for item in items:
+        routes = "".join(f"<li>{escape(str(route))}</li>" for route in item.get("routes", []))
+        conditions = "".join(f"<li>{escape(str(value))}</li>" for value in item.get("conditions", []))
+        rate_values = "".join(
+            f"<strong>{escape(str(value))}</strong>"
+            for value in (item.get("clp_rate", ""), item.get("usd_rate", ""))
+            if value
+        )
+        phone = str(item.get("phone", ""))
+        email = str(item.get("email", ""))
+        url = str(item.get("url", ""))
+        contacts = "".join(
+            value
+            for value in [
+                f'<a href="mailto:{escape(email, quote=True)}">{escape(email)}</a>' if email else "",
+                f'<a href="tel:{escape(re.sub(r"[^+0-9]", "", phone), quote=True)}">{escape(phone)}</a>' if phone else "",
+                f'<a href="{escape(url, quote=True)}"{external_attrs(url)}>Operator website</a>' if url else "",
+            ]
+            if value
+        )
+        primary_class = " is-primary" if item.get("primary") else ""
+        entries.append(
+            f"""
+            <article class="transfer-entry{primary_class} reveal">
+              <div class="transfer-entry-heading"><span>{escape(str(item.get('service_type', 'Transfer service')))}</span><h3>{escape(str(item.get('name', '')))}</h3><p>{escape(str(item.get('includes', '')))}</p></div>
+              <div class="transfer-entry-route"><span>Route</span><ul>{routes}</ul></div>
+              <div class="transfer-entry-rate">{rate_values}<small>{escape(str(item.get('price_basis', '')))}</small><span>{escape(str(item.get('duration', '')))}</span></div>
+              {f'<ul class="transfer-conditions">{conditions}</ul>' if conditions else ''}
+              <div class="transfer-entry-contact">{contacts}</div>
+            </article>"""
+        )
+    section_id = escape(str(section.get("id", "airport-transfers")), quote=True)
+    html = f"""
+      <section id="{section_id}" class="section travel-directory transfer-directory"><div class="section-shell">
+        <div class="travel-directory-heading reveal"><div><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2></div><p>{escape(str(data.get('introduction', '')))}</p></div>
+        <div class="transfer-directory-list">{''.join(entries)}</div>
+      </div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_hotel_directory(section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    items = COLLECTIONS.get(str(data.get("collection", "hotels")), [])
+    entries = []
+    for item in items:
+        rates = []
+        for rate in item.get("rates", []):
+            secondary = f'<span>{escape(str(rate.get("usd", "")))}</span>' if rate.get("usd") else ""
+            rates.append(
+                f"""
+                <div class="hotel-rate-row">
+                  <div><strong>{escape(str(rate.get('room', '')))}</strong><small>{escape(str(rate.get('occupancy', '')))} · {escape(str(rate.get('basis', '')))}</small></div>
+                  <div><strong>{escape(str(rate.get('clp', '')))}</strong>{secondary}</div>
+                </div>"""
+            )
+        email = str(item.get("booking_email", ""))
+        phone = str(item.get("booking_phone", ""))
+        url = str(item.get("url", ""))
+        featured_class = " is-featured" if item.get("featured") else ""
+        entries.append(
+            f"""
+            <article class="hotel-directory-row{featured_class} reveal">
+              <div class="hotel-directory-name"><span>{escape(str(item.get('category', 'Hotel')))}</span><h3>{escape(str(item.get('name', '')))}</h3><p>{escape(str(item.get('summary', '')))}</p></div>
+              <div class="hotel-directory-rates">{''.join(rates)}<p>{escape(str(item.get('rate_note', '')))}</p></div>
+              <div class="hotel-directory-contact">
+                <span>{escape(str(item.get('distance', '')))}</span>
+                <small>Reservations: {escape(str(item.get('booking_via', '')))}</small>
+                {f'<a href="mailto:{escape(email, quote=True)}">{escape(email)}</a>' if email else ''}
+                {f'<a href="tel:{escape(re.sub(r"[^+0-9]", "", phone), quote=True)}">{escape(phone)}</a>' if phone else ''}
+                {f'<a class="text-link" href="{escape(url, quote=True)}"{external_attrs(url)}>Hotel details</a>' if url else ''}
+              </div>
+            </article>"""
+        )
+    section_id = escape(str(section.get("id", "hotels")), quote=True)
+    html = f"""
+      <section id="{section_id}" class="section hotel-directory-section"><div class="section-shell">
+        <div class="travel-directory-heading reveal"><div><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2></div><p>{escape(str(data.get('introduction', '')))}</p></div>
+        <div class="hotel-directory-list">{''.join(entries)}</div>
+        <p class="travel-source-note reveal">{escape(str(data.get('note', '')))}</p>
+      </div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_tour_directory(section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    items = COLLECTIONS.get(str(data.get("collection", "tours")), [])
+    rows = []
+    for index, item in enumerate(items, start=1):
+        rows.append(
+            f"""
+            <article class="tour-directory-row reveal">
+              <span class="tour-directory-number">{index:02d}</span>
+              <div><h3>{escape(str(item.get('name', '')))}</h3><p>{escape(str(item.get('includes', '')))}</p></div>
+              <div class="tour-directory-meta"><span>{escape(str(item.get('duration', '')))}</span><strong>{escape(str(item.get('clp_rate', '')))}</strong><strong>{escape(str(item.get('usd_rate', '')))}</strong><small>{escape(str(item.get('price_basis', '')))}</small></div>
+            </article>"""
+        )
+    email = str(data.get("email", ""))
+    phone = str(data.get("phone", ""))
+    url = str(data.get("url", ""))
+    section_id = escape(str(section.get("id", "optional-tours")), quote=True)
+    html = f"""
+      <section id="{section_id}" class="section travel-directory tour-directory"><div class="section-shell">
+        <div class="travel-directory-heading reveal"><div><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2></div><p>{escape(str(data.get('introduction', '')))}</p></div>
+        <div class="tour-directory-list">{''.join(rows)}</div>
+        <div class="tour-operator-contact reveal"><div><span>Third-party operator</span><strong>{escape(str(data.get('operator', '')))}</strong><p>{escape(str(data.get('conditions', '')))}</p></div><div><a href="mailto:{escape(email, quote=True)}">{escape(email)}</a><a href="tel:{escape(re.sub(r'[^+0-9]', '', phone), quote=True)}">{escape(phone)}</a><a class="button button-outline" href="{escape(url, quote=True)}"{external_attrs(url)}>Contact JCA Turismo</a></div></div>
+      </div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_stopover_panel(section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    assert isinstance(data, dict)
+    links = []
+    for item in data.get("links", []):
+        url = str(item.get("url", "#"))
+        links.append(
+            f'<a href="{escape(url, quote=True)}"{external_attrs(url)}>{travel_icon(str(item.get("icon", "plane")))}<span><strong>{escape(str(item.get("label", "")))}</strong><small>{escape(str(item.get("description", "")))}</small></span></a>'
+        )
+    email = str(data.get("transfer_email", ""))
+    phone = str(data.get("transfer_phone", ""))
+    section_id = escape(str(section.get("id", "santiago-stopover")), quote=True)
+    html = f"""
+      <section id="{section_id}" class="section travel-stopover"><div class="section-shell">
+        <div class="travel-stopover-copy reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2>{sanitize_rich_html(str(data.get('body_html', '')))}</div>
+        <div class="travel-stopover-links reveal">{''.join(links)}</div>
+        <div class="travel-stopover-contact reveal"><span>Santiago transfer contact</span><a href="mailto:{escape(email, quote=True)}">{escape(email)}</a><a href="tel:{escape(re.sub(r'[^+0-9]', '', phone), quote=True)}">{escape(phone)}</a></div>
       </div></section>"""
     return mark_content_section(html, section)
 
@@ -2714,6 +2867,16 @@ def render_content_section(prefix: str, page: dict[str, object], section: dict[s
         return render_price_callout(prefix, section)
     if section_type == "venue_overview":
         return render_venue_overview(prefix, section)
+    if section_type == "venue_anchor_nav":
+        return render_venue_anchor_nav(section)
+    if section_type == "transfer_directory":
+        return render_transfer_directory(section)
+    if section_type == "hotel_directory":
+        return render_hotel_directory(section)
+    if section_type == "tour_directory":
+        return render_tour_directory(section)
+    if section_type == "stopover_panel":
+        return render_stopover_panel(section)
     if section_type == "article_list":
         return render_article_list(section)
     if section_type == "resource_links":

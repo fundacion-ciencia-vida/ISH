@@ -1,14 +1,7 @@
 {
   "items": [
-    {"id": "practical-tips", "icon": "document", "label": "Practical tips for visiting Chile", "description": "PDF guide with practical advice for ICH2026 visitors.", "url": "assets/documents/ich2026/practical-tips-visit-chile.pdf"},
-    {"id": "hotel", "icon": "hotel", "label": "Hotel Bellavista", "description": "Conference venue and event facilities.", "url": "https://hotelbellavista.cl/"},
-    {"id": "venue-map", "icon": "map-pin", "label": "Venue map", "description": "Av. Vicente Perez Rosales #060, Puerto Varas.", "url": "https://goo.gl/maps/dv2jUC4hSGLvr2Ld9"},
-    {"id": "santiago-airport", "icon": "plane", "label": "Santiago airport", "description": "International arrival at Arturo Merino Benitez Airport.", "url": "https://thesantiagoairport.com/"},
-    {"id": "santiago-day-trips", "icon": "route", "label": "Santiago day trips", "description": "Optional stop-over ideas near Santiago.", "url": "https://www.tripadvisor.com/Attractions-g294305-Activities-c42-t205-Santiago_Santiago_Metropolitan_Region.html"},
-    {"id": "santiago-tours", "icon": "route", "label": "Santiago tours", "description": "Additional tours and day activities in Santiago.", "url": "https://www.viator.com/Santiago/d713?pid=P00095352&mcid=42383&medium=link&campaign=scltours"},
-    {"id": "santiago-transfer", "icon": "car", "label": "Santiago airport transfer", "description": "SCL transfer service for travelers staying overnight in Santiago.", "url": "https://ww2.trasladoaeropuerto.cl/"},
-    {"id": "santiago-whatsapp", "icon": "message", "label": "Santiago transfer WhatsApp", "description": "Direct WhatsApp contact for SCL transfer reservations.", "url": "https://api.whatsapp.com/send?phone=56976053701&text=hola,%20lo%20contacto%20desde%20la%20p%C3%A1gina%20web"},
-    {"id": "santiago-email", "icon": "mail", "label": "Santiago transfer email", "description": "SCL transfer contact: reservas@trasladoaeropuerto.cl", "url": "mailto:reservas@trasladoaeropuerto.cl"},
-    {"id": "survip", "icon": "car", "label": "Survip transfer", "description": "Transfer service from Puerto Montt airport to Puerto Varas.", "url": "https://www.survip.cl/transfer-aeropuerto-puerto-montt-a-puerto-varas.php"}
+    {"id": "practical-tips", "icon": "document", "label": "Practical tips for visiting Chile", "description": "English-language PDF guide prepared for ICH2026 visitors.", "url": "assets/documents/ich2026/practical-tips-visit-chile.pdf"},
+    {"id": "hotel", "icon": "hotel", "label": "Hotel Bellavista", "description": "Official website for the ICH2026 conference venue.", "url": "https://hotelbellavista.cl/"},
+    {"id": "venue-map", "icon": "map-pin", "label": "Venue map", "description": "Av. Vicente Pérez Rosales 060, Puerto Varas.", "url": "https://goo.gl/maps/dv2jUC4hSGLvr2Ld9"}
   ]
 }
