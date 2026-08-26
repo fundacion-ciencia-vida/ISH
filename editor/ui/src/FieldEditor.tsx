@@ -107,6 +107,7 @@ const fieldLabels: Record<string, string> = {
   name: "Nombre",
   navigation: "Navegacion",
   note: "Nota",
+  notice: "Aviso importante",
   number: "Numero",
   officer: "Cargo directivo",
   opportunity_grid: "Oportunidades",

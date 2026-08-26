@@ -5126,6 +5126,43 @@ body.lightbox-open {
   font-weight: 800;
 }
 
+.fee-table tbody tr.is-restricted {
+  background: color-mix(in srgb, var(--accent) 9%, transparent);
+}
+
+.fee-table tbody tr.is-restricted th,
+.fee-table tbody tr.is-restricted td {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.fee-table tbody tr.is-restricted th {
+  padding-left: 18px;
+}
+
+.fee-access-notice {
+  display: grid;
+  grid-template-columns: minmax(190px, 0.34fr) minmax(0, 1fr);
+  gap: 36px;
+  margin-top: 22px;
+  padding: 22px 24px;
+  background: color-mix(in srgb, var(--accent) 12%, var(--paper));
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line));
+  border-radius: 6px;
+}
+
+.fee-access-notice strong {
+  color: var(--ink);
+  font-size: 15px;
+}
+
+.fee-access-notice p {
+  max-width: 780px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .andv-fee-layout {
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
@@ -5205,6 +5242,12 @@ body.lightbox-open {
 
   .fee-table .fee-usd {
     font-size: 17px;
+  }
+
+  .fee-access-notice {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 18px;
   }
 }
 

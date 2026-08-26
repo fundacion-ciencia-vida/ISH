@@ -2443,11 +2443,16 @@ def render_fee_table(section: dict[str, object]) -> str:
         for index, value in enumerate(row.get("values", []), start=1):
             klass = ' class="fee-usd"' if index in {2, 4} else ""
             values.append(f'<td{klass}>{escape(str(value))}</td>')
-        body_rows.append(f'<tr><th scope="row">{escape(str(row.get("category", "")))}{detail}</th>{"".join(values)}</tr>')
+        row_class = ' class="is-restricted"' if row.get("highlight") else ""
+        body_rows.append(f'<tr{row_class}><th scope="row">{escape(str(row.get("category", "")))}{detail}</th>{"".join(values)}</tr>')
+    notice = data.get("notice", {})
+    notice_html = ""
+    if isinstance(notice, dict) and notice.get("body"):
+        notice_html = f'<aside class="fee-access-notice reveal" aria-label="{escape(str(notice.get("heading", "Important fee information")), quote=True)}"><strong>{escape(str(notice.get("heading", "Important fee information")))}</strong><p>{escape(str(notice.get("body", "")))}</p></aside>'
     html = f"""
       <section class="section data-section"><div class="section-shell">
         <div class="section-heading compact reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2>{content_paragraphs(data)}</div>
-        <div class="fee-table-wrap reveal"><table class="fee-table"><caption>{escape(str(data.get('caption', 'Registration fees')))}</caption><thead><tr>{''.join(headings)}</tr></thead><tbody>{''.join(body_rows)}</tbody></table></div>
+        <div class="fee-table-wrap reveal"><table class="fee-table"><caption>{escape(str(data.get('caption', 'Registration fees')))}</caption><thead><tr>{''.join(headings)}</tr></thead><tbody>{''.join(body_rows)}</tbody></table></div>{notice_html}
       </div></section>"""
     return mark_content_section(html, section)
 
