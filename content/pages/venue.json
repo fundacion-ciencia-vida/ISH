@@ -34,7 +34,7 @@
         "label": "Venue and travel sections",
         "items": [
           {"label": "Getting there", "url": "#getting-there"},
-          {"label": "Airport transfers", "url": "#airport-transfers"},
+          {"label": "Ground transfer", "url": "#airport-transfers"},
           {"label": "Hotels", "url": "#hotels"},
           {"label": "Optional tours", "url": "#optional-tours"},
           {"label": "Santiago stopover", "url": "#santiago-stopover"}
@@ -70,8 +70,8 @@
       "type": "transfer_directory",
       "visible": true,
       "data": {
-        "eyebrow": "Airport transfers",
-        "heading": "El Tepual Airport (PMC) to Puerto Varas, and return.",
+        "eyebrow": "Ground transfer",
+        "heading": "Puerto Montt Airport (PMC) to Puerto Varas, and return.",
         "introduction": "The quoted shared service operates in both directions. Reserve directly with the operator and confirm availability, pickup time and payment before travelling.",
         "collection": "transfers"
       }
