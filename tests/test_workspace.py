@@ -159,6 +159,7 @@ class GeneratorIntegrationTests(unittest.TestCase):
             self.assertIn("Social events only; no conference access", registration)
             self.assertIn("Opening Event on the evening of November 1", registration)
             self.assertIn("does not include access to the scientific programme", registration)
+            self.assertNotIn("or any other ICH2026 activities", registration)
             self.assertIn("https://forms.gle/SqXDscDq8BuauHgP6", registration)
             self.assertIn("https://forms.gle/Ak6Bkg3GCUzKKMrw7", registration)
             self.assertIn("Connie S. Schmaljohn", awards)
