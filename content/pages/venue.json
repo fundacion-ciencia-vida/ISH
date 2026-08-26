@@ -115,7 +115,7 @@
         "links": [
           {"icon": "plane", "label": "Santiago Airport", "description": "Passenger information for Arturo Merino Benítez International Airport (SCL).", "url": "https://thesantiagoairport.com/"},
           {"icon": "car", "label": "Santiago airport transfer", "description": "Independent SCL transfer service for an optional overnight stay.", "url": "https://ww2.trasladoaeropuerto.cl/"},
-          {"icon": "route", "label": "Ideas for a Santiago stopover", "description": "Optional activities to consider during a personal stopover.", "url": "https://www.tripadvisor.com/Attractions-g294305-Activities-c42-t205-Santiago_Santiago_Metropolitan_Region.html"}
+          {"icon": "route", "label": "Ideas for a Santiago stopover", "description": "Optional activities to consider during a personal stopover.", "url": "https://www.tripadvisor.com/Attractions-g294305-Activities-Santiago_Santiago_Metropolitan_Region.html"}
         ],
         "transfer_email": "reservas@trasladoaeropuerto.cl",
         "transfer_phone": "+56 9 7605 3701"

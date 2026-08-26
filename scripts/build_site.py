@@ -302,7 +302,7 @@ TRAVEL_LINKS = [
     ("hotel", "Hotel Bellavista", "Conference venue and event facilities.", "https://hotelbellavista.cl/"),
     ("map-pin", "Venue map", "Av. Vicente Perez Rosales #060, Puerto Varas.", "https://goo.gl/maps/dv2jUC4hSGLvr2Ld9"),
     ("plane", "Santiago airport", "International arrival at Arturo Merino Benítez Airport.", "https://thesantiagoairport.com/"),
-    ("route", "Santiago day trips", "Optional stop-over ideas near Santiago.", "https://www.tripadvisor.com/Attractions-g294305-Activities-c42-t205-Santiago_Santiago_Metropolitan_Region.html"),
+    ("route", "Santiago day trips", "Optional stop-over ideas near Santiago.", "https://www.tripadvisor.com/Attractions-g294305-Activities-Santiago_Santiago_Metropolitan_Region.html"),
     ("route", "Santiago tours", "Additional tours and day activities in Santiago.", "https://www.viator.com/Santiago/d713?pid=P00095352&mcid=42383&medium=link&campaign=scltours"),
     ("car", "Santiago airport transfer", "SCL transfer service for travelers staying overnight in Santiago.", "https://ww2.trasladoaeropuerto.cl/"),
     ("message", "Santiago transfer WhatsApp", "Direct WhatsApp contact for SCL transfer reservations.", "https://api.whatsapp.com/send?phone=56976053701&text=hola,%20lo%20contacto%20desde%20la%20p%C3%A1gina%20web"),
@@ -1458,7 +1458,7 @@ def venue_page(prefix: str) -> str:
             <h3>After landing</h3>
             <ul><li>Proceed through immigration and customs</li><li>Collect your luggage</li><li>Follow signs for domestic connections</li></ul>
             <p><strong>Tip:</strong> Allow at least 2-3 hours for connection time, especially if arriving from long-haul international flights.</p>
-            <p>Alternatively, you may prefer to make a stop-over in Santiago. The Santiago transfer contact below is for SCL airport transfers and can be useful for overnight stays before the domestic flight to Puerto Montt. A curated list of hotels near Santiago airport will be added once confirmed by the organizing team. It is also possible to book <a class="text-link" href="https://www.tripadvisor.com/Attractions-g294305-Activities-c42-t205-Santiago_Santiago_Metropolitan_Region.html" target="_blank" rel="noreferrer">day trips</a> to diverse destinations, close to, or in <a class="text-link" href="https://www.viator.com/Santiago/d713?pid=P00095352&mcid=42383&medium=link&campaign=scltours" target="_blank" rel="noreferrer">Santiago</a>.</p>
+            <p>Alternatively, you may prefer to make a stop-over in Santiago. The Santiago transfer contact below is for SCL airport transfers and can be useful for overnight stays before the domestic flight to Puerto Montt. A curated list of hotels near Santiago airport will be added once confirmed by the organizing team. It is also possible to book <a class="text-link" href="https://www.tripadvisor.com/Attractions-g294305-Activities-Santiago_Santiago_Metropolitan_Region.html" target="_blank" rel="noreferrer">day trips</a> to diverse destinations, close to, or in <a class="text-link" href="https://www.viator.com/Santiago/d713?pid=P00095352&mcid=42383&medium=link&campaign=scltours" target="_blank" rel="noreferrer">Santiago</a>.</p>
           </article>
           <article class="reveal">
             <p class="eyebrow">Domestic connection</p>

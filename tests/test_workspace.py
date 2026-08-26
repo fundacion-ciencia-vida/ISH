@@ -183,6 +183,8 @@ class GeneratorIntegrationTests(unittest.TestCase):
             self.assertLess(venue.index("Hotel Germania"), venue.index("Hotel Weisserhaus"))
             self.assertLess(venue.index("Hotel Weisserhaus"), venue.index("El Greco Hotel Museo"))
             self.assertIn("A stay in Santiago is optional and is not required to reach ICH2026", venue)
+            self.assertIn("https://www.tripadvisor.com/Attractions-g294305-Activities-Santiago_Santiago_Metropolitan_Region.html", venue)
+            self.assertNotIn("Attractions-g294305-Activities-c42-t205", venue)
             self.assertIn("not organized by, included in, or paid through ICH2026", venue)
             self.assertNotIn("{{conference.", registration)
 
