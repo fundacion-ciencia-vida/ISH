@@ -3661,6 +3661,16 @@ body.lightbox-open {
   font-weight: 800;
 }
 
+.speaker .speaker-role { margin-bottom: 8px; font-size: 15px; text-align: left; }
+.speaker-keynote { margin: 24px 0; }
+.speaker-keynote > span { color: var(--muted); font-size: 12px; font-weight: 800; }
+.speaker-keynote h3 { max-width: 760px; margin: 6px 0 0; font-size: 23px; line-height: 1.35; }
+.speaker-biography { max-width: 760px; margin: 18px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.speaker-biography summary { min-height: 44px; padding: 10px 0; color: var(--ink); font-weight: 750; cursor: pointer; }
+.speaker-biography p { font-size: 16px; }
+.speaker-biography summary:focus-visible { outline: 2px solid var(--lake); outline-offset: 4px; }
+.speaker-keynote-pending { font-size: 14px; }
+
 .venue {
   background: var(--surface);
 }

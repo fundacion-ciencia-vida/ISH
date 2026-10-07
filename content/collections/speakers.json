@@ -1,17 +1,77 @@
 {
   "items": [
     {
+      "id": "satoru-arai",
+      "name": "Dr. Satoru Arai",
+      "role": "Chief, Division of Seroepidemiology for Vaccine Preventable Diseases",
+      "affiliation": "Department of Immunization Research, National Institute of Infectious Diseases, Japan Institute for Health Security (JIHS), Japan",
+      "keynote_title": "Hantaviruses across Hosts and Continents: Evolutionary Insights from Panama and Beyond",
+      "image": "board/satoru-arai.jpg",
+      "url": "https://orcid.org/0000-0001-5865-0717",
+      "link_label": "ORCID profile",
+      "paragraphs": [
+        "Dr. Satoru Arai is Chief of the Division of Seroepidemiology for vaccine-preventable diseases, Department of Immunization Research, National Institute of Infectious Diseases at Japan Institute for Health Security in Japan. His research encompasses the seroepidemiology of vaccine-preventable diseases as well as the ecology and evolution of zoonotic viruses. Over the past two decades, his work has contributed to the discovery and characterization of genetically diverse hantaviruses in shrews, moles, and bats across Asia and other regions. His research on hantaviruses focuses particularly on their host associations, evolutionary history, and biogeography."
+      ],
+      "sort_name": "Arai"
+    },
+    {
+      "id": "kartik-chandran",
+      "name": "Dr. Kartik Chandran",
+      "role": "Professor, Department of Microbiology & Immunology; Gertrude and David Feinson Chair in Medicine",
+      "affiliation": "Department of Microbiology & Immunology and Montefiore-Einstein Comprehensive Cancer Center, Albert Einstein College of Medicine, Bronx, NY, USA",
+      "keynote_title": "Structural basis for receptor recognition by New World hantaviruses",
+      "image": "speakers/kartik-chandran.jpg",
+      "url": "https://orcid.org/0000-0003-0232-7077",
+      "link_label": "ORCID profile",
+      "paragraphs": [
+        "The Chandran Lab takes an integrative approach to investigate how high-consequence and emerging viral pathogens interact with their hosts. We use comprehensive genetic screens and mechanistic studies to identify and target viral Achilles’ heels, uncover barriers to host switching, and optimize vaccine designs. We leverage natural and unconventional antibodies and engineered biologics to discover, develop, and translate antiviral countermeasures with our partners in academia, government, and industry. Kartik received his Ph.D. at the University of Wisconsin-Madison and was a research fellow at Harvard Medical School and the Brigham and Women’s Hospital in Boston before starting his group at Einstein in 2007."
+      ],
+      "sort_name": "Chandran"
+    },
+    {
+      "id": "maria-eugenia-dieterle",
+      "name": "Dr. María Eugenia Dieterle",
+      "role": "Head, Emerging Viruses Laboratory",
+      "affiliation": "Fundación Instituto Leloir, Argentina",
+      "keynote_title": "",
+      "image": "speakers/maria-eugenia-dieterle.jpg",
+      "url": "https://orcid.org/0000-0002-5257-7253",
+      "link_label": "ORCID profile",
+      "paragraphs": [
+        "María Eugenia Dieterle recently established her research laboratory at Fundación Instituto Leloir in Argentina, where she studies emerging viruses. Her research focuses on the mechanisms that regulate viral transcription and translation in bunyaviruses, including hantaviruses, as well as novel mechanisms of antiviral protection against these viruses.",
+        "Dr. Dieterle received a B.A. in Biology and a Ph.D. in Biochemistry from the University of Buenos Aires. As a Pew Latin American Fellow, she joined Dr. Kartik Chandran’s laboratory for her postdoctoral training, where she studied virus–host interactions and developed antibody-based approaches against hantaviruses and SARS-CoV-2."
+      ],
+      "sort_name": "Dieterle"
+    },
+    {
       "id": "marcela-ferres",
-      "name": "Dr. Marcela Ferres",
-      "affiliation": "Pontificia Universidad Catolica, Chile",
+      "name": "Dr. Marcela Ferrés",
+      "affiliation": "Pontificia Universidad Católica de Chile and Red de Salud UC CHRISTUS, Santiago, Chile",
       "image": "speakers/marcela-ferres.png",
       "url": "https://orcid.org/0000-0001-9415-4657",
       "link_label": "ORCID profile",
       "paragraphs": [
-        "Dr. Marcela Ferres is a professor, pediatric infectious diseases specialist, and director of the Infectious Diseases and Molecular Virology Laboratory at the Faculty of Medicine, Universidad Catolica de Chile, and Red de Salud UC CHRISTUS in Santiago.",
+        "Dr. Marcela Ferrés is a professor, pediatric infectious diseases specialist, and director of the Infectious Diseases and Molecular Virology Laboratory at the Faculty of Medicine, Universidad Católica de Chile, and Red de Salud UC CHRISTUS in Santiago.",
         "Her hantavirus research focuses on the epidemiological, cellular and molecular factors involved in person-to-person transmission of Andes virus. Her work has contributed to studies on transmission risks, early diagnostic methods and viral detection in different body fluids.",
-        "Dr. Ferres has authored more than 30 peer-reviewed publications in hantavirus, SARS-CoV-2 and diagnostic virology, and is the author of a Clinical Virology book currently in preparation for its third edition."
-      ]
+        "Dr. Ferrés has authored more than 30 peer-reviewed publications in hantavirus, SARS-CoV-2 and diagnostic virology, and is the author of a Clinical Virology book currently in preparation for its third edition."
+      ],
+      "role": "Professor; Pediatric Infectious Diseases Specialist; Laboratory Director",
+      "keynote_title": "Breaking the Paradigm: Epidemiological and Pathogenic Foundations of Person-to-Person Hantavirus Transmission",
+      "sort_name": "Ferres"
+    },
+    {
+      "id": "mattias-forsell",
+      "name": "Dr. Mattias Forsell",
+      "role": "Professor, Department of Clinical Microbiology",
+      "affiliation": "Umeå University, Sweden",
+      "keynote_title": "Long-Term Evolution and Persistence of Humoral Immunity Following Puumala Orthohantavirus Infection",
+      "image": "speakers/mattias-forsell.jpg",
+      "url": "https://orcid.org/0000-0001-6904-742X",
+      "link_label": "ORCID profile",
+      "paragraphs": [
+        "Dr. Mattias Forsell received a PhD in infectious disease control from Karolinska Institutet in 2008 and has been a professor at the Department of Clinical Microbiology, Umeå University, since 2024. His laboratory studies long-term immune memory to virus infections and vaccination in humans. His hantavirus research follows the evolution of humoral and cellular memory in a cohort sampled longitudinally for decades after Puumala virus (PUUV) infection. He was part of a consortium showing that PUUV infected individuals can generate monoclonal antibodies that cross-neutralize Old World and New World hantaviruses."
+      ],
+      "sort_name": "Forsell"
     },
     {
       "id": "jay-hooper",
@@ -23,7 +83,24 @@
       "paragraphs": [
         "Dr. Jay Hooper is Chief of the Molecular Virology Branch at USAMRIID. His work focuses on the discovery and development of medical countermeasures against high-consequence viral diseases, including hemorrhagic fevers and diseases caused by poxviruses.",
         "He has more than 30 years of research experience with lethal viruses, largely in BSL-3 and BSL-4 high-containment settings. Dr. Hooper received a B.A. in Biology from Colby College and a Ph.D. in Virology from Harvard University; his research has produced more than 100 peer-reviewed publications and 15 patents."
-      ]
+      ],
+      "role": "Chief, Molecular Virology Branch",
+      "keynote_title": "",
+      "sort_name": "Hooper"
+    },
+    {
+      "id": "stephanie-monticelli",
+      "name": "Dr. Stephanie Monticelli",
+      "role": "Principal Investigator, Viral Immunology Branch, Virology Division",
+      "affiliation": "United States Army Medical Research Institute of Infectious Diseases (USAMRIID) / Henry M. Jackson Foundation for the Advancement of Military Medicine (HJF), USA",
+      "keynote_title": "Development and characterization of hantavirus hamster models of vascular leak",
+      "image": "speakers/stephanie-monticelli.jpg",
+      "url": "https://orcid.org/0000-0002-5031-2534",
+      "link_label": "ORCID profile",
+      "paragraphs": [
+        "Dr. Stephanie Monticelli is a Principal Investigator in the Viral Immunology Branch, Virology Division at USAMRIID. Her research portfolio primarily focuses on viral therapeutic and vaccine development against a diverse set of high-consequence pathogens, including arenaviruses, nairoviruses, hantaviruses, poxviruses, paramyxoviruses, and filoviruses. Her hantavirus research focuses on dissecting viral protein function and host-virus interactions, host factor discovery, animal model development, and uncovering the role of viral glycoproteins for pathogenesis and disease. Dr. Monticelli earned a B.S. in Biochemistry from University of Missouri – Columbia and her Ph.D. and M.P.H. from the University of Rochester in Rochester, New York. Her research has produced more than 20 peer-reviewed publications."
+      ],
+      "sort_name": "Monticelli"
     }
   ]
 }

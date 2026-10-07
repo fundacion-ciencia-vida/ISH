@@ -1991,7 +1991,7 @@ def render_home_hero(prefix: str, section: dict[str, object]) -> str:
           <div class="hero-panel-meta" aria-label="Conference location and venue">
             <span>{escape(str(data.get('panel_location', conference['location'])))}</span>
             <span>{escape(str(data.get('panel_venue', conference['venue'])))}</span>
-            <span class="hero-panel-deadline">{escape(str(data.get('panel_deadline_prefix', 'Abstract deadline:')))} {escape(conference['abstract_deadline'])}</span>
+            {f'<span class="hero-panel-deadline">{escape(str(data.get("panel_deadline_prefix", "Abstract deadline:")))} {escape(conference["abstract_deadline"])}</span>' if data.get('show_abstract_deadline', True) else ''}
           </div>
           <div class="countdown" data-countdown="{escape(str(data.get('countdown_date', conference['start_date'])), quote=True)}" aria-label="Time until ICH2026">
             <div class="countdown-unit"><span class="countdown-val" data-unit="days">--</span><span class="countdown-label">Days</span></div>
@@ -2380,13 +2380,16 @@ def render_speakers(prefix: str, section: dict[str, object]) -> str:
     assert isinstance(data, dict)
     people = COLLECTIONS.get(str(data.get("collection", "speakers")), [])
     cards = []
-    for person in people:
+    for person in sorted(people, key=lambda person: str(person.get("sort_name", person.get("name", ""))).casefold()):
         paragraphs = "".join(f'<p>{escape(str(paragraph))}</p>' for paragraph in person.get("paragraphs", []))
+        role = f'<p class="speaker-role">{escape(str(person.get("role", "")))}</p>' if person.get("role") else ""
+        keynote_title = str(person.get("keynote_title", "")).strip()
+        keynote = f'<div class="speaker-keynote"><span>Keynote</span><h3>{escape(keynote_title)}</h3></div>' if keynote_title else '<p class="speaker-keynote-pending">Keynote title to be announced.</p>'
         link = ""
         if person.get("url"):
             link = f'<a class="text-link" href="{escape(person["url"], quote=True)}" target="_blank" rel="noreferrer">{escape(person.get("link_label", "Profile"))}</a>'
         cards.append(
-            f'<article class="speaker reveal">{responsive_image(prefix, person["image"], person["name"], loading="lazy", decoding="async", sizes="196px")}<div><h2>{escape(person["name"])}</h2><p class="speaker-meta">{escape(person.get("affiliation", ""))}</p>{paragraphs}{link}</div></article>'
+            f'<article class="speaker reveal">{responsive_image(prefix, person["image"], person["name"], loading="lazy", decoding="async", sizes="196px")}<div><h2>{escape(person["name"])}</h2>{role}<p class="speaker-meta">{escape(person.get("affiliation", ""))}</p>{keynote}<details class="speaker-biography"><summary>Biography</summary>{paragraphs}</details>{link}</div></article>'
         )
     html = f'<section class="section speakers"><div class="section-shell speaker-grid">{"".join(cards)}</div></section>'
     return mark_content_section(html, section)

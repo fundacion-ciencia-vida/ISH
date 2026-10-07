@@ -6009,6 +6009,91 @@
     ],
     "width": 498
   },
+  "speakers/kartik-chandran.jpg": {
+    "bytes": 960066,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2729,
+          "height": 167,
+          "path": "optimized/speakers/kartik-chandran-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 4207,
+          "height": 250,
+          "path": "optimized/speakers/kartik-chandran-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 5613,
+          "height": 334,
+          "path": "optimized/speakers/kartik-chandran-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 8902,
+          "height": 501,
+          "path": "optimized/speakers/kartik-chandran-480.avif",
+          "width": 480
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 3528,
+          "height": 167,
+          "path": "optimized/speakers/kartik-chandran-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 5966,
+          "height": 250,
+          "path": "optimized/speakers/kartik-chandran-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 8670,
+          "height": 334,
+          "path": "optimized/speakers/kartik-chandran-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 15156,
+          "height": 501,
+          "path": "optimized/speakers/kartik-chandran-480.webp",
+          "width": 480
+        }
+      ]
+    },
+    "height": 2301,
+    "variants": [
+      {
+        "bytes": 3528,
+        "height": 167,
+        "path": "optimized/speakers/kartik-chandran-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 5966,
+        "height": 250,
+        "path": "optimized/speakers/kartik-chandran-240.webp",
+        "width": 240
+      },
+      {
+        "bytes": 8670,
+        "height": 334,
+        "path": "optimized/speakers/kartik-chandran-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 15156,
+        "height": 501,
+        "path": "optimized/speakers/kartik-chandran-480.webp",
+        "width": 480
+      }
+    ],
+    "width": 2205
+  },
   "speakers/marcela-ferres.png": {
     "bytes": 46609,
     "formats": {
@@ -6111,6 +6196,243 @@
       }
     ],
     "width": 517
+  },
+  "speakers/maria-eugenia-dieterle.jpg": {
+    "bytes": 9743108,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2158,
+          "height": 107,
+          "path": "optimized/speakers/maria-eugenia-dieterle-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 3127,
+          "height": 160,
+          "path": "optimized/speakers/maria-eugenia-dieterle-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 4235,
+          "height": 213,
+          "path": "optimized/speakers/maria-eugenia-dieterle-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 6910,
+          "height": 320,
+          "path": "optimized/speakers/maria-eugenia-dieterle-480.avif",
+          "width": 480
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 2712,
+          "height": 107,
+          "path": "optimized/speakers/maria-eugenia-dieterle-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 4342,
+          "height": 160,
+          "path": "optimized/speakers/maria-eugenia-dieterle-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 6458,
+          "height": 213,
+          "path": "optimized/speakers/maria-eugenia-dieterle-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 11074,
+          "height": 320,
+          "path": "optimized/speakers/maria-eugenia-dieterle-480.webp",
+          "width": 480
+        }
+      ]
+    },
+    "height": 3602,
+    "variants": [
+      {
+        "bytes": 2712,
+        "height": 107,
+        "path": "optimized/speakers/maria-eugenia-dieterle-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 4342,
+        "height": 160,
+        "path": "optimized/speakers/maria-eugenia-dieterle-240.webp",
+        "width": 240
+      },
+      {
+        "bytes": 6458,
+        "height": 213,
+        "path": "optimized/speakers/maria-eugenia-dieterle-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 11074,
+        "height": 320,
+        "path": "optimized/speakers/maria-eugenia-dieterle-480.webp",
+        "width": 480
+      }
+    ],
+    "width": 5400
+  },
+  "speakers/mattias-forsell.jpg": {
+    "bytes": 351152,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2444,
+          "height": 160,
+          "path": "optimized/speakers/mattias-forsell-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 3640,
+          "height": 240,
+          "path": "optimized/speakers/mattias-forsell-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 4890,
+          "height": 320,
+          "path": "optimized/speakers/mattias-forsell-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 7814,
+          "height": 480,
+          "path": "optimized/speakers/mattias-forsell-480.avif",
+          "width": 480
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 3048,
+          "height": 160,
+          "path": "optimized/speakers/mattias-forsell-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 5042,
+          "height": 240,
+          "path": "optimized/speakers/mattias-forsell-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 7180,
+          "height": 320,
+          "path": "optimized/speakers/mattias-forsell-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 12568,
+          "height": 480,
+          "path": "optimized/speakers/mattias-forsell-480.webp",
+          "width": 480
+        }
+      ]
+    },
+    "height": 1280,
+    "variants": [
+      {
+        "bytes": 3048,
+        "height": 160,
+        "path": "optimized/speakers/mattias-forsell-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 5042,
+        "height": 240,
+        "path": "optimized/speakers/mattias-forsell-240.webp",
+        "width": 240
+      },
+      {
+        "bytes": 7180,
+        "height": 320,
+        "path": "optimized/speakers/mattias-forsell-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 12568,
+        "height": 480,
+        "path": "optimized/speakers/mattias-forsell-480.webp",
+        "width": 480
+      }
+    ],
+    "width": 1280
+  },
+  "speakers/stephanie-monticelli.jpg": {
+    "bytes": 38144,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2960,
+          "height": 160,
+          "path": "optimized/speakers/stephanie-monticelli-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 4579,
+          "height": 240,
+          "path": "optimized/speakers/stephanie-monticelli-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 6136,
+          "height": 320,
+          "path": "optimized/speakers/stephanie-monticelli-320.avif",
+          "width": 320
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 3896,
+          "height": 160,
+          "path": "optimized/speakers/stephanie-monticelli-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 6542,
+          "height": 240,
+          "path": "optimized/speakers/stephanie-monticelli-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 9156,
+          "height": 320,
+          "path": "optimized/speakers/stephanie-monticelli-320.webp",
+          "width": 320
+        }
+      ]
+    },
+    "height": 400,
+    "variants": [
+      {
+        "bytes": 3896,
+        "height": 160,
+        "path": "optimized/speakers/stephanie-monticelli-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 6542,
+        "height": 240,
+        "path": "optimized/speakers/stephanie-monticelli-240.webp",
+        "width": 240
+      },
+      {
+        "bytes": 9156,
+        "height": 320,
+        "path": "optimized/speakers/stephanie-monticelli-320.webp",
+        "width": 320
+      }
+    ],
+    "width": 400
   },
   "sponsors/poster/anasac.png": {
     "bytes": 10862,
