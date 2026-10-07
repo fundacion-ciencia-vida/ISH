@@ -182,7 +182,7 @@
             "note": "This workshop will be conducted with simultaneous translation (English-Spanish; Spanish-English)."
           }
         ],
-        "collapsible": true
+        "collapsible": false
       }
     }
   ]

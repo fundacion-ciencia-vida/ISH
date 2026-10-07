@@ -3666,7 +3666,7 @@ body.lightbox-open {
 .speaker-keynote > span { color: var(--muted); font-size: 12px; font-weight: 800; }
 .speaker-keynote h3 { max-width: 760px; margin: 6px 0 0; font-size: 23px; line-height: 1.35; }
 .speaker-biography { max-width: 760px; margin: 18px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.speaker-biography summary { min-height: 44px; padding: 10px 0; color: var(--ink); font-weight: 750; cursor: pointer; }
+.speaker-biography summary { display: flex; align-items: center; justify-content: space-between; gap: 18px; min-height: 48px; padding: 10px 0; color: var(--ink); font-weight: 750; cursor: pointer; list-style: none; }
 .speaker-biography p { font-size: 16px; }
 .speaker-biography summary:focus-visible { outline: 2px solid var(--lake); outline-offset: 4px; }
 .speaker-keynote-pending { font-size: 14px; }
@@ -3711,6 +3711,18 @@ body.lightbox-open {
 .programme-topics > div { padding: 0 0 24px 24px; color: var(--muted); max-width: 75ch; }
 .programme-topics li { margin-bottom: 8px; }
 .programme-topics summary:focus-visible { outline: 2px solid var(--lake); outline-offset: 4px; }
+.speaker-biography summary::-webkit-details-marker,
+.programme-topics summary::-webkit-details-marker { display: none; }
+.speaker-biography summary::marker,
+.programme-topics summary::marker { content: ""; }
+.speaker-biography summary::after,
+.programme-topics summary::after { content: "+"; flex: 0 0 28px; display: grid; place-items: center; width: 28px; height: 28px; color: var(--ink); background: color-mix(in srgb, var(--lake) 8%, var(--paper)); border: 1px solid var(--line); border-radius: 4px; font: 22px/1 Arial, sans-serif; }
+.speaker-biography[open] > summary::after,
+.programme-topics[open] > summary::after { content: "−"; }
+.speaker-biography summary:hover { color: var(--lake); }
+.speaker-biography[open] > summary { margin-bottom: 12px; }
+.programme-topics summary { display: flex; align-items: center; gap: 20px; list-style: none; }
+.programme-topics summary::after { margin-left: auto; }
 @media (max-width: 780px) {
   .programme-arrival .section-shell { grid-template-columns: 1fr; gap: 24px; }
   .programme-arrival dd { font-size: 22px; white-space: nowrap; }
