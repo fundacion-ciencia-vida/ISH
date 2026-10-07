@@ -89,6 +89,21 @@
       "sort_name": "Hooper"
     },
     {
+      "id": "valeria-martinez",
+      "name": "Dr. Valeria Martínez",
+      "role": "Chief, Molecular Biology Division, Department of Virology; Director, National Reference Laboratory for Hantavirus",
+      "affiliation": "Instituto Nacional de Enfermedades Infecciosas, ANLIS Dr. Carlos G. Malbrán, Buenos Aires, Argentina",
+      "keynote_title": "",
+      "image": "board/valeria-martinez.jpg",
+      "url": "https://orcid.org/0000-0002-4356-8136",
+      "link_label": "ORCID profile",
+      "paragraphs": [
+        "Dr. Valeria Martínez is Chief of the Molecular Biology Division, Department of Virology, at INEI-ANLIS Dr. Carlos Malbrán. She directs the National Reference Laboratory for Hantavirus and coordinates the Argentine National Hantavirus Laboratory Network. Dr. Martínez holds a degree in Biology and a PhD in Biological Chemistry from the University of Buenos Aires.",
+        "For more than 30 years, she has conducted research on hantaviruses, including rodent reservoir ecology, viral diversity, Hantavirus Pulmonary Syndrome epidemiology and transmission mechanisms, contributing to more than 50 scientific publications. She has extensive expertise in virus isolation and animal models of hantavirus infection under BSL-3 containment."
+      ],
+      "sort_name": "Martinez"
+    },
+    {
       "id": "stephanie-monticelli",
       "name": "Dr. Stephanie Monticelli",
       "role": "Principal Investigator, Viral Immunology Branch, Virology Division",
