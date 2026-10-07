@@ -2406,11 +2406,52 @@ def render_programme_tracks(section: dict[str, object]) -> str:
         tracks.append(
             f'<article class="{class_name}"><p class="track-date">{escape(str(track.get("date", "")))}</p><h3>{escape(str(track.get("title", "")))}</h3><p>{escape(str(track.get("description", "")))}</p><ul>{items}</ul>{note}</article>'
         )
+        if data.get("collapsible"):
+            tracks[-1] = f'<details class="programme-topics"><summary><span>{escape(str(track.get("date", "")))}</span><strong>{escape(str(track.get("title", "")))}</strong></summary><div><p>{escape(str(track.get("description", "")))}</p><ul>{items}</ul>{note}</div></details>'
+    if data.get("collapsible"):
+        html = f'<section class="section programme-topics-section"><div class="section-shell"><div class="section-heading compact"><p class="eyebrow">{escape(str(data.get("eyebrow", "")))}</p><h2>{escape(str(data.get("heading", "")))}</h2></div>{"".join(tracks)}</div></section>'
+        return mark_content_section(html, section)
     html = f"""
       <section class="section program"><div class="section-shell">
         <div class="program-intro reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2><p>{escape(str(data.get('introduction', '')))}</p></div>
         <div class="program-grid program-support">{''.join(tracks)}</div>
       </div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_programme_arrival(section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    html = f"""
+      <section class="programme-arrival"><div class="section-shell">
+        <div><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2><p>{escape(str(data.get('venue', '')))}</p></div>
+        <dl><div><dt>On-site registration</dt><dd>{escape(str(data.get('registration_time', '')))}</dd></div><div><dt>Opening Event</dt><dd>{escape(str(data.get('opening_time', '')))}</dd></div></dl>
+        <p class="programme-arrival-note">{escape(str(data.get('note', '')))}</p>
+      </div></section>"""
+    return mark_content_section(html, section)
+
+
+def render_programme_agenda(section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    days = []
+    for day in data.get("days", []):
+        events = []
+        for event in day.get("events", []):
+            kind = str(event.get("kind", "scientific"))
+            kind_class = kind if kind in {"scientific", "optional", "social", "workshop"} else "scientific"
+            detail = f'<p>{escape(str(event["detail"]))}</p>' if event.get("detail") else ""
+            events.append(f'<div class="programme-event is-{kind_class}"><span class="programme-event-time">{escape(str(event.get("time", "")))}</span><div><h3>{escape(str(event.get("title", "")))}</h3>{detail}</div></div>')
+        days.append(f'<div class="programme-day"><div class="programme-day-label"><h3>{escape(str(day.get("day", "")))}</h3><span>{escape(str(day.get("date", "")))}</span></div><div>{"".join(events)}</div></div>')
+    html = f'<section class="section programme-agenda"><div class="section-shell"><div class="section-heading compact"><p class="eyebrow">{escape(str(data.get("eyebrow", "")))}</p><h2>{escape(str(data.get("heading", "")))}</h2><p>{escape(str(data.get("note", "")))}</p></div><div class="programme-days">{"".join(days)}</div></div></section>'
+    return mark_content_section(html, section)
+
+
+def render_presentation_guidelines(section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    items = []
+    for item in data.get("items", []):
+        note = f'<small>{escape(str(item["note"]))}</small>' if item.get("note") else ""
+        items.append(f'<div><h3>{escape(str(item.get("title", "")))}</h3><strong>{escape(str(item.get("value", "")))}</strong><p>{escape(str(item.get("detail", "")))}</p>{note}</div>')
+    html = f'<section class="section programme-guidelines"><div class="section-shell"><div class="section-heading compact"><p class="eyebrow">{escape(str(data.get("eyebrow", "")))}</p><h2>{escape(str(data.get("heading", "")))}</h2></div><div class="programme-guideline-items">{"".join(items)}</div></div></section>'
     return mark_content_section(html, section)
 
 
@@ -2867,6 +2908,12 @@ def render_content_section(prefix: str, page: dict[str, object], section: dict[s
         return render_speakers(prefix, section)
     if section_type == "programme_tracks":
         return render_programme_tracks(section)
+    if section_type == "programme_arrival":
+        return render_programme_arrival(section)
+    if section_type == "programme_agenda":
+        return render_programme_agenda(section)
+    if section_type == "presentation_guidelines":
+        return render_presentation_guidelines(section)
     if section_type == "media_split":
         return render_media_split(prefix, section)
     if section_type == "fee_table":

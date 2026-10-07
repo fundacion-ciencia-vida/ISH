@@ -30,56 +30,114 @@
     },
     {
       "id": "arrival-registration",
-      "type": "rich_text",
+      "type": "programme_arrival",
       "visible": true,
       "data": {
         "eyebrow": "Sunday, November 1",
-        "heading": "Register at Hotel Bellavista before the Opening Event.",
-        "body_html": "<p><strong>On-site registration: 15:00–18:00 at Hotel Bellavista.</strong></p><p>The Opening Event starts at <strong>19:00</strong>. Please complete on-site registration beforehand to receive your beverage vouchers.</p>"
+        "heading": "Registration & Opening Event",
+        "venue": "Hotel Bellavista",
+        "registration_time": "15:00–18:00",
+        "opening_time": "19:00",
+        "note": "Please complete on-site registration before the Opening Event to receive your beverage vouchers."
       }
     },
     {
       "id": "daily-schedule",
-      "type": "article_list",
+      "type": "programme_agenda",
       "visible": true,
       "data": {
-        "articles": [
+        "eyebrow": "November 2–5",
+        "heading": "Schedule at a glance",
+        "note": "Scientific session times are approximate. The detailed programme will be published soon.",
+        "days": [
           {
-            "eyebrow": "Sunday, November 1",
-            "heading": "Registration and Opening Event",
-            "body_html": "<p><strong>15:00–18:00:</strong> On-site registration at Hotel Bellavista.</p><p><strong>19:00:</strong> Opening Event. Prior registration is essential to obtain your beverage vouchers.</p>"
+            "day": "Monday",
+            "date": "November 2",
+            "events": [
+              {
+                "time": "08:30–18:30",
+                "title": "ICH2026 scientific meeting",
+                "detail": "First conference day",
+                "kind": "scientific"
+              }
+            ]
           },
           {
-            "eyebrow": "Monday, November 2",
-            "heading": "ICH2026 begins",
-            "body_html": "<p><strong>Approximately 08:30–18:30:</strong> Scientific meeting.</p>"
+            "day": "Tuesday",
+            "date": "November 3",
+            "events": [
+              {
+                "time": "08:30–13:00",
+                "title": "Scientific meeting",
+                "detail": "",
+                "kind": "scientific"
+              },
+              {
+                "time": "Afternoon",
+                "title": "Optional Petrohué Falls excursion",
+                "detail": "Free afternoon. Separate registration and payment required on site; departure time to be confirmed.",
+                "kind": "optional"
+              }
+            ]
           },
           {
-            "eyebrow": "Tuesday, November 3",
-            "heading": "Scientific meeting and optional excursion",
-            "body_html": "<p><strong>Approximately 08:30–13:00:</strong> Scientific meeting.</p><p>Free afternoon for an optional excursion to Petrohué Falls. Separate registration and payment are required on site.</p>"
+            "day": "Wednesday",
+            "date": "November 4",
+            "events": [
+              {
+                "time": "08:30–18:30",
+                "title": "Scientific meeting",
+                "detail": "Final conference day",
+                "kind": "scientific"
+              },
+              {
+                "time": "19:30",
+                "title": "Gala Dinner",
+                "detail": "Closing evening of ICH2026",
+                "kind": "social"
+              }
+            ]
           },
           {
-            "eyebrow": "Wednesday, November 4",
-            "heading": "Final conference day and Gala Dinner",
-            "body_html": "<p><strong>Approximately 08:30–18:30:</strong> Scientific meeting.</p><p><strong>19:30:</strong> Gala Dinner. End of the ICH2026 meeting.</p>"
-          },
-          {
-            "eyebrow": "Thursday, November 5",
-            "heading": "Andes Virus Workshop",
-            "body_html": "<p><strong>Approximately 08:30–17:00:</strong> Andes Virus Workshop.</p><p>The detailed programme will be published soon. Scientific session times are approximate.</p>"
+            "day": "Thursday",
+            "date": "November 5",
+            "events": [
+              {
+                "time": "08:30–17:00",
+                "title": "Andes Virus Workshop",
+                "detail": "Simultaneous English–Spanish and Spanish–English translation.",
+                "kind": "workshop"
+              }
+            ]
           }
         ]
       }
     },
     {
       "id": "presentation-guidelines",
-      "type": "rich_text",
+      "type": "presentation_guidelines",
       "visible": true,
       "data": {
         "eyebrow": "Presentation guidelines",
-        "heading": "Information for speakers and poster presenters.",
-        "body_html": "<h3>Oral talks</h3><p>12 minutes for the presentation, followed by 3 minutes for questions.</p><h3>Lightning talks</h3><p>6 minutes for the presentation, followed by 2 minutes for questions.</p><h3>Posters</h3><p><strong>88 cm wide × 120 cm high</strong> (approximately 34.6 × 47.2 inches). Portrait orientation.</p>"
+        "heading": "For speakers & poster presenters",
+        "items": [
+          {
+            "title": "Oral talks",
+            "value": "12 min + 3 min",
+            "detail": "Presentation + questions"
+          },
+          {
+            "title": "Lightning talks",
+            "value": "6 min + 2 min",
+            "detail": "Presentation + questions"
+          },
+          {
+            "title": "Posters",
+            "value": "88 × 120 cm",
+            "detail": "Width × height · Portrait orientation",
+            "note": "Approximately 34.6 × 47.2 inches"
+          }
+        ]
       }
     },
     {
@@ -87,9 +145,9 @@
       "type": "programme_tracks",
       "visible": true,
       "data": {
-        "eyebrow": "Programme overview",
-        "heading": "Scientific sessions and a focused Andes Virus Workshop.",
-        "introduction": "Conference themes and workshop topics are listed below. The detailed programme will be published soon.",
+        "eyebrow": "Scientific topics",
+        "heading": "Conference & workshop themes",
+        "introduction": "",
         "tracks": [
           {
             "date": "November 2-4",
@@ -123,7 +181,8 @@
             "highlight": true,
             "note": "This workshop will be conducted with simultaneous translation (English-Spanish; Spanish-English)."
           }
-        ]
+        ],
+        "collapsible": true
       }
     }
   ]

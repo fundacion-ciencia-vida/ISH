@@ -3671,6 +3671,61 @@ body.lightbox-open {
 .speaker-biography summary:focus-visible { outline: 2px solid var(--lake); outline-offset: 4px; }
 .speaker-keynote-pending { font-size: 14px; }
 
+.programme-arrival { padding: 38px 0; background: var(--paper); border-bottom: 1px solid var(--line); }
+.programme-arrival .section-shell { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 60px; align-items: center; }
+.programme-arrival h2 { margin: 0 0 6px; font-size: 26px; }
+.programme-arrival p { margin-bottom: 0; color: var(--muted); text-align: left; }
+.programme-arrival dl { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin: 0; }
+.programme-arrival dt { color: var(--muted); font-size: 13px; margin-bottom: 6px; }
+.programme-arrival dd { margin: 0; color: var(--ink); font-size: 26px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.programme-arrival .programme-arrival-note { grid-column: 1 / -1; font-size: 14px; padding-top: 16px; border-top: 1px solid var(--line); }
+.programme-agenda { background: var(--surface); }
+.programme-agenda .section-heading { max-width: 850px; }
+.programme-agenda .section-heading p:not(.eyebrow) { color: var(--muted); font-size: 15px; text-align: left; }
+.programme-days { border-top: 1px solid var(--line); }
+.programme-day { display: grid; grid-template-columns: 205px minmax(0, 1fr); border-bottom: 1px solid var(--line); }
+.programme-day-label { padding: 26px 24px 26px 0; }
+.programme-day-label h3 { margin: 0 0 5px; font-size: 20px; }
+.programme-day-label > span { color: var(--muted); font-size: 14px; }
+.programme-event { display: grid; grid-template-columns: 145px minmax(0, 1fr); gap: 24px; padding: 26px 20px; }
+.programme-event + .programme-event { border-top: 1px solid var(--line); }
+.programme-event-time { color: var(--ink); font-size: 16px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.programme-event h3 { font-size: 19px; line-height: 1.35; margin: 0; }
+.programme-event p { color: var(--muted); font-size: 14px; text-align: left; margin: 6px 0 0; max-width: 65ch; }
+.programme-event.is-optional { background: color-mix(in srgb, var(--lake) 5%, var(--paper)); }
+.programme-event.is-social { background: color-mix(in srgb, var(--accent) 9%, var(--paper)); }
+.programme-guidelines { background: var(--paper); }
+.programme-guideline-items { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); }
+.programme-guideline-items > div { padding: 28px 24px 0 0; }
+.programme-guideline-items > div + div { padding-left: 28px; border-left: 1px solid var(--line); }
+.programme-guideline-items h3 { font-size: 18px; margin-bottom: 16px; }
+.programme-guideline-items strong { display: block; font-size: 26px; color: var(--ink); font-variant-numeric: tabular-nums; }
+.programme-guideline-items p { color: var(--muted); text-align: left; font-size: 14px; margin: 10px 0 3px; }
+.programme-guideline-items small { color: var(--muted); font-size: 12px; }
+.programme-topics-section { background: var(--surface); border-top: 1px solid var(--line); }
+.programme-topics { border-top: 1px solid var(--line); }
+.programme-topics:last-child { border-bottom: 1px solid var(--line); }
+.programme-topics summary { cursor: pointer; padding: 24px 0; color: var(--ink); }
+.programme-topics summary span { display: inline-block; min-width: 180px; margin-right: 20px; color: var(--muted); font-size: 14px; }
+.programme-topics summary strong { font-size: 18px; }
+.programme-topics > div { padding: 0 0 24px 24px; color: var(--muted); max-width: 75ch; }
+.programme-topics li { margin-bottom: 8px; }
+.programme-topics summary:focus-visible { outline: 2px solid var(--lake); outline-offset: 4px; }
+@media (max-width: 780px) {
+  .programme-arrival .section-shell { grid-template-columns: 1fr; gap: 24px; }
+  .programme-arrival dd { font-size: 22px; white-space: nowrap; }
+  .programme-day { grid-template-columns: 1fr; }
+  .programme-day-label { padding: 20px 0 8px; display: flex; gap: 12px; align-items: baseline; }
+  .programme-day-label h3 { margin: 0; }
+  .programme-event { grid-template-columns: 118px minmax(0, 1fr); gap: 16px; padding: 20px 12px; }
+  .programme-event h3 { font-size: 17px; }
+  .programme-event-time { font-size: 14px; }
+  .programme-guideline-items { grid-template-columns: 1fr; }
+  .programme-guideline-items > div { padding: 24px 0; }
+  .programme-guideline-items > div + div { padding-left: 0; border-left: 0; border-top: 1px solid var(--line); }
+  .programme-topics summary span { display: block; margin: 0 0 6px 18px; }
+}
+
 .venue {
   background: var(--surface);
 }
