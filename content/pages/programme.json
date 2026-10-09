@@ -16,7 +16,7 @@
       "data": {
         "eyebrow": "ICH2026 Program",
         "title": "International Hantavirus Conference",
-        "lede": "On-site registration and Opening Event on November 1. ICH2026 runs November 2-4, followed by the Andes Virus Workshop on November 5.",
+        "lede": "Please plan to arrive in Puerto Varas by Sunday afternoon, November 1. The Opening Event starts at 19:00. ICH2026 runs November 2-4, followed by the Andes Virus Workshop on November 5.",
         "image": "ich2026/ich2026-hero-emblem.jpg",
         "breadcrumbs": true,
         "actions": [
@@ -38,7 +38,7 @@
         "venue": "Hotel Bellavista",
         "registration_time": "15:00–18:00",
         "opening_time": "19:00",
-        "note": "Please complete on-site registration before the Opening Event to receive your beverage vouchers."
+        "note": "Please plan to arrive in Puerto Varas by Sunday afternoon, November 1. Complete on-site registration before the Opening Event to receive your beverage vouchers."
       }
     },
     {
@@ -46,10 +46,28 @@
       "type": "programme_agenda",
       "visible": true,
       "data": {
-        "eyebrow": "November 2–5",
+        "eyebrow": "November 1–5",
         "heading": "Schedule at a glance",
         "note": "Scientific session times are approximate. The detailed programme will be published soon.",
         "days": [
+          {
+            "day": "Sunday",
+            "date": "November 1",
+            "events": [
+              {
+                "time": "15:00–18:00",
+                "title": "On-site registration",
+                "detail": "Hotel Bellavista. Please register before the Opening Event to receive your beverage vouchers.",
+                "kind": "scientific"
+              },
+              {
+                "time": "19:00",
+                "title": "Opening Event",
+                "detail": "Hotel Bellavista. Please plan to be in Puerto Varas by Sunday afternoon.",
+                "kind": "social"
+              }
+            ]
+          },
           {
             "day": "Monday",
             "date": "November 2",
