@@ -23,7 +23,7 @@
         "actions": [
           {
             "label": "Meet the 2026 award recipients",
-            "url": "ich2026/#award-recipients-2026",
+            "url": "#awards-2026",
             "style": "primary"
           },
           {
@@ -36,21 +36,18 @@
     },
     {
       "id": "awards-2026",
-      "type": "split_text",
+      "type": "conference_awards",
       "visible": true,
-      "variant": "intro",
       "data": {
-        "eyebrow": "ICH2026",
-        "heading": "Congratulations to the 2026 award recipients.",
-        "paragraphs": [
-          "Joel M. Dalrymple Memorial Award: Rohit Jangra.",
-          "Ho Wang Lee Lifetime Award: Gregory Mertz and Pablo Vial."
-        ],
+        "eyebrow": "New · ICH2026",
+        "heading": "2026 Awardees",
+        "introduction": "Celebrating the recipients of the 2026 ISH lectureship awards.",
+        "collection": "award_recipients",
         "actions": [
           {
-            "label": "Meet the 2026 award recipients",
-            "url": "ich2026/#award-recipients-2026",
-            "style": "primary"
+            "label": "Previous recipients",
+            "url": "#award-history",
+            "style": "outline"
           }
         ]
       }
