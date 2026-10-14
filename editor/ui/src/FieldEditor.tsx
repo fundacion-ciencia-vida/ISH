@@ -130,6 +130,8 @@ const fieldLabels: Record<string, string> = {
   report_url: "Enlace del informe",
   role: "Cargo",
   keynote_title: "Titulo del keynote",
+  lecture_title: "Titulo de la Award Lecture",
+  abstract: "Abstract de la conferencia",
   sort_name: "Apellido para orden alfabetico",
   show_abstract_deadline: "Mostrar fecha limite de abstracts",
   registration_time: "Horario de registro presencial",

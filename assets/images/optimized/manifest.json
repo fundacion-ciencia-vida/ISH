@@ -1,4 +1,174 @@
 {
+  "awards/gregory-mertz.jpg": {
+    "bytes": 2294810,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1453,
+          "height": 160,
+          "path": "optimized/awards/gregory-mertz-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 2473,
+          "height": 240,
+          "path": "optimized/awards/gregory-mertz-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 3611,
+          "height": 320,
+          "path": "optimized/awards/gregory-mertz-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 6735,
+          "height": 480,
+          "path": "optimized/awards/gregory-mertz-480.avif",
+          "width": 480
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1772,
+          "height": 160,
+          "path": "optimized/awards/gregory-mertz-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 3298,
+          "height": 240,
+          "path": "optimized/awards/gregory-mertz-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 5134,
+          "height": 320,
+          "path": "optimized/awards/gregory-mertz-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 10572,
+          "height": 480,
+          "path": "optimized/awards/gregory-mertz-480.webp",
+          "width": 480
+        }
+      ]
+    },
+    "height": 2869,
+    "variants": [
+      {
+        "bytes": 1772,
+        "height": 160,
+        "path": "optimized/awards/gregory-mertz-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 3298,
+        "height": 240,
+        "path": "optimized/awards/gregory-mertz-240.webp",
+        "width": 240
+      },
+      {
+        "bytes": 5134,
+        "height": 320,
+        "path": "optimized/awards/gregory-mertz-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 10572,
+        "height": 480,
+        "path": "optimized/awards/gregory-mertz-480.webp",
+        "width": 480
+      }
+    ],
+    "width": 2869
+  },
+  "awards/rohit-jangra.jpg": {
+    "bytes": 256593,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 2665,
+          "height": 186,
+          "path": "optimized/awards/rohit-jangra-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 4431,
+          "height": 280,
+          "path": "optimized/awards/rohit-jangra-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 6500,
+          "height": 373,
+          "path": "optimized/awards/rohit-jangra-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 11139,
+          "height": 559,
+          "path": "optimized/awards/rohit-jangra-480.avif",
+          "width": 480
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 3488,
+          "height": 186,
+          "path": "optimized/awards/rohit-jangra-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 6392,
+          "height": 280,
+          "path": "optimized/awards/rohit-jangra-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 9894,
+          "height": 373,
+          "path": "optimized/awards/rohit-jangra-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 18116,
+          "height": 559,
+          "path": "optimized/awards/rohit-jangra-480.webp",
+          "width": 480
+        }
+      ]
+    },
+    "height": 1118,
+    "variants": [
+      {
+        "bytes": 3488,
+        "height": 186,
+        "path": "optimized/awards/rohit-jangra-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 6392,
+        "height": 280,
+        "path": "optimized/awards/rohit-jangra-240.webp",
+        "width": 240
+      },
+      {
+        "bytes": 9894,
+        "height": 373,
+        "path": "optimized/awards/rohit-jangra-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 18116,
+        "height": 559,
+        "path": "optimized/awards/rohit-jangra-480.webp",
+        "width": 480
+      }
+    ],
+    "width": 960
+  },
   "board/almeka-markotic.jpg": {
     "bytes": 35325,
     "formats": {
