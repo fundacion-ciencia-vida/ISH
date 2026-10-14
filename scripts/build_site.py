@@ -2189,15 +2189,16 @@ def render_conference_awards(prefix: str, section: dict[str, object]) -> str:
         for item in items:
             if item.get("award") != award:
                 continue
-            photo = responsive_image(prefix, str(item["image"]), str(item["name"]), loading="lazy", decoding="async", sizes="160px") if item.get("image") else ""
+            photo = responsive_image(prefix, str(item["image"]), "", loading="lazy", decoding="async", sizes="144px", aria_hidden="true") if item.get("image") else ""
             paragraphs = "".join(f'<p>{escape(str(value))}</p>' for value in item.get("paragraphs", []))
             biography = f'<details class="speaker-biography"><summary>Biography</summary>{paragraphs}</details>' if paragraphs else ""
             abstract = "".join(f'<p>{escape(str(value))}</p>' for value in item.get("abstract", []))
             abstract_html = f'<details class="speaker-biography"><summary>Award lecture abstract</summary>{abstract}</details>' if abstract else ""
             lecture = f'<div class="conference-award-lecture"><span>Award Lecture</span><h5>{escape(str(item["lecture_title"]))}</h5></div>' if item.get("lecture_title") else ""
             orcid = f'<a class="text-link" href="{escape(str(item["url"]), quote=True)}" target="_blank" rel="noreferrer">ORCID profile</a>' if item.get("url") else ""
-            profiles.append(f'<article class="conference-award-person">{photo}<div><h4>{escape(str(item.get("name", "")))}</h4><p class="conference-award-affiliation">{escape(str(item.get("affiliation", "")))}</p></div><div class="conference-award-details">{lecture}{biography}{abstract_html}{orcid}</div></article>')
-        groups.append(f'<div class="conference-award-group"><h3>{escape(award)}</h3><div>{"".join(profiles)}</div></div>')
+            profiles.append(f'<article class="conference-award-person"><div class="conference-award-person-header">{photo}<div><h4>{escape(str(item.get("name", "")))}</h4><p class="conference-award-affiliation">{escape(str(item.get("affiliation", "")))}</p></div></div><div class="conference-award-details">{lecture}<div class="conference-award-disclosures">{biography}{abstract_html}</div>{orcid}</div></article>')
+        recipient_label = "Co-recipients" if len(profiles) > 1 else "Recipient"
+        groups.append(f'<div class="conference-award-group"><div class="conference-award-heading"><h3>{escape(award)}</h3><span>{recipient_label}</span></div><div class="conference-award-profiles">{"".join(profiles)}</div></div>')
     html = f'<section id="{escape(str(section.get("id", "award-recipients-2026")), quote=True)}" class="section conference-awards"><div class="section-shell"><div class="section-heading compact reveal"><p class="eyebrow">{escape(str(data.get("eyebrow", "")))}</p><h2>{escape(str(data.get("heading", "")))}</h2><p>{escape(str(data.get("introduction", "")))}</p></div><div class="conference-award-groups">{"".join(groups)}</div>{content_actions(prefix, data.get("actions", []))}</div></section>'
     return mark_content_section(html, section)
 
