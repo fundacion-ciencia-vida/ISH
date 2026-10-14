@@ -3678,9 +3678,9 @@ body.lightbox-open {
 .conference-award-heading h3 { color: var(--ink); font-size: 24px; line-height: 1.35; margin: 0; }
 .conference-award-heading > span { color: var(--muted); font-size: 13px; font-weight: 750; }
 .conference-award-profiles { display: grid; gap: 48px; align-items: start; }
-.conference-award-group.is-shared .conference-award-profiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.conference-award-group.is-single .conference-award-person { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 48px; align-items: start; }
-.conference-award-group.is-single .conference-award-details { margin-top: 0; }
+.conference-award-group.is-shared .conference-award-profiles { grid-template-columns: 1fr; }
+.conference-award-person + .conference-award-person { border-top: 1px solid var(--line); padding-top: 32px; }
+.conference-award-details { max-width: 800px; }
 .conference-award-person-header { display: grid; grid-template-columns: 144px minmax(0, 1fr); gap: 24px; align-items: start; }
 .conference-award-person-header > div { min-width: 0; padding-top: 28px; }
 .conference-award-person img { width: 144px; height: 168px; object-fit: cover; object-position: center 20%; border-radius: 6px; }
