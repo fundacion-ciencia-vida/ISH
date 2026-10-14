@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "id": "rohit-jangra-2026",
+      "name": "Rohit Jangra",
+      "award": "Joel M. Dalrymple Memorial Award",
+      "affiliation": "LSU Health Shreveport, USA",
+      "image": "",
+      "paragraphs": []
+    },
+    {
+      "id": "gregory-mertz-2026",
+      "name": "Gregory Mertz",
+      "award": "Ho Wang Lee Lifetime Award",
+      "affiliation": "University of New Mexico, USA",
+      "image": "",
+      "paragraphs": []
+    },
+    {
+      "id": "pablo-vial-2026",
+      "name": "Pablo Vial",
+      "award": "Ho Wang Lee Lifetime Award",
+      "affiliation": "Universidad del Desarrollo, Chile",
+      "image": "ich2026/local-pablo-vial.jpg",
+      "paragraphs": []
+    }
+  ]
+}

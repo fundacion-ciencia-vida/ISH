@@ -22,6 +22,7 @@ const fieldLabels: Record<string, string> = {
   abstract_label: "Texto del abstract",
   abstract_url: "Enlace del abstract",
   award: "Premio",
+  award_recipients: "Premiados del congreso",
   award_nominations: "Formulario de nominaciones",
   award_nominations_deadline: "Cierre de nominaciones",
   award_archive: "Historial de premios",

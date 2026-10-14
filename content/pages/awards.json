@@ -22,14 +22,35 @@
         "breadcrumbs": true,
         "actions": [
           {
-            "label": "Submit an ICH2026 nomination",
-            "site_link": "award_nominations",
+            "label": "Meet the 2026 award recipients",
+            "url": "ich2026/#award-recipients-2026",
             "style": "primary"
           },
           {
             "label": "ICH2023 Abstract Book",
             "url": "assets/documents/former-meetings/2023-seoul-abstract-book.pdf",
             "style": "secondary"
+          }
+        ]
+      }
+    },
+    {
+      "id": "awards-2026",
+      "type": "split_text",
+      "visible": true,
+      "variant": "intro",
+      "data": {
+        "eyebrow": "ICH2026",
+        "heading": "Congratulations to the 2026 award recipients.",
+        "paragraphs": [
+          "Joel M. Dalrymple Memorial Award: Rohit Jangra.",
+          "Ho Wang Lee Lifetime Award: Gregory Mertz and Pablo Vial."
+        ],
+        "actions": [
+          {
+            "label": "Meet the 2026 award recipients",
+            "url": "ich2026/#award-recipients-2026",
+            "style": "primary"
           }
         ]
       }
@@ -51,7 +72,7 @@
           },
           {
             "number": "02",
-            "title": "Lee Ho Wang Lifetime Achievement Award",
+            "title": "Ho Wang Lee Lifetime Award",
             "description": "Honors a senior investigator for exceptional and sustained contributions to the field."
           }
         ]
@@ -74,7 +95,7 @@
           },
           {
             "id": "lee-ho-wang",
-            "title": "Lee Ho Wang Lifetime Achievement Award"
+            "title": "Ho Wang Lee Lifetime Award"
           }
         ],
         "image": "former-meetings/2023-seoul-3.jpg",
@@ -84,31 +105,6 @@
           {
             "label": "Open the ICH2023 Abstract Book",
             "url": "assets/documents/former-meetings/2023-seoul-abstract-book.pdf",
-            "style": "outline"
-          }
-        ]
-      }
-    },
-    {
-      "id": "award-nominations",
-      "type": "split_text",
-      "visible": true,
-      "variant": "awards",
-      "data": {
-        "eyebrow": "ICH2026 nominations",
-        "heading": "Nominations are open until {{conference.award_nominations_deadline}}.",
-        "paragraphs": [
-          "Nominators are invited to submit proposals for the two ICH2026 lectureship awards through the official online form."
-        ],
-        "actions": [
-          {
-            "label": "Open nomination form",
-            "site_link": "award_nominations",
-            "style": "primary"
-          },
-          {
-            "label": "ICH2026 registration information",
-            "page_id": "registration",
             "style": "outline"
           }
         ]

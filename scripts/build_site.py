@@ -1685,7 +1685,7 @@ def former_meetings_page(prefix: str) -> str:
           <p class="eyebrow">Lectureship awards</p>
           <div>
             <h2>Two lectureship awards frame the scientific legacy of each triennial ICH.</h2>
-            <p>At each triennial ICH, the Ho-Wang Lee Lifetime Achievement Award recognizes a senior hantavirologist for exceptional contributions to hantavirus research, while the Joel M. Dalrymple Memorial Award honors an early- to mid-career researcher whose innovative and forward-looking work reflects the legacy of Dr. Dalrymple at the U.S. Army Medical Research Institute of Infectious Diseases.</p>
+            <p>At each triennial ICH, the Ho Wang Lee Lifetime Award recognizes a senior hantavirologist for exceptional contributions to hantavirus research, while the Joel M. Dalrymple Memorial Award honors an early- to mid-career researcher whose innovative and forward-looking work reflects the legacy of Dr. Dalrymple at the U.S. Army Medical Research Institute of Infectious Diseases.</p>
           </div>
         </div>
       </section>"""
@@ -2180,6 +2180,23 @@ def render_award_profiles(section: dict[str, object]) -> str:
     return mark_content_section(html, section)
 
 
+def render_conference_awards(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    items = COLLECTIONS.get(str(data.get("collection", "award_recipients")), [])
+    groups = []
+    for award in dict.fromkeys(str(item.get("award", "")) for item in items):
+        profiles = []
+        for item in items:
+            if item.get("award") != award:
+                continue
+            photo = responsive_image(prefix, str(item["image"]), str(item["name"]), loading="lazy", decoding="async", sizes="160px") if item.get("image") else ""
+            paragraphs = "".join(f'<p>{escape(str(value))}</p>' for value in item.get("paragraphs", []))
+            profiles.append(f'<article class="conference-award-person">{photo}<div><h4>{escape(str(item.get("name", "")))}</h4><p class="conference-award-affiliation">{escape(str(item.get("affiliation", "")))}</p>{paragraphs}</div></article>')
+        groups.append(f'<div class="conference-award-group"><h3>{escape(award)}</h3><div>{"".join(profiles)}</div></div>')
+    html = f'<section id="{escape(str(section.get("id", "award-recipients-2026")), quote=True)}" class="section conference-awards"><div class="section-shell"><div class="section-heading compact reveal"><p class="eyebrow">{escape(str(data.get("eyebrow", "")))}</p><h2>{escape(str(data.get("heading", "")))}</h2><p>{escape(str(data.get("introduction", "")))}</p></div><div class="conference-award-groups">{"".join(groups)}</div>{content_actions(prefix, data.get("actions", []))}</div></section>'
+    return mark_content_section(html, section)
+
+
 def render_award_archive(prefix: str, section: dict[str, object]) -> str:
     data = section.get("data", {})
     assert isinstance(data, dict)
@@ -2217,7 +2234,7 @@ def render_award_archive(prefix: str, section: dict[str, object]) -> str:
         )
     actions = data.get("actions", [])
     html = f"""
-      <section class="section data-section award-history-section"><div class="section-shell">
+      <section id="{escape(str(section.get('id', 'award-history')), quote=True)}" class="section data-section award-history-section"><div class="section-shell">
         <div class="award-history-lead"><div class="section-heading compact reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2><p>{escape(str(data.get('introduction', '')))}</p>{content_actions(prefix, actions if isinstance(actions, list) else [])}</div>{image_html}</div>
         <div class="award-history-grid">{''.join(group_sections)}</div>
       </div></section>"""
@@ -2890,6 +2907,8 @@ def render_content_section(prefix: str, page: dict[str, object], section: dict[s
         return render_award_profiles(section)
     if section_type == "award_archive":
         return render_award_archive(prefix, section)
+    if section_type == "conference_awards":
+        return render_conference_awards(prefix, section)
     if section_type == "link_tags":
         return render_link_tags(prefix, section)
     if section_type == "people_directory":

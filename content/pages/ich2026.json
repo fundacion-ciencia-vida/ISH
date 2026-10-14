@@ -104,6 +104,24 @@
       }
     },
     {
+      "id": "award-recipients-2026",
+      "type": "conference_awards",
+      "visible": true,
+      "data": {
+        "eyebrow": "ICH2026 awards",
+        "heading": "2026 Award Recipients",
+        "introduction": "The International Society for Hantaviruses is pleased to announce the recipients of its 2026 lectureship awards.",
+        "collection": "award_recipients",
+        "actions": [
+          {
+            "label": "Previous award recipients",
+            "url": "awards/#award-history",
+            "style": "outline"
+          }
+        ]
+      }
+    },
+    {
       "id": "location-carousel",
       "type": "carousel",
       "visible": true,

@@ -19,6 +19,7 @@ IDENTIFIER_PATTERN = re.compile(r"^[a-z0-9][a-z0-9_-]{0,79}$")
 RESERVED_ROUTE_PARTS = {"assets", "content", "editor", "scripts", ".git", ".github"}
 
 COLLECTION_REQUIREMENTS: dict[str, tuple[str, ...]] = {
+    "award_recipients": ("id", "name", "award"),
     "awards": ("id", "award", "year", "recipient"),
     "board": ("id", "name", "image"),
     "committees": ("id", "name", "group", "image"),
@@ -34,6 +35,7 @@ COLLECTION_REQUIREMENTS: dict[str, tuple[str, ...]] = {
 }
 
 COLLECTION_LABELS = {
+    "award_recipients": "Premiados del congreso",
     "awards": "Premios",
     "board": "Consejo asesor",
     "committees": "Comites",

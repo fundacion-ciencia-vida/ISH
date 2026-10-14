@@ -132,6 +132,31 @@
       }
     },
     {
+      "id": "awards-link",
+      "type": "split_text",
+      "visible": true,
+      "variant": "intro",
+      "data": {
+        "eyebrow": "ICH2026 awards",
+        "heading": "Celebrating the 2026 award recipients",
+        "paragraphs": [
+          "Rohit Jangra receives the Joel M. Dalrymple Memorial Award. Gregory Mertz and Pablo Vial receive the Ho Wang Lee Lifetime Award."
+        ],
+        "actions": [
+          {
+            "label": "Meet the award recipients",
+            "url": "ich2026/#award-recipients-2026",
+            "style": "outline"
+          },
+          {
+            "label": "Previous award recipients",
+            "url": "awards/#award-history",
+            "style": "outline"
+          }
+        ]
+      }
+    },
+    {
       "id": "presentation-guidelines",
       "type": "presentation_guidelines",
       "visible": true,
