@@ -1694,7 +1694,7 @@ def former_meetings_page(prefix: str) -> str:
         <div class="section-shell">
           <div class="section-heading compact reveal">
             <p class="eyebrow">Conference timeline</p>
-            <h2>International Hantavirus Conference editions, 1989-2026.</h2>
+            <h2>Editions of the International Conference on Hantaviruses</h2>
           </div>
           {former_meetings_timeline(prefix)}
         </div>
@@ -2180,6 +2180,13 @@ def render_award_profiles(section: dict[str, object]) -> str:
     return mark_content_section(html, section)
 
 
+def render_award_link(prefix: str, section: dict[str, object]) -> str:
+    data = section.get("data", {})
+    href = content_href(prefix, data)
+    html = f'<section id="{escape(str(section.get("id", "award-link")), quote=True)}" class="award-shortcut"><div class="section-shell"><a href="{escape(href, quote=True)}">{escape(str(data.get("label", "ISH Awards 2026")))}<span aria-hidden="true">&rarr;</span></a></div></section>'
+    return mark_content_section(html, section)
+
+
 def render_conference_awards(prefix: str, section: dict[str, object]) -> str:
     data = section.get("data", {})
     items = COLLECTIONS.get(str(data.get("collection", "award_recipients")), [])
@@ -2189,7 +2196,7 @@ def render_conference_awards(prefix: str, section: dict[str, object]) -> str:
         for item in items:
             if item.get("award") != award:
                 continue
-            photo = responsive_image(prefix, str(item["image"]), "", loading="lazy", decoding="async", sizes="144px", aria_hidden="true") if item.get("image") else ""
+            photo = responsive_image(prefix, str(item["image"]), "", loading="lazy", decoding="async", sizes="176px", aria_hidden="true", picture_attrs_extra={"data-recipient": str(item.get("id", ""))}) if item.get("image") else ""
             paragraphs = "".join(f'<p>{escape(str(value))}</p>' for value in item.get("paragraphs", []))
             biography = f'<details class="speaker-biography"><summary>Biography</summary>{paragraphs}</details>' if paragraphs else ""
             abstract = "".join(f'<p>{escape(str(value))}</p>' for value in item.get("abstract", []))
@@ -2918,6 +2925,8 @@ def render_content_section(prefix: str, page: dict[str, object], section: dict[s
         return render_award_archive(prefix, section)
     if section_type == "conference_awards":
         return render_conference_awards(prefix, section)
+    if section_type == "award_link":
+        return render_award_link(prefix, section)
     if section_type == "link_tags":
         return render_link_tags(prefix, section)
     if section_type == "people_directory":

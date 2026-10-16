@@ -3672,18 +3672,20 @@ body.lightbox-open {
 .speaker-keynote-pending { font-size: 14px; }
 
 .conference-awards { background: var(--paper); scroll-margin-top: calc(var(--header-height) + 60px); }
-.conference-award-groups { display: grid; gap: 40px; }
-.conference-award-group { border-top: 1px solid var(--line); padding-top: 28px; }
-.conference-award-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px 28px; margin-bottom: 28px; }
+.conference-award-groups { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px 36px; }
+.conference-award-group { display: grid; grid-template-rows: subgrid; grid-row: span 2; border-top: 1px solid var(--line); padding-top: 28px; }
+.conference-award-group.is-shared { grid-column: span 2; }
+.conference-award-heading { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
 .conference-award-heading h3 { color: var(--ink); font-size: 24px; line-height: 1.35; margin: 0; }
 .conference-award-heading > span { color: var(--muted); font-size: 13px; font-weight: 750; }
-.conference-award-profiles { display: grid; gap: 48px; align-items: start; }
-.conference-award-group.is-shared .conference-award-profiles { grid-template-columns: 1fr; }
-.conference-award-person + .conference-award-person { border-top: 1px solid var(--line); padding-top: 32px; }
+.conference-award-profiles { display: grid; gap: 36px; align-items: start; }
+.conference-award-group.is-shared .conference-award-profiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .conference-award-details { max-width: 800px; }
-.conference-award-person-header { display: grid; grid-template-columns: 144px minmax(0, 1fr); gap: 24px; align-items: start; }
-.conference-award-person-header > div { min-width: 0; padding-top: 28px; }
-.conference-award-person img { width: 144px; height: 168px; object-fit: cover; object-position: center 20%; border-radius: 6px; }
+.conference-award-person-header { display: grid; grid-template-columns: 1fr; gap: 24px; align-items: start; }
+.conference-award-person-header > div { min-width: 0; min-height: 136px; }
+.conference-award-person-header > picture { width: 176px; height: 208px; overflow: hidden; border-radius: 6px; }
+.conference-award-person-header > picture[data-recipient="pablo-vial-2026"] img { transform: scale(1.24); }
+.conference-award-person img { width: 176px; height: 208px; object-fit: cover; object-position: center 20%; border-radius: 6px; }
 .conference-award-person h4 { color: var(--ink); font-size: 26px; line-height: 1.3; margin: 0 0 10px; }
 .conference-award-person p { max-width: 65ch; color: var(--muted); text-align: left; font-size: 15px; margin-bottom: 0; }
 .conference-award-details { margin-top: 24px; }
@@ -3706,23 +3708,31 @@ body.lightbox-open {
 @media (max-width: 780px) { .conference-award-archive { justify-content: flex-start; } }
 @media (prefers-reduced-motion: reduce) { .conference-award-archive a > span { transition: none; } }
 #award-history { scroll-margin-top: calc(var(--header-height) + 40px); }
+.award-shortcut { background: var(--paper); border-block: 1px solid var(--line); }
+.award-shortcut a { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 24px 0; color: var(--ink); text-decoration: none; font-size: 20px; font-weight: 750; }
+.award-shortcut a > span { font-size: 26px; }
+.award-shortcut a:hover { color: var(--lake); }
+.award-shortcut a:focus-visible { outline: 2px solid var(--lake); outline-offset: 5px; }
 @media (max-width: 780px) {
-  .conference-award-groups { gap: 32px; }
-  .conference-award-heading { flex-direction: column; gap: 8px; }
-  .conference-award-group.is-shared .conference-award-profiles,
-  .conference-award-group.is-single .conference-award-person { grid-template-columns: 1fr; gap: 24px; }
+  .conference-award-groups { grid-template-columns: 1fr; gap: 32px; }
+  .conference-award-group { grid-template-rows: auto auto; grid-row: auto; gap: 28px; }
+  .conference-award-group.is-shared { grid-column: auto; }
+  .conference-award-heading { gap: 8px; }
+  .conference-award-group.is-shared .conference-award-profiles { grid-template-columns: 1fr; gap: 24px; }
   .conference-award-group.is-shared .conference-award-person + .conference-award-person { border-top: 1px solid var(--line); padding-top: 28px; }
   .conference-award-person-header { grid-template-columns: 120px minmax(0, 1fr); gap: 20px; }
-  .conference-award-person-header > div { padding-top: 10px; }
+  .conference-award-person-header > div { min-height: 0; padding-top: 10px; }
   .conference-award-person img { width: 120px; height: 144px; }
+  .conference-award-person-header > picture { width: 120px; height: 144px; }
   .conference-award-person h4 { font-size: 23px; }
   .conference-award-person p { font-size: 14px; }
   .conference-award-lecture { padding: 18px; }
 }
 @media (min-width: 781px) and (max-width: 1060px) {
-  .conference-award-groups { gap: 36px; }
-  .conference-award-person-header { grid-template-columns: 1fr; }
-  .conference-award-person-header > div { padding-top: 0; }
+  .conference-award-groups { column-gap: 24px; }
+  .conference-award-profiles { gap: 24px; }
+  .conference-award-person h4 { font-size: 23px; }
+  .conference-award-person-header > div { min-height: 180px; }
 }
 @media (max-width: 360px) {
   .conference-award-person-header { grid-template-columns: 1fr; }

@@ -35,24 +35,6 @@
       }
     },
     {
-      "id": "awards-2026",
-      "type": "conference_awards",
-      "visible": true,
-      "data": {
-        "eyebrow": "New · ICH2026",
-        "heading": "2026 Awardees",
-        "introduction": "Celebrating the recipients of the 2026 ISH lectureship awards.",
-        "collection": "award_recipients",
-        "actions": [
-          {
-            "label": "Previous recipients",
-            "url": "#award-history",
-            "style": "outline"
-          }
-        ]
-      }
-    },
-    {
       "id": "award-profiles",
       "type": "award_profiles",
       "visible": true,
@@ -71,6 +53,24 @@
             "number": "02",
             "title": "Ho Wang Lee Lifetime Award",
             "description": "Honors a senior investigator for exceptional and sustained contributions to the field."
+          }
+        ]
+      }
+    },
+    {
+      "id": "awards-2026",
+      "type": "conference_awards",
+      "visible": true,
+      "data": {
+        "eyebrow": "New · ICH2026",
+        "heading": "2026 Awardees",
+        "introduction": "Celebrating the recipients of the 2026 ISH lectureship awards.",
+        "collection": "award_recipients",
+        "actions": [
+          {
+            "label": "Previous recipients",
+            "url": "#award-history",
+            "style": "outline"
           }
         ]
       }

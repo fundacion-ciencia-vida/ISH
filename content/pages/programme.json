@@ -145,7 +145,7 @@
         "actions": [
           {
             "label": "Meet the award recipients",
-            "url": "ich2026/#award-recipients-2026",
+            "url": "awards/#awards-2026",
             "style": "outline"
           },
           {
