@@ -2511,8 +2511,9 @@ def render_fee_table(section: dict[str, object]) -> str:
     rows = data.get("rows", [])
     headings = []
     for column in columns:
-        detail = f'<br><span>{escape(str(column.get("detail", "")))}</span>' if column.get("detail") else ""
-        headings.append(f'<th scope="col">{escape(str(column.get("label", "")))}{detail}</th>')
+        detail = f'{"<br>" if not column.get("status") else ""}<span>{escape(str(column.get("detail", "")))}</span>' if column.get("detail") else ""
+        status = f'<strong class="fee-status">{escape(str(column["status"]))}</strong>' if column.get("status") else ""
+        headings.append(f'<th scope="col">{escape(str(column.get("label", "")))}{status}{detail}</th>')
     body_rows = []
     for row in rows:
         detail = f' <span>{escape(str(row.get("category_detail", "")))}</span>' if row.get("category_detail") else ""

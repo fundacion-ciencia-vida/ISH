@@ -5207,6 +5207,25 @@ body.lightbox-open {
   color: var(--ink);
 }
 
+.fee-table .fee-status {
+  display: flex;
+  width: max-content;
+  margin-top: 8px;
+  padding: 4px 8px;
+  color: oklch(0.42 0.14 30);
+  background: oklch(0.95 0.025 30);
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+:root[data-theme="dark"] .fee-table .fee-status {
+  color: oklch(0.8 0.12 40);
+  background: oklch(0.25 0.04 30);
+}
+
 .fee-table caption {
   position: absolute;
   width: 1px;

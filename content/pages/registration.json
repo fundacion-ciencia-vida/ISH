@@ -77,7 +77,8 @@
             "label": "Category"
           },
           {
-            "label": "Early bird — closed",
+            "label": "Early bird",
+            "status": "Closed",
             "detail": "Chilean pesos"
           },
           {
