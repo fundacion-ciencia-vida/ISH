@@ -35,10 +35,12 @@
       "id": "pablo-vial-2026",
       "name": "Pablo Vial",
       "award": "Ho Wang Lee Lifetime Award",
-      "affiliation": "Universidad del Desarrollo, Chile",
+      "affiliation": "Professor, Facultad de Medicina Clínica Alemana Universidad del Desarrollo; Researcher, ANID Sentinett, CIN250062, Santiago, Chile",
       "image": "ich2026/local-pablo-vial.jpg",
-      "paragraphs": [],
-      "lecture_title": "",
+      "paragraphs": [
+        "Dr. Pablo Vial, MD, a graduate of the University of Chile, completed his postgraduate training in pediatrics at Universidad Católica de Chile, and a fellowship in Infectious Diseases and Geographic Medicine at the University of Maryland, USA. Upon returning to Chile, he joined the Infectious Diseases Program and the Molecular Virology Laboratory at Universidad Católica de Chile. In 2001, he became the inaugural Dean of the Faculty of Medicine at Clínica Alemana Universidad del Desarrollo, a position he held for 14 years. He has focused his research effort on the clinical characterization and treatment of hantavirus infections. He is a co-author of two editions of the Chilean Ministry of Health’s National Guidelines for the Management of Hantavirus Infection, and is co-author of the chapters on hantavirus infections for UpToDate. A past president of the Chilean Society of Infectious Diseases, he currently serves as Director of the Hantavirus and Zoonoses Program at the Institute for Science and Innovation in Medicine (ICIM) at Clínica Alemana Universidad del Desarrollo."
+      ],
+      "lecture_title": "Hantavirus cardiopulmonary syndrome: what has been achieved and what remains to be done.",
       "abstract": [],
       "url": "https://orcid.org/0000-0002-4135-0416"
     }
