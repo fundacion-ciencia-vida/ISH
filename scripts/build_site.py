@@ -1413,8 +1413,7 @@ def registration_page(prefix: str) -> str:
           </div>
           <div class="andv-fee-card reveal">
             <span>All categories</span>
-            <strong class="andv-workshop-price">$20,000</strong>
-            <em class="andv-workshop-usd">~US$23</em>
+            <strong class="andv-workshop-price">CLP 48,500</strong>
             <p>Participants may register for the ANDV Workshop separately or together with ICH2026.</p>
             <a class="button button-primary" href="{CONFERENCE_FORM}" target="_blank" rel="noreferrer">Register through 4ID</a>
           </div>
@@ -2539,10 +2538,12 @@ def render_price_callout(prefix: str, section: dict[str, object]) -> str:
     data = section.get("data", {})
     assert isinstance(data, dict)
     actions = data.get("actions", [])
+    secondary_price = str(data.get("secondary_price", ""))
+    secondary_price_html = f'<em class="andv-workshop-usd">{escape(secondary_price)}</em>' if secondary_price else ""
     html = f"""
       <section class="section intro-band"><div class="section-shell andv-fee-layout">
         <div class="section-heading reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2></div>
-        <div class="andv-fee-card reveal"><span>{escape(str(data.get('label', '')))}</span><strong class="andv-workshop-price">{escape(str(data.get('price', '')))}</strong><em class="andv-workshop-usd">{escape(str(data.get('secondary_price', '')))}</em><p>{escape(str(data.get('description', '')))}</p>{content_actions(prefix, actions if isinstance(actions, list) else [])}</div>
+        <div class="andv-fee-card reveal"><span>{escape(str(data.get('label', '')))}</span><strong class="andv-workshop-price">{escape(str(data.get('price', '')))}</strong>{secondary_price_html}<p>{escape(str(data.get('description', '')))}</p>{content_actions(prefix, actions if isinstance(actions, list) else [])}</div>
       </div></section>"""
     return mark_content_section(html, section)
 
