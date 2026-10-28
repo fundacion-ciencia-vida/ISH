@@ -7494,6 +7494,315 @@
     ],
     "width": 255
   },
+  "sponsors/sentinet.jpg": {
+    "bytes": 59050,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 812,
+          "height": 55,
+          "path": "optimized/sponsors/sentinet-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 1166,
+          "height": 83,
+          "path": "optimized/sponsors/sentinet-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 1409,
+          "height": 111,
+          "path": "optimized/sponsors/sentinet-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 2008,
+          "height": 166,
+          "path": "optimized/sponsors/sentinet-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 2505,
+          "height": 221,
+          "path": "optimized/sponsors/sentinet-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 3378,
+          "height": 343,
+          "path": "optimized/sponsors/sentinet-992.avif",
+          "width": 992
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 716,
+          "height": 55,
+          "path": "optimized/sponsors/sentinet-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 1220,
+          "height": 83,
+          "path": "optimized/sponsors/sentinet-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 1658,
+          "height": 111,
+          "path": "optimized/sponsors/sentinet-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 2592,
+          "height": 166,
+          "path": "optimized/sponsors/sentinet-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 3456,
+          "height": 221,
+          "path": "optimized/sponsors/sentinet-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 5672,
+          "height": 343,
+          "path": "optimized/sponsors/sentinet-992.webp",
+          "width": 992
+        }
+      ]
+    },
+    "height": 343,
+    "variants": [
+      {
+        "bytes": 716,
+        "height": 55,
+        "path": "optimized/sponsors/sentinet-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 1220,
+        "height": 83,
+        "path": "optimized/sponsors/sentinet-240.webp",
+        "width": 240
+      },
+      {
+        "bytes": 1658,
+        "height": 111,
+        "path": "optimized/sponsors/sentinet-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 2592,
+        "height": 166,
+        "path": "optimized/sponsors/sentinet-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 3456,
+        "height": 221,
+        "path": "optimized/sponsors/sentinet-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 5672,
+        "height": 343,
+        "path": "optimized/sponsors/sentinet-992.webp",
+        "width": 992
+      }
+    ],
+    "width": 992
+  },
+  "sponsors/universidad-austral-chile.png": {
+    "bytes": 256968,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 3230,
+          "height": 106,
+          "path": "optimized/sponsors/universidad-austral-chile-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 5341,
+          "height": 159,
+          "path": "optimized/sponsors/universidad-austral-chile-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 7571,
+          "height": 212,
+          "path": "optimized/sponsors/universidad-austral-chile-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 11782,
+          "height": 318,
+          "path": "optimized/sponsors/universidad-austral-chile-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 15958,
+          "height": 424,
+          "path": "optimized/sponsors/universidad-austral-chile-640.avif",
+          "width": 640
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 3902,
+          "height": 106,
+          "path": "optimized/sponsors/universidad-austral-chile-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 6636,
+          "height": 159,
+          "path": "optimized/sponsors/universidad-austral-chile-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 9872,
+          "height": 212,
+          "path": "optimized/sponsors/universidad-austral-chile-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 16482,
+          "height": 318,
+          "path": "optimized/sponsors/universidad-austral-chile-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 23824,
+          "height": 424,
+          "path": "optimized/sponsors/universidad-austral-chile-640.webp",
+          "width": 640
+        }
+      ]
+    },
+    "height": 1408,
+    "variants": [
+      {
+        "bytes": 3902,
+        "height": 106,
+        "path": "optimized/sponsors/universidad-austral-chile-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 6636,
+        "height": 159,
+        "path": "optimized/sponsors/universidad-austral-chile-240.webp",
+        "width": 240
+      },
+      {
+        "bytes": 9872,
+        "height": 212,
+        "path": "optimized/sponsors/universidad-austral-chile-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 16482,
+        "height": 318,
+        "path": "optimized/sponsors/universidad-austral-chile-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 23824,
+        "height": 424,
+        "path": "optimized/sponsors/universidad-austral-chile-640.webp",
+        "width": 640
+      }
+    ],
+    "width": 2125
+  },
+  "sponsors/waters.jpg": {
+    "bytes": 18384,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 1238,
+          "height": 40,
+          "path": "optimized/sponsors/waters-160.avif",
+          "width": 160
+        },
+        {
+          "bytes": 1796,
+          "height": 61,
+          "path": "optimized/sponsors/waters-240.avif",
+          "width": 240
+        },
+        {
+          "bytes": 2198,
+          "height": 81,
+          "path": "optimized/sponsors/waters-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 2880,
+          "height": 101,
+          "path": "optimized/sponsors/waters-400.avif",
+          "width": 400
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 1434,
+          "height": 40,
+          "path": "optimized/sponsors/waters-160.webp",
+          "width": 160
+        },
+        {
+          "bytes": 2136,
+          "height": 61,
+          "path": "optimized/sponsors/waters-240.webp",
+          "width": 240
+        },
+        {
+          "bytes": 2748,
+          "height": 81,
+          "path": "optimized/sponsors/waters-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 3838,
+          "height": 101,
+          "path": "optimized/sponsors/waters-400.webp",
+          "width": 400
+        }
+      ]
+    },
+    "height": 101,
+    "variants": [
+      {
+        "bytes": 1434,
+        "height": 40,
+        "path": "optimized/sponsors/waters-160.webp",
+        "width": 160
+      },
+      {
+        "bytes": 2136,
+        "height": 61,
+        "path": "optimized/sponsors/waters-240.webp",
+        "width": 240
+      },
+      {
+        "bytes": 2748,
+        "height": 81,
+        "path": "optimized/sponsors/waters-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 3838,
+        "height": 101,
+        "path": "optimized/sponsors/waters-400.webp",
+        "width": 400
+      }
+    ],
+    "width": 400
+  },
   "ui/home-hero-emblem-science.webp": {
     "bytes": 24760,
     "formats": {
