@@ -218,7 +218,7 @@ LOCAL_COMMITTEE = [
 ]
 
 SPONSORS = [
-    ("Sponsors", "BD", "https://www.bd.com/en-us/", "sponsors/poster/bd.png"),
+    ("Sponsors", "Waters", "https://www.waters.com/", "sponsors/waters.jpg"),
     ("Sponsors", "Thermo Fisher Scientific", "https://www.thermofisher.com/us/en/home.html", "sponsors/poster/thermofisher-scientific.png"),
     ("Sponsors", "IMERLAB", "https://www.imerlab.cl/", "sponsors/poster/imerlab.png"),
     ("Sponsors", "Anasac", "https://anasac.cl/", "sponsors/poster/anasac.png"),
