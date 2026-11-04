@@ -3053,6 +3053,127 @@
     ],
     "width": 4032
   },
+  "ich2026/andv-workshop-flyer.png": {
+    "bytes": 1764036,
+    "formats": {
+      "avif": [
+        {
+          "bytes": 21509,
+          "height": 457,
+          "path": "optimized/ich2026/andv-workshop-flyer-320.avif",
+          "width": 320
+        },
+        {
+          "bytes": 42355,
+          "height": 686,
+          "path": "optimized/ich2026/andv-workshop-flyer-480.avif",
+          "width": 480
+        },
+        {
+          "bytes": 65418,
+          "height": 914,
+          "path": "optimized/ich2026/andv-workshop-flyer-640.avif",
+          "width": 640
+        },
+        {
+          "bytes": 111497,
+          "height": 1371,
+          "path": "optimized/ich2026/andv-workshop-flyer-960.avif",
+          "width": 960
+        },
+        {
+          "bytes": 164209,
+          "height": 1828,
+          "path": "optimized/ich2026/andv-workshop-flyer-1280.avif",
+          "width": 1280
+        },
+        {
+          "bytes": 214910,
+          "height": 2267,
+          "path": "optimized/ich2026/andv-workshop-flyer-1587.avif",
+          "width": 1587
+        }
+      ],
+      "webp": [
+        {
+          "bytes": 24958,
+          "height": 457,
+          "path": "optimized/ich2026/andv-workshop-flyer-320.webp",
+          "width": 320
+        },
+        {
+          "bytes": 51504,
+          "height": 686,
+          "path": "optimized/ich2026/andv-workshop-flyer-480.webp",
+          "width": 480
+        },
+        {
+          "bytes": 82424,
+          "height": 914,
+          "path": "optimized/ich2026/andv-workshop-flyer-640.webp",
+          "width": 640
+        },
+        {
+          "bytes": 150324,
+          "height": 1371,
+          "path": "optimized/ich2026/andv-workshop-flyer-960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 219182,
+          "height": 1828,
+          "path": "optimized/ich2026/andv-workshop-flyer-1280.webp",
+          "width": 1280
+        },
+        {
+          "bytes": 292430,
+          "height": 2267,
+          "path": "optimized/ich2026/andv-workshop-flyer-1587.webp",
+          "width": 1587
+        }
+      ]
+    },
+    "height": 2267,
+    "variants": [
+      {
+        "bytes": 24958,
+        "height": 457,
+        "path": "optimized/ich2026/andv-workshop-flyer-320.webp",
+        "width": 320
+      },
+      {
+        "bytes": 51504,
+        "height": 686,
+        "path": "optimized/ich2026/andv-workshop-flyer-480.webp",
+        "width": 480
+      },
+      {
+        "bytes": 82424,
+        "height": 914,
+        "path": "optimized/ich2026/andv-workshop-flyer-640.webp",
+        "width": 640
+      },
+      {
+        "bytes": 150324,
+        "height": 1371,
+        "path": "optimized/ich2026/andv-workshop-flyer-960.webp",
+        "width": 960
+      },
+      {
+        "bytes": 219182,
+        "height": 1828,
+        "path": "optimized/ich2026/andv-workshop-flyer-1280.webp",
+        "width": 1280
+      },
+      {
+        "bytes": 292430,
+        "height": 2267,
+        "path": "optimized/ich2026/andv-workshop-flyer-1587.webp",
+        "width": 1587
+      }
+    ],
+    "width": 1587
+  },
   "ich2026/conference-volcano.jpg": {
     "bytes": 201357,
     "formats": {

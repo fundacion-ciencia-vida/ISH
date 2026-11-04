@@ -5030,6 +5030,75 @@ body.lightbox-open {
   max-width: 900px;
 }
 
+.workshop-access {
+  scroll-margin-top: calc(var(--header-height) + 100px);
+}
+
+.workshop-access .registration-flow-layout {
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 56px;
+}
+
+.workshop-access .section-heading h2 {
+  font-size: 42px;
+  line-height: 1.12;
+}
+
+main .workshop-access .section-heading p:not(.eyebrow) {
+  text-align: left;
+}
+
+.workshop-access .registration-portal {
+  width: 100%;
+  max-width: 440px;
+  justify-self: end;
+}
+
+.workshop-credentials {
+  display: grid;
+  gap: 18px;
+  margin: 28px 0;
+  padding: 22px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.workshop-credentials dt {
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.workshop-credentials dd {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+}
+
+.workshop-access .hero-actions {
+  gap: 12px;
+}
+
+@media (max-width: 780px) {
+  .workshop-access .registration-flow-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .workshop-access .section-heading h2 {
+    font-size: 32px;
+  }
+
+  .workshop-access .registration-portal {
+    justify-self: start;
+  }
+}
+
 .registration-opportunities .opportunity-introduction {
   max-width: 680px;
   margin: 20px 0 0;

@@ -24,6 +24,47 @@
             "label": "Registration",
             "page_id": "registration",
             "style": "primary"
+          },
+          {
+            "label": "ANDV Workshop · November 5",
+            "url": "#andv-workshop",
+            "style": "secondary"
+          }
+        ]
+      }
+    },
+    {
+      "id": "andv-workshop",
+      "type": "media_split",
+      "visible": true,
+      "variant": "workshop-access",
+      "data": {
+        "eyebrow": "Thursday, November 5, 2026",
+        "heading": "Andes Virus Workshop",
+        "paragraphs": [
+          "08:00–16:30 · Puerto Varas, Chile local time. Hotel Bellavista, with virtual participation via Zoom.",
+          "On-site registration: 08:00–08:15. Opening: 08:15–08:30.",
+          "The workshop brings together experts in public health, rodent reservoirs, hantavirus cardiopulmonary syndrome, medical countermeasures, prevention and surveillance.",
+          "Simultaneous English–Spanish and Spanish–English translation is available."
+        ],
+        "image": "ich2026/andv-workshop-flyer.png",
+        "image_alt": "Andes Virus Workshop flyer for November 5, 2026, listing modules, chairs, speakers and organizers",
+        "image_url": "assets/images/ich2026/andv-workshop-flyer.png",
+        "caption": "ANDV Workshop · November 5, 2026. Open the full-size flyer.",
+        "access": {
+          "meeting_id": "868 8020 6303",
+          "password": "152804423"
+        },
+        "actions": [
+          {
+            "label": "Join via Zoom",
+            "url": "https://us02web.zoom.us/j/86880206303?pwd=L0E3MEFuQnFkNVdqMHVFV0dnK25aQT09",
+            "style": "primary"
+          },
+          {
+            "label": "Download programme (PDF)",
+            "url": "assets/documents/ich2026/andv-workshop-nov5.pdf",
+            "style": "outline"
           }
         ]
       }
@@ -48,7 +89,7 @@
       "data": {
         "eyebrow": "November 1–5",
         "heading": "Schedule at a glance",
-        "note": "Scientific session times are approximate. The detailed programme will be published soon.",
+        "note": "Scientific session times are approximate. The detailed November 5 workshop programme is available above.",
         "days": [
           {
             "day": "Sunday",
@@ -121,9 +162,9 @@
             "date": "November 5",
             "events": [
               {
-                "time": "08:30–17:00",
+                "time": "08:00–16:30",
                 "title": "Andes Virus Workshop",
-                "detail": "Simultaneous English–Spanish and Spanish–English translation.",
+                "detail": "Registration 08:00–08:15; opening 08:15–08:30. Hotel Bellavista and via Zoom, with simultaneous English–Spanish and Spanish–English translation.",
                 "kind": "workshop"
               }
             ]

@@ -2491,13 +2491,32 @@ def render_media_split(prefix: str, section: dict[str, object]) -> str:
     data = section.get("data", {})
     assert isinstance(data, dict)
     image_href = content_href(prefix, {"site_link": data.get("image_url_site_link")}) if data.get("image_url_site_link") else ""
+    if data.get("image_url"):
+        image_href = content_href(prefix, {"url": data["image_url"]})
     image_html = responsive_image(prefix, str(data.get("image", "")), str(data.get("image_alt", "")), loading="lazy", decoding="async", sizes="(max-width: 780px) 92vw, 620px")
     if image_href:
         image_html = f'<a href="{escape(image_href, quote=True)}"{external_attrs(image_href)} aria-label="Open linked resource">{image_html}</a>'
     actions = data.get("actions", [])
+    workshop = section.get("variant") == "workshop-access"
+    access = data.get("access", {})
+    access_html = ""
+    if workshop and isinstance(access, dict):
+        password = escape(str(access.get("password", "")))
+        access_html = f'''
+          <dl class="workshop-credentials">
+            <div><dt>Zoom meeting ID</dt><dd>{escape(str(access.get('meeting_id', '')))}</dd></div>
+            <div><dt>Passcode</dt><dd><strong>{password}</strong>
+              <button class="news-copy-button" type="button" data-copy-text="{escape(str(access.get('password', '')), quote=True)}" aria-label="Copy Zoom password" title="Copy passcode">
+                <span class="news-copy-icon" aria-hidden="true"></span><span data-copy-label aria-live="polite">Copy</span>
+              </button>
+            </dd></div>
+          </dl>'''
+    section_attrs = f' id="{escape(str(section["id"]), quote=True)}"' if workshop else ""
+    section_class = " workshop-access" if workshop else ""
+    actions_html = content_actions(prefix, actions if isinstance(actions, list) else [])
     html = f"""
-      <section class="section intro-band"><div class="section-shell registration-flow-layout">
-        <div class="section-heading reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2>{content_paragraphs(data)}{content_actions(prefix, actions if isinstance(actions, list) else [])}</div>
+      <section{section_attrs} class="section intro-band{section_class}"><div class="section-shell registration-flow-layout">
+        <div class="section-heading reveal"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2>{content_paragraphs(data)}{actions_html}{access_html}</div>
         <figure class="registration-portal reveal">{image_html}<figcaption>{escape(str(data.get('caption', '')))}</figcaption></figure>
       </div></section>"""
     return mark_content_section(html, section)

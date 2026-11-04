@@ -1,6 +1,19 @@
 {
   "items": [
     {
+      "id": "andv-workshop-november-2026",
+      "category": "ICH2026 · ANDV Workshop",
+      "date": "November 4, 2026",
+      "title": "Andes Virus Workshop: programme and Zoom access",
+      "description": "Join the November 5 workshop at Hotel Bellavista in Puerto Varas or via Zoom, with simultaneous English–Spanish and Spanish–English translation.",
+      "body_html": "<p>The Andes Virus Workshop takes place on <strong>Thursday, November 5, 2026, from 08:00 to 16:30 (Puerto Varas, Chile local time)</strong>, at Hotel Bellavista, with virtual participation via Zoom.</p><p>Sessions will address public health and rodent reservoirs, hantavirus cardiopulmonary syndrome and medical countermeasures, as well as prevention, surveillance and education. Simultaneous English–Spanish and Spanish–English translation is available.</p><p>On-site registration runs from 08:00 to 08:15, followed by the opening from 08:15 to 08:30. The flyer, detailed programme and Zoom access details are available on the Programme page.</p>",
+      "url": "https://www.hantavirussociety.org/ich2026/programme/#andv-workshop",
+      "label": "Workshop programme & Zoom access",
+      "image": "ich2026/ich2026-logo-landscape.png",
+      "image_alt": "ICH2026 conference visual identity in Puerto Varas, Chile",
+      "featured": true
+    },
+    {
       "id": "ich2026-august-updates",
       "category": "ICH2026 update",
       "date": "August 4, 2026",
@@ -11,7 +24,7 @@
       "label": "View ICH2026 registration updates",
       "image": "ich2026/ich2026-logo-landscape.png",
       "image_alt": "ICH2026 conference visual identity",
-      "featured": true
+      "featured": false
     },
     {
       "id": "hantavirus-corc-vaccine-working-group",
