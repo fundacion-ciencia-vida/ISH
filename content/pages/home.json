@@ -21,8 +21,8 @@
         "lede": "A global scientific network advancing hantavirus research, clinical knowledge and international collaboration.",
         "actions": [
           {
-            "label": "ICH2026 in Chile",
-            "page_id": "ich2026",
+            "label": "ICH2026 · Conference memories",
+            "url": "former-meetings/ich2026/",
             "style": "primary"
           },
           {
@@ -31,20 +31,20 @@
             "style": "secondary"
           },
           {
-            "label": "Registration",
-            "page_id": "registration",
+            "label": "About ICH2026",
+            "page_id": "ich2026",
             "style": "ghost"
           }
         ],
         "panel_kicker": "ICH2026",
+        "panel_mode": "archive",
         "panel_title": "International Conference on Hantaviruses",
         "panel_date": "Nov 2-5, 2026",
         "panel_location": "Puerto Varas, Chile",
         "panel_venue": "Hotel Bellavista",
         "panel_deadline_prefix": "Final abstract deadline:",
-        "countdown_date": "2026-11-02",
-        "panel_link_label": "Register",
-        "panel_link_page_id": "registration",
+        "panel_link_label": "View photo gallery",
+        "panel_link_page_id": "ich2026-gallery",
         "show_abstract_deadline": false
       }
     },

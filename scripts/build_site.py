@@ -1589,25 +1589,17 @@ def timeline_report_link(prefix: str, href: str) -> str:
 
 def former_meetings_timeline(prefix: str) -> str:
     items = []
-    timeline_entries = list(
-        reversed(
-            [
-                (number, year, location, abstract_label, abstract_href, report_href, False)
-                for number, year, location, abstract_label, abstract_href, _, report_href in FORMER_MEETINGS
-            ]
-        )
-    )
-    timeline_entries.append(("XIII", "2026", "Puerto Varas, Chile", "", "", "", True))
-    for index, (number, year, location, abstract_label, abstract_href, report_href, is_upcoming) in enumerate(timeline_entries):
-        item_class = "archive-timeline-item is-upcoming" if is_upcoming else "archive-timeline-item"
-        timeline_tag = '<span class="archive-timeline-tag">Next ICH</span>' if is_upcoming else ""
+    timeline_entries = list(reversed(FORMER_MEETINGS))
+    for index, (number, year, location, abstract_label, abstract_href, _, report_href) in enumerate(timeline_entries):
         links = timeline_abstract_link(prefix, abstract_label, abstract_href) + timeline_report_link(prefix, report_href)
+        meeting = next((item for item in COLLECTIONS.get("former_meetings", []) if item["year"] == year), {})
+        if meeting.get("gallery_url"):
+            links += f'<a class="archive-timeline-abstract" href="{local(prefix, str(meeting["gallery_url"]))}"><span>Photo gallery</span></a>'
         document_links = f'<div class="archive-timeline-links">{links}</div>' if links else ""
         items.append(
             f"""
-            <li class="{item_class}" style="--timeline-index: {index}">
+            <li class="archive-timeline-item" style="--timeline-index: {index}">
               <div class="archive-timeline-card">
-                {timeline_tag}
                 <span class="archive-timeline-no">{escape(number)}</span>
                 <time class="archive-timeline-year" datetime="{escape(year)}">{escape(year)}</time>
                 <strong class="archive-timeline-location">{escape(location)}</strong>
@@ -1631,6 +1623,19 @@ def former_meeting_materials(prefix: str) -> str:
         if not images and not abstract_href:
             continue
         lead = images[0] if images else "ui/society-archive-2.png"
+        meeting = next((item for item in COLLECTIONS.get("former_meetings", []) if item["year"] == year), {})
+        if meeting.get("gallery_url"):
+            gallery_href = local(prefix, str(meeting["gallery_url"]))
+            photo_count = sum(len(album.get("photos", [])) for album in COLLECTIONS.get("conference_photos", []))
+            cards.append(f'''
+              <article class="archive-material reveal" data-archive-year="{escape(year)}">
+                <a class="archive-material-image" href="{gallery_href}" aria-label="View ICH2026 photo gallery">
+                  {responsive_image(prefix, lead, 'ICH2026 participants in Puerto Varas, Chile', loading='lazy', sizes='(max-width: 780px) 92vw, 360px')}
+                  <span class="archive-photo-count">{photo_count} photos</span><span class="archive-gallery-label">View gallery</span>
+                </a>
+                <div class="archive-material-copy"><span>{escape(number)} | {escape(year)}</span><h3>{escape(location)}</h3><a href="{gallery_href}">Explore the albums</a></div>
+              </article>''')
+            continue
         photo_count = len(images)
         gallery_id = f"former-{year}"
         gallery_links = []
@@ -1948,6 +1953,8 @@ def mark_content_section(html: str, section: dict[str, object]) -> str:
 
 def content_breadcrumbs(prefix: str, page: dict[str, object]) -> list[tuple[str, str | None]]:
     crumbs: list[tuple[str, str | None]] = [("Home", local(prefix))]
+    if str(page.get("route", "")).startswith("former-meetings/"):
+        crumbs.append(("Former Meetings", content_page_href(prefix, "former")))
     if page.get("conference_page") and page["id"] != "ich2026":
         crumbs.append(("ICH2026", content_page_href(prefix, "ich2026")))
     crumbs.append((str(page.get("title", page["id"])).split(" | ", 1)[0], None))
@@ -1973,17 +1980,20 @@ def render_home_hero(prefix: str, section: dict[str, object]) -> str:
     actions = data.get("actions", [])
     actions_html = content_actions(prefix, actions if isinstance(actions, list) else [])
     panel_href = content_page_href(prefix, str(data.get("panel_link_page_id", "registration")))
-    html = f"""
-      <section class="hero" aria-labelledby="hero-title" data-active-hero="0">
-        <div class="hero-slides">{hero_media}</div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content reveal is-visible">
-          <p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p>
-          <h1 id="hero-title">{escape(str(data.get('title', '')))}</h1>
-          <p class="hero-lede">{escape(str(data.get('lede', '')))}</p>
-          {actions_html}
-        </div>
-        <aside class="hero-panel" aria-label="ICH2026 conference brief">
+    memory_panel = ""
+    if data.get("panel_mode") == "archive":
+        cover = str(PAGE_BY_ID["ich2026-gallery"]["hero_image"])
+        memory_panel = f'''
+          <aside class="hero-panel conference-memory" aria-label="ICH2026 conference memories">
+            <a href="{panel_href}" class="conference-memory-link">
+              {responsive_image(prefix, cover, 'ICH2026 participants beside Lake Llanquihue', loading='eager', sizes='(max-width: 780px) 40vw, 190px')}
+              <span class="conference-memory-copy"><span class="conference-memory-kicker">ICH2026 · Puerto Varas</span>
+              <strong>Conference memories</strong><span>November 1–5, 2026</span>
+              <span class="conference-memory-action"><img src="{prefix}assets/icons/images.svg" width="20" height="20" alt="" aria-hidden="true">{escape(str(data.get('panel_link_label', 'View photo gallery')))}</span></span>
+            </a>
+          </aside>'''
+    else:
+        memory_panel = f"""<aside class="hero-panel" aria-label="ICH2026 conference brief">
           <div class="hero-panel-kicker">{escape(str(data.get('panel_kicker', 'ICH2026')))}</div>
           <span class="hero-panel-title">{escape(str(data.get('panel_title', '')))}</span>
           <strong class="hero-panel-date">{escape(str(data.get('panel_date', conference['dates_label'])))}</strong>
@@ -1998,7 +2008,18 @@ def render_home_hero(prefix: str, section: dict[str, object]) -> str:
             <div class="countdown-unit"><span class="countdown-val" data-unit="minutes">--</span><span class="countdown-label">Minutes</span></div>
           </div>
           <a class="hero-panel-link" href="{panel_href}">{escape(str(data.get('panel_link_label', 'Submit abstract')))}</a>
-        </aside>
+        </aside>"""
+    html = f"""
+      <section class="hero" aria-labelledby="hero-title" data-active-hero="0">
+        <div class="hero-slides">{hero_media}</div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal is-visible">
+          <p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p>
+          <h1 id="hero-title">{escape(str(data.get('title', '')))}</h1>
+          <p class="hero-lede">{escape(str(data.get('lede', '')))}</p>
+          {actions_html}
+        </div>
+        {memory_panel}
       </section>"""
     return mark_content_section(html, section)
 
@@ -2920,6 +2941,77 @@ def render_gallery(prefix: str, section: dict[str, object]) -> str:
     return mark_content_section(html, section)
 
 
+def album_cover(album: dict[str, object]) -> dict[str, object]:
+    photos = album.get("photos", [])
+    return next((photo for photo in photos if photo["id"] == album.get("cover_id")), photos[0]) if photos else {}
+
+
+def render_gallery_teaser(prefix: str, section: dict[str, object]) -> str:
+    data = section["data"]
+    albums = COLLECTIONS.get(str(data.get("collection", "conference_photos")), [])
+    href = content_page_href(prefix, str(data.get("page_id", "ich2026-gallery")))
+    images = []
+    for album in albums:
+        if album["id"] not in {"group-pictures", "closing-dinner", "andv-workshop"}:
+            continue
+        cover = album_cover(album)
+        if not cover:
+            continue
+        images.append(f'''<a class="memory-preview" href="{href}#{escape(album['id'])}">
+          {responsive_image(prefix, str(cover['image']), f"ICH2026 · {album['title']}", loading='lazy', decoding='async', sizes='(max-width: 600px) 90vw, 400px')}
+          <span>{escape(str(album['title']))}</span></a>''')
+    count = sum(len(album.get("photos", [])) for album in albums)
+    html = f'''<section class="section memory-teaser"><div class="section-shell">
+      <div class="memory-teaser-heading"><div class="section-heading"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p>
+      <h2>{escape(str(data.get('heading', '')))}</h2>{content_paragraphs(data)}</div>
+      <a class="button button-primary" href="{href}">{escape(str(data.get('label', 'View photo gallery')))}</a></div>
+      <div class="memory-previews">{''.join(images)}</div><p class="memory-total">{count} photographs · {len(albums)} albums</p>
+      </div></section>'''
+    return mark_content_section(html, section)
+
+
+def render_photo_albums(prefix: str, section: dict[str, object]) -> str:
+    data = section["data"]
+    albums = COLLECTIONS.get(str(data.get("collection", "conference_photos")), [])
+    index_links = []
+    album_sections = []
+    for album_index, album in enumerate(albums, start=1):
+        photos = album.get("photos", [])
+        if not photos:
+            continue
+        album_id = escape(str(album["id"]), quote=True)
+        title = escape(str(album["title"]))
+        cover = album_cover(album)
+        index_links.append(f'''<a class="album-index-link" href="#{album_id}">
+          {responsive_image(prefix, str(cover['image']), f"ICH2026 · {album['title']}", loading='lazy', decoding='async', sizes='(max-width: 600px) 45vw, 280px')}
+          <strong>{title}</strong><span>{escape(str(album['date']))} · {len(photos)} photos</span></a>''')
+        tiles = []
+        for photo_index, photo in enumerate(photos, start=1):
+            caption = f"ICH2026 · {album['title']} · Photo {photo_index} of {len(photos)}"
+            hidden = " hidden" if photo_index > 12 else ""
+            full_src = img(prefix, str(photo["image"]))
+            tiles.append(f'''<a class="photo-tile" href="{full_src}" data-lightbox-src="{full_src}"
+              data-lightbox-group="ich2026-{album_id}" data-lightbox-caption="{escape(caption, quote=True)}"
+              data-lightbox-alt="{escape(caption, quote=True)}" aria-label="Open {escape(caption, quote=True)}"{hidden}>
+              <img src="{img(prefix, str(photo['thumbnail']))}" alt="{escape(caption, quote=True)}"
+                width="{int(photo['thumbnail_width'])}" height="{int(photo['thumbnail_height'])}" loading="lazy" decoding="async">
+              <span class="photo-tile-number" aria-hidden="true">{photo_index:02d}</span></a>''')
+        more = f'<button class="button button-outline" type="button" data-album-more aria-controls="photos-{album_id}">Show more photos</button>' if len(photos) > 12 else ""
+        album_sections.append(f'''<section class="photo-album" id="{album_id}" data-photo-album aria-labelledby="title-{album_id}">
+          <header class="photo-album-heading"><div><p class="eyebrow">{album_index:02d} / {len(albums):02d} · {escape(str(album['date']))}</p><h3 id="title-{album_id}">{title}</h3></div>
+          <a href="#albums" class="album-back">All albums ↑</a></header>
+          <div class="photo-grid" id="photos-{album_id}">{''.join(tiles)}</div>
+          <div class="photo-album-footer"><span data-album-count role="status">{min(12, len(photos))} of {len(photos)} photos</span>{more}</div>
+          </section>''')
+    total = sum(len(album.get("photos", [])) for album in albums)
+    html = f'''<section id="albums" class="section conference-albums"><div class="section-shell">
+      <div class="section-heading compact"><p class="eyebrow">{escape(str(data.get('eyebrow', '')))}</p><h2>{escape(str(data.get('heading', '')))}</h2><p>{total} photographs · {len(albums)} albums · Puerto Varas, Chile</p></div>
+      <nav class="album-index" aria-label="Photo albums">{''.join(index_links)}</nav>{''.join(album_sections)}
+      <noscript><style>.photo-tile[hidden]{{display:block}} [data-album-more], [data-album-count]{{display:none}}</style></noscript>
+      </div></section>'''
+    return mark_content_section(html, section)
+
+
 def render_content_section(prefix: str, page: dict[str, object], section: dict[str, object]) -> str:
     section_type = str(section.get("type", ""))
     if section_type == "home_hero":
@@ -3004,6 +3096,10 @@ def render_content_section(prefix: str, page: dict[str, object], section: dict[s
         return render_former_materials(prefix, section)
     if section_type == "gallery":
         return render_gallery(prefix, section)
+    if section_type == "photo_albums":
+        return render_photo_albums(prefix, section)
+    if section_type == "gallery_teaser":
+        return render_gallery_teaser(prefix, section)
     if section_type == "rich_text":
         return render_rich_text(prefix, section)
     raise ValueError(f"Unsupported section type '{section_type}' in page '{page['id']}'.")

@@ -20,8 +20,8 @@
         "image": "former-meetings/2023-seoul-2.jpg",
         "actions": [
           {
-            "label": "ICH2026",
-            "page_id": "ich2026",
+            "label": "ICH2026 photo gallery",
+            "page_id": "ich2026-gallery",
             "style": "primary"
           }
         ]
@@ -36,7 +36,7 @@
         "eyebrow": "International meetings",
         "heading": "Triennial exchange across hantavirus research communities.",
         "paragraphs": [
-          "The International Society for Hantaviruses was founded in 1989 with its first meeting in Seoul, Korea. This archive now includes photo and abstract-book material recovered from the Webpage asset package."
+          "The International Society for Hantaviruses was founded in 1989 with its first meeting in Seoul, Korea. Explore photographs, abstract books and meeting reports from past conferences, including ICH2026 in Puerto Varas, Chile."
         ]
       }
     },
@@ -60,13 +60,7 @@
       "data": {
         "eyebrow": "Conference timeline",
         "heading": "Editions of the International Conference on Hantaviruses",
-        "collection": "former_meetings",
-        "upcoming": {
-          "number": "XIII",
-          "year": "2026",
-          "location": "Puerto Varas, Chile",
-          "tag": "Next ICH"
-        }
+        "collection": "former_meetings"
       }
     },
     {

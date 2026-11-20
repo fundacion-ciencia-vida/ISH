@@ -1,0 +1,39 @@
+{
+  "id": "ich2026-gallery",
+  "route": "former-meetings/ich2026",
+  "core_route": false,
+  "title": "ICH2026 Photo Gallery | International Society for Hantaviruses",
+  "description": "Photographs from ICH2026 in Puerto Varas, Chile: scientific meetings, the opening event, excursion, closing dinner and Andes Virus Workshop.",
+  "social_image": "former-meetings/ich2026/group-pictures/img-1983-1c09f827.webp",
+  "hero_image": "former-meetings/ich2026/group-pictures/img-1983-1c09f827.webp",
+  "conference_page": false,
+  "sections": [
+    {
+      "id": "hero",
+      "type": "page_hero",
+      "visible": true,
+      "locked": true,
+      "data": {
+        "eyebrow": "Conference memories · XIII edition",
+        "title": "ICH2026",
+        "lede": "Puerto Varas, Chile · November 1–5, 2026",
+        "image": "former-meetings/ich2026/group-pictures/img-1983-1c09f827.webp",
+        "breadcrumbs": true,
+        "actions": [
+          {"label": "Explore the albums", "url": "#albums", "style": "primary"},
+          {"label": "About the meeting", "page_id": "ich2026", "style": "secondary"}
+        ]
+      }
+    },
+    {
+      "id": "albums",
+      "type": "photo_albums",
+      "visible": true,
+      "data": {
+        "eyebrow": "The meeting in pictures",
+        "heading": "ICH2026 photo gallery",
+        "collection": "conference_photos"
+      }
+    }
+  ]
+}

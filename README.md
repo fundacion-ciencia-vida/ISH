@@ -139,6 +139,26 @@ header.
 
 ## Asset note
 
+### ICH2026 photo archive
+
+The gallery lives at `former-meetings/ich2026/`. Albums and selected covers are
+stored in `content/collections/conference_photos.json`. Home and ICH2026 link to
+this single archive; the optional local editor is not required to publish it.
+
+To reimport the selected ZIPs from outside the repository:
+
+```bash
+python scripts/import_conference_photos.py ../All_selected-20261120T121301Z-1-001.zip ../All_selected-20261120T121301Z-1-002.zip ../All_selected-20261120T121301Z-1-003.zip
+python scripts/build_site.py
+python scripts/validate_site.py
+```
+
+The importer requires ImageMagick, skips identical images and videos, preserves
+selected `cover_id` values, and writes metadata-free WebP images (1920 px maximum)
+and thumbnails (640 px maximum). ZIPs, videos and full-resolution originals must
+remain outside Git. The viewer loads only the active image and its neighbours;
+each album initially displays at most 12 thumbnails, with progressive reveal.
+
 Images are now stored locally under `assets/images/`, so the published page does
 not depend on Google Sites image hotlinks. Keep replacing or optimizing those
 files in the same paths as the site evolves.

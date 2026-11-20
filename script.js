@@ -158,8 +158,9 @@ if (lightboxLinks.length) {
   lightbox.setAttribute("aria-modal", "true");
   lightbox.setAttribute("aria-label", "Image preview");
   lightbox.setAttribute("aria-hidden", "true");
+  lightbox.inert = true;
   lightbox.innerHTML = `
-    <button class="lightbox-close" type="button" aria-label="Close image preview">Close</button>
+    <button class="lightbox-close" type="button" aria-label="Close image preview"><span aria-hidden="true">×</span></button>
     <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">
       <span class="lightbox-nav-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous image</span>
@@ -205,7 +206,11 @@ if (lightboxLinks.length) {
   };
 
   const preloadLightboxGroup = () => {
-    activeLightboxGroup.forEach((item) => {
+    // Only warm the neighbouring images; an album can contain hundreds of photos.
+    [-1, 1].forEach((offset) => {
+      const index = (activeLightboxIndex + offset + activeLightboxGroup.length) % activeLightboxGroup.length;
+      const item = activeLightboxGroup[index];
+      if (!item) return;
       if (!item.dataset.lightboxSrc) return;
       const preload = new Image();
       preload.decoding = "async";
@@ -236,6 +241,7 @@ if (lightboxLinks.length) {
       lightbox.classList.remove("is-loading");
       lightbox.setAttribute("aria-busy", "false");
       requestAnimationFrame(() => lightboxImage.classList.add("is-loaded"));
+      preloadLightboxGroup();
     };
 
     const preload = new Image();
@@ -255,6 +261,7 @@ if (lightboxLinks.length) {
     if (!lightbox.classList.contains("is-open")) return;
     lightbox.classList.remove("is-open");
     lightbox.setAttribute("aria-hidden", "true");
+    lightbox.inert = true;
     lightbox.setAttribute("aria-busy", "false");
     lightbox.classList.remove("is-loading");
     body.classList.remove("lightbox-open");
@@ -273,10 +280,10 @@ if (lightboxLinks.length) {
     activeLightboxGroup = lightboxGroups.get(groupName) || [trigger];
     activeLightboxIndex = Math.max(0, activeLightboxGroup.indexOf(trigger));
     lastLightboxTrigger = trigger;
-    preloadLightboxGroup();
     renderLightboxImage();
     lightbox.classList.add("is-open");
     lightbox.setAttribute("aria-hidden", "false");
+    lightbox.inert = false;
     body.classList.add("lightbox-open");
     lightboxClose.focus({ preventScroll: true });
   };
@@ -295,11 +302,48 @@ if (lightboxLinks.length) {
     if (event.target === lightbox) closeLightbox();
   });
   document.addEventListener("keydown", (event) => {
+    if (!lightbox.classList.contains("is-open")) return;
     if (event.key === "Escape") closeLightbox();
-    if (lightbox.classList.contains("is-open") && event.key === "ArrowLeft") moveLightbox(-1);
-    if (lightbox.classList.contains("is-open") && event.key === "ArrowRight") moveLightbox(1);
+    if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+      event.preventDefault();
+      moveLightbox(event.key === "ArrowLeft" ? -1 : 1);
+    }
+    if (event.key === "Tab") {
+      const controls = Array.from(lightbox.querySelectorAll("button:not([hidden])"));
+      const index = controls.indexOf(document.activeElement);
+      const next = event.shiftKey ? index - 1 : index + 1;
+      event.preventDefault();
+      controls[(next + controls.length) % controls.length].focus();
+    }
   });
+
+  let touchStart = null;
+  lightbox.addEventListener("touchstart", (event) => {
+    touchStart = event.touches.length === 1 ? { x: event.touches[0].clientX, y: event.touches[0].clientY } : null;
+  }, { passive: true });
+  lightbox.addEventListener("touchend", (event) => {
+    if (!touchStart || !event.changedTouches.length) return;
+    const dx = event.changedTouches[0].clientX - touchStart.x;
+    const dy = event.changedTouches[0].clientY - touchStart.y;
+    touchStart = null;
+    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) moveLightbox(dx < 0 ? 1 : -1);
+  }, { passive: true });
 }
+
+document.querySelectorAll("[data-photo-album]").forEach((album) => {
+  const button = album.querySelector("[data-album-more]");
+  const count = album.querySelector("[data-album-count]");
+  const tiles = Array.from(album.querySelectorAll(".photo-tile"));
+  if (!button) return;
+  button.addEventListener("click", () => {
+    const next = tiles.filter((tile) => tile.hidden).slice(0, 12);
+    next.forEach((tile) => { tile.hidden = false; });
+    const visible = tiles.filter((tile) => !tile.hidden).length;
+    if (count) count.textContent = `${visible} of ${tiles.length} photos`;
+    button.hidden = visible === tiles.length;
+    if (next.length) next[0].focus();
+  });
+});
 
 const navObserver = new IntersectionObserver(
   (entries) => {

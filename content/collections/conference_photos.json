@@ -1,0 +1,4394 @@
+{
+  "items": [
+    {
+      "id": "group-pictures",
+      "cover_id": "img-1983-1c09f827",
+      "title": "Group Pictures",
+      "date": "November 2026",
+      "photos": [
+        {
+          "id": "img-1966-5a61ca7e",
+          "image": "former-meetings/ich2026/group-pictures/img-1966-5a61ca7e.webp",
+          "thumbnail": "former-meetings/ich2026/group-pictures/img-1966-5a61ca7e-thumb.webp",
+          "width": 1920,
+          "height": 1440,
+          "thumbnail_width": 640,
+          "thumbnail_height": 480,
+          "source_filename": "IMG_1966.jpeg"
+        },
+        {
+          "id": "img-1983-1c09f827",
+          "image": "former-meetings/ich2026/group-pictures/img-1983-1c09f827.webp",
+          "thumbnail": "former-meetings/ich2026/group-pictures/img-1983-1c09f827-thumb.webp",
+          "width": 1920,
+          "height": 1440,
+          "thumbnail_width": 640,
+          "thumbnail_height": 480,
+          "source_filename": "IMG_1983.jpeg"
+        },
+        {
+          "id": "img-1984-663158c4",
+          "image": "former-meetings/ich2026/group-pictures/img-1984-663158c4.webp",
+          "thumbnail": "former-meetings/ich2026/group-pictures/img-1984-663158c4-thumb.webp",
+          "width": 1920,
+          "height": 1440,
+          "thumbnail_width": 640,
+          "thumbnail_height": 480,
+          "source_filename": "IMG_1984.jpeg"
+        },
+        {
+          "id": "img-1994-f39f7da9",
+          "image": "former-meetings/ich2026/group-pictures/img-1994-f39f7da9.webp",
+          "thumbnail": "former-meetings/ich2026/group-pictures/img-1994-f39f7da9-thumb.webp",
+          "width": 1920,
+          "height": 1440,
+          "thumbnail_width": 640,
+          "thumbnail_height": 480,
+          "source_filename": "IMG_1994.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "opening-event",
+      "title": "Opening Event",
+      "date": "November 1",
+      "photos": [
+        {
+          "id": "20261101-201256-0dc0ed12",
+          "image": "former-meetings/ich2026/opening-event/20261101-201256-0dc0ed12.webp",
+          "thumbnail": "former-meetings/ich2026/opening-event/20261101-201256-0dc0ed12-thumb.webp",
+          "width": 1920,
+          "height": 1081,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "20261101_201256.jpg"
+        },
+        {
+          "id": "20261101-201324-e04f8275",
+          "image": "former-meetings/ich2026/opening-event/20261101-201324-e04f8275.webp",
+          "thumbnail": "former-meetings/ich2026/opening-event/20261101-201324-e04f8275-thumb.webp",
+          "width": 1081,
+          "height": 1920,
+          "thumbnail_width": 360,
+          "thumbnail_height": 640,
+          "source_filename": "20261101_201324.jpg"
+        },
+        {
+          "id": "20261101-203414-dbf56fba",
+          "image": "former-meetings/ich2026/opening-event/20261101-203414-dbf56fba.webp",
+          "thumbnail": "former-meetings/ich2026/opening-event/20261101-203414-dbf56fba-thumb.webp",
+          "width": 1920,
+          "height": 1081,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "20261101_203414.jpg"
+        },
+        {
+          "id": "20261101-203717-6f426c53",
+          "image": "former-meetings/ich2026/opening-event/20261101-203717-6f426c53.webp",
+          "thumbnail": "former-meetings/ich2026/opening-event/20261101-203717-6f426c53-thumb.webp",
+          "width": 1920,
+          "height": 1081,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "20261101_203717.jpg"
+        },
+        {
+          "id": "20261101-204008-fb65d4a3",
+          "image": "former-meetings/ich2026/opening-event/20261101-204008-fb65d4a3.webp",
+          "thumbnail": "former-meetings/ich2026/opening-event/20261101-204008-fb65d4a3-thumb.webp",
+          "width": 1920,
+          "height": 1081,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "20261101_204008.jpg"
+        },
+        {
+          "id": "20261101-204638-e46b078a",
+          "image": "former-meetings/ich2026/opening-event/20261101-204638-e46b078a.webp",
+          "thumbnail": "former-meetings/ich2026/opening-event/20261101-204638-e46b078a-thumb.webp",
+          "width": 1920,
+          "height": 1081,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "20261101_204638.jpg"
+        },
+        {
+          "id": "20261101-204648-7540491a",
+          "image": "former-meetings/ich2026/opening-event/20261101-204648-7540491a.webp",
+          "thumbnail": "former-meetings/ich2026/opening-event/20261101-204648-7540491a-thumb.webp",
+          "width": 1081,
+          "height": 1920,
+          "thumbnail_width": 360,
+          "thumbnail_height": 640,
+          "source_filename": "20261101_204648.jpg"
+        },
+        {
+          "id": "20261101-204721-8d77bcb9",
+          "image": "former-meetings/ich2026/opening-event/20261101-204721-8d77bcb9.webp",
+          "thumbnail": "former-meetings/ich2026/opening-event/20261101-204721-8d77bcb9-thumb.webp",
+          "width": 1920,
+          "height": 1081,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "20261101_204721.jpg"
+        },
+        {
+          "id": "20261101-204833-4a517879",
+          "image": "former-meetings/ich2026/opening-event/20261101-204833-4a517879.webp",
+          "thumbnail": "former-meetings/ich2026/opening-event/20261101-204833-4a517879-thumb.webp",
+          "width": 1920,
+          "height": 1081,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "20261101_204833.jpg"
+        },
+        {
+          "id": "20261101-204842-e71d8093",
+          "image": "former-meetings/ich2026/opening-event/20261101-204842-e71d8093.webp",
+          "thumbnail": "former-meetings/ich2026/opening-event/20261101-204842-e71d8093-thumb.webp",
+          "width": 1081,
+          "height": 1920,
+          "thumbnail_width": 360,
+          "thumbnail_height": 640,
+          "source_filename": "20261101_204842.jpg"
+        },
+        {
+          "id": "20261101-204908-4473a819",
+          "image": "former-meetings/ich2026/opening-event/20261101-204908-4473a819.webp",
+          "thumbnail": "former-meetings/ich2026/opening-event/20261101-204908-4473a819-thumb.webp",
+          "width": 1081,
+          "height": 1920,
+          "thumbnail_width": 360,
+          "thumbnail_height": 640,
+          "source_filename": "20261101_204908.jpg"
+        },
+        {
+          "id": "20261101-205111-f217e81e",
+          "image": "former-meetings/ich2026/opening-event/20261101-205111-f217e81e.webp",
+          "thumbnail": "former-meetings/ich2026/opening-event/20261101-205111-f217e81e-thumb.webp",
+          "width": 1920,
+          "height": 1081,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "20261101_205111.jpg"
+        },
+        {
+          "id": "20261101-205117-bd595043",
+          "image": "former-meetings/ich2026/opening-event/20261101-205117-bd595043.webp",
+          "thumbnail": "former-meetings/ich2026/opening-event/20261101-205117-bd595043-thumb.webp",
+          "width": 1920,
+          "height": 1081,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "20261101_205117.jpg"
+        },
+        {
+          "id": "20261101-205319-8fdf77d6",
+          "image": "former-meetings/ich2026/opening-event/20261101-205319-8fdf77d6.webp",
+          "thumbnail": "former-meetings/ich2026/opening-event/20261101-205319-8fdf77d6-thumb.webp",
+          "width": 1920,
+          "height": 1081,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "20261101_205319.jpg"
+        },
+        {
+          "id": "20261101-205332-c02abc78",
+          "image": "former-meetings/ich2026/opening-event/20261101-205332-c02abc78.webp",
+          "thumbnail": "former-meetings/ich2026/opening-event/20261101-205332-c02abc78-thumb.webp",
+          "width": 1920,
+          "height": 1081,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "20261101_205332.jpg"
+        },
+        {
+          "id": "20261101-205411-d9e2e850",
+          "image": "former-meetings/ich2026/opening-event/20261101-205411-d9e2e850.webp",
+          "thumbnail": "former-meetings/ich2026/opening-event/20261101-205411-d9e2e850-thumb.webp",
+          "width": 1920,
+          "height": 1081,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "20261101_205411.jpg"
+        },
+        {
+          "id": "20261101-222727-71f2277d",
+          "image": "former-meetings/ich2026/opening-event/20261101-222727-71f2277d.webp",
+          "thumbnail": "former-meetings/ich2026/opening-event/20261101-222727-71f2277d-thumb.webp",
+          "width": 1920,
+          "height": 1081,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "20261101_222727.jpg"
+        },
+        {
+          "id": "img-5024-536f11b6",
+          "image": "former-meetings/ich2026/opening-event/img-5024-536f11b6.webp",
+          "thumbnail": "former-meetings/ich2026/opening-event/img-5024-536f11b6-thumb.webp",
+          "width": 1440,
+          "height": 1920,
+          "thumbnail_width": 480,
+          "thumbnail_height": 640,
+          "source_filename": "IMG_5024.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "scientific-day-1",
+      "cover_id": "dsc-5672-b0d050c9",
+      "title": "Scientific Meeting · Day 1",
+      "date": "November 2",
+      "photos": [
+        {
+          "id": "20261102-113434-4e0bad6b",
+          "image": "former-meetings/ich2026/scientific-day-1/20261102-113434-4e0bad6b.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/20261102-113434-4e0bad6b-thumb.webp",
+          "width": 1081,
+          "height": 1920,
+          "thumbnail_width": 360,
+          "thumbnail_height": 640,
+          "source_filename": "20261102_113434.jpg"
+        },
+        {
+          "id": "20261102-123856-4d86e05f",
+          "image": "former-meetings/ich2026/scientific-day-1/20261102-123856-4d86e05f.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/20261102-123856-4d86e05f-thumb.webp",
+          "width": 1920,
+          "height": 1081,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "20261102_123856.jpg"
+        },
+        {
+          "id": "20261102-125954-5a02796f",
+          "image": "former-meetings/ich2026/scientific-day-1/20261102-125954-5a02796f.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/20261102-125954-5a02796f-thumb.webp",
+          "width": 1920,
+          "height": 1081,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "20261102_125954.jpg"
+        },
+        {
+          "id": "20261102-161004-67dedd87",
+          "image": "former-meetings/ich2026/scientific-day-1/20261102-161004-67dedd87.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/20261102-161004-67dedd87-thumb.webp",
+          "width": 1920,
+          "height": 1081,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "20261102_161004.jpg"
+        },
+        {
+          "id": "dsc-5555-642d3808",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5555-642d3808.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5555-642d3808-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5555.JPG"
+        },
+        {
+          "id": "dsc-5565-ec1989a9",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5565-ec1989a9.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5565-ec1989a9-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5565.JPG"
+        },
+        {
+          "id": "dsc-5568-001a0a92",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5568-001a0a92.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5568-001a0a92-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5568.JPG"
+        },
+        {
+          "id": "dsc-5572-02cf72d4",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5572-02cf72d4.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5572-02cf72d4-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5572.JPG"
+        },
+        {
+          "id": "dsc-5577-2cfacb43",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5577-2cfacb43.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5577-2cfacb43-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5577.JPG"
+        },
+        {
+          "id": "dsc-5584-4cd92745",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5584-4cd92745.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5584-4cd92745-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5584.JPG"
+        },
+        {
+          "id": "dsc-5586-0c413ae1",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5586-0c413ae1.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5586-0c413ae1-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5586.JPG"
+        },
+        {
+          "id": "dsc-5590-a6079124",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5590-a6079124.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5590-a6079124-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5590.JPG"
+        },
+        {
+          "id": "dsc-5592-1b7c3f2a",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5592-1b7c3f2a.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5592-1b7c3f2a-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5592.JPG"
+        },
+        {
+          "id": "dsc-5593-1458ff2d",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5593-1458ff2d.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5593-1458ff2d-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5593.JPG"
+        },
+        {
+          "id": "dsc-5594-f56193a0",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5594-f56193a0.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5594-f56193a0-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5594.JPG"
+        },
+        {
+          "id": "dsc-5597-7557f48c",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5597-7557f48c.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5597-7557f48c-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5597.JPG"
+        },
+        {
+          "id": "dsc-5600-9265e305",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5600-9265e305.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5600-9265e305-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5600.JPG"
+        },
+        {
+          "id": "dsc-5603-8936e29b",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5603-8936e29b.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5603-8936e29b-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5603.JPG"
+        },
+        {
+          "id": "dsc-5612-0b54625b",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5612-0b54625b.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5612-0b54625b-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5612.JPG"
+        },
+        {
+          "id": "dsc-5613-369e6432",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5613-369e6432.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5613-369e6432-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5613.JPG"
+        },
+        {
+          "id": "dsc-5614-c92345e3",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5614-c92345e3.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5614-c92345e3-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5614.JPG"
+        },
+        {
+          "id": "dsc-5617-cf80f184",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5617-cf80f184.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5617-cf80f184-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5617.JPG"
+        },
+        {
+          "id": "dsc-5624-304d8bc5",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5624-304d8bc5.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5624-304d8bc5-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5624.JPG"
+        },
+        {
+          "id": "dsc-5627-ed1e9b48",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5627-ed1e9b48.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5627-ed1e9b48-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5627.JPG"
+        },
+        {
+          "id": "dsc-5629-08800fef",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5629-08800fef.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5629-08800fef-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5629.JPG"
+        },
+        {
+          "id": "dsc-5630-8d5e58e3",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5630-8d5e58e3.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5630-8d5e58e3-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5630.JPG"
+        },
+        {
+          "id": "dsc-5632-4e83fdc0",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5632-4e83fdc0.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5632-4e83fdc0-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5632.JPG"
+        },
+        {
+          "id": "dsc-5638-51bc9da4",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5638-51bc9da4.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5638-51bc9da4-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5638.JPG"
+        },
+        {
+          "id": "dsc-5640-a8c90397",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5640-a8c90397.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5640-a8c90397-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5640.JPG"
+        },
+        {
+          "id": "dsc-5642-d35f6a10",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5642-d35f6a10.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5642-d35f6a10-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5642.JPG"
+        },
+        {
+          "id": "dsc-5647-31af60d8",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5647-31af60d8.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5647-31af60d8-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5647.JPG"
+        },
+        {
+          "id": "dsc-5651-89ec91bd",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5651-89ec91bd.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5651-89ec91bd-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5651.JPG"
+        },
+        {
+          "id": "dsc-5656-a4b01b17",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5656-a4b01b17.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5656-a4b01b17-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5656.JPG"
+        },
+        {
+          "id": "dsc-5659-316ff735",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5659-316ff735.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5659-316ff735-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5659.JPG"
+        },
+        {
+          "id": "dsc-5662-ad0069a6",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5662-ad0069a6.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5662-ad0069a6-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5662.JPG"
+        },
+        {
+          "id": "dsc-5670-a264107b",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5670-a264107b.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5670-a264107b-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5670.JPG"
+        },
+        {
+          "id": "dsc-5672-b0d050c9",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5672-b0d050c9.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5672-b0d050c9-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5672.JPG"
+        },
+        {
+          "id": "dsc-5674-d24db0e0",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5674-d24db0e0.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5674-d24db0e0-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5674.JPG"
+        },
+        {
+          "id": "dsc-5676-e143a8f2",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5676-e143a8f2.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5676-e143a8f2-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5676.JPG"
+        },
+        {
+          "id": "dsc-5685-33897dd3",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5685-33897dd3.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5685-33897dd3-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5685.JPG"
+        },
+        {
+          "id": "dsc-5690-78cf4680",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5690-78cf4680.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5690-78cf4680-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5690.JPG"
+        },
+        {
+          "id": "dsc-5694-9164d2aa",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5694-9164d2aa.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5694-9164d2aa-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5694.JPG"
+        },
+        {
+          "id": "dsc-5695-5369ae68",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5695-5369ae68.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5695-5369ae68-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5695.JPG"
+        },
+        {
+          "id": "dsc-5697-ae672d17",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5697-ae672d17.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5697-ae672d17-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5697.JPG"
+        },
+        {
+          "id": "dsc-5699-3016ddac",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5699-3016ddac.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5699-3016ddac-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5699.JPG"
+        },
+        {
+          "id": "dsc-5700-cd010f0f",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5700-cd010f0f.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5700-cd010f0f-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5700.JPG"
+        },
+        {
+          "id": "dsc-5707-e6f87fe5",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5707-e6f87fe5.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5707-e6f87fe5-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5707.JPG"
+        },
+        {
+          "id": "dsc-5708-2d62c601",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5708-2d62c601.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5708-2d62c601-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5708.JPG"
+        },
+        {
+          "id": "dsc-5711-cc2c8836",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5711-cc2c8836.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5711-cc2c8836-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5711.JPG"
+        },
+        {
+          "id": "dsc-5715-11ed9bef",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5715-11ed9bef.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5715-11ed9bef-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5715.JPG"
+        },
+        {
+          "id": "dsc-5719-76313b96",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5719-76313b96.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5719-76313b96-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5719.JPG"
+        },
+        {
+          "id": "dsc-5723-39458e94",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5723-39458e94.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5723-39458e94-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5723.JPG"
+        },
+        {
+          "id": "dsc-5724-d7276ac0",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5724-d7276ac0.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5724-d7276ac0-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5724.JPG"
+        },
+        {
+          "id": "dsc-5731-6f8fad8e",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5731-6f8fad8e.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5731-6f8fad8e-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5731.JPG"
+        },
+        {
+          "id": "dsc-5734-c5762221",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5734-c5762221.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5734-c5762221-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5734.JPG"
+        },
+        {
+          "id": "dsc-5738-298d7354",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5738-298d7354.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5738-298d7354-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5738.JPG"
+        },
+        {
+          "id": "dsc-5740-2ea902a9",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5740-2ea902a9.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5740-2ea902a9-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5740.JPG"
+        },
+        {
+          "id": "dsc-5741-d45b3587",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5741-d45b3587.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5741-d45b3587-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5741.JPG"
+        },
+        {
+          "id": "dsc-5742-5a6dcf61",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5742-5a6dcf61.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5742-5a6dcf61-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5742.JPG"
+        },
+        {
+          "id": "dsc-5745-945244e0",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5745-945244e0.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5745-945244e0-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5745.JPG"
+        },
+        {
+          "id": "dsc-5750-f38defb6",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5750-f38defb6.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5750-f38defb6-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5750.JPG"
+        },
+        {
+          "id": "dsc-5753-26dfdfe7",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5753-26dfdfe7.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5753-26dfdfe7-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5753.JPG"
+        },
+        {
+          "id": "dsc-5756-b4114f2c",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5756-b4114f2c.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5756-b4114f2c-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5756.JPG"
+        },
+        {
+          "id": "dsc-5758-8fba03c0",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5758-8fba03c0.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5758-8fba03c0-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5758.JPG"
+        },
+        {
+          "id": "dsc-5760-975ab957",
+          "image": "former-meetings/ich2026/scientific-day-1/dsc-5760-975ab957.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/dsc-5760-975ab957-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5760.JPG"
+        },
+        {
+          "id": "whatsapp-image-2026-11-03-at-23-00-09-ab4481c6",
+          "image": "former-meetings/ich2026/scientific-day-1/whatsapp-image-2026-11-03-at-23-00-09-ab4481c6.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/whatsapp-image-2026-11-03-at-23-00-09-ab4481c6-thumb.webp",
+          "width": 1280,
+          "height": 960,
+          "thumbnail_width": 640,
+          "thumbnail_height": 480,
+          "source_filename": "WhatsApp Image 2026-11-03 at 23.00.09.jpeg"
+        },
+        {
+          "id": "whatsapp-image-2026-11-03-at-23-00-10-1-c563b3b9",
+          "image": "former-meetings/ich2026/scientific-day-1/whatsapp-image-2026-11-03-at-23-00-10-1-c563b3b9.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/whatsapp-image-2026-11-03-at-23-00-10-1-c563b3b9-thumb.webp",
+          "width": 960,
+          "height": 1280,
+          "thumbnail_width": 480,
+          "thumbnail_height": 640,
+          "source_filename": "WhatsApp Image 2026-11-03 at 23.00.10 (1).jpeg"
+        },
+        {
+          "id": "whatsapp-image-2026-11-03-at-23-00-10-2-057f4018",
+          "image": "former-meetings/ich2026/scientific-day-1/whatsapp-image-2026-11-03-at-23-00-10-2-057f4018.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/whatsapp-image-2026-11-03-at-23-00-10-2-057f4018-thumb.webp",
+          "width": 1280,
+          "height": 960,
+          "thumbnail_width": 640,
+          "thumbnail_height": 480,
+          "source_filename": "WhatsApp Image 2026-11-03 at 23.00.10 (2).jpeg"
+        },
+        {
+          "id": "whatsapp-image-2026-11-03-at-23-00-12-2-4cd170de",
+          "image": "former-meetings/ich2026/scientific-day-1/whatsapp-image-2026-11-03-at-23-00-12-2-4cd170de.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/whatsapp-image-2026-11-03-at-23-00-12-2-4cd170de-thumb.webp",
+          "width": 1280,
+          "height": 960,
+          "thumbnail_width": 640,
+          "thumbnail_height": 480,
+          "source_filename": "WhatsApp Image 2026-11-03 at 23.00.12 (2).jpeg"
+        },
+        {
+          "id": "whatsapp-image-2026-11-03-at-23-00-12-3-2c21e199",
+          "image": "former-meetings/ich2026/scientific-day-1/whatsapp-image-2026-11-03-at-23-00-12-3-2c21e199.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/whatsapp-image-2026-11-03-at-23-00-12-3-2c21e199-thumb.webp",
+          "width": 1280,
+          "height": 960,
+          "thumbnail_width": 640,
+          "thumbnail_height": 480,
+          "source_filename": "WhatsApp Image 2026-11-03 at 23.00.12 (3).jpeg"
+        },
+        {
+          "id": "whatsapp-image-2026-11-03-at-23-00-12-4-19c6f7ee",
+          "image": "former-meetings/ich2026/scientific-day-1/whatsapp-image-2026-11-03-at-23-00-12-4-19c6f7ee.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/whatsapp-image-2026-11-03-at-23-00-12-4-19c6f7ee-thumb.webp",
+          "width": 960,
+          "height": 1280,
+          "thumbnail_width": 480,
+          "thumbnail_height": 640,
+          "source_filename": "WhatsApp Image 2026-11-03 at 23.00.12 (4).jpeg"
+        },
+        {
+          "id": "whatsapp-image-2026-11-03-at-23-00-12-6b0b318f",
+          "image": "former-meetings/ich2026/scientific-day-1/whatsapp-image-2026-11-03-at-23-00-12-6b0b318f.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-1/whatsapp-image-2026-11-03-at-23-00-12-6b0b318f-thumb.webp",
+          "width": 1280,
+          "height": 960,
+          "thumbnail_width": 640,
+          "thumbnail_height": 480,
+          "source_filename": "WhatsApp Image 2026-11-03 at 23.00.12.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "scientific-day-2",
+      "cover_id": "dsc-5875-84ee0f00",
+      "title": "Scientific Meeting · Day 2",
+      "date": "November 3",
+      "photos": [
+        {
+          "id": "dsc-5763-2eec1e11",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5763-2eec1e11.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5763-2eec1e11-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5763.JPG"
+        },
+        {
+          "id": "dsc-5766-1f1727dd",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5766-1f1727dd.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5766-1f1727dd-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5766.JPG"
+        },
+        {
+          "id": "dsc-5767-ef042da5",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5767-ef042da5.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5767-ef042da5-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5767.JPG"
+        },
+        {
+          "id": "dsc-5769-9adc8e67",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5769-9adc8e67.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5769-9adc8e67-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5769.JPG"
+        },
+        {
+          "id": "dsc-5771-b8e2bcb2",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5771-b8e2bcb2.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5771-b8e2bcb2-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5771.JPG"
+        },
+        {
+          "id": "dsc-5773-49d37146",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5773-49d37146.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5773-49d37146-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5773.JPG"
+        },
+        {
+          "id": "dsc-5774-4da66be3",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5774-4da66be3.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5774-4da66be3-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5774.JPG"
+        },
+        {
+          "id": "dsc-5782-b8247b48",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5782-b8247b48.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5782-b8247b48-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5782.JPG"
+        },
+        {
+          "id": "dsc-5783-9e205f6d",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5783-9e205f6d.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5783-9e205f6d-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5783.JPG"
+        },
+        {
+          "id": "dsc-5788-ce168f87",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5788-ce168f87.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5788-ce168f87-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5788.JPG"
+        },
+        {
+          "id": "dsc-5791-cbb779cf",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5791-cbb779cf.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5791-cbb779cf-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5791.JPG"
+        },
+        {
+          "id": "dsc-5793-90f7e2e6",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5793-90f7e2e6.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5793-90f7e2e6-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5793.JPG"
+        },
+        {
+          "id": "dsc-5795-aefaae9c",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5795-aefaae9c.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5795-aefaae9c-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5795.JPG"
+        },
+        {
+          "id": "dsc-5797-68912ef7",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5797-68912ef7.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5797-68912ef7-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5797.JPG"
+        },
+        {
+          "id": "dsc-5801-9af07ba3",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5801-9af07ba3.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5801-9af07ba3-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5801.JPG"
+        },
+        {
+          "id": "dsc-5805-647bf967",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5805-647bf967.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5805-647bf967-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5805.JPG"
+        },
+        {
+          "id": "dsc-5807-521de8b2",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5807-521de8b2.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5807-521de8b2-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5807.JPG"
+        },
+        {
+          "id": "dsc-5813-ce4dff5f",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5813-ce4dff5f.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5813-ce4dff5f-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5813.JPG"
+        },
+        {
+          "id": "dsc-5816-6937cd77",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5816-6937cd77.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5816-6937cd77-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5816.JPG"
+        },
+        {
+          "id": "dsc-5821-1d4aee1d",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5821-1d4aee1d.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5821-1d4aee1d-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5821.JPG"
+        },
+        {
+          "id": "dsc-5824-c0524dbf",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5824-c0524dbf.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5824-c0524dbf-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5824.JPG"
+        },
+        {
+          "id": "dsc-5825-fe2baa14",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5825-fe2baa14.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5825-fe2baa14-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5825.JPG"
+        },
+        {
+          "id": "dsc-5829-2f5bfb74",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5829-2f5bfb74.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5829-2f5bfb74-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5829.JPG"
+        },
+        {
+          "id": "dsc-5830-28df557d",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5830-28df557d.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5830-28df557d-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5830.JPG"
+        },
+        {
+          "id": "dsc-5833-029234bc",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5833-029234bc.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5833-029234bc-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5833.JPG"
+        },
+        {
+          "id": "dsc-5836-07d3f800",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5836-07d3f800.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5836-07d3f800-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5836.JPG"
+        },
+        {
+          "id": "dsc-5844-02af3d4c",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5844-02af3d4c.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5844-02af3d4c-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5844.JPG"
+        },
+        {
+          "id": "dsc-5845-20b0c98a",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5845-20b0c98a.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5845-20b0c98a-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5845.JPG"
+        },
+        {
+          "id": "dsc-5849-b5fc81a9",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5849-b5fc81a9.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5849-b5fc81a9-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5849.JPG"
+        },
+        {
+          "id": "dsc-5856-fb941d98",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5856-fb941d98.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5856-fb941d98-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5856.JPG"
+        },
+        {
+          "id": "dsc-5858-7f3c6dff",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5858-7f3c6dff.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5858-7f3c6dff-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5858.JPG"
+        },
+        {
+          "id": "dsc-5861-9ff5324a",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5861-9ff5324a.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5861-9ff5324a-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5861.JPG"
+        },
+        {
+          "id": "dsc-5863-5ec4951a",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5863-5ec4951a.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5863-5ec4951a-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5863.JPG"
+        },
+        {
+          "id": "dsc-5866-71f5865a",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5866-71f5865a.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5866-71f5865a-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5866.JPG"
+        },
+        {
+          "id": "dsc-5872-f2a7d757",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5872-f2a7d757.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5872-f2a7d757-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5872.JPG"
+        },
+        {
+          "id": "dsc-5873-c61192cb",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5873-c61192cb.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5873-c61192cb-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5873.JPG"
+        },
+        {
+          "id": "dsc-5875-84ee0f00",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5875-84ee0f00.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5875-84ee0f00-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5875.JPG"
+        },
+        {
+          "id": "dsc-5885-af7bde52",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5885-af7bde52.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5885-af7bde52-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5885.JPG"
+        },
+        {
+          "id": "dsc-5889-74942d8f",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5889-74942d8f.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5889-74942d8f-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5889.JPG"
+        },
+        {
+          "id": "dsc-5893-e346fc62",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5893-e346fc62.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5893-e346fc62-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5893.JPG"
+        },
+        {
+          "id": "dsc-5894-fec13765",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5894-fec13765.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5894-fec13765-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5894.JPG"
+        },
+        {
+          "id": "dsc-5896-4a2d6b1b",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5896-4a2d6b1b.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5896-4a2d6b1b-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5896.JPG"
+        },
+        {
+          "id": "dsc-5903-7f62343c",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5903-7f62343c.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5903-7f62343c-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5903.JPG"
+        },
+        {
+          "id": "dsc-5905-9ad28b7f",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5905-9ad28b7f.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5905-9ad28b7f-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5905.JPG"
+        },
+        {
+          "id": "dsc-5908-7131365a",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5908-7131365a.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5908-7131365a-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_5908.JPG"
+        },
+        {
+          "id": "dsc-5911-7736cd6a",
+          "image": "former-meetings/ich2026/scientific-day-2/dsc-5911-7736cd6a.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/dsc-5911-7736cd6a-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5911.JPG"
+        },
+        {
+          "id": "whatsapp-image-2026-11-03-at-23-00-09-1-a4de0b7c",
+          "image": "former-meetings/ich2026/scientific-day-2/whatsapp-image-2026-11-03-at-23-00-09-1-a4de0b7c.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/whatsapp-image-2026-11-03-at-23-00-09-1-a4de0b7c-thumb.webp",
+          "width": 960,
+          "height": 1280,
+          "thumbnail_width": 480,
+          "thumbnail_height": 640,
+          "source_filename": "WhatsApp Image 2026-11-03 at 23.00.09 (1).jpeg"
+        },
+        {
+          "id": "whatsapp-image-2026-11-03-at-23-00-11-2-f60646bf",
+          "image": "former-meetings/ich2026/scientific-day-2/whatsapp-image-2026-11-03-at-23-00-11-2-f60646bf.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/whatsapp-image-2026-11-03-at-23-00-11-2-f60646bf-thumb.webp",
+          "width": 960,
+          "height": 1280,
+          "thumbnail_width": 480,
+          "thumbnail_height": 640,
+          "source_filename": "WhatsApp Image 2026-11-03 at 23.00.11 (2).jpeg"
+        },
+        {
+          "id": "whatsapp-image-2026-11-03-at-23-00-13-020c5f9c",
+          "image": "former-meetings/ich2026/scientific-day-2/whatsapp-image-2026-11-03-at-23-00-13-020c5f9c.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-2/whatsapp-image-2026-11-03-at-23-00-13-020c5f9c-thumb.webp",
+          "width": 960,
+          "height": 1280,
+          "thumbnail_width": 480,
+          "thumbnail_height": 640,
+          "source_filename": "WhatsApp Image 2026-11-03 at 23.00.13.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "excursion",
+      "title": "Petrohué & Todos los Santos",
+      "date": "November 3",
+      "photos": [
+        {
+          "id": "20261103-162007-d0bb0dac",
+          "image": "former-meetings/ich2026/excursion/20261103-162007-d0bb0dac.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/20261103-162007-d0bb0dac-thumb.webp",
+          "width": 1920,
+          "height": 1081,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "20261103_162007.jpg"
+        },
+        {
+          "id": "dsc-5918-88ba0cf9",
+          "image": "former-meetings/ich2026/excursion/dsc-5918-88ba0cf9.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5918-88ba0cf9-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5918.JPG"
+        },
+        {
+          "id": "dsc-5923-8bbd24e1",
+          "image": "former-meetings/ich2026/excursion/dsc-5923-8bbd24e1.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5923-8bbd24e1-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5923.JPG"
+        },
+        {
+          "id": "dsc-5926-431e07a4",
+          "image": "former-meetings/ich2026/excursion/dsc-5926-431e07a4.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5926-431e07a4-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5926.JPG"
+        },
+        {
+          "id": "dsc-5930-3ae49208",
+          "image": "former-meetings/ich2026/excursion/dsc-5930-3ae49208.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5930-3ae49208-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5930.JPG"
+        },
+        {
+          "id": "dsc-5938-e87ff1e0",
+          "image": "former-meetings/ich2026/excursion/dsc-5938-e87ff1e0.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5938-e87ff1e0-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5938.JPG"
+        },
+        {
+          "id": "dsc-5941-5656afc0",
+          "image": "former-meetings/ich2026/excursion/dsc-5941-5656afc0.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5941-5656afc0-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5941.JPG"
+        },
+        {
+          "id": "dsc-5943-85cba1e9",
+          "image": "former-meetings/ich2026/excursion/dsc-5943-85cba1e9.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5943-85cba1e9-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5943.JPG"
+        },
+        {
+          "id": "dsc-5944-3f2c72f7",
+          "image": "former-meetings/ich2026/excursion/dsc-5944-3f2c72f7.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5944-3f2c72f7-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5944.JPG"
+        },
+        {
+          "id": "dsc-5945-e9fe7dcb",
+          "image": "former-meetings/ich2026/excursion/dsc-5945-e9fe7dcb.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5945-e9fe7dcb-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5945.JPG"
+        },
+        {
+          "id": "dsc-5947-0deefce5",
+          "image": "former-meetings/ich2026/excursion/dsc-5947-0deefce5.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5947-0deefce5-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5947.JPG"
+        },
+        {
+          "id": "dsc-5948-b0c40ba0",
+          "image": "former-meetings/ich2026/excursion/dsc-5948-b0c40ba0.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5948-b0c40ba0-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5948.JPG"
+        },
+        {
+          "id": "dsc-5949-21a2cb0d",
+          "image": "former-meetings/ich2026/excursion/dsc-5949-21a2cb0d.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5949-21a2cb0d-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5949.JPG"
+        },
+        {
+          "id": "dsc-5950-bd62a8eb",
+          "image": "former-meetings/ich2026/excursion/dsc-5950-bd62a8eb.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5950-bd62a8eb-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5950.JPG"
+        },
+        {
+          "id": "dsc-5951-e28fae59",
+          "image": "former-meetings/ich2026/excursion/dsc-5951-e28fae59.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5951-e28fae59-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5951.JPG"
+        },
+        {
+          "id": "dsc-5952-046c71a9",
+          "image": "former-meetings/ich2026/excursion/dsc-5952-046c71a9.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5952-046c71a9-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5952.JPG"
+        },
+        {
+          "id": "dsc-5954-d4a09496",
+          "image": "former-meetings/ich2026/excursion/dsc-5954-d4a09496.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5954-d4a09496-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5954.JPG"
+        },
+        {
+          "id": "dsc-5958-2522d61b",
+          "image": "former-meetings/ich2026/excursion/dsc-5958-2522d61b.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5958-2522d61b-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5958.JPG"
+        },
+        {
+          "id": "dsc-5961-08f64ef5",
+          "image": "former-meetings/ich2026/excursion/dsc-5961-08f64ef5.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5961-08f64ef5-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5961.JPG"
+        },
+        {
+          "id": "dsc-5963-78397a1b",
+          "image": "former-meetings/ich2026/excursion/dsc-5963-78397a1b.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5963-78397a1b-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5963.JPG"
+        },
+        {
+          "id": "dsc-5965-fda893a5",
+          "image": "former-meetings/ich2026/excursion/dsc-5965-fda893a5.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5965-fda893a5-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5965.JPG"
+        },
+        {
+          "id": "dsc-5969-3b37b97b",
+          "image": "former-meetings/ich2026/excursion/dsc-5969-3b37b97b.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5969-3b37b97b-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5969.JPG"
+        },
+        {
+          "id": "dsc-5970-91096c1a",
+          "image": "former-meetings/ich2026/excursion/dsc-5970-91096c1a.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5970-91096c1a-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5970.JPG"
+        },
+        {
+          "id": "dsc-5976-0d9376a2",
+          "image": "former-meetings/ich2026/excursion/dsc-5976-0d9376a2.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5976-0d9376a2-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5976.JPG"
+        },
+        {
+          "id": "dsc-5979-869823ee",
+          "image": "former-meetings/ich2026/excursion/dsc-5979-869823ee.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5979-869823ee-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5979.JPG"
+        },
+        {
+          "id": "dsc-5981-5f3bd8f0",
+          "image": "former-meetings/ich2026/excursion/dsc-5981-5f3bd8f0.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5981-5f3bd8f0-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5981.JPG"
+        },
+        {
+          "id": "dsc-5987-1a0962b3",
+          "image": "former-meetings/ich2026/excursion/dsc-5987-1a0962b3.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5987-1a0962b3-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5987.JPG"
+        },
+        {
+          "id": "dsc-5990-5cd69bee",
+          "image": "former-meetings/ich2026/excursion/dsc-5990-5cd69bee.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5990-5cd69bee-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5990.JPG"
+        },
+        {
+          "id": "dsc-5997-68ed7213",
+          "image": "former-meetings/ich2026/excursion/dsc-5997-68ed7213.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-5997-68ed7213-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_5997.JPG"
+        },
+        {
+          "id": "dsc-6000-f755457e",
+          "image": "former-meetings/ich2026/excursion/dsc-6000-f755457e.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6000-f755457e-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6000.JPG"
+        },
+        {
+          "id": "dsc-6001-c59bd7aa",
+          "image": "former-meetings/ich2026/excursion/dsc-6001-c59bd7aa.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6001-c59bd7aa-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6001.JPG"
+        },
+        {
+          "id": "dsc-6002-161299a3",
+          "image": "former-meetings/ich2026/excursion/dsc-6002-161299a3.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6002-161299a3-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6002.JPG"
+        },
+        {
+          "id": "dsc-6004-46a0508d",
+          "image": "former-meetings/ich2026/excursion/dsc-6004-46a0508d.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6004-46a0508d-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6004.JPG"
+        },
+        {
+          "id": "dsc-6005-4e3b37e0",
+          "image": "former-meetings/ich2026/excursion/dsc-6005-4e3b37e0.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6005-4e3b37e0-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6005.JPG"
+        },
+        {
+          "id": "dsc-6006-84399a32",
+          "image": "former-meetings/ich2026/excursion/dsc-6006-84399a32.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6006-84399a32-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6006.JPG"
+        },
+        {
+          "id": "dsc-6007-79bf07fe",
+          "image": "former-meetings/ich2026/excursion/dsc-6007-79bf07fe.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6007-79bf07fe-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6007.JPG"
+        },
+        {
+          "id": "dsc-6008-573c11c5",
+          "image": "former-meetings/ich2026/excursion/dsc-6008-573c11c5.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6008-573c11c5-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6008.JPG"
+        },
+        {
+          "id": "dsc-6009-5b64c126",
+          "image": "former-meetings/ich2026/excursion/dsc-6009-5b64c126.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6009-5b64c126-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6009.JPG"
+        },
+        {
+          "id": "dsc-6010-637125a3",
+          "image": "former-meetings/ich2026/excursion/dsc-6010-637125a3.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6010-637125a3-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6010.JPG"
+        },
+        {
+          "id": "dsc-6011-8a7f3364",
+          "image": "former-meetings/ich2026/excursion/dsc-6011-8a7f3364.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6011-8a7f3364-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6011.JPG"
+        },
+        {
+          "id": "dsc-6013-d2ef4aab",
+          "image": "former-meetings/ich2026/excursion/dsc-6013-d2ef4aab.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6013-d2ef4aab-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6013.JPG"
+        },
+        {
+          "id": "dsc-6018-a820f456",
+          "image": "former-meetings/ich2026/excursion/dsc-6018-a820f456.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6018-a820f456-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6018.JPG"
+        },
+        {
+          "id": "dsc-6019-1c1af5cc",
+          "image": "former-meetings/ich2026/excursion/dsc-6019-1c1af5cc.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6019-1c1af5cc-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6019.JPG"
+        },
+        {
+          "id": "dsc-6023-fd60f6b0",
+          "image": "former-meetings/ich2026/excursion/dsc-6023-fd60f6b0.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6023-fd60f6b0-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6023.JPG"
+        },
+        {
+          "id": "dsc-6024-fca69cda",
+          "image": "former-meetings/ich2026/excursion/dsc-6024-fca69cda.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6024-fca69cda-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6024.JPG"
+        },
+        {
+          "id": "dsc-6025-ecbf0c95",
+          "image": "former-meetings/ich2026/excursion/dsc-6025-ecbf0c95.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6025-ecbf0c95-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6025.JPG"
+        },
+        {
+          "id": "dsc-6031-07ee06b6",
+          "image": "former-meetings/ich2026/excursion/dsc-6031-07ee06b6.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6031-07ee06b6-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6031.JPG"
+        },
+        {
+          "id": "dsc-6032-92f049fb",
+          "image": "former-meetings/ich2026/excursion/dsc-6032-92f049fb.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6032-92f049fb-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6032.JPG"
+        },
+        {
+          "id": "dsc-6033-e88d9a12",
+          "image": "former-meetings/ich2026/excursion/dsc-6033-e88d9a12.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6033-e88d9a12-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6033.JPG"
+        },
+        {
+          "id": "dsc-6035-3d7c1c2c",
+          "image": "former-meetings/ich2026/excursion/dsc-6035-3d7c1c2c.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6035-3d7c1c2c-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6035.JPG"
+        },
+        {
+          "id": "dsc-6036-cbd30654",
+          "image": "former-meetings/ich2026/excursion/dsc-6036-cbd30654.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6036-cbd30654-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6036.JPG"
+        },
+        {
+          "id": "dsc-6037-15cc72b2",
+          "image": "former-meetings/ich2026/excursion/dsc-6037-15cc72b2.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6037-15cc72b2-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6037.JPG"
+        },
+        {
+          "id": "dsc-6039-f8ddc6d1",
+          "image": "former-meetings/ich2026/excursion/dsc-6039-f8ddc6d1.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6039-f8ddc6d1-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6039.JPG"
+        },
+        {
+          "id": "dsc-6040-1b025213",
+          "image": "former-meetings/ich2026/excursion/dsc-6040-1b025213.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6040-1b025213-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6040.JPG"
+        },
+        {
+          "id": "dsc-6041-ad35fe4a",
+          "image": "former-meetings/ich2026/excursion/dsc-6041-ad35fe4a.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6041-ad35fe4a-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6041.JPG"
+        },
+        {
+          "id": "dsc-6043-195a0066",
+          "image": "former-meetings/ich2026/excursion/dsc-6043-195a0066.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6043-195a0066-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6043.JPG"
+        },
+        {
+          "id": "dsc-6048-badf94bf",
+          "image": "former-meetings/ich2026/excursion/dsc-6048-badf94bf.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6048-badf94bf-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6048.JPG"
+        },
+        {
+          "id": "dsc-6051-064bce59",
+          "image": "former-meetings/ich2026/excursion/dsc-6051-064bce59.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6051-064bce59-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6051.JPG"
+        },
+        {
+          "id": "dsc-6053-216aad3f",
+          "image": "former-meetings/ich2026/excursion/dsc-6053-216aad3f.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6053-216aad3f-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6053.JPG"
+        },
+        {
+          "id": "dsc-6060-966193f7",
+          "image": "former-meetings/ich2026/excursion/dsc-6060-966193f7.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6060-966193f7-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6060.JPG"
+        },
+        {
+          "id": "dsc-6062-5428a5b8",
+          "image": "former-meetings/ich2026/excursion/dsc-6062-5428a5b8.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6062-5428a5b8-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6062.JPG"
+        },
+        {
+          "id": "dsc-6063-e5a3b242",
+          "image": "former-meetings/ich2026/excursion/dsc-6063-e5a3b242.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6063-e5a3b242-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6063.JPG"
+        },
+        {
+          "id": "dsc-6064-90ee7aa9",
+          "image": "former-meetings/ich2026/excursion/dsc-6064-90ee7aa9.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6064-90ee7aa9-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6064.JPG"
+        },
+        {
+          "id": "dsc-6066-b3044ee6",
+          "image": "former-meetings/ich2026/excursion/dsc-6066-b3044ee6.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6066-b3044ee6-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6066.JPG"
+        },
+        {
+          "id": "dsc-6068-45eb353e",
+          "image": "former-meetings/ich2026/excursion/dsc-6068-45eb353e.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6068-45eb353e-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6068.JPG"
+        },
+        {
+          "id": "dsc-6070-d44f5446",
+          "image": "former-meetings/ich2026/excursion/dsc-6070-d44f5446.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6070-d44f5446-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6070.JPG"
+        },
+        {
+          "id": "dsc-6071-d05c89fa",
+          "image": "former-meetings/ich2026/excursion/dsc-6071-d05c89fa.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6071-d05c89fa-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6071.JPG"
+        },
+        {
+          "id": "dsc-6074-ece71f2b",
+          "image": "former-meetings/ich2026/excursion/dsc-6074-ece71f2b.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6074-ece71f2b-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6074.JPG"
+        },
+        {
+          "id": "dsc-6081-1e064a68",
+          "image": "former-meetings/ich2026/excursion/dsc-6081-1e064a68.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6081-1e064a68-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6081.JPG"
+        },
+        {
+          "id": "dsc-6087-a976ae20",
+          "image": "former-meetings/ich2026/excursion/dsc-6087-a976ae20.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6087-a976ae20-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6087.JPG"
+        },
+        {
+          "id": "dsc-6089-3c52d7f2",
+          "image": "former-meetings/ich2026/excursion/dsc-6089-3c52d7f2.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6089-3c52d7f2-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6089.JPG"
+        },
+        {
+          "id": "dsc-6090-2625ca86",
+          "image": "former-meetings/ich2026/excursion/dsc-6090-2625ca86.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6090-2625ca86-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6090.JPG"
+        },
+        {
+          "id": "dsc-6091-077fdb4a",
+          "image": "former-meetings/ich2026/excursion/dsc-6091-077fdb4a.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6091-077fdb4a-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6091.JPG"
+        },
+        {
+          "id": "dsc-6095-607007ff",
+          "image": "former-meetings/ich2026/excursion/dsc-6095-607007ff.webp",
+          "thumbnail": "former-meetings/ich2026/excursion/dsc-6095-607007ff-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6095.JPG"
+        }
+      ]
+    },
+    {
+      "id": "scientific-day-3",
+      "title": "Scientific Meeting · Day 3",
+      "date": "November 4",
+      "photos": [
+        {
+          "id": "20261104-152856-dfa94d0b",
+          "image": "former-meetings/ich2026/scientific-day-3/20261104-152856-dfa94d0b.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/20261104-152856-dfa94d0b-thumb.webp",
+          "width": 1920,
+          "height": 1081,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "20261104_152856.jpg"
+        },
+        {
+          "id": "dsc-6111-e826b853",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6111-e826b853.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6111-e826b853-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6111.JPG"
+        },
+        {
+          "id": "dsc-6113-309e6c2f",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6113-309e6c2f.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6113-309e6c2f-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6113.JPG"
+        },
+        {
+          "id": "dsc-6123-b4b32be9",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6123-b4b32be9.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6123-b4b32be9-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6123.JPG"
+        },
+        {
+          "id": "dsc-6127-691b84ca",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6127-691b84ca.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6127-691b84ca-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6127.JPG"
+        },
+        {
+          "id": "dsc-6141-f88d7cf5",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6141-f88d7cf5.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6141-f88d7cf5-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6141.JPG"
+        },
+        {
+          "id": "dsc-6147-f71c317a",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6147-f71c317a.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6147-f71c317a-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6147.JPG"
+        },
+        {
+          "id": "dsc-6152-9c6c62d9",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6152-9c6c62d9.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6152-9c6c62d9-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6152.JPG"
+        },
+        {
+          "id": "dsc-6153-8599f0e8",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6153-8599f0e8.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6153-8599f0e8-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6153.JPG"
+        },
+        {
+          "id": "dsc-6154-d1f8ba33",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6154-d1f8ba33.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6154-d1f8ba33-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6154.JPG"
+        },
+        {
+          "id": "dsc-6158-0ffa50af",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6158-0ffa50af.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6158-0ffa50af-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6158.JPG"
+        },
+        {
+          "id": "dsc-6160-589c14ff",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6160-589c14ff.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6160-589c14ff-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6160.JPG"
+        },
+        {
+          "id": "dsc-6162-e268b2df",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6162-e268b2df.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6162-e268b2df-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6162.JPG"
+        },
+        {
+          "id": "dsc-6163-2bda4b37",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6163-2bda4b37.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6163-2bda4b37-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6163.JPG"
+        },
+        {
+          "id": "dsc-6172-f2882ce4",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6172-f2882ce4.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6172-f2882ce4-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6172.JPG"
+        },
+        {
+          "id": "dsc-6177-b6641f0c",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6177-b6641f0c.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6177-b6641f0c-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6177.JPG"
+        },
+        {
+          "id": "dsc-6178-7d518216",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6178-7d518216.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6178-7d518216-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6178.JPG"
+        },
+        {
+          "id": "dsc-6180-3cfcc196",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6180-3cfcc196.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6180-3cfcc196-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6180.JPG"
+        },
+        {
+          "id": "dsc-6193-cfa65769",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6193-cfa65769.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6193-cfa65769-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6193.JPG"
+        },
+        {
+          "id": "dsc-6198-1e02242d",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6198-1e02242d.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6198-1e02242d-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6198.JPG"
+        },
+        {
+          "id": "dsc-6201-5244ef52",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6201-5244ef52.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6201-5244ef52-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6201.JPG"
+        },
+        {
+          "id": "dsc-6202-087ea659",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6202-087ea659.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6202-087ea659-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6202.JPG"
+        },
+        {
+          "id": "dsc-6209-ca7a8715",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6209-ca7a8715.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6209-ca7a8715-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6209.JPG"
+        },
+        {
+          "id": "dsc-6211-92d15f2c",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6211-92d15f2c.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6211-92d15f2c-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6211.JPG"
+        },
+        {
+          "id": "dsc-6213-f4149919",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6213-f4149919.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6213-f4149919-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6213.JPG"
+        },
+        {
+          "id": "dsc-6214-02929ad8",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6214-02929ad8.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6214-02929ad8-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6214.JPG"
+        },
+        {
+          "id": "dsc-6217-a780be39",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6217-a780be39.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6217-a780be39-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6217.JPG"
+        },
+        {
+          "id": "dsc-6221-21108210",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6221-21108210.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6221-21108210-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6221.JPG"
+        },
+        {
+          "id": "dsc-6227-3b02e5bc",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6227-3b02e5bc.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6227-3b02e5bc-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6227.JPG"
+        },
+        {
+          "id": "dsc-6231-c5f33df4",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6231-c5f33df4.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6231-c5f33df4-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6231.JPG"
+        },
+        {
+          "id": "dsc-6232-08412c80",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6232-08412c80.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6232-08412c80-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6232.JPG"
+        },
+        {
+          "id": "dsc-6235-20271ec4",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6235-20271ec4.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6235-20271ec4-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6235.JPG"
+        },
+        {
+          "id": "dsc-6236-25c64a0b",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6236-25c64a0b.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6236-25c64a0b-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6236.JPG"
+        },
+        {
+          "id": "dsc-6240-572d354c",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6240-572d354c.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6240-572d354c-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6240.JPG"
+        },
+        {
+          "id": "dsc-6242-88a65a5e",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6242-88a65a5e.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6242-88a65a5e-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6242.JPG"
+        },
+        {
+          "id": "dsc-6244-da529673",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6244-da529673.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6244-da529673-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6244.JPG"
+        },
+        {
+          "id": "dsc-6249-df0021d1",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6249-df0021d1.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6249-df0021d1-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6249.JPG"
+        },
+        {
+          "id": "dsc-6256-fa8623a6",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6256-fa8623a6.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6256-fa8623a6-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6256.JPG"
+        },
+        {
+          "id": "dsc-6259-89d0976a",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6259-89d0976a.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6259-89d0976a-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6259.JPG"
+        },
+        {
+          "id": "dsc-6264-9bbb050a",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6264-9bbb050a.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6264-9bbb050a-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6264.JPG"
+        },
+        {
+          "id": "dsc-6265-a79585ca",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6265-a79585ca.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6265-a79585ca-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6265.JPG"
+        },
+        {
+          "id": "dsc-6267-a70ee3f0",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6267-a70ee3f0.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6267-a70ee3f0-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6267.JPG"
+        },
+        {
+          "id": "dsc-6274-15d1e5aa",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6274-15d1e5aa.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6274-15d1e5aa-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6274.JPG"
+        },
+        {
+          "id": "dsc-6281-94cc505a",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6281-94cc505a.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6281-94cc505a-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6281.JPG"
+        },
+        {
+          "id": "dsc-6286-96b625b6",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6286-96b625b6.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6286-96b625b6-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6286.JPG"
+        },
+        {
+          "id": "dsc-6292-00e102b8",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6292-00e102b8.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6292-00e102b8-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6292.JPG"
+        },
+        {
+          "id": "dsc-6297-ff024c8f",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6297-ff024c8f.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6297-ff024c8f-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6297.JPG"
+        },
+        {
+          "id": "dsc-6298-1d6982a6",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6298-1d6982a6.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6298-1d6982a6-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6298.JPG"
+        },
+        {
+          "id": "dsc-6306-b71eab6a",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6306-b71eab6a.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6306-b71eab6a-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6306.JPG"
+        },
+        {
+          "id": "dsc-6308-be401c6f",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6308-be401c6f.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6308-be401c6f-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6308.JPG"
+        },
+        {
+          "id": "dsc-6316-12fc137b",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6316-12fc137b.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6316-12fc137b-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6316.JPG"
+        },
+        {
+          "id": "dsc-6318-4df55ff8",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6318-4df55ff8.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6318-4df55ff8-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6318.JPG"
+        },
+        {
+          "id": "dsc-6319-1d19f7dd",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6319-1d19f7dd.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6319-1d19f7dd-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6319.JPG"
+        },
+        {
+          "id": "dsc-6330-3f06164c",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6330-3f06164c.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6330-3f06164c-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6330.JPG"
+        },
+        {
+          "id": "dsc-6332-f8df7fd0",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6332-f8df7fd0.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6332-f8df7fd0-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6332.JPG"
+        },
+        {
+          "id": "dsc-6338-e0f1c64f",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6338-e0f1c64f.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6338-e0f1c64f-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6338.JPG"
+        },
+        {
+          "id": "dsc-6340-24329f93",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6340-24329f93.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6340-24329f93-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6340.JPG"
+        },
+        {
+          "id": "dsc-6342-f1a3c916",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6342-f1a3c916.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6342-f1a3c916-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6342.JPG"
+        },
+        {
+          "id": "dsc-6343-3b7b276a",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6343-3b7b276a.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6343-3b7b276a-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6343.JPG"
+        },
+        {
+          "id": "dsc-6346-93007ca2",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6346-93007ca2.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6346-93007ca2-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6346.JPG"
+        },
+        {
+          "id": "dsc-6350-43f035a2",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6350-43f035a2.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6350-43f035a2-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6350.JPG"
+        },
+        {
+          "id": "dsc-6355-40f25595",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6355-40f25595.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6355-40f25595-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6355.JPG"
+        },
+        {
+          "id": "dsc-6357-ddeb37ef",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6357-ddeb37ef.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6357-ddeb37ef-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6357.JPG"
+        },
+        {
+          "id": "dsc-6358-ca496cc1",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6358-ca496cc1.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6358-ca496cc1-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6358.JPG"
+        },
+        {
+          "id": "dsc-6359-bc0ec7b4",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6359-bc0ec7b4.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6359-bc0ec7b4-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6359.JPG"
+        },
+        {
+          "id": "dsc-6364-e3531f36",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6364-e3531f36.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6364-e3531f36-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6364.JPG"
+        },
+        {
+          "id": "dsc-6366-79c2fb4b",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6366-79c2fb4b.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6366-79c2fb4b-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6366.JPG"
+        },
+        {
+          "id": "dsc-6367-d76b5ebd",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6367-d76b5ebd.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6367-d76b5ebd-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6367.JPG"
+        },
+        {
+          "id": "dsc-6368-216701ae",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6368-216701ae.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6368-216701ae-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6368.JPG"
+        },
+        {
+          "id": "dsc-6370-9ea03835",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6370-9ea03835.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6370-9ea03835-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6370.JPG"
+        },
+        {
+          "id": "dsc-6378-3400693e",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6378-3400693e.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6378-3400693e-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6378.JPG"
+        },
+        {
+          "id": "dsc-6379-d73ccbf5",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6379-d73ccbf5.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6379-d73ccbf5-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6379.JPG"
+        },
+        {
+          "id": "dsc-6383-cbea6a2f",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6383-cbea6a2f.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6383-cbea6a2f-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6383.JPG"
+        },
+        {
+          "id": "dsc-6391-c239187e",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6391-c239187e.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6391-c239187e-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6391.JPG"
+        },
+        {
+          "id": "dsc-6392-62a93a78",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6392-62a93a78.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6392-62a93a78-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6392.JPG"
+        },
+        {
+          "id": "dsc-6395-599a1242",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6395-599a1242.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6395-599a1242-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6395.JPG"
+        },
+        {
+          "id": "dsc-6398-5f1b0fcf",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6398-5f1b0fcf.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6398-5f1b0fcf-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6398.JPG"
+        },
+        {
+          "id": "dsc-6400-fc696edf",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6400-fc696edf.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6400-fc696edf-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6400.JPG"
+        },
+        {
+          "id": "dsc-6403-cbd6ee80",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6403-cbd6ee80.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6403-cbd6ee80-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6403.JPG"
+        },
+        {
+          "id": "dsc-6406-0332d6c3",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6406-0332d6c3.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6406-0332d6c3-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6406.JPG"
+        },
+        {
+          "id": "dsc-6412-3e644528",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6412-3e644528.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6412-3e644528-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6412.JPG"
+        },
+        {
+          "id": "dsc-6419-71989b9e",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6419-71989b9e.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6419-71989b9e-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6419.JPG"
+        },
+        {
+          "id": "dsc-6421-396c5c1c",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6421-396c5c1c.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6421-396c5c1c-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6421.JPG"
+        },
+        {
+          "id": "dsc-6424-dfa534bc",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6424-dfa534bc.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6424-dfa534bc-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6424.JPG"
+        },
+        {
+          "id": "dsc-6431-69741acd",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6431-69741acd.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6431-69741acd-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6431.JPG"
+        },
+        {
+          "id": "dsc-6432-e5bb18d2",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6432-e5bb18d2.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6432-e5bb18d2-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6432.JPG"
+        },
+        {
+          "id": "dsc-6440-9fc12768",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6440-9fc12768.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6440-9fc12768-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6440.JPG"
+        },
+        {
+          "id": "dsc-6441-ae648708",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6441-ae648708.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6441-ae648708-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6441.JPG"
+        },
+        {
+          "id": "dsc-6444-76ec5c9c",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6444-76ec5c9c.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6444-76ec5c9c-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6444.JPG"
+        },
+        {
+          "id": "dsc-6445-41842124",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6445-41842124.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6445-41842124-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6445.JPG"
+        },
+        {
+          "id": "dsc-6446-40c0533d",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6446-40c0533d.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6446-40c0533d-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6446.JPG"
+        },
+        {
+          "id": "dsc-6448-ef6be252",
+          "image": "former-meetings/ich2026/scientific-day-3/dsc-6448-ef6be252.webp",
+          "thumbnail": "former-meetings/ich2026/scientific-day-3/dsc-6448-ef6be252-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6448.JPG"
+        }
+      ]
+    },
+    {
+      "id": "closing-dinner",
+      "title": "Closing Dinner",
+      "date": "November 4",
+      "photos": [
+        {
+          "id": "20261104-223340-ef4d3df5",
+          "image": "former-meetings/ich2026/closing-dinner/20261104-223340-ef4d3df5.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/20261104-223340-ef4d3df5-thumb.webp",
+          "width": 1920,
+          "height": 1081,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "20261104_223340.jpg"
+        },
+        {
+          "id": "20261104-230340-f6768bf2",
+          "image": "former-meetings/ich2026/closing-dinner/20261104-230340-f6768bf2.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/20261104-230340-f6768bf2-thumb.webp",
+          "width": 1920,
+          "height": 1081,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "20261104_230340.jpg"
+        },
+        {
+          "id": "20261104-231346-e60bdabe",
+          "image": "former-meetings/ich2026/closing-dinner/20261104-231346-e60bdabe.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/20261104-231346-e60bdabe-thumb.webp",
+          "width": 1920,
+          "height": 1081,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "20261104_231346.jpg"
+        },
+        {
+          "id": "dsc-6454-11f2fd9e",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6454-11f2fd9e.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6454-11f2fd9e-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6454.JPG"
+        },
+        {
+          "id": "dsc-6456-a3ebb7ba",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6456-a3ebb7ba.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6456-a3ebb7ba-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6456.JPG"
+        },
+        {
+          "id": "dsc-6457-9f48210b",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6457-9f48210b.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6457-9f48210b-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6457.JPG"
+        },
+        {
+          "id": "dsc-6458-8f0177bd",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6458-8f0177bd.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6458-8f0177bd-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6458.JPG"
+        },
+        {
+          "id": "dsc-6459-834f75f3",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6459-834f75f3.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6459-834f75f3-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6459.JPG"
+        },
+        {
+          "id": "dsc-6461-14c30d30",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6461-14c30d30.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6461-14c30d30-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6461.JPG"
+        },
+        {
+          "id": "dsc-6467-c8bf4574",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6467-c8bf4574.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6467-c8bf4574-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6467.JPG"
+        },
+        {
+          "id": "dsc-6469-8daae10d",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6469-8daae10d.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6469-8daae10d-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6469.JPG"
+        },
+        {
+          "id": "dsc-6472-7dbbae1b",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6472-7dbbae1b.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6472-7dbbae1b-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6472.JPG"
+        },
+        {
+          "id": "dsc-6476-183a2a98",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6476-183a2a98.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6476-183a2a98-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6476.JPG"
+        },
+        {
+          "id": "dsc-6478-1607f192",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6478-1607f192.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6478-1607f192-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6478.JPG"
+        },
+        {
+          "id": "dsc-6482-7fd21432",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6482-7fd21432.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6482-7fd21432-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6482.JPG"
+        },
+        {
+          "id": "dsc-6484-4f729a1e",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6484-4f729a1e.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6484-4f729a1e-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6484.JPG"
+        },
+        {
+          "id": "dsc-6490-c5eb2ac9",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6490-c5eb2ac9.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6490-c5eb2ac9-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6490.JPG"
+        },
+        {
+          "id": "dsc-6498-61d4bd77",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6498-61d4bd77.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6498-61d4bd77-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6498.JPG"
+        },
+        {
+          "id": "dsc-6508-0c2368d7",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6508-0c2368d7.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6508-0c2368d7-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6508.JPG"
+        },
+        {
+          "id": "dsc-6512-a8a68e16",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6512-a8a68e16.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6512-a8a68e16-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6512.JPG"
+        },
+        {
+          "id": "dsc-6514-186f79c8",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6514-186f79c8.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6514-186f79c8-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6514.JPG"
+        },
+        {
+          "id": "dsc-6517-fba9a926",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6517-fba9a926.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6517-fba9a926-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6517.JPG"
+        },
+        {
+          "id": "dsc-6520-0fd711f9",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6520-0fd711f9.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6520-0fd711f9-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6520.JPG"
+        },
+        {
+          "id": "dsc-6521-3d1e712c",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6521-3d1e712c.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6521-3d1e712c-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6521.JPG"
+        },
+        {
+          "id": "dsc-6522-7fa774dd",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6522-7fa774dd.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6522-7fa774dd-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6522.JPG"
+        },
+        {
+          "id": "dsc-6523-7afb9e78",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6523-7afb9e78.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6523-7afb9e78-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6523.JPG"
+        },
+        {
+          "id": "dsc-6525-832c1fc9",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6525-832c1fc9.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6525-832c1fc9-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6525.JPG"
+        },
+        {
+          "id": "dsc-6526-1a3a0fd4",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6526-1a3a0fd4.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6526-1a3a0fd4-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6526.JPG"
+        },
+        {
+          "id": "dsc-6538-397c0823",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6538-397c0823.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6538-397c0823-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6538.JPG"
+        },
+        {
+          "id": "dsc-6539-78deee10",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6539-78deee10.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6539-78deee10-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6539.JPG"
+        },
+        {
+          "id": "dsc-6542-ae62077c",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6542-ae62077c.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6542-ae62077c-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6542.JPG"
+        },
+        {
+          "id": "dsc-6544-6f36a2fa",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6544-6f36a2fa.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6544-6f36a2fa-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6544.JPG"
+        },
+        {
+          "id": "dsc-6547-12b01db1",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6547-12b01db1.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6547-12b01db1-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6547.JPG"
+        },
+        {
+          "id": "dsc-6549-c7bac517",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6549-c7bac517.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6549-c7bac517-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6549.JPG"
+        },
+        {
+          "id": "dsc-6559-ae239525",
+          "image": "former-meetings/ich2026/closing-dinner/dsc-6559-ae239525.webp",
+          "thumbnail": "former-meetings/ich2026/closing-dinner/dsc-6559-ae239525-thumb.webp",
+          "width": 1079,
+          "height": 1920,
+          "thumbnail_width": 360,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6559.JPG"
+        }
+      ]
+    },
+    {
+      "id": "andv-workshop",
+      "cover_id": "andes-virus-workshop-05-11-62-73dd9ac0",
+      "title": "ANDV Workshop",
+      "date": "November 5",
+      "photos": [
+        {
+          "id": "20261105-161833-cef3234d",
+          "image": "former-meetings/ich2026/andv-workshop/20261105-161833-cef3234d.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/20261105-161833-cef3234d-thumb.webp",
+          "width": 1081,
+          "height": 1920,
+          "thumbnail_width": 360,
+          "thumbnail_height": 640,
+          "source_filename": "20261105_161833.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-10-fdfdeb8b",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-10-fdfdeb8b.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-10-fdfdeb8b-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-10.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-11-30839b42",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-11-30839b42.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-11-30839b42-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-11.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-12-3f2a8bd1",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-12-3f2a8bd1.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-12-3f2a8bd1-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-12.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-16-cceb28eb",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-16-cceb28eb.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-16-cceb28eb-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-16.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-17-a67571c6",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-17-a67571c6.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-17-a67571c6-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-17.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-21-b6dbee2b",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-21-b6dbee2b.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-21-b6dbee2b-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-21.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-22-7fba8b72",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-22-7fba8b72.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-22-7fba8b72-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-22.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-23-e8ba74d7",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-23-e8ba74d7.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-23-e8ba74d7-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-23.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-25-6086bbe3",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-25-6086bbe3.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-25-6086bbe3-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-25.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-26-9a7526f8",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-26-9a7526f8.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-26-9a7526f8-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-26.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-27-5d1439d1",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-27-5d1439d1.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-27-5d1439d1-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-27.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-28-27554d45",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-28-27554d45.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-28-27554d45-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-28.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-29-7cdcb706",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-29-7cdcb706.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-29-7cdcb706-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-29.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-31-139cb873",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-31-139cb873.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-31-139cb873-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "Andes_Virus_Workshop-05-11-31.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-32-6956ec02",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-32-6956ec02.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-32-6956ec02-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-32.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-33-02b27dd3",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-33-02b27dd3.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-33-02b27dd3-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-33.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-34-40f198c6",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-34-40f198c6.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-34-40f198c6-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-34.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-35-364ab238",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-35-364ab238.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-35-364ab238-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-35.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-36-193dd3c3",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-36-193dd3c3.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-36-193dd3c3-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-36.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-4-d6003de4",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-4-d6003de4.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-4-d6003de4-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-4.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-40-d9d73746",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-40-d9d73746.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-40-d9d73746-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-40.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-44-98bdee82",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-44-98bdee82.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-44-98bdee82-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-44.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-45-a28fa48a",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-45-a28fa48a.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-45-a28fa48a-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-45.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-47-0b6e8e65",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-47-0b6e8e65.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-47-0b6e8e65-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-47.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-48-12c1e57d",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-48-12c1e57d.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-48-12c1e57d-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-48.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-5-9a87a8be",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-5-9a87a8be.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-5-9a87a8be-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-5.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-50-22428457",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-50-22428457.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-50-22428457-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-50.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-52-4edd7ed6",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-52-4edd7ed6.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-52-4edd7ed6-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-52.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-56-89532e7c",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-56-89532e7c.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-56-89532e7c-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-56.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-57-95ca8439",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-57-95ca8439.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-57-95ca8439-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-57.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-59-71153ebf",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-59-71153ebf.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-59-71153ebf-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-59.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-60-1f30f381",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-60-1f30f381.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-60-1f30f381-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-60.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-62-73dd9ac0",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-62-73dd9ac0.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-62-73dd9ac0-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-62.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-64-9335b24d",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-64-9335b24d.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-64-9335b24d-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-64.jpg"
+        },
+        {
+          "id": "dsc-6572-1cbc6d49",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6572-1cbc6d49.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6572-1cbc6d49-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6572.JPG"
+        },
+        {
+          "id": "dsc-6581-df6cbd7a",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6581-df6cbd7a.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6581-df6cbd7a-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6581.JPG"
+        },
+        {
+          "id": "dsc-6585-476f00bd",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6585-476f00bd.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6585-476f00bd-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6585.JPG"
+        },
+        {
+          "id": "dsc-6588-735a92bc",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6588-735a92bc.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6588-735a92bc-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6588.JPG"
+        },
+        {
+          "id": "dsc-6591-d3680a94",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6591-d3680a94.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6591-d3680a94-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6591.JPG"
+        },
+        {
+          "id": "dsc-6600-e89170f4",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6600-e89170f4.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6600-e89170f4-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6600.JPG"
+        },
+        {
+          "id": "dsc-6612-cc9569c1",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6612-cc9569c1.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6612-cc9569c1-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6612.JPG"
+        },
+        {
+          "id": "dsc-6619-2abd3fdd",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6619-2abd3fdd.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6619-2abd3fdd-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6619.JPG"
+        },
+        {
+          "id": "dsc-6625-5d2e6c6d",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6625-5d2e6c6d.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6625-5d2e6c6d-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6625.JPG"
+        },
+        {
+          "id": "dsc-6628-d3d86014",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6628-d3d86014.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6628-d3d86014-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6628.JPG"
+        },
+        {
+          "id": "dsc-6629-7a410108",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6629-7a410108.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6629-7a410108-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6629.JPG"
+        },
+        {
+          "id": "dsc-6630-ccc83813",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6630-ccc83813.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6630-ccc83813-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6630.JPG"
+        },
+        {
+          "id": "dsc-6636-5285eac9",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6636-5285eac9.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6636-5285eac9-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6636.JPG"
+        },
+        {
+          "id": "dsc-6639-76e11fd2",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6639-76e11fd2.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6639-76e11fd2-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6639.JPG"
+        },
+        {
+          "id": "dsc-6644-e74e4eb5",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6644-e74e4eb5.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6644-e74e4eb5-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6644.JPG"
+        },
+        {
+          "id": "dsc-6670-78745d5a",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6670-78745d5a.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6670-78745d5a-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6670.JPG"
+        },
+        {
+          "id": "dsc-6673-1cc62f15",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6673-1cc62f15.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6673-1cc62f15-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6673.JPG"
+        },
+        {
+          "id": "dsc-6675-19ca322d",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6675-19ca322d.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6675-19ca322d-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6675.JPG"
+        },
+        {
+          "id": "dsc-6681-28166805",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6681-28166805.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6681-28166805-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6681.JPG"
+        },
+        {
+          "id": "dsc-6683-cbca2c9c",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6683-cbca2c9c.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6683-cbca2c9c-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6683.JPG"
+        },
+        {
+          "id": "dsc-6707-aa485efd",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6707-aa485efd.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6707-aa485efd-thumb.webp",
+          "width": 1079,
+          "height": 1920,
+          "thumbnail_width": 360,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6707.JPG"
+        },
+        {
+          "id": "dsc-6711-b04abf2f",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6711-b04abf2f.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6711-b04abf2f-thumb.webp",
+          "width": 1079,
+          "height": 1920,
+          "thumbnail_width": 360,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6711.JPG"
+        },
+        {
+          "id": "dsc-6730-f2f4ee9f",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6730-f2f4ee9f.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6730-f2f4ee9f-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6730.JPG"
+        },
+        {
+          "id": "dsc-6748-0fdbe3f6",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6748-0fdbe3f6.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6748-0fdbe3f6-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6748.JPG"
+        },
+        {
+          "id": "dsc-6749-3dfb1e7b",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6749-3dfb1e7b.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6749-3dfb1e7b-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6749.JPG"
+        },
+        {
+          "id": "dsc-6750-52580620",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6750-52580620.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6750-52580620-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6750.JPG"
+        },
+        {
+          "id": "dsc-6755-4bb375f0",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6755-4bb375f0.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6755-4bb375f0-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6755.JPG"
+        },
+        {
+          "id": "dsc-6760-104f67a8",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6760-104f67a8.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6760-104f67a8-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6760.JPG"
+        },
+        {
+          "id": "dsc-6767-e5275f06",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6767-e5275f06.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6767-e5275f06-thumb.webp",
+          "width": 1079,
+          "height": 1920,
+          "thumbnail_width": 360,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6767.JPG"
+        },
+        {
+          "id": "dsc-6770-e1cfc202",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6770-e1cfc202.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6770-e1cfc202-thumb.webp",
+          "width": 1920,
+          "height": 1079,
+          "thumbnail_width": 640,
+          "thumbnail_height": 360,
+          "source_filename": "DSC_6770.JPG"
+        },
+        {
+          "id": "dsc-6778-faf8ad4c",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6778-faf8ad4c.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6778-faf8ad4c-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6778.JPG"
+        },
+        {
+          "id": "dsc-6781-2d234cb5",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6781-2d234cb5.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6781-2d234cb5-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6781.JPG"
+        },
+        {
+          "id": "dsc-6787-e1b3d0ac",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6787-e1b3d0ac.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6787-e1b3d0ac-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6787.JPG"
+        },
+        {
+          "id": "dsc-6796-c4ac7c29",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6796-c4ac7c29.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6796-c4ac7c29-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6796.JPG"
+        },
+        {
+          "id": "dsc-6799-7573ac67",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6799-7573ac67.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6799-7573ac67-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6799.JPG"
+        },
+        {
+          "id": "dsc-6801-fb50e8af",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6801-fb50e8af.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6801-fb50e8af-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6801.JPG"
+        },
+        {
+          "id": "dsc-6807-e399ada2",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6807-e399ada2.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6807-e399ada2-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6807.JPG"
+        },
+        {
+          "id": "dsc-6809-613012ea",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6809-613012ea.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6809-613012ea-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6809.JPG"
+        },
+        {
+          "id": "dsc-6818-050e31a8",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6818-050e31a8.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6818-050e31a8-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6818.JPG"
+        },
+        {
+          "id": "dsc-6819-8e7ea8cd",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6819-8e7ea8cd.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6819-8e7ea8cd-thumb.webp",
+          "width": 1079,
+          "height": 1920,
+          "thumbnail_width": 360,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6819.JPG"
+        },
+        {
+          "id": "dsc-6825-98e944f5",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6825-98e944f5.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6825-98e944f5-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6825.JPG"
+        },
+        {
+          "id": "dsc-6826-4086701d",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6826-4086701d.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6826-4086701d-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6826.JPG"
+        },
+        {
+          "id": "dsc-6828-8060746d",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6828-8060746d.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6828-8060746d-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6828.JPG"
+        },
+        {
+          "id": "dsc-6831-915de18a",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6831-915de18a.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6831-915de18a-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6831.JPG"
+        },
+        {
+          "id": "dsc-6832-b2dd48c1",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6832-b2dd48c1.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6832-b2dd48c1-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6832.JPG"
+        },
+        {
+          "id": "dsc-6839-11a9b631",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6839-11a9b631.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6839-11a9b631-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6839.JPG"
+        },
+        {
+          "id": "dsc-6840-4df8acaa",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6840-4df8acaa.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6840-4df8acaa-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6840.JPG"
+        },
+        {
+          "id": "dsc-6841-88680b3e",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6841-88680b3e.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6841-88680b3e-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6841.JPG"
+        },
+        {
+          "id": "dsc-6857-3a98cf59",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6857-3a98cf59.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6857-3a98cf59-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6857.JPG"
+        },
+        {
+          "id": "dsc-6860-0361c1f2",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6860-0361c1f2.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6860-0361c1f2-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6860.JPG"
+        },
+        {
+          "id": "dsc-6863-1661ef72",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6863-1661ef72.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6863-1661ef72-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6863.JPG"
+        },
+        {
+          "id": "dsc-6868-ed4c77dc",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6868-ed4c77dc.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6868-ed4c77dc-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6868.JPG"
+        },
+        {
+          "id": "dsc-6872-6b61fb6b",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6872-6b61fb6b.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6872-6b61fb6b-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6872.JPG"
+        },
+        {
+          "id": "dsc-6875-5a1fa0a5",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6875-5a1fa0a5.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6875-5a1fa0a5-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6875.JPG"
+        }
+      ]
+    }
+  ]
+}

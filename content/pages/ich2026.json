@@ -33,8 +33,8 @@
         ],
         "actions": [
           {
-            "label": "Registration",
-            "page_id": "registration",
+            "label": "View photo gallery",
+            "page_id": "ich2026-gallery",
             "style": "primary"
           },
           {
@@ -48,6 +48,19 @@
             "style": "secondary"
           }
         ]
+      }
+    },
+    {
+      "id": "conference-memories",
+      "type": "gallery_teaser",
+      "visible": true,
+      "data": {
+        "eyebrow": "ICH2026 · Conference memories",
+        "heading": "Science, connections & shared moments.",
+        "paragraphs": ["A photographic record of the meeting in Puerto Varas, from the opening evening to the Andes Virus Workshop."],
+        "page_id": "ich2026-gallery",
+        "collection": "conference_photos",
+        "label": "Explore the ICH2026 gallery"
       }
     },
     {
@@ -70,8 +83,8 @@
             "value": "November 1, 19:00"
           },
           {
-            "label": "Registration",
-            "value": "Until October 15, 2026"
+            "label": "Edition",
+            "value": "XIII · Puerto Varas, Chile"
           }
         ]
       }
@@ -85,8 +98,8 @@
         "eyebrow": "Venue & Location",
         "heading": "Puerto Varas, located in the scenic Lake District in Southern Chile.",
         "paragraphs": [
-          "The 2026 meeting of the International Society for Hantaviruses will take place in Puerto Varas, located in the scenic Lake District in Southern Chile widely regarded as a gateway to Patagonia. The city sits at the foot of the iconic Osorno Volcano in southern Chile, providing a spectacular natural setting for scientific exchange and collaboration.",
-          "The conference will bring together scientists and health professionals from around the world to share and discuss the latest advances across a broad range of topics, including viral epidemiology, ecology, virus-host interactions, pathogenesis, clinical aspects of disease, and the development of vaccines and therapeutics."
+          "The 2026 meeting of the International Society for Hantaviruses took place in Puerto Varas, located in the scenic Lake District in Southern Chile widely regarded as a gateway to Patagonia. The city sits at the foot of the iconic Osorno Volcano in southern Chile, providing a spectacular natural setting for scientific exchange and collaboration.",
+          "The conference brought together scientists and health professionals from around the world to share and discuss the latest advances across a broad range of topics, including viral epidemiology, ecology, virus-host interactions, pathogenesis, clinical aspects of disease, and the development of vaccines and therapeutics."
         ]
       }
     },
@@ -99,7 +112,7 @@
         "eyebrow": "Scientific Program & Keynote Speakers",
         "heading": "An excellent platform for students, postdoctoral researchers, and established scientists.",
         "paragraphs": [
-          "The International Conference on Hantaviruses will provide an excellent platform for students, postdoctoral researchers, and established scientists to present their latest findings and engage with the international hantavirus research community. In addition, the organizing committee has invited leading experts in the field to deliver keynote lectures highlighting cutting-edge developments in hantavirus research."
+          "The International Conference on Hantaviruses provided a platform for students, postdoctoral researchers, and established scientists to present their latest findings and engage with the international hantavirus research community. Leading experts delivered keynote lectures highlighting cutting-edge developments in hantavirus research."
         ]
       }
     },
@@ -143,9 +156,8 @@
         "eyebrow": "Specialized Workshop: Andes Virus",
         "heading": "A one-day workshop dedicated to Andes virus.",
         "paragraphs": [
-          "In addition to the traditional ICH scientific program, the conference will feature on November 5 a one-day workshop dedicated to Andes virus, a pathogen of particular regional importance. This workshop will provide an opportunity for researchers, clinicians, and public health professionals to discuss the local epidemiology, clinical management, and public health response to hantavirus cardiopulmonary syndrome.",
-          "Local authorities and decision-makers will also be invited to participate, fostering dialogue between the scientific community and public health stakeholders.",
-          "Registration is open. Participants may attend the ANDV Workshop without registering for ICH2026, or add the workshop to their conference registration."
+          "On November 5, the conference was followed by a one-day workshop dedicated to Andes virus, a pathogen of particular regional importance. Researchers, clinicians, and public health professionals discussed local epidemiology, clinical management, and the public health response to hantavirus cardiopulmonary syndrome.",
+          "The workshop fostered dialogue between the scientific community and public health stakeholders. Photographs from the workshop are included in the conference gallery."
         ],
         "actions": [
           {
@@ -154,8 +166,8 @@
             "style": "primary"
           },
           {
-            "label": "Workshop registration",
-            "page_id": "registration",
+            "label": "Workshop photographs",
+            "url": "former-meetings/ich2026/#andv-workshop",
             "style": "secondary-light"
           }
         ]

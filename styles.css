@@ -9271,3 +9271,322 @@ body:is([data-page="about"], [data-page="home"]) .advisor-copy {
     padding: 15px 14px;
   }
 }
+
+/* Conference photographs and the post-meeting archive entry points. */
+.hero-panel.conference-memory {
+  display: block;
+  padding: 0;
+  overflow: hidden;
+}
+
+.conference-memory-link {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  color: var(--white);
+  text-decoration: none;
+}
+
+.conference-memory-link > picture,
+.conference-memory-link > picture img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 170px;
+  object-fit: cover;
+  object-position: center 65%;
+}
+
+.conference-memory-copy {
+  display: grid;
+  align-content: center;
+  gap: 9px;
+  padding: 20px;
+  font-size: 13px;
+}
+
+.conference-memory-copy > strong {
+  font-size: 22px;
+  line-height: 1.15;
+}
+
+.conference-memory-kicker {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.conference-memory-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.conference-memory-action img {
+  filter: invert(1);
+}
+
+.memory-teaser-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.memory-teaser-heading .section-heading {
+  max-width: 700px;
+}
+
+.memory-teaser-heading h2 {
+  font-size: 38px;
+  line-height: 1.15;
+}
+
+.memory-previews {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.memory-preview,
+.album-index-link {
+  min-width: 0;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.memory-preview picture,
+.album-index-link picture {
+  display: block;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+
+.memory-preview img,
+.album-index-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 45%;
+  transition: transform 180ms ease;
+}
+
+.memory-preview:hover img,
+.album-index-link:hover img {
+  transform: scale(1.025);
+}
+
+.memory-preview > span {
+  font-size: 17px;
+  font-weight: 750;
+}
+
+.memory-total {
+  margin: 24px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+main .conference-albums .section-heading p:not(.eyebrow),
+main .memory-teaser .section-heading p:not(.eyebrow) {
+  text-align: left;
+}
+
+#albums,
+.photo-album {
+  scroll-margin-top: calc(var(--header-height) + 35px);
+}
+
+.album-index {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px 20px;
+  padding: 12px 0 64px;
+}
+
+.album-index-link strong,
+.album-index-link > span {
+  display: block;
+}
+
+.album-index-link strong {
+  font-size: 18px;
+  line-height: 1.35;
+  margin-bottom: 7px;
+}
+
+.album-index-link > span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.photo-album {
+  padding: 52px 0;
+  border-top: 1px solid var(--line);
+}
+
+.photo-album-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 26px;
+}
+
+.photo-album-heading h3 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.album-back {
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 750;
+  text-underline-offset: 5px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+#group-pictures .photo-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.photo-tile {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 3 / 2;
+  background: var(--surface);
+}
+
+.photo-tile[hidden],
+.photo-album-footer button[hidden],
+.lightbox-nav[hidden] {
+  display: none;
+}
+
+.photo-tile img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  transition: transform 180ms ease;
+}
+
+.photo-tile:hover img {
+  transform: scale(1.025);
+}
+
+.photo-tile-number {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 4px 7px;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+
+.photo-album-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 22px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.photo-tile:focus-visible,
+.album-index-link:focus-visible,
+.memory-preview:focus-visible,
+.conference-memory-link:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 4px;
+}
+
+.lightbox-close {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.lightbox-frame {
+  touch-action: pan-y pinch-zoom;
+}
+
+.lightbox {
+  background: rgba(3, 12, 22, 0.97);
+}
+
+body.lightbox-open .back-to-top {
+  visibility: hidden;
+}
+
+body[data-page="ich2026-gallery"] .page-hero img {
+  object-position: center 60%;
+}
+
+@media (max-width: 780px) {
+  .conference-memory-link {
+    grid-template-columns: 115px minmax(0, 1fr);
+  }
+
+  .conference-memory-copy {
+    padding: 14px;
+    gap: 8px;
+  }
+
+  .conference-memory-copy > strong {
+    font-size: 19px;
+  }
+
+  .conference-memory-link > picture,
+  .conference-memory-link > picture img {
+    min-height: 165px;
+  }
+
+  .album-index {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 14px;
+  }
+
+  .album-index-link strong {
+    font-size: 16px;
+  }
+
+  .memory-teaser-heading h2 {
+    font-size: 30px;
+  }
+
+  .photo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .photo-album-heading h3 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 520px) {
+  .memory-previews {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 26px;
+  }
+}
