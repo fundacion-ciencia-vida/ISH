@@ -86,13 +86,20 @@ def main() -> None:
             print(f"{title}: {len(photos)} photos", flush=True)
     target = ROOT / "content/collections/conference_photos.json"
     previous = json.loads(target.read_text(encoding="utf-8")).get("items", []) if target.exists() else []
-    covers = {album["id"]: album.get("cover_id") for album in previous}
-    for album in albums:
-        if any(photo["id"] == covers.get(album["id"]) for photo in album["photos"]):
-            album["cover_id"] = covers[album["id"]]
+    preserve_editorial_order(albums, previous)
     target.write_text(json.dumps({"items": albums}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"Imported {sum(len(album['photos']) for album in albums)} photos into {target}")
     update_manifest(albums)
+
+
+def preserve_editorial_order(albums: list[dict[str, object]], previous: list[dict[str, object]]) -> None:
+    previous_lookup = {album["id"]: album for album in previous}
+    for album in albums:
+        old = previous_lookup.get(album["id"], {})
+        if any(photo["id"] == old.get("cover_id") for photo in album["photos"]):
+            album["cover_id"] = old["cover_id"]
+        order = {photo["id"]: index for index, photo in enumerate(old.get("photos", []))}
+        album["photos"].sort(key=lambda photo: order.get(photo["id"], len(order)))
 
 
 def update_manifest(albums: list[dict[str, object]]) -> None:

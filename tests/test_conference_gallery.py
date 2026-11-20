@@ -1,11 +1,14 @@
 from html.parser import HTMLParser
 from pathlib import Path
 import unittest
+from unittest.mock import patch
 
 from PIL import Image
 
 from scripts.content_store import load_content_bundle
 from scripts import build_site
+from scripts.import_conference_photos import preserve_editorial_order
+from scripts.prepare_original_photos import prepare
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -68,6 +71,39 @@ class ConferenceGalleryTests(unittest.TestCase):
         self.assertIn('href="former-meetings/ich2026/"', html)
         self.assertIn("Conference memories", html)
         self.assertNotIn('href="ich2026/abstracts-registration/"', html)
+
+    def test_workshop_opening_photos_come_first_without_losing_the_rest(self):
+        album = next(album for album in self.albums if album["id"] == "andv-workshop")
+        self.assertEqual([photo["source_filename"] for photo in album["photos"][:2]], ["DSC_6581.JPG", "DSC_6585.JPG"])
+        self.assertEqual(album["photos"][2]["source_filename"], "20261105_161833.jpg")
+        self.assertEqual(len(album["photos"]), 89)
+
+    def test_reimport_preserves_custom_order_cover_and_appends_new_photos(self):
+        previous = [{"id": "album", "cover_id": "b", "photos": [{"id": "b"}, {"id": "a"}]}]
+        albums = [{"id": "album", "photos": [{"id": "a"}, {"id": "b"}, {"id": "c"}]}]
+        preserve_editorial_order(albums, previous)
+        self.assertEqual([photo["id"] for photo in albums[0]["photos"]], ["b", "a", "c"])
+        self.assertEqual(albums[0]["cover_id"], "b")
+
+    def test_full_resolution_files_cannot_be_exported_into_the_repository(self):
+        with self.assertRaisesRegex(ValueError, "outside the Git"):
+            prepare([], ROOT / "assets/images/originals", "exiftool")
+
+    def test_original_download_is_separate_from_the_fast_preview(self):
+        photo = self.albums[0]["photos"][0]
+        downloads = [{"id": photo["id"], "url": "https://drive.google.com/file/d/test-photo/view",
+                      "width": 5568, "height": 3712, "bytes": 12_000_000}]
+        section = {"id": "albums", "type": "photo_albums", "data": {"collection": "conference_photos"}}
+        with patch.dict(build_site.COLLECTIONS, {"photo_downloads": downloads}):
+            parser = GalleryParser(build_site.render_photo_albums("../../", section))
+        self.assertEqual(parser.tiles[0]["data-lightbox-download"], downloads[0]["url"])
+        self.assertIn("5,568 × 3,712 px", parser.tiles[0]["data-lightbox-download-info"])
+        self.assertTrue(parser.tiles[0]["data-lightbox-src"].endswith(".webp"))
+        self.assertNotIn("data-lightbox-download", parser.tiles[1])
+        downloads[0]["url"] = "javascript:alert(1)"
+        with patch.dict(build_site.COLLECTIONS, {"photo_downloads": downloads}):
+            parser = GalleryParser(build_site.render_photo_albums("../../", section))
+        self.assertNotIn("data-lightbox-download", parser.tiles[0])
 
     def test_former_meetings_has_one_completed_2026_entry(self):
         timeline = build_site.former_meetings_timeline("")

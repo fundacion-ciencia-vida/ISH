@@ -9538,6 +9538,66 @@ body.lightbox-open .back-to-top {
   visibility: hidden;
 }
 
+.lightbox-download-panel {
+  position: fixed;
+  top: 18px;
+  left: 18px;
+  display: grid;
+  gap: 8px;
+  max-width: calc(100vw - 100px);
+  color: #fff;
+}
+
+.lightbox-download-panel[hidden] {
+  display: none;
+}
+
+.lightbox-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  width: fit-content;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 750;
+  line-height: 1.3;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.lightbox-download:hover,
+.lightbox-download:focus-visible {
+  background: rgba(255, 255, 255, 0.24);
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+.lightbox-download-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  background: currentColor;
+  mask: url("assets/icons/download.svg") center / contain no-repeat;
+}
+
+.lightbox-download-info {
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.4;
+}
+
+.lightbox.has-download {
+  padding-top: 110px;
+  padding-bottom: 70px;
+}
+
+.lightbox.has-download .lightbox-frame img {
+  max-height: min(64svh, calc(100svh - 250px));
+}
+
 body[data-page="ich2026-gallery"] .page-hero img {
   object-position: center 60%;
 }

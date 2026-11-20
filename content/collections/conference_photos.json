@@ -3499,6 +3499,26 @@
       "date": "November 5",
       "photos": [
         {
+          "id": "dsc-6581-df6cbd7a",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6581-df6cbd7a.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6581-df6cbd7a-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6581.JPG"
+        },
+        {
+          "id": "dsc-6585-476f00bd",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6585-476f00bd.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6585-476f00bd-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6585.JPG"
+        },
+        {
           "id": "20261105-161833-cef3234d",
           "image": "former-meetings/ich2026/andv-workshop/20261105-161833-cef3234d.webp",
           "thumbnail": "former-meetings/ich2026/andv-workshop/20261105-161833-cef3234d-thumb.webp",
@@ -3857,26 +3877,6 @@
           "thumbnail_width": 640,
           "thumbnail_height": 427,
           "source_filename": "DSC_6572.JPG"
-        },
-        {
-          "id": "dsc-6581-df6cbd7a",
-          "image": "former-meetings/ich2026/andv-workshop/dsc-6581-df6cbd7a.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6581-df6cbd7a-thumb.webp",
-          "width": 1920,
-          "height": 1280,
-          "thumbnail_width": 640,
-          "thumbnail_height": 427,
-          "source_filename": "DSC_6581.JPG"
-        },
-        {
-          "id": "dsc-6585-476f00bd",
-          "image": "former-meetings/ich2026/andv-workshop/dsc-6585-476f00bd.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6585-476f00bd-thumb.webp",
-          "width": 1920,
-          "height": 1280,
-          "thumbnail_width": 640,
-          "thumbnail_height": 427,
-          "source_filename": "DSC_6585.JPG"
         },
         {
           "id": "dsc-6588-735a92bc",

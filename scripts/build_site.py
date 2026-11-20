@@ -6,6 +6,7 @@ import os
 import re
 from html import escape
 from pathlib import Path
+from urllib.parse import urlparse
 
 try:
     from .content_store import collection_item_complete, load_content_bundle, sanitize_rich_html
@@ -2973,6 +2974,7 @@ def render_gallery_teaser(prefix: str, section: dict[str, object]) -> str:
 def render_photo_albums(prefix: str, section: dict[str, object]) -> str:
     data = section["data"]
     albums = COLLECTIONS.get(str(data.get("collection", "conference_photos")), [])
+    downloads = {item["id"]: item for item in COLLECTIONS.get("photo_downloads", [])}
     index_links = []
     album_sections = []
     for album_index, album in enumerate(albums, start=1):
@@ -2990,7 +2992,13 @@ def render_photo_albums(prefix: str, section: dict[str, object]) -> str:
             caption = f"ICH2026 · {album['title']} · Photo {photo_index} of {len(photos)}"
             hidden = " hidden" if photo_index > 12 else ""
             full_src = img(prefix, str(photo["image"]))
-            tiles.append(f'''<a class="photo-tile" href="{full_src}" data-lightbox-src="{full_src}"
+            download = downloads.get(photo["id"], {})
+            download_url = str(download.get("url", ""))
+            download_attrs = ""
+            if urlparse(download_url).scheme == "https" and urlparse(download_url).netloc:
+                size = f"{int(download['width']):,} × {int(download['height']):,} px · {int(download['bytes']) / 1_000_000:.1f} MB"
+                download_attrs = f' data-lightbox-download="{escape(download_url, quote=True)}" data-lightbox-download-info="{escape(size, quote=True)}"'
+            tiles.append(f'''<a class="photo-tile" href="{full_src}" data-lightbox-src="{full_src}"{download_attrs}
               data-lightbox-group="ich2026-{album_id}" data-lightbox-caption="{escape(caption, quote=True)}"
               data-lightbox-alt="{escape(caption, quote=True)}" aria-label="Open {escape(caption, quote=True)}"{hidden}>
               <img src="{img(prefix, str(photo['thumbnail']))}" alt="{escape(caption, quote=True)}"

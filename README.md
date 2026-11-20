@@ -154,10 +154,22 @@ python scripts/validate_site.py
 ```
 
 The importer requires ImageMagick, skips identical images and videos, preserves
-selected `cover_id` values, and writes metadata-free WebP images (1920 px maximum)
+selected `cover_id` values and editorial photo order, and writes metadata-free WebP images (1920 px maximum)
 and thumbnails (640 px maximum). ZIPs, videos and full-resolution originals must
 remain outside Git. The viewer loads only the active image and its neighbours;
 each album initially displays at most 12 thumbnails, with progressive reveal.
+
+Original download links are separate from previews, in
+`content/collections/photo_downloads.json` (`id`, HTTPS `url`, native `width`,
+`height`, and `bytes`). The viewer only displays its download action when a photo
+has a configured link; it never downloads an original just to display a preview.
+
+`scripts/prepare_original_photos.py --output <folder-outside-Git> <ZIPs...>`
+requires Pillow and ExifTool. It extracts the selected native-resolution JPEGs,
+removes personal/location metadata without recompressing image pixels, preserves
+orientation and ICC colour profiles, and creates a local upload manifest. Upload
+those files to the public-read-only Drive folder, not to GitHub. Give only the
+upload account Editor access, never the public link.
 
 Images are now stored locally under `assets/images/`, so the published page does
 not depend on Google Sites image hotlinks. Keep replacing or optimizing those

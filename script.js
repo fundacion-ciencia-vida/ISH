@@ -161,6 +161,10 @@ if (lightboxLinks.length) {
   lightbox.inert = true;
   lightbox.innerHTML = `
     <button class="lightbox-close" type="button" aria-label="Close image preview"><span aria-hidden="true">×</span></button>
+    <div class="lightbox-download-panel" hidden>
+      <a class="lightbox-download" target="_blank" rel="noopener noreferrer"><span class="lightbox-download-icon" aria-hidden="true"></span>Download original</a>
+      <span class="lightbox-download-info"></span>
+    </div>
     <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">
       <span class="lightbox-nav-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous image</span>
@@ -183,6 +187,9 @@ if (lightboxLinks.length) {
   const lightboxPrev = lightbox.querySelector(".lightbox-prev");
   const lightboxNext = lightbox.querySelector(".lightbox-next");
   const lightboxCount = lightbox.querySelector(".lightbox-count");
+  const downloadPanel = lightbox.querySelector(".lightbox-download-panel");
+  const downloadLink = lightbox.querySelector(".lightbox-download");
+  const downloadInfo = lightbox.querySelector(".lightbox-download-info");
   let lastLightboxTrigger = null;
   let activeLightboxGroup = [];
   let activeLightboxIndex = 0;
@@ -231,12 +238,22 @@ if (lightboxLinks.length) {
     lightbox.classList.add("is-loading");
     lightbox.setAttribute("aria-busy", "true");
     lightboxImage.classList.remove("is-loaded");
+    downloadPanel.hidden = true;
+    downloadLink.removeAttribute("href");
+    lightbox.classList.remove("has-download");
 
     const commitImage = () => {
       if (renderToken !== lightboxRenderToken) return;
       lightboxImage.src = nextSrc;
       lightboxImage.alt = nextAlt;
       lightboxCaption.textContent = caption;
+      const download = item.dataset.lightboxDownload;
+      if (download) {
+        downloadLink.href = download;
+        downloadInfo.textContent = item.dataset.lightboxDownloadInfo || "";
+        downloadPanel.hidden = false;
+        lightbox.classList.add("has-download");
+      }
       syncLightboxNav();
       lightbox.classList.remove("is-loading");
       lightbox.setAttribute("aria-busy", "false");
@@ -268,6 +285,9 @@ if (lightboxLinks.length) {
     lightboxRenderToken += 1;
     lightboxImage.removeAttribute("src");
     lightboxCaption.textContent = "";
+    downloadPanel.hidden = true;
+    downloadLink.removeAttribute("href");
+    lightbox.classList.remove("has-download");
     activeLightboxGroup = [];
     activeLightboxIndex = 0;
     if (lastLightboxTrigger) {
@@ -309,7 +329,7 @@ if (lightboxLinks.length) {
       moveLightbox(event.key === "ArrowLeft" ? -1 : 1);
     }
     if (event.key === "Tab") {
-      const controls = Array.from(lightbox.querySelectorAll("button:not([hidden])"));
+      const controls = Array.from(lightbox.querySelectorAll("button:not([hidden]), a[href]"));
       const index = controls.indexOf(document.activeElement);
       const next = event.shiftKey ? index - 1 : index + 1;
       event.preventDefault();
