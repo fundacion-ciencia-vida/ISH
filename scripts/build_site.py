@@ -2996,7 +2996,8 @@ def render_photo_albums(prefix: str, section: dict[str, object]) -> str:
             download_url = str(download.get("url", ""))
             download_attrs = ""
             if urlparse(download_url).scheme == "https" and urlparse(download_url).netloc:
-                size = f"{int(download['width']):,} × {int(download['height']):,} px · {int(download['bytes']) / 1_000_000:.1f} MB"
+                dimensions = f"{int(download['width']):,} × {int(download['height']):,} px · " if download.get('width') and download.get('height') else "HD · "
+                size = f"{dimensions}{int(download['bytes']) / 1_000_000:.1f} MB"
                 download_attrs = f' data-lightbox-download="{escape(download_url, quote=True)}" data-lightbox-download-info="{escape(size, quote=True)}"'
             tiles.append(f'''<a class="photo-tile" href="{full_src}" data-lightbox-src="{full_src}"{download_attrs}
               data-lightbox-group="ich2026-{album_id}" data-lightbox-caption="{escape(caption, quote=True)}"

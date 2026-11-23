@@ -9,6 +9,7 @@ from scripts.content_store import load_content_bundle
 from scripts import build_site
 from scripts.import_conference_photos import preserve_editorial_order
 from scripts.prepare_original_photos import prepare
+from scripts.link_photo_downloads import match_downloads
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -104,6 +105,41 @@ class ConferenceGalleryTests(unittest.TestCase):
         with patch.dict(build_site.COLLECTIONS, {"photo_downloads": downloads}):
             parser = GalleryParser(build_site.render_photo_albums("../../", section))
         self.assertNotIn("data-lightbox-download", parser.tiles[0])
+
+    def test_hd_links_support_verified_file_sizes_without_assuming_dimensions(self):
+        photo = self.albums[0]["photos"][0]
+        downloads = [{"id": photo["id"], "url": "https://drive.google.com/file/d/test-photo/view", "bytes": 12_000_000}]
+        section = {"id": "albums", "type": "photo_albums", "data": {"collection": "conference_photos"}}
+        with patch.dict(build_site.COLLECTIONS, {"photo_downloads": downloads}):
+            parser = GalleryParser(build_site.render_photo_albums("../../", section))
+        self.assertEqual(parser.tiles[0]["data-lightbox-download-info"], "HD · 12.0 MB")
+
+    def test_hd_matching_uses_file_names_not_workshop_photo_numbers(self):
+        albums = [{"id": "andv-workshop", "photos": [
+            {"id": "opening", "source_filename": "DSC_6581.JPG"},
+            {"id": "renamed", "source_filename": "DSC_6141.JPG"},
+            {"id": "missing", "source_filename": "DSC_6711.JPG"},
+        ]}]
+        def file(name, identifier):
+            return {"title": name, "id": identifier, "url": f"https://drive.google.com/file/d/{identifier}/view", "size": "10000000", "mime_type": "image/jpeg"}
+        inventory = [{"folder": {"title": "Nov 05 ANDV Workshop"}, "files": [
+            file("37 ANDV Workshop.png", "different-photo"),
+            file("2 DSC_6581.JPG", "correct-photo"),
+            file("DSC_6141 (1).JPG", "renamed-photo"),
+        ]}]
+        downloads, missing = match_downloads(albums, inventory)
+        self.assertEqual([item["drive_file_id"] for item in downloads], ["correct-photo", "renamed-photo"])
+        self.assertEqual(missing, [{"album": "andv-workshop", "filename": "DSC_6711.JPG"}])
+
+    def test_hd_entries_are_unique_and_do_not_replace_preview_assets(self):
+        downloads = self.bundle["collections"]["photo_downloads"]
+        photos = {photo["id"]: photo for album in self.albums for photo in album["photos"]}
+        self.assertEqual(len(downloads), len({item["id"] for item in downloads}))
+        for item in downloads:
+            self.assertIn(item["id"], photos)
+            self.assertTrue(item["url"].startswith("https://drive.google.com/file/d/"))
+            self.assertGreater(item["bytes"], 0)
+            self.assertTrue(photos[item["id"]]["image"].endswith(".webp"))
 
     def test_former_meetings_has_one_completed_2026_entry(self):
         timeline = build_site.former_meetings_timeline("")

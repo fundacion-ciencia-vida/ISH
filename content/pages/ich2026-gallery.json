@@ -21,6 +21,7 @@
         "breadcrumbs": true,
         "actions": [
           {"label": "Explore the albums", "url": "#albums", "style": "primary"},
+          {"label": "HD photos on Google Drive", "url": "https://drive.google.com/drive/folders/1w07MWF8wGS13b-GtOzLWFTWA8AbSXFsq", "style": "secondary"},
           {"label": "About the meeting", "page_id": "ich2026", "style": "secondary"}
         ]
       }

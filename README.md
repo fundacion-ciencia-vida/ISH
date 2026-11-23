@@ -163,6 +163,12 @@ Original download links are separate from previews, in
 `content/collections/photo_downloads.json` (`id`, HTTPS `url`, native `width`,
 `height`, and `bytes`). The viewer only displays its download action when a photo
 has a configured link; it never downloads an original just to display a preview.
+Dimensions are optional and are only displayed when known. Current HD files are
+in the organizer-supplied Drive folder linked from the gallery. Existing files in
+Drive are linked unchanged; connecting them does not remove their metadata.
+`scripts/link_photo_downloads.py <inventory.json>` matches a connector folder
+inventory by original file name (including numbered workshop prefixes), reports
+missing photographs, and updates only download links, never preview assets or order.
 
 `scripts/prepare_original_photos.py --output <folder-outside-Git> <ZIPs...>`
 requires Pillow and ExifTool. It extracts the selected native-resolution JPEGs,

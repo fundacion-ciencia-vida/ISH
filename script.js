@@ -162,7 +162,7 @@ if (lightboxLinks.length) {
   lightbox.innerHTML = `
     <button class="lightbox-close" type="button" aria-label="Close image preview"><span aria-hidden="true">×</span></button>
     <div class="lightbox-download-panel" hidden>
-      <a class="lightbox-download" target="_blank" rel="noopener noreferrer"><span class="lightbox-download-icon" aria-hidden="true"></span>Download original</a>
+      <a class="lightbox-download" target="_blank" rel="noopener noreferrer"><span class="lightbox-download-icon" aria-hidden="true"></span>Download HD photo</a>
       <span class="lightbox-download-info"></span>
     </div>
     <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">
