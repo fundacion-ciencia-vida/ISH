@@ -3499,6 +3499,16 @@
       "date": "November 5",
       "photos": [
         {
+          "id": "andes-virus-workshop-05-11-57-95ca8439",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-57-95ca8439.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-57-95ca8439-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-57.jpg"
+        },
+        {
           "id": "dsc-6581-df6cbd7a",
           "image": "former-meetings/ich2026/andv-workshop/dsc-6581-df6cbd7a.webp",
           "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6581-df6cbd7a-thumb.webp",
@@ -3519,14 +3529,34 @@
           "source_filename": "DSC_6585.JPG"
         },
         {
-          "id": "20261105-161833-cef3234d",
-          "image": "former-meetings/ich2026/andv-workshop/20261105-161833-cef3234d.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/20261105-161833-cef3234d-thumb.webp",
-          "width": 1081,
+          "id": "dsc-6572-1cbc6d49",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6572-1cbc6d49.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6572-1cbc6d49-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6572.JPG"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-4-d6003de4",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-4-d6003de4.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-4-d6003de4-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-4.jpg"
+        },
+        {
+          "id": "dsc-6588-735a92bc",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6588-735a92bc.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6588-735a92bc-thumb.webp",
+          "width": 1280,
           "height": 1920,
-          "thumbnail_width": 360,
+          "thumbnail_width": 427,
           "thumbnail_height": 640,
-          "source_filename": "20261105_161833.jpg"
+          "source_filename": "DSC_6588.JPG"
         },
         {
           "id": "andes-virus-workshop-05-11-10-fdfdeb8b",
@@ -3549,6 +3579,16 @@
           "source_filename": "Andes_Virus_Workshop-05-11-11.jpg"
         },
         {
+          "id": "dsc-6591-d3680a94",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6591-d3680a94.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6591-d3680a94-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6591.JPG"
+        },
+        {
           "id": "andes-virus-workshop-05-11-12-3f2a8bd1",
           "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-12-3f2a8bd1.webp",
           "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-12-3f2a8bd1-thumb.webp",
@@ -3557,6 +3597,16 @@
           "thumbnail_width": 640,
           "thumbnail_height": 427,
           "source_filename": "Andes_Virus_Workshop-05-11-12.jpg"
+        },
+        {
+          "id": "dsc-6600-e89170f4",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6600-e89170f4.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6600-e89170f4-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6600.JPG"
         },
         {
           "id": "andes-virus-workshop-05-11-16-cceb28eb",
@@ -3599,6 +3649,16 @@
           "source_filename": "Andes_Virus_Workshop-05-11-22.jpg"
         },
         {
+          "id": "andes-virus-workshop-05-11-5-9a87a8be",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-5-9a87a8be.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-5-9a87a8be-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-5.jpg"
+        },
+        {
           "id": "andes-virus-workshop-05-11-23-e8ba74d7",
           "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-23-e8ba74d7.webp",
           "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-23-e8ba74d7-thumb.webp",
@@ -3607,6 +3667,26 @@
           "thumbnail_width": 640,
           "thumbnail_height": 427,
           "source_filename": "Andes_Virus_Workshop-05-11-23.jpg"
+        },
+        {
+          "id": "dsc-6612-cc9569c1",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6612-cc9569c1.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6612-cc9569c1-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "DSC_6612.JPG"
+        },
+        {
+          "id": "dsc-6619-2abd3fdd",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6619-2abd3fdd.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6619-2abd3fdd-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6619.JPG"
         },
         {
           "id": "andes-virus-workshop-05-11-25-6086bbe3",
@@ -3709,6 +3789,16 @@
           "source_filename": "Andes_Virus_Workshop-05-11-35.jpg"
         },
         {
+          "id": "dsc-6639-76e11fd2",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6639-76e11fd2.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6639-76e11fd2-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6639.JPG"
+        },
+        {
           "id": "andes-virus-workshop-05-11-36-193dd3c3",
           "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-36-193dd3c3.webp",
           "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-36-193dd3c3-thumb.webp",
@@ -3719,16 +3809,6 @@
           "source_filename": "Andes_Virus_Workshop-05-11-36.jpg"
         },
         {
-          "id": "andes-virus-workshop-05-11-4-d6003de4",
-          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-4-d6003de4.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-4-d6003de4-thumb.webp",
-          "width": 1920,
-          "height": 1280,
-          "thumbnail_width": 640,
-          "thumbnail_height": 427,
-          "source_filename": "Andes_Virus_Workshop-05-11-4.jpg"
-        },
-        {
           "id": "andes-virus-workshop-05-11-40-d9d73746",
           "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-40-d9d73746.webp",
           "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-40-d9d73746-thumb.webp",
@@ -3737,196 +3817,6 @@
           "thumbnail_width": 640,
           "thumbnail_height": 427,
           "source_filename": "Andes_Virus_Workshop-05-11-40.jpg"
-        },
-        {
-          "id": "andes-virus-workshop-05-11-44-98bdee82",
-          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-44-98bdee82.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-44-98bdee82-thumb.webp",
-          "width": 1920,
-          "height": 1280,
-          "thumbnail_width": 640,
-          "thumbnail_height": 427,
-          "source_filename": "Andes_Virus_Workshop-05-11-44.jpg"
-        },
-        {
-          "id": "andes-virus-workshop-05-11-45-a28fa48a",
-          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-45-a28fa48a.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-45-a28fa48a-thumb.webp",
-          "width": 1920,
-          "height": 1280,
-          "thumbnail_width": 640,
-          "thumbnail_height": 427,
-          "source_filename": "Andes_Virus_Workshop-05-11-45.jpg"
-        },
-        {
-          "id": "andes-virus-workshop-05-11-47-0b6e8e65",
-          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-47-0b6e8e65.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-47-0b6e8e65-thumb.webp",
-          "width": 1920,
-          "height": 1280,
-          "thumbnail_width": 640,
-          "thumbnail_height": 427,
-          "source_filename": "Andes_Virus_Workshop-05-11-47.jpg"
-        },
-        {
-          "id": "andes-virus-workshop-05-11-48-12c1e57d",
-          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-48-12c1e57d.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-48-12c1e57d-thumb.webp",
-          "width": 1920,
-          "height": 1280,
-          "thumbnail_width": 640,
-          "thumbnail_height": 427,
-          "source_filename": "Andes_Virus_Workshop-05-11-48.jpg"
-        },
-        {
-          "id": "andes-virus-workshop-05-11-5-9a87a8be",
-          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-5-9a87a8be.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-5-9a87a8be-thumb.webp",
-          "width": 1920,
-          "height": 1280,
-          "thumbnail_width": 640,
-          "thumbnail_height": 427,
-          "source_filename": "Andes_Virus_Workshop-05-11-5.jpg"
-        },
-        {
-          "id": "andes-virus-workshop-05-11-50-22428457",
-          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-50-22428457.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-50-22428457-thumb.webp",
-          "width": 1920,
-          "height": 1280,
-          "thumbnail_width": 640,
-          "thumbnail_height": 427,
-          "source_filename": "Andes_Virus_Workshop-05-11-50.jpg"
-        },
-        {
-          "id": "andes-virus-workshop-05-11-52-4edd7ed6",
-          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-52-4edd7ed6.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-52-4edd7ed6-thumb.webp",
-          "width": 1920,
-          "height": 1280,
-          "thumbnail_width": 640,
-          "thumbnail_height": 427,
-          "source_filename": "Andes_Virus_Workshop-05-11-52.jpg"
-        },
-        {
-          "id": "andes-virus-workshop-05-11-56-89532e7c",
-          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-56-89532e7c.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-56-89532e7c-thumb.webp",
-          "width": 1920,
-          "height": 1280,
-          "thumbnail_width": 640,
-          "thumbnail_height": 427,
-          "source_filename": "Andes_Virus_Workshop-05-11-56.jpg"
-        },
-        {
-          "id": "andes-virus-workshop-05-11-57-95ca8439",
-          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-57-95ca8439.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-57-95ca8439-thumb.webp",
-          "width": 1920,
-          "height": 1280,
-          "thumbnail_width": 640,
-          "thumbnail_height": 427,
-          "source_filename": "Andes_Virus_Workshop-05-11-57.jpg"
-        },
-        {
-          "id": "andes-virus-workshop-05-11-59-71153ebf",
-          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-59-71153ebf.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-59-71153ebf-thumb.webp",
-          "width": 1920,
-          "height": 1280,
-          "thumbnail_width": 640,
-          "thumbnail_height": 427,
-          "source_filename": "Andes_Virus_Workshop-05-11-59.jpg"
-        },
-        {
-          "id": "andes-virus-workshop-05-11-60-1f30f381",
-          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-60-1f30f381.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-60-1f30f381-thumb.webp",
-          "width": 1920,
-          "height": 1280,
-          "thumbnail_width": 640,
-          "thumbnail_height": 427,
-          "source_filename": "Andes_Virus_Workshop-05-11-60.jpg"
-        },
-        {
-          "id": "andes-virus-workshop-05-11-62-73dd9ac0",
-          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-62-73dd9ac0.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-62-73dd9ac0-thumb.webp",
-          "width": 1920,
-          "height": 1280,
-          "thumbnail_width": 640,
-          "thumbnail_height": 427,
-          "source_filename": "Andes_Virus_Workshop-05-11-62.jpg"
-        },
-        {
-          "id": "andes-virus-workshop-05-11-64-9335b24d",
-          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-64-9335b24d.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-64-9335b24d-thumb.webp",
-          "width": 1920,
-          "height": 1280,
-          "thumbnail_width": 640,
-          "thumbnail_height": 427,
-          "source_filename": "Andes_Virus_Workshop-05-11-64.jpg"
-        },
-        {
-          "id": "dsc-6572-1cbc6d49",
-          "image": "former-meetings/ich2026/andv-workshop/dsc-6572-1cbc6d49.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6572-1cbc6d49-thumb.webp",
-          "width": 1920,
-          "height": 1280,
-          "thumbnail_width": 640,
-          "thumbnail_height": 427,
-          "source_filename": "DSC_6572.JPG"
-        },
-        {
-          "id": "dsc-6588-735a92bc",
-          "image": "former-meetings/ich2026/andv-workshop/dsc-6588-735a92bc.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6588-735a92bc-thumb.webp",
-          "width": 1280,
-          "height": 1920,
-          "thumbnail_width": 427,
-          "thumbnail_height": 640,
-          "source_filename": "DSC_6588.JPG"
-        },
-        {
-          "id": "dsc-6591-d3680a94",
-          "image": "former-meetings/ich2026/andv-workshop/dsc-6591-d3680a94.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6591-d3680a94-thumb.webp",
-          "width": 1280,
-          "height": 1920,
-          "thumbnail_width": 427,
-          "thumbnail_height": 640,
-          "source_filename": "DSC_6591.JPG"
-        },
-        {
-          "id": "dsc-6600-e89170f4",
-          "image": "former-meetings/ich2026/andv-workshop/dsc-6600-e89170f4.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6600-e89170f4-thumb.webp",
-          "width": 1280,
-          "height": 1920,
-          "thumbnail_width": 427,
-          "thumbnail_height": 640,
-          "source_filename": "DSC_6600.JPG"
-        },
-        {
-          "id": "dsc-6612-cc9569c1",
-          "image": "former-meetings/ich2026/andv-workshop/dsc-6612-cc9569c1.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6612-cc9569c1-thumb.webp",
-          "width": 1920,
-          "height": 1280,
-          "thumbnail_width": 640,
-          "thumbnail_height": 427,
-          "source_filename": "DSC_6612.JPG"
-        },
-        {
-          "id": "dsc-6619-2abd3fdd",
-          "image": "former-meetings/ich2026/andv-workshop/dsc-6619-2abd3fdd.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6619-2abd3fdd-thumb.webp",
-          "width": 1280,
-          "height": 1920,
-          "thumbnail_width": 427,
-          "thumbnail_height": 640,
-          "source_filename": "DSC_6619.JPG"
         },
         {
           "id": "dsc-6625-5d2e6c6d",
@@ -3979,16 +3869,6 @@
           "source_filename": "DSC_6636.JPG"
         },
         {
-          "id": "dsc-6639-76e11fd2",
-          "image": "former-meetings/ich2026/andv-workshop/dsc-6639-76e11fd2.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6639-76e11fd2-thumb.webp",
-          "width": 1280,
-          "height": 1920,
-          "thumbnail_width": 427,
-          "thumbnail_height": 640,
-          "source_filename": "DSC_6639.JPG"
-        },
-        {
           "id": "dsc-6644-e74e4eb5",
           "image": "former-meetings/ich2026/andv-workshop/dsc-6644-e74e4eb5.webp",
           "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6644-e74e4eb5-thumb.webp",
@@ -3997,6 +3877,26 @@
           "thumbnail_width": 427,
           "thumbnail_height": 640,
           "source_filename": "DSC_6644.JPG"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-44-98bdee82",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-44-98bdee82.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-44-98bdee82-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-44.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-45-a28fa48a",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-45-a28fa48a.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-45-a28fa48a-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-45.jpg"
         },
         {
           "id": "dsc-6670-78745d5a",
@@ -4009,14 +3909,24 @@
           "source_filename": "DSC_6670.JPG"
         },
         {
-          "id": "dsc-6673-1cc62f15",
-          "image": "former-meetings/ich2026/andv-workshop/dsc-6673-1cc62f15.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6673-1cc62f15-thumb.webp",
-          "width": 1280,
-          "height": 1920,
-          "thumbnail_width": 427,
-          "thumbnail_height": 640,
-          "source_filename": "DSC_6673.JPG"
+          "id": "andes-virus-workshop-05-11-47-0b6e8e65",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-47-0b6e8e65.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-47-0b6e8e65-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-47.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-48-12c1e57d",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-48-12c1e57d.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-48-12c1e57d-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-48.jpg"
         },
         {
           "id": "dsc-6675-19ca322d",
@@ -4049,24 +3959,34 @@
           "source_filename": "DSC_6683.JPG"
         },
         {
-          "id": "dsc-6707-aa485efd",
-          "image": "former-meetings/ich2026/andv-workshop/dsc-6707-aa485efd.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6707-aa485efd-thumb.webp",
-          "width": 1079,
-          "height": 1920,
-          "thumbnail_width": 360,
-          "thumbnail_height": 640,
-          "source_filename": "DSC_6707.JPG"
+          "id": "andes-virus-workshop-05-11-50-22428457",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-50-22428457.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-50-22428457-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-50.jpg"
         },
         {
-          "id": "dsc-6711-b04abf2f",
-          "image": "former-meetings/ich2026/andv-workshop/dsc-6711-b04abf2f.webp",
-          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6711-b04abf2f-thumb.webp",
-          "width": 1079,
-          "height": 1920,
-          "thumbnail_width": 360,
-          "thumbnail_height": 640,
-          "source_filename": "DSC_6711.JPG"
+          "id": "andes-virus-workshop-05-11-52-4edd7ed6",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-52-4edd7ed6.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-52-4edd7ed6-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-52.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-56-89532e7c",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-56-89532e7c.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-56-89532e7c-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-56.jpg"
         },
         {
           "id": "dsc-6730-f2f4ee9f",
@@ -4077,6 +3997,66 @@
           "thumbnail_width": 427,
           "thumbnail_height": 640,
           "source_filename": "DSC_6730.JPG"
+        },
+        {
+          "id": "dsc-6707-aa485efd",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6707-aa485efd.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6707-aa485efd-thumb.webp",
+          "width": 1079,
+          "height": 1920,
+          "thumbnail_width": 360,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6707.JPG"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-59-71153ebf",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-59-71153ebf.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-59-71153ebf-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-59.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-60-1f30f381",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-60-1f30f381.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-60-1f30f381-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-60.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-62-73dd9ac0",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-62-73dd9ac0.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-62-73dd9ac0-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-62.jpg"
+        },
+        {
+          "id": "andes-virus-workshop-05-11-64-9335b24d",
+          "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-64-9335b24d.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-64-9335b24d-thumb.webp",
+          "width": 1920,
+          "height": 1280,
+          "thumbnail_width": 640,
+          "thumbnail_height": 427,
+          "source_filename": "Andes_Virus_Workshop-05-11-64.jpg"
+        },
+        {
+          "id": "dsc-6673-1cc62f15",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6673-1cc62f15.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6673-1cc62f15-thumb.webp",
+          "width": 1280,
+          "height": 1920,
+          "thumbnail_width": 427,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6673.JPG"
         },
         {
           "id": "dsc-6748-0fdbe3f6",
@@ -4339,6 +4319,16 @@
           "source_filename": "DSC_6857.JPG"
         },
         {
+          "id": "20261105-161833-cef3234d",
+          "image": "former-meetings/ich2026/andv-workshop/20261105-161833-cef3234d.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/20261105-161833-cef3234d-thumb.webp",
+          "width": 1081,
+          "height": 1920,
+          "thumbnail_width": 360,
+          "thumbnail_height": 640,
+          "source_filename": "20261105_161833.jpg"
+        },
+        {
           "id": "dsc-6860-0361c1f2",
           "image": "former-meetings/ich2026/andv-workshop/dsc-6860-0361c1f2.webp",
           "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6860-0361c1f2-thumb.webp",
@@ -4387,6 +4377,16 @@
           "thumbnail_width": 640,
           "thumbnail_height": 427,
           "source_filename": "DSC_6875.JPG"
+        },
+        {
+          "id": "dsc-6711-b04abf2f",
+          "image": "former-meetings/ich2026/andv-workshop/dsc-6711-b04abf2f.webp",
+          "thumbnail": "former-meetings/ich2026/andv-workshop/dsc-6711-b04abf2f-thumb.webp",
+          "width": 1079,
+          "height": 1920,
+          "thumbnail_width": 360,
+          "thumbnail_height": 640,
+          "source_filename": "DSC_6711.JPG"
         }
       ]
     }

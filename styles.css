@@ -5054,6 +5054,45 @@ main .workshop-access .section-heading p:not(.eyebrow) {
   justify-self: end;
 }
 
+.conference-poster .registration-flow-layout {
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 56px;
+}
+
+.conference-poster .registration-portal {
+  width: 100%;
+  max-width: 440px;
+  justify-self: end;
+}
+
+.conference-poster .section-heading h2 {
+  font-size: 38px;
+  line-height: 1.15;
+}
+
+main .conference-poster .section-heading p:not(.eyebrow) {
+  text-align: left;
+}
+
+.program-support:has(> :only-child) {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+@media (max-width: 780px) {
+  .conference-poster .registration-flow-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .conference-poster .section-heading h2 {
+    font-size: 30px;
+  }
+
+  .conference-poster .registration-portal {
+    justify-self: start;
+  }
+}
+
 .workshop-credentials {
   display: grid;
   gap: 18px;
@@ -7803,7 +7842,7 @@ body[data-page="committees"] .page-hero {
   color: #f7fbff;
 }
 
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) {
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) {
   --ich-blue: #69a9ff;
   --ich-sky: #7dd3fc;
   --ich-teal: #5eead4;
@@ -7817,8 +7856,8 @@ body[data-page="committees"] .page-hero {
   --muted: #9ab7d2;
 }
 
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .conference-path-section,
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .sponsors,
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .conference-path-section,
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .sponsors,
 :root[data-theme="dark"] body[data-page="programme"] .program,
 :root[data-theme="dark"] body[data-page="venue"] .venue,
 :root[data-theme="dark"] body[data-page="venue"] .intro-band {
@@ -7828,61 +7867,61 @@ body[data-page="committees"] .page-hero {
   color: var(--ink);
 }
 
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .data-section {
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .data-section {
   background: var(--surface);
 }
 
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .ich-feature,
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .program-track,
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .program-track.highlight,
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .travel-shortcuts a,
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .link-list a,
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .travel-link,
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .committee-person {
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .ich-feature,
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .program-track,
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .program-track.highlight,
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .travel-shortcuts a,
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .link-list a,
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .travel-link,
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .committee-person {
   background: #0f263d;
   color: var(--ink);
   border-color: rgba(147, 197, 253, 0.2);
   box-shadow: none;
 }
 
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .ich-feature h3,
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .program-track h3,
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .venue-address a,
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .travel-steps div,
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .travel-shortcuts a,
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .sponsor-group-heading h2 {
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .ich-feature h3,
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .program-track h3,
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .venue-address a,
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .travel-steps div,
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .travel-shortcuts a,
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .sponsor-group-heading h2 {
   color: #e5f2ff;
 }
 
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .ich-feature p,
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .program-intro p:not(.eyebrow),
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .program-track p,
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .program-track li,
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .venue-copy p:not(.eyebrow),
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .travel-steps small,
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .travel-shortcuts small,
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .travel-detail-list p,
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .travel-detail-list li,
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .venue-image figcaption {
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .ich-feature p,
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .program-intro p:not(.eyebrow),
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .program-track p,
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .program-track li,
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .venue-copy p:not(.eyebrow),
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .travel-steps small,
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .travel-shortcuts small,
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .travel-detail-list p,
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .travel-detail-list li,
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .venue-image figcaption {
   color: #a9c3da;
 }
 
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .track-date,
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .track-date,
 :root[data-theme="dark"] body[data-page="programme"] .program-track.highlight .track-date,
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .path-step span,
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .ich-feature span,
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .text-link {
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .path-step span,
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .ich-feature span,
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .text-link {
   color: #93c5fd;
 }
 
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .sponsor {
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .sponsor {
   background: #0f263d;
   color: #e5f2ff;
   border-color: rgba(147, 197, 253, 0.2);
   box-shadow: none;
 }
 
-:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .sponsor img {
+:root[data-theme="dark"] body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .sponsor img {
   padding: 8px;
   background: rgba(248, 252, 255, 0.96);
   border-radius: 4px;
@@ -8123,7 +8162,7 @@ body[data-page="ich2026"] .ich-hero .eyebrow {
 }
 
 /* ICH2026 conference identity. */
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) {
   --accent: #285ba8;
   --accent-strong: #1e4f9a;
   --lake: #43afd7;
@@ -8233,37 +8272,37 @@ body[data-page="sponsors"] .page-hero {
   }
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .site-header {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .site-header {
   background: rgba(248, 252, 255, 0.98);
   border-bottom-color: rgba(40, 91, 168, 0.2);
   box-shadow: inset 0 -4px 0 var(--ich-yellow);
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .nav-group[data-nav-group="conference"] > span {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .nav-group[data-nav-group="conference"] > span {
   color: var(--ich-blue);
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .nav-group + .nav-group::before {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .nav-group + .nav-group::before {
   color: var(--ich-sky);
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .site-nav a[aria-current="page"],
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .site-nav a.active {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .site-nav a[aria-current="page"],
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .site-nav a.active {
   background: var(--ich-blue);
   color: var(--white);
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .subnav-strip {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .subnav-strip {
   background: var(--ich-blue);
   border-bottom: 4px solid var(--ich-yellow);
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .subnav-strip > span,
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .subnav-strip a[aria-current="page"] {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .subnav-strip > span,
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .subnav-strip a[aria-current="page"] {
   color: var(--ich-yellow);
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .page-hero-overlay,
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .page-hero-overlay,
 body[data-page="ich2026"] .ich-hero-overlay {
   background:
     linear-gradient(90deg, rgba(16, 41, 77, 0.9) 0%, rgba(16, 41, 77, 0.62) 42%, rgba(16, 41, 77, 0.08) 78%, rgba(16, 41, 77, 0.03) 100%),
@@ -8282,23 +8321,23 @@ body:is([data-page="keynote"], [data-page="programme"], [data-page="registration
   background: linear-gradient(90deg, var(--ich-sky) 0 34%, var(--ich-teal) 34% 68%, var(--ich-yellow) 68% 100%);
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .button-primary,
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .hero-panel-link {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .button-primary,
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .hero-panel-link {
   background: var(--ich-yellow);
   color: var(--ich-ink);
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .button-primary:hover,
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .button-primary:focus-visible {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .button-primary:hover,
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .button-primary:focus-visible {
   background: #e7af34;
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .data-section {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .data-section {
   background: var(--ich-mist);
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .conference-summary,
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .ich-workshop {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .conference-summary,
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .ich-workshop {
   background: var(--ich-blue);
 }
 
@@ -8308,70 +8347,70 @@ body[data-page="programme"] .program {
   color: var(--ich-ink);
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .summary-item:nth-child(2) {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .summary-item:nth-child(2) {
   background: #2e78b8;
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .summary-item:nth-child(3) {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .summary-item:nth-child(3) {
   background: var(--ich-teal);
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .summary-item:nth-child(4) {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .summary-item:nth-child(4) {
   background: var(--ich-yellow);
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .summary-item:nth-child(4) span,
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .summary-item:nth-child(4) strong {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .summary-item:nth-child(4) span,
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .summary-item:nth-child(4) strong {
   color: var(--ich-ink);
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .conference-path-section,
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .sponsors {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .conference-path-section,
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .sponsors {
   background: var(--ich-cream);
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .path-step span,
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .ich-feature span,
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .track-date {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .path-step span,
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .ich-feature span,
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .track-date {
   color: var(--ich-blue);
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .path-step:hover,
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .path-step:focus-visible {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .path-step:hover,
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .path-step:focus-visible {
   background: rgba(67, 175, 215, 0.12);
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .ich-feature,
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .sponsor {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .ich-feature,
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .sponsor {
   background: #fffef7;
   border-color: rgba(40, 91, 168, 0.18);
   box-shadow: 0 14px 38px rgba(16, 41, 77, 0.08);
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .ich-feature {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .ich-feature {
   border-top: 5px solid var(--ich-blue);
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .ich-feature:nth-child(2) {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .ich-feature:nth-child(2) {
   border-top-color: var(--ich-teal);
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .ich-feature:nth-child(3) {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .ich-feature:nth-child(3) {
   border-top-color: var(--ich-sky);
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .ich-feature:nth-child(4) {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .ich-feature:nth-child(4) {
   border-top-color: var(--ich-yellow);
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .ich-feature:hover,
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .sponsor:hover,
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .sponsor:focus-visible {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .ich-feature:hover,
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .sponsor:hover,
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .sponsor:focus-visible {
   border-color: var(--ich-sky);
 }
 
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .program-day.highlight,
-body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .program-track.highlight {
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .program-day.highlight,
+body:is([data-page="ich2026"], [data-page="keynote"], [data-page="programme"], [data-page="workshop"], [data-page="registration"], [data-page="venue"], [data-page="sponsors"]) .program-track.highlight {
   background: #fffef7;
   border-color: rgba(88, 190, 156, 0.34);
   border-top-color: var(--ich-teal);
@@ -9648,5 +9687,10 @@ body[data-page="ich2026-gallery"] .page-hero img {
   .memory-previews {
     grid-template-columns: minmax(0, 1fr);
     gap: 26px;
+  }
+
+  .programme-event {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
   }
 }

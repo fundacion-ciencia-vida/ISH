@@ -9,7 +9,7 @@ from scripts.content_store import load_content_bundle
 from scripts import build_site
 from scripts.import_conference_photos import preserve_editorial_order
 from scripts.prepare_original_photos import prepare
-from scripts.link_photo_downloads import match_downloads
+from scripts.link_photo_downloads import match_downloads, numbered_photo_order
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -73,11 +73,17 @@ class ConferenceGalleryTests(unittest.TestCase):
         self.assertIn("Conference memories", html)
         self.assertNotIn('href="ich2026/abstracts-registration/"', html)
 
-    def test_workshop_opening_photos_come_first_without_losing_the_rest(self):
+    def test_workshop_uses_nicoles_numbered_order_without_losing_photos(self):
         album = next(album for album in self.albums if album["id"] == "andv-workshop")
-        self.assertEqual([photo["source_filename"] for photo in album["photos"][:2]], ["DSC_6581.JPG", "DSC_6585.JPG"])
-        self.assertEqual(album["photos"][2]["source_filename"], "20261105_161833.jpg")
+        self.assertEqual([photo["source_filename"] for photo in album["photos"][:3]], ["Andes_Virus_Workshop-05-11-57.jpg", "DSC_6581.JPG", "DSC_6585.JPG"])
+        self.assertEqual(album["photos"][-1]["source_filename"], "DSC_6711.JPG")
         self.assertEqual(len(album["photos"]), 89)
+
+    def test_numbered_order_is_stable_and_keeps_unmatched_photos(self):
+        photos = [{"id": "a"}, {"id": "b"}, {"id": "c"}, {"id": "missing"}]
+        files = [{"id": "fa", "title": "7 a.jpg"}, {"id": "fb", "title": "1 b.jpg"}, {"id": "fc", "title": "7 c.jpg"}]
+        links = [{"id": item, "drive_file_id": "f" + item} for item in ("a", "b", "c")]
+        self.assertEqual([photo["id"] for photo in numbered_photo_order(photos, files, links)], ["b", "a", "c", "missing"])
 
     def test_reimport_preserves_custom_order_cover_and_appends_new_photos(self):
         previous = [{"id": "album", "cover_id": "b", "photos": [{"id": "b"}, {"id": "a"}]}]

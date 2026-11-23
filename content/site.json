@@ -69,6 +69,10 @@
               "label": "Programme"
             },
             {
+              "page_id": "workshop",
+              "label": "ANDV Workshop"
+            },
+            {
               "page_id": "registration",
               "label": "Registration"
             },
@@ -87,6 +91,7 @@
         "ich2026",
         "keynote",
         "programme",
+        "workshop",
         "registration",
         "venue",
         "sponsors"

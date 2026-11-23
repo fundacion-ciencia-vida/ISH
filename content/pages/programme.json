@@ -14,20 +14,20 @@
       "visible": true,
       "locked": true,
       "data": {
-        "eyebrow": "ICH2026 Program",
-        "title": "International Hantavirus Conference",
-        "lede": "Please plan to arrive in Puerto Varas by Sunday afternoon, November 1. The Opening Event starts at 19:00. ICH2026 runs November 2-4, followed by the Andes Virus Workshop on November 5.",
+        "eyebrow": "ICH2026 · Programme",
+        "title": "ICH2026 Programme",
+        "lede": "The scientific meeting took place on November 2–4, 2026, at Hotel Bellavista in Puerto Varas, Chile.",
         "image": "ich2026/ich2026-hero-emblem.jpg",
         "breadcrumbs": true,
         "actions": [
           {
-            "label": "Registration",
-            "page_id": "registration",
+            "label": "Programme at a glance (PDF)",
+            "url": "assets/documents/ich2026/ich2026-programme-at-a-glance.pdf",
             "style": "primary"
           },
           {
             "label": "ANDV Workshop · November 5",
-            "url": "#andv-workshop",
+            "page_id": "workshop",
             "style": "secondary"
           }
         ]
@@ -35,38 +35,11 @@
     },
     {
       "id": "andv-workshop",
-      "type": "media_split",
+      "type": "page_link",
       "visible": true,
-      "variant": "workshop-access",
       "data": {
-        "eyebrow": "Thursday, November 5, 2026",
-        "heading": "Andes Virus Workshop",
-        "paragraphs": [
-          "08:00–16:30 · Puerto Varas, Chile local time. Hotel Bellavista, with virtual participation via Zoom.",
-          "On-site registration: 08:00–08:15. Opening: 08:15–08:30.",
-          "The workshop brings together experts in public health, rodent reservoirs, hantavirus cardiopulmonary syndrome, medical countermeasures, prevention and surveillance.",
-          "Simultaneous English–Spanish and Spanish–English translation is available."
-        ],
-        "image": "ich2026/andv-workshop-flyer.png",
-        "image_alt": "Andes Virus Workshop flyer for November 5, 2026, listing modules, chairs, speakers and organizers",
-        "image_url": "assets/images/ich2026/andv-workshop-flyer.png",
-        "caption": "ANDV Workshop · November 5, 2026. Open the full-size flyer.",
-        "access": {
-          "meeting_id": "868 8020 6303",
-          "password": "152804423"
-        },
-        "actions": [
-          {
-            "label": "Join via Zoom",
-            "url": "https://us02web.zoom.us/j/86880206303?pwd=L0E3MEFuQnFkNVdqMHVFV0dnK25aQT09",
-            "style": "primary"
-          },
-          {
-            "label": "Download programme (PDF)",
-            "url": "assets/documents/ich2026/andv-workshop-nov5.pdf",
-            "style": "outline"
-          }
-        ]
+        "label": "ANDV Workshop · November 5 · Programme & materials",
+        "page_id": "workshop"
       }
     },
     {
@@ -79,7 +52,7 @@
         "venue": "Hotel Bellavista",
         "registration_time": "15:00–18:00",
         "opening_time": "19:00",
-        "note": "Please plan to arrive in Puerto Varas by Sunday afternoon, November 1. Complete on-site registration before the Opening Event to receive your beverage vouchers."
+        "note": "On-site registration preceded the Opening Event on Sunday, November 1, at Hotel Bellavista."
       }
     },
     {
@@ -87,9 +60,9 @@
       "type": "programme_agenda",
       "visible": true,
       "data": {
-        "eyebrow": "November 1–5",
-        "heading": "Schedule at a glance",
-        "note": "Scientific session times are approximate. The detailed November 5 workshop programme is available above.",
+        "eyebrow": "November 1–4, 2026",
+        "heading": "Programme at a glance",
+        "note": "Scientific sessions and times follow the final programme at a glance. All times are local to Puerto Varas, Chile.",
         "days": [
           {
             "day": "Sunday",
@@ -98,13 +71,13 @@
               {
                 "time": "15:00–18:00",
                 "title": "On-site registration",
-                "detail": "Hotel Bellavista. Please register before the Opening Event to receive your beverage vouchers.",
+                "detail": "Hotel Bellavista.",
                 "kind": "scientific"
               },
               {
                 "time": "19:00",
                 "title": "Opening Event",
-                "detail": "Hotel Bellavista. Please plan to be in Puerto Varas by Sunday afternoon.",
+                "detail": "Hotel Bellavista.",
                 "kind": "social"
               }
             ]
@@ -114,9 +87,21 @@
             "date": "November 2",
             "events": [
               {
-                "time": "08:30–18:30",
-                "title": "Scientific meeting",
-                "detail": "First conference day",
+                "time": "08:45–10:56",
+                "title": "Reservoir hosts, virus ecology and evolution",
+                "detail": "Keynote lecture 1",
+                "kind": "scientific"
+              },
+              {
+                "time": "11:45–13:25",
+                "title": "Viral replication cycle",
+                "detail": "Keynote lecture 2",
+                "kind": "scientific"
+              },
+              {
+                "time": "14:45–18:44",
+                "title": "Virus-host interactions",
+                "detail": "Keynote lectures 3 & 4",
                 "kind": "scientific"
               }
             ]
@@ -126,15 +111,21 @@
             "date": "November 3",
             "events": [
               {
-                "time": "08:30–13:00",
-                "title": "Scientific meeting",
-                "detail": "",
+                "time": "08:30–10:57",
+                "title": "Human epidemiology, surveillance and applied methods",
+                "detail": "Keynote lecture 5",
+                "kind": "scientific"
+              },
+              {
+                "time": "11:30–12:56",
+                "title": "Pathogenesis",
+                "detail": "Keynote lecture 6",
                 "kind": "scientific"
               },
               {
                 "time": "Afternoon",
-                "title": "Optional Petrohué Falls excursion",
-                "detail": "Free afternoon. Separate registration and payment required on site; departure time to be confirmed.",
+                "title": "Petrohué Falls excursion",
+                "detail": "Optional excursion; separate on-site registration and payment applied.",
                 "kind": "optional"
               }
             ]
@@ -144,28 +135,34 @@
             "date": "November 4",
             "events": [
               {
-                "time": "08:30–18:30",
-                "title": "Scientific meeting",
-                "detail": "Final conference day",
+                "time": "08:35–09:00",
+                "title": "J. Dalrymple Award Ceremony",
+                "detail": "",
+                "kind": "social"
+              },
+              {
+                "time": "09:00–12:11",
+                "title": "Vaccines & therapeutics",
+                "detail": "Keynote lecture 7",
                 "kind": "scientific"
+              },
+              {
+                "time": "12:15–16:03",
+                "title": "Clinical aspects & diagnostics",
+                "detail": "Keynote lecture 8",
+                "kind": "scientific"
+              },
+              {
+                "time": "16:50–17:45",
+                "title": "Ho Wang Lee Award Ceremony",
+                "detail": "",
+                "kind": "social"
               },
               {
                 "time": "19:30",
                 "title": "Gala Dinner",
-                "detail": "Closing evening of ICH2026",
+                "detail": "Closing evening of ICH2026.",
                 "kind": "social"
-              }
-            ]
-          },
-          {
-            "day": "Thursday",
-            "date": "November 5",
-            "events": [
-              {
-                "time": "08:00–16:30",
-                "title": "Andes Virus Workshop",
-                "detail": "Registration 08:00–08:15; opening 08:15–08:30. Hotel Bellavista and via Zoom, with simultaneous English–Spanish and Spanish–English translation.",
-                "kind": "workshop"
               }
             ]
           }
@@ -181,7 +178,7 @@
         "eyebrow": "ICH2026 awards",
         "heading": "Celebrating the 2026 award recipients",
         "paragraphs": [
-          "Rohit Jangra receives the Joel M. Dalrymple Memorial Award. Gregory Mertz and Pablo Vial receive the Ho Wang Lee Lifetime Award."
+          "Rohit Jangra received the Joel M. Dalrymple Memorial Award. Gregory Mertz and Pablo Vial received the Ho Wang Lee Lifetime Award."
         ],
         "actions": [
           {
@@ -230,13 +227,13 @@
       "visible": true,
       "data": {
         "eyebrow": "Scientific topics",
-        "heading": "Conference & workshop themes",
+        "heading": "Conference themes",
         "introduction": "",
         "tracks": [
           {
             "date": "November 2-4",
             "title": "International Hantavirus Conference",
-            "description": "The meeting will cover the following topics:",
+            "description": "The scientific meeting covered the following topics:",
             "items": [
               "Viral epidemiology, evolution & genetics",
               "Virus ecology and climate change",
@@ -248,22 +245,6 @@
             ],
             "highlight": false,
             "note": ""
-          },
-          {
-            "date": "November 5",
-            "title": "Andes Virus Workshop",
-            "description": "Topics will cover the following aspects:",
-            "items": [
-              "Translation of vaccine & therapeutics candidates",
-              "Early diagnosis",
-              "Management of Andes virus-exposed persons",
-              "Surveillance of Andes virus",
-              "Regional Network",
-              "Other topics",
-              "Round Table discussion"
-            ],
-            "highlight": true,
-            "note": "This workshop will be conducted with simultaneous translation (English-Spanish; Spanish-English)."
           }
         ],
         "collapsible": false

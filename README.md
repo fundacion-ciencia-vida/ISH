@@ -139,6 +139,19 @@ header.
 
 ## Asset note
 
+### Conference and workshop programmes
+
+`content/pages/programme.json` contains the final ICH2026 thematic schedule for
+November 2-4 and the November 1 Opening Event. `content/pages/workshop.json`
+owns the separate `/ich2026/andv-workshop/` archive, its public programme and
+English/Spanish flyers. The former `/ich2026/programme/#andv-workshop` anchor
+still provides a link to the dedicated page. Slides and recording links should
+only be added after the organizers supply the released material.
+
+The conference poster is published as supplied, without retouching. It prints
+XII while the website archive currently records XIII; confirm the edition with
+the organizers before changing either source.
+
 ### ICH2026 photo archive
 
 The gallery lives at `former-meetings/ich2026/`. Albums and selected covers are
@@ -169,6 +182,9 @@ Drive are linked unchanged; connecting them does not remove their metadata.
 `scripts/link_photo_downloads.py <inventory.json>` matches a connector folder
 inventory by original file name (including numbered workshop prefixes), reports
 missing photographs, and updates only download links, never preview assets or order.
+Add `--order-album andv-workshop` to apply the numbered Drive order explicitly.
+That option preserves the relative order of tied numbers and keeps unmatched
+photographs at the end; it never adds, removes or replaces a photograph.
 
 `scripts/prepare_original_photos.py --output <folder-outside-Git> <ZIPs...>`
 requires Pillow and ExifTool. It extracts the selected native-resolution JPEGs,

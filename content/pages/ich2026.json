@@ -57,7 +57,9 @@
       "data": {
         "eyebrow": "ICH2026 · Conference memories",
         "heading": "Science, connections & shared moments.",
-        "paragraphs": ["A photographic record of the meeting in Puerto Varas, from the opening evening to the Andes Virus Workshop."],
+        "paragraphs": [
+          "A photographic record of the meeting in Puerto Varas, from the opening evening to the Andes Virus Workshop."
+        ],
         "page_id": "ich2026-gallery",
         "collection": "conference_photos",
         "label": "Explore the ICH2026 gallery"
@@ -161,14 +163,43 @@
         ],
         "actions": [
           {
-            "label": "Workshop programme",
-            "page_id": "programme",
+            "label": "Workshop programme & materials",
+            "page_id": "workshop",
             "style": "primary"
           },
           {
             "label": "Workshop photographs",
             "url": "former-meetings/ich2026/#andv-workshop",
             "style": "secondary-light"
+          }
+        ]
+      }
+    },
+    {
+      "id": "conference-poster",
+      "type": "media_split",
+      "variant": "poster",
+      "visible": true,
+      "data": {
+        "eyebrow": "ICH2026 · Conference poster",
+        "heading": "The Puerto Varas meeting.",
+        "paragraphs": [
+          "The official conference poster brings together the keynote speakers, award recipients and organizing committees of ICH2026."
+        ],
+        "image": "ich2026/ich2026-conference-poster.webp",
+        "image_alt": "Official ICH2026 conference poster with keynote speakers, award recipients and organizing committees",
+        "image_url": "assets/documents/ich2026/ich2026-conference-poster.pdf",
+        "caption": "ICH2026 conference poster · Original supplied by the organizing committee",
+        "actions": [
+          {
+            "label": "Conference poster (PDF)",
+            "url": "assets/documents/ich2026/ich2026-conference-poster.pdf",
+            "style": "primary"
+          },
+          {
+            "label": "Programme at a glance",
+            "page_id": "programme",
+            "style": "outline"
           }
         ]
       }

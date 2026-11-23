@@ -2534,7 +2534,7 @@ def render_media_split(prefix: str, section: dict[str, object]) -> str:
             </dd></div>
           </dl>'''
     section_attrs = f' id="{escape(str(section["id"]), quote=True)}"' if workshop else ""
-    section_class = " workshop-access" if workshop else ""
+    section_class = " workshop-access" if workshop else " conference-poster" if section.get("variant") == "poster" else ""
     actions_html = content_actions(prefix, actions if isinstance(actions, list) else [])
     html = f"""
       <section{section_attrs} class="section intro-band{section_class}"><div class="section-shell registration-flow-layout">
@@ -3047,7 +3047,7 @@ def render_content_section(prefix: str, page: dict[str, object], section: dict[s
         return render_award_archive(prefix, section)
     if section_type == "conference_awards":
         return render_conference_awards(prefix, section)
-    if section_type == "award_link":
+    if section_type in {"award_link", "page_link"}:
         return render_award_link(prefix, section)
     if section_type == "link_tags":
         return render_link_tags(prefix, section)

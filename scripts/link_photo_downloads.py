@@ -43,12 +43,29 @@ def match_downloads(albums: list[dict], inventory: list[dict]) -> tuple[list[dic
     return downloads, missing
 
 
+def numbered_photo_order(photos: list[dict], files: list[dict], downloads: list[dict]) -> list[dict]:
+    ranks = {file["id"]: int(match.group(1)) for file in files
+             if (match := re.match(r"^(\d+)\s+", file["title"]))}
+    links = {item["id"]: item.get("drive_file_id") for item in downloads}
+    # Stable sorting preserves the current order for tied numbers and unmatched photos.
+    return sorted(photos, key=lambda photo: ranks.get(links.get(photo["id"]), float("inf")))
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("inventory", type=Path)
+    parser.add_argument("--order-album", help="Apply the verified Drive numbering to one album, without adding/removing photos.")
     args = parser.parse_args()
     albums = json.loads((ROOT / "content/collections/conference_photos.json").read_text())["items"]
-    downloads, missing = match_downloads(albums, json.loads(args.inventory.read_text()))
+    inventory = json.loads(args.inventory.read_text())
+    downloads, missing = match_downloads(albums, inventory)
+    if args.order_album:
+        album = next(album for album in albums if album["id"] == args.order_album)
+        folder_name = next(folder for folder, album_id, *_ in ALBUMS if album_id == args.order_album)
+        files = next(entry["files"] for entry in inventory if entry["folder"]["title"] == folder_name)
+        album["photos"] = numbered_photo_order(album["photos"], files, downloads)
+        (ROOT / "content/collections/conference_photos.json").write_text(
+            json.dumps({"items": albums}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     target = ROOT / "content/collections/photo_downloads.json"
     target.write_text(json.dumps({"items": downloads}, indent=2) + "\n")
     print(f"Linked {len(downloads)} HD photos. Unmatched photographs: {json.dumps(missing)}")

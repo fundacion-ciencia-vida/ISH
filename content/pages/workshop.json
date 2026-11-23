@@ -1,0 +1,85 @@
+{
+  "id": "workshop",
+  "route": "ich2026/andv-workshop",
+  "core_route": true,
+  "title": "ANDV Workshop | ICH2026",
+  "description": "Public programme, flyers and materials from the Andes Virus Workshop held on November 5, 2026, in Puerto Varas, Chile.",
+  "social_image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-62-73dd9ac0.webp",
+  "hero_image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-62-73dd9ac0.webp",
+  "conference_page": true,
+  "sections": [
+    {
+      "id": "hero",
+      "type": "page_hero",
+      "visible": true,
+      "locked": true,
+      "data": {
+        "eyebrow": "ICH2026 · November 5, 2026",
+        "title": "ANDV Workshop",
+        "lede": "The Andes Virus Workshop brought together researchers, clinicians and public health professionals at Hotel Bellavista in Puerto Varas, Chile, with virtual participation and simultaneous English–Spanish translation.",
+        "image": "former-meetings/ich2026/andv-workshop/andes-virus-workshop-05-11-62-73dd9ac0.webp",
+        "breadcrumbs": true,
+        "actions": [
+          {"label": "Workshop programme (PDF)", "url": "assets/documents/ich2026/andv-workshop-programme.pdf", "style": "primary"},
+          {"label": "Workshop photographs", "url": "former-meetings/ich2026/#andv-workshop", "style": "secondary"}
+        ]
+      }
+    },
+    {
+      "id": "workshop-programme",
+      "type": "media_split",
+      "variant": "poster",
+      "visible": true,
+      "data": {
+        "eyebrow": "Public workshop materials",
+        "heading": "Andes virus: research & public health.",
+        "paragraphs": [
+          "Thursday, November 5, 2026 · 08:00–16:30 · Hotel Bellavista, Puerto Varas, Chile.",
+          "Organized by Marcela Ferrés, Nicole Le Corre and Nicole D. Tischler, the workshop addressed reservoirs and public health, patients and hantavirus cardiopulmonary syndrome, and prevention, follow-up and public education.",
+          "The detailed workshop programme is public. Presentation slides and the recording will be added when released by the organizers."
+        ],
+        "image": "ich2026/andv-workshop-flyer-en.webp",
+        "image_alt": "English-language Andes Virus Workshop flyer listing modules, chairs, speakers and organizers",
+        "image_url": "assets/documents/ich2026/andv-workshop-flyer-en.pdf",
+        "caption": "ANDV Workshop · English flyer",
+        "actions": [
+          {"label": "Public programme (PDF)", "url": "assets/documents/ich2026/andv-workshop-programme.pdf", "style": "primary"},
+          {"label": "English flyer (PDF)", "url": "assets/documents/ich2026/andv-workshop-flyer-en.pdf", "style": "outline"},
+          {"label": "Spanish flyer (PNG)", "url": "assets/images/ich2026/andv-workshop-flyer-es.png", "style": "outline"}
+        ]
+      }
+    },
+    {
+      "id": "workshop-agenda",
+      "type": "programme_agenda",
+      "visible": true,
+      "data": {
+        "eyebrow": "November 5, 2026",
+        "heading": "Workshop programme",
+        "note": "Times and modules follow the public workshop programme. All times are local to Puerto Varas, Chile.",
+        "days": [
+          {
+            "day": "Thursday",
+            "date": "November 5",
+            "events": [
+              {"time": "08:00–08:15", "title": "Registration", "detail": "Hotel Bellavista", "kind": "workshop"},
+              {"time": "08:15–08:30", "title": "Welcome from the organizers", "detail": "Opening of the Andes Virus Workshop", "kind": "workshop"},
+              {"time": "08:30–09:59", "title": "Module I · Reservoirs and public health", "detail": "Strategies for ANDV detection: from reservoirs to outbreaks; surveillance and public health.", "kind": "workshop"},
+              {"time": "10:00–10:30", "title": "Coffee break", "detail": "", "kind": "social"},
+              {"time": "10:30–12:30", "title": "Module II · Patients and HCPS", "detail": "Hantavirus infection detection, therapeutic strategies, medical countermeasures and vaccines, with panel discussion.", "kind": "workshop"},
+              {"time": "12:30–14:30", "title": "Lunch & poster session", "detail": "", "kind": "social"},
+              {"time": "14:30–16:15", "title": "Module III · Contacts: prevention, follow-up and public education", "detail": "Management of survivors, follow-up of exposed individuals, monitoring and public education, with panel discussion.", "kind": "workshop"},
+              {"time": "16:30", "title": "Closing remarks", "detail": "Local Organizing Committee", "kind": "workshop"}
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "workshop-gallery",
+      "type": "page_link",
+      "visible": true,
+      "data": {"label": "ANDV Workshop photographs · View the album", "url": "former-meetings/ich2026/#andv-workshop"}
+    }
+  ]
+}
